@@ -1,0 +1,12 @@
+{
+    "name": "RVAutomationV2",
+    "description": "RV Automation Version 2",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "flows.json",
+            "credentialsFile": "flows_cred.json"
+        }
+    }
+}

@@ -1,1 +1,524 @@
-[]
+[
+    {
+        "id": "0977fce194365578",
+        "type": "tab",
+        "label": "Startup",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e213983d60d65ed3",
+        "type": "tab",
+        "label": "Global Functions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "49c27f958aacfefb",
+        "type": "tab",
+        "label": "GPS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b82afc4011b4b924",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Global function g_readJsonFile",
+        "style": {
+            "stroke": "#6f2fa0",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "9bcd4840591ee942",
+            "d67529f3de996ef4",
+            "deb4f6ccd9b783da",
+            "ae7b59c2467d1104",
+            "82af9427c91443f4"
+        ],
+        "x": 194,
+        "y": 279,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "5be6bf7969fc9e8d",
+        "type": "mqtt-broker",
+        "name": "GPS Data In",
+        "broker": "127.0.0.1",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "13fb5b3eef8d068d",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "CONSTANTS",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const constants = g_readJsonFile(BOOTSTRAP.FILES.CONSTANTS);\n\n    global.set(\"CONSTANTS\", constants);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "2ed86bf7290b8241"
+            ]
+        ]
+    },
+    {
+        "id": "2ed86bf7290b8241",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "CONFIG",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const config = g_readJsonFile(BOOTSTRAP.FILES.CONFIG);\n\n    global.set(\"config\", config);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 380,
+        "y": 380,
+        "wires": [
+            [
+                "912792a501771737"
+            ]
+        ]
+    },
+    {
+        "id": "912792a501771737",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "DEVICES",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = g_readJsonFile(BOOTSTRAP.FILES.DEVICES);\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8a9edcf430d2c8a9",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "UTILS",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c77ba61e0750134",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "STATE",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6afa73a0128206a2",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "PREFS",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "904d7e821cdab2ac",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "HOST",
+        "func": "return msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f1aacee0d2ed0fe",
+        "type": "comment",
+        "z": "0977fce194365578",
+        "name": "Init order",
+        "info": "Startup\n\n1. CONSTANTS\n2. CONFIG\n3. PREFS\n4. HOST\n5. UTILS\n6. DEVICES\n7. STATE\n8. Validate Startup\n9. Startup Complete\n\nCONSTANTS has no dependencies.\nCONFIG may use constants.\nPREFS may depend on configuration (default values, storage location, etc.).\nHOST is independent and can be collected early.\nUTILS may use constants/config.\nDEVICES will almost certainly use CONSTANTS, CONFIG, and possibly PREFS.\nSTATE is last because it represents the initial runtime state after everything else exists.",
+        "x": 260,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "3b8cb6717d2bc39d",
+        "type": "comment",
+        "z": "0977fce194365578",
+        "name": "HOST",
+        "info": "HOST\n├── hostname\n├── os\n│   ├── name\n│   ├── version\n│   └── kernel\n├── nodeRed\n│   ├── version\n│   └── uptime\n├── nodejs\n│   └── version\n├── hardware\n│   ├── model\n│   ├── architecture\n│   └── serialNumber\n├── network\n│   ├── hostname\n│   ├── ipAddress\n│   └── macAddress\n└── startupTime\n",
+        "x": 990,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a09aac1ae2293994",
+        "type": "comment",
+        "z": "0977fce194365578",
+        "name": "CONSTANTS",
+        "info": "RULES:\nCONSTANTS are values that may be changed by the developer or administrator, \nbut only intentionally as part of the system's design. They are not runtime preferences.\n\nLWT_DOWN; 0\nLWT_UP; 1\nDEV_DWN_2_MINS: 2\nHEARTBEAT: 3?",
+        "x": 410,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e8657589e65ad22d",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "bootstrap",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/projects/RVAutomation/config/CONSTANTS.json\",\n        CONFIG: \"/home/admin/projects/RVAutomation/config/config.json\",\n        DEVICES: \"/home/admin/projects/RVAutomation/config/devices.json\"\n    }\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "13fb5b3eef8d068d"
+            ]
+        ]
+    },
+    {
+        "id": "968cda74b4511127",
+        "type": "inject",
+        "z": "0977fce194365578",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "e8657589e65ad22d"
+            ]
+        ]
+    },
+    {
+        "id": "c78995f40a28a261",
+        "type": "inject",
+        "z": "0977fce194365578",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 560,
+        "wires": [
+            [
+                "6841b3cb4a4073fc"
+            ]
+        ]
+    },
+    {
+        "id": "6841b3cb4a4073fc",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "print gloabl vars",
+        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.devices = global.get('devices');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "2fada4076d76cd3b"
+            ]
+        ]
+    },
+    {
+        "id": "2fada4076d76cd3b",
+        "type": "debug",
+        "z": "0977fce194365578",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "9bcd4840591ee942",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "b82afc4011b4b924",
+        "name": "g_readJsonFile",
+        "func": "function g_readJsonFile(fileName) {\n    return JSON.parse(\n        fs.readFileSync(fileName,\"utf8\")\n    );\n}\n\nglobal.set('g_readJsonFile', g_readJsonFile);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 520,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d67529f3de996ef4",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "b82afc4011b4b924",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "9bcd4840591ee942"
+            ]
+        ]
+    },
+    {
+        "id": "deb4f6ccd9b783da",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "b82afc4011b4b924",
+        "name": "test g_getJsonFiile",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "BOOTSTRAP.FILES.CONSTANTS",
+        "payloadType": "global",
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "82af9427c91443f4"
+            ]
+        ]
+    },
+    {
+        "id": "ae7b59c2467d1104",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "b82afc4011b4b924",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "82af9427c91443f4",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "b82afc4011b4b924",
+        "name": "test g_readJsonFile",
+        "func": "let g_readJsonFile = global.get('g_readJsonFile');\nmsg.payload = g_readJsonFile(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "ae7b59c2467d1104"
+            ]
+        ]
+    },
+    {
+        "id": "4cc435a5e1358f17",
+        "type": "mqtt in",
+        "z": "49c27f958aacfefb",
+        "name": "",
+        "topic": "gps/to/nr/new/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "8dba1305d96c74c6"
+            ]
+        ]
+    },
+    {
+        "id": "8dba1305d96c74c6",
+        "type": "debug",
+        "z": "49c27f958aacfefb",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 560,
+        "wires": []
+    }
+]

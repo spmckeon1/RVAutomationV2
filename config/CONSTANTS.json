@@ -1,0 +1,19 @@
+{
+  "MONITOR": {
+    "EVENT": {
+      "LWT_DOWN": 0,
+      "LWT_UP": 1,
+      "DEV_DWN_2_MINS": 2,
+      "HEARTBEAT": 3
+    }
+  },
+  "ERROR": {
+    "VALIDATION": {
+      "NONE": -1,
+      "INVALID_PAYLOAD": 100,
+      "MISSING_REQUIRED_OBJECT": 101,
+      "INVALID_DATA_TYPE": 102,
+      "VALUE_OUT_OF_RANGE": 103
+    }
+  }
+}

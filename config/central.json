@@ -1,0 +1,45 @@
+{
+  "driversSeatShade": {
+    "blackout": {
+      "enabled": false,
+      "maxDown": 100
+    },
+    "solar": {
+      "enabled": false,
+      "maxDown": 100
+    }
+  },
+  "windshieldShade": {
+    "blackout": {
+      "enabled": false,
+      "maxDown": 100
+    },
+    "solar": {
+      "enabled": false,
+      "maxDown": 100
+    }
+  },
+  "passengerSeatShade": {
+    "blackout": {
+      "enabled": false,
+      "maxDown": 100
+    },
+    "solar": {
+      "enabled": false,
+      "maxDown": 100
+    }
+  },
+  "driverWindow": {
+    "closeWindow": {
+      "enabled": false,
+      "maxDown": 100
+    }
+  },
+  "gps": {
+    "validation": {
+      "lastValidUpdate": 0,
+      "consecutiveErrors": 0,
+      "error": -1
+    }
+  }
+}

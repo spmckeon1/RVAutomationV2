@@ -24,6 +24,14 @@
         "env": []
     },
     {
+        "id": "4721bb14b0bb8ce2",
+        "type": "tab",
+        "label": "Logging",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "b82afc4011b4b924",
         "type": "group",
         "z": "e213983d60d65ed3",
@@ -42,13 +50,35 @@
         ],
         "x": 194,
         "y": 279,
-        "w": 652,
+        "w": 712,
+        "h": 142
+    },
+    {
+        "id": "799b31fd65377930",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Global function g_createLogEventObject",
+        "style": {
+            "stroke": "#6f2fa0",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "51df4d4a2bcedc7c",
+            "af4625adf0fe7971",
+            "f87bb1d58326e771",
+            "e2935b0533035db1",
+            "bdd9ee9bfaf93c92"
+        ],
+        "x": 134,
+        "y": 459,
+        "w": 772,
         "h": 142
     },
     {
         "id": "5be6bf7969fc9e8d",
         "type": "mqtt-broker",
-        "name": "GPS Data In",
+        "name": "RVAutomation_V2",
         "broker": "127.0.0.1",
         "port": 1883,
         "clientid": "",
@@ -118,7 +148,7 @@
                 "module": "fs"
             }
         ],
-        "x": 380,
+        "x": 320,
         "y": 380,
         "wires": [
             [
@@ -138,10 +168,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
+        "x": 380,
         "y": 440,
         "wires": [
-            []
+            [
+                "c5c94e3321ce38bc"
+            ]
         ]
     },
     {
@@ -157,7 +189,7 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 500,
+        "y": 700,
         "wires": [
             []
         ]
@@ -175,7 +207,7 @@
         "finalize": "",
         "libs": [],
         "x": 710,
-        "y": 560,
+        "y": 760,
         "wires": [
             []
         ]
@@ -193,7 +225,7 @@
         "finalize": "",
         "libs": [],
         "x": 780,
-        "y": 620,
+        "y": 820,
         "wires": [
             []
         ]
@@ -211,7 +243,7 @@
         "finalize": "",
         "libs": [],
         "x": 870,
-        "y": 680,
+        "y": 880,
         "wires": [
             []
         ]
@@ -233,7 +265,7 @@
         "name": "HOST",
         "info": "HOST\n├── hostname\n├── os\n│   ├── name\n│   ├── version\n│   └── kernel\n├── nodeRed\n│   ├── version\n│   └── uptime\n├── nodejs\n│   └── version\n├── hardware\n│   ├── model\n│   ├── architecture\n│   └── serialNumber\n├── network\n│   ├── hostname\n│   ├── ipAddress\n│   └── macAddress\n└── startupTime\n",
         "x": 990,
-        "y": 680,
+        "y": 880,
         "wires": []
     },
     {
@@ -251,7 +283,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "bootstrap",
-        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/projects/RVAutomation/config/CONSTANTS.json\",\n        CONFIG: \"/home/admin/projects/RVAutomation/config/config.json\",\n        DEVICES: \"/home/admin/projects/RVAutomation/config/devices.json\"\n    }\n});\nreturn msg;",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/projects/RVAutomation/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/projects/RVAutomation/config/central.json\",\n        CONFIG: \"/home/admin/projects/RVAutomation/config/config.json\",\n        DEVICES: \"/home/admin/projects/RVAutomation/config/devices.json\",\n        LOG_EVENT_TEMPLATE: \"/home/admin/projects/RVAutomation/config/logEventTemplate.json\"\n    }\n});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -329,7 +361,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "print gloabl vars",
-        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.devices = global.get('devices');\nreturn msg;",
+        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CENTRAL = global.get('central');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.devices = global.get('devices');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -362,6 +394,24 @@
         "wires": []
     },
     {
+        "id": "c5c94e3321ce38bc",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "CENTRAL",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const central = g_readJsonFile(BOOTSTRAP.FILES.CENTRAL);\n\n    global.set(\"central\", central);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "9bcd4840591ee942",
         "type": "function",
         "z": "e213983d60d65ed3",
@@ -379,7 +429,7 @@
                 "module": "fs"
             }
         ],
-        "x": 520,
+        "x": 540,
         "y": 320,
         "wires": [
             []
@@ -459,7 +509,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
+        "x": 800,
         "y": 380,
         "wires": []
     },
@@ -485,6 +535,129 @@
         ]
     },
     {
+        "id": "51df4d4a2bcedc7c",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "799b31fd65377930",
+        "name": "g_createLogEventObject",
+        "func": "function g_createLogEventObject() {\n    const config = global.get('config');\n    return JSON.parse(JSON.stringify(config.logEventTemplate));\n}\n\nglobal.set('g_createLogEventObject', g_createLogEventObject);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 570,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af4625adf0fe7971",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "799b31fd65377930",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "51df4d4a2bcedc7c"
+            ]
+        ]
+    },
+    {
+        "id": "f87bb1d58326e771",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "799b31fd65377930",
+        "name": "test g_createLogEventObject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "BOOTSTRAP.FILES.CONSTANTS",
+        "payloadType": "global",
+        "x": 300,
+        "y": 560,
+        "wires": [
+            [
+                "bdd9ee9bfaf93c92"
+            ]
+        ]
+    },
+    {
+        "id": "e2935b0533035db1",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "799b31fd65377930",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "bdd9ee9bfaf93c92",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "799b31fd65377930",
+        "name": "test g_createLogEventObject",
+        "func": "let g_createLogEventObject = global.get('g_createLogEventObject');\nmsg.payload = g_createLogEventObject();\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 560,
+        "wires": [
+            [
+                "e2935b0533035db1"
+            ]
+        ]
+    },
+    {
         "id": "4cc435a5e1358f17",
         "type": "mqtt in",
         "z": "49c27f958aacfefb",
@@ -501,7 +674,8 @@
         "y": 500,
         "wires": [
             [
-                "8dba1305d96c74c6"
+                "8dba1305d96c74c6",
+                "6d8aa5ce9092896d"
             ]
         ]
     },
@@ -510,15 +684,158 @@
         "type": "debug",
         "z": "49c27f958aacfefb",
         "name": "debug 3",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
-        "y": 560,
+        "x": 540,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "6d8aa5ce9092896d",
+        "type": "function",
+        "z": "49c27f958aacfefb",
+        "name": "processIncomingData",
+        "func": "const CONSTANTS = global.get(\"CONSTANTS\");\nconst DEVICES = global.get(\"devices\");\nconst CENTRAL = global.get(\"central\");\n\nconst gps = DEVICES.gps;\nconst validation = CENTRAL.gps.validation;\n\n//------------------------------------------------------------\n// Validate payload\n//------------------------------------------------------------\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n    validation.error = CONSTANTS.ERROR.VALIDATION.INVALID_PAYLOAD;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\nconst p = msg.payload;\n\nif (!p.location ||\n    !p.fix ||\n    !p.motion ||\n    !p.altitude ||\n    !p.quality ||\n    !p.utc) {\n\n    validation.error = CONSTANTS.ERROR.VALIDATION.MISSING_REQUIRED_OBJECT;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\n//------------------------------------------------------------\n// Payload validated\n//------------------------------------------------------------\ngps.state = p;\n\nvalidation.error = CONSTANTS.ERROR.VALIDATION.NONE;\nvalidation.consecutiveErrors = 0;\nvalidation.lastValidUpdate = Date.now();\n\nglobal.set(\"DEVICES\", DEVICES);\nglobal.set(\"CENTRAL\", CENTRAL);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "f0963ad6d9f87774"
+            ]
+        ]
+    },
+    {
+        "id": "f0963ad6d9f87774",
+        "type": "debug",
+        "z": "49c27f958aacfefb",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9d22f03c4e9db31b",
+        "type": "catch",
+        "z": "49c27f958aacfefb",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "8574286cde61e343"
+            ]
+        ]
+    },
+    {
+        "id": "8574286cde61e343",
+        "type": "debug",
+        "z": "49c27f958aacfefb",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "80da20fb82eb87b9",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "name": "message",
+        "func": "// -----------------------------------------------------------------------------\n// Normalize LogEvent\n//\n// Accepts:\n//   • Legacy ESP32 syslog messages\n//   • Canonical LogEvent objects (future)\n//\n// Produces:\n//   • Canonical LogEvent\n// -----------------------------------------------------------------------------\n\nconst g_createLogEventObject = global.get('g_createLogEventObject');\n\n// Future:\n// if (isLogEvent(msg.payload)) {\n//     return msg;\n// }\n\n// -----------------------------------------------------------------------------\n// Legacy ESP32 Translation\n// -----------------------------------------------------------------------------\n\n/**\n * Determine whether the incoming payload is a log file (multiple legacy log\n * events concatenated together) rather than a single legacy log event.\n *\n * Assumption:\n * Each legacy log event generated by the ESP32 logging framework contains\n * exactly one \"Line#:\" field. Therefore, if the payload contains more than\n * one \"Line#:\", it is considered a log file replay.\n *\n * Returns:\n *   true  - Payload contains multiple legacy log events.\n *   false - Payload contains a single legacy log event.\n */\n\n/*-----  IS THIS A LOG FILE COMING IN OR AN INDIVIDUAL ENTRY  -----*/\n\nfunction isLogFile() {\n    if (typeof msg.payload !== \"string\") return false;\n    const matches = msg.payload.match(/Line#:/g);\n    if (!matches) {\n        return false;\n    }\n    return matches.length > 1;\n}\n\n/**\n * Normalize a legacy log file.\n *\n * A legacy log file consists of one or more legacy log events.\n * Each legacy log event is terminated by a '\\n' character.\n */\n\n/*-----  SPLIT THE LOG FILE INTO INDIVIDUAL ETRIES AND LET normalizeLegacyLogEvent DEAL WITH WHAT TO DO WITH THEM  -----*/\n\nfunction normalizeLogFile() {\n\n    const entries = msg.payload.split('\\n');\n\n    for (const entry of entries) {\n\n        if (entry.length === 0) {\n            continue;\n        }\n\n        const outMsg = {\n            topic: msg.topic,\n            payload: entry\n        };\n\n        normalizeLegacyLogEvent(outMsg);\n    }\n}\n/*-----  IF THE EVENT ARRIVES AS AN OBJECT WITH THE CORRECTLY NAMES ELEMENTS  -----*/\n\nfunction isCanonicalLogEvent() {\n    if (typeof msg.payload !== \"object\" || msg.payload === null)\n        return false;\n\n    return (\n        msg.payload.hasOwnProperty(\"eventTime\") &&\n        msg.payload.hasOwnProperty(\"component\") &&\n        msg.payload.hasOwnProperty(\"function\") &&\n        msg.payload.hasOwnProperty(\"message\")\n    );\n}\n\n/*-----  TRANSITION THE INCOMING LOG OBJECT TO THE STANDARD V2 LOGING OBJECT  -----*/\n\nfunction normalizeCanonicalLogEvent() {\n\n    // Create a new canonical LogEvent.\n    const logEvent = g_createLogEventObject();\n//    const logEvent = JSON.parse(JSON.stringify(config.logEventTemplate));\n\n    // Copy only recognized fields.\n    logEvent.eventTime = msg.payload.eventTime;\n    logEvent.component = msg.payload.component;\n    logEvent.function = msg.payload.function;\n    logEvent.message = msg.payload.message;\n\n    // Ensure data is always an object.\n    if (\"data\" in msg.payload && typeof msg.payload.data === \"object\") {\n        logEvent.data = msg.payload.data;\n    }\n\n    const outMsg = {\n        payload: logEvent\n    };\n\n    node.send(outMsg);\n    return;\n}\n\n/*-----  IS MSG.PAYLOAD A SINGLE LEGACY LOG ENTRY  -----*/\n\nfunction isLegacyLogEvent() {\n    if (typeof msg.payload !== \"string\") return false;\n    const matches = msg.payload.match(/Line#:/g);\n    if (!matches) {\n        return false;\n    }\n    return matches.length === 1;\n}\n\n/*-----  NORMALIZE THE LEGACY EVENT TO THE V2 logEventTemplate  -----*/\n\nfunction normalizeLegacyLogEvent(msg) {\n    const logEvent = g_createLogEventObject();\n//    const logEvent = JSON.parse(JSON.stringify(config.logEventTemplate));\n    const outMsg = {};\n\n    //outMsg.originalPayload = outMsg.payload;\n\n    // Determine the component from the MQTT topic.\n    const topicParts = msg.topic.split(\"/\");\n    logEvent.component = topicParts[0];\n\n    // Save the original payload while translating.\n    const text = msg.payload;\n\n    // Find the first two commas.\n    const firstComma = text.indexOf(\",\");\n    const secondComma = text.indexOf(\",\", firstComma + 1);\n\n    // Event Time\n    logEvent.eventTime = text.substring(0, firstComma).trim();\n\n    // Line Number\n    const lineText = text.substring(firstComma + 1, secondComma).trim();\n    logEvent.line = Number(lineText.replace(\"Line#:\", \"\"));\n\n    // Remaining text (Stage 2 will parse this)\n    logEvent.data.originalPayload = text;\n\n    // Parse the FROM field.\n    const fromText = text.substring(secondComma + 1).trim();\n\n    // Remove the \"FROM:\" prefix.\n    const functionText = fromText.replace(\"FROM:\", \"\").trim();\n\n    // Find the separator between the function name and the message.\n    const separator = functionText.indexOf(\":\");\n\n    // Function name.\n    logEvent.function = functionText.substring(0, separator).trim();\n\n    // Log message.\n    logEvent.message = functionText.substring(separator + 1).trim();\n\n    outMsg.payload = logEvent;\n\n    node.send(outMsg);\n}\n\n/*-----  MAIN  -----*/\n\nif (isCanonicalLogEvent())\n    normalizeCanonicalLogEvent();\n\nelse if (isLogFile())\n    normalizeLogFile();\n\nelse if (isLegacyLogEvent())\n    normalizeLegacyLogEvent(msg);\n\nelse {\n    node.error(\n        \"Normalize LogEvent: Unsupported log event format. Payload type: \" +\n        typeof msg.payload +\n        \", Payload: \" +\n        JSON.stringify(msg.payload)\n    );    return null;\n}\nreturn null;\n\n\n/*\nRule 1\nIf msg.payload is an object that satisfies the minimum LogEvent contract, then it is a Canonical LogEvent.\nCanonical Object\n      │\n      ▼\nnormalizeCanonicalLogEvent()\n\nRule 2\nIf msg.payload is a string containing more than one Line#:, then it is a Log File.\nLegacy Log File\n      │\n      ▼\nnormalizeLogFile()\n\nRule 3\nIf msg.payload is a string containing exactly one Line#:, then it is a Legacy Log Event.\nLegacy Log Event\n      │\n      ▼\nnormalizeLegacyLogEvent()\n\n\nEverything else is unsupported.\nUnsupported\n      │\n      ▼\nnode.error(...)\nreturn;\n*/",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 400,
+        "wires": [
+            [
+                "50a8f2fa880d0e05"
+            ]
+        ]
+    },
+    {
+        "id": "cc7e6f0e7c814b09",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "name": "gpsSyslog",
+        "topic": "gps/in/syslog",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "80da20fb82eb87b9",
+                "e4554361f99621a9"
+            ]
+        ]
+    },
+    {
+        "id": "50a8f2fa880d0e05",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e4554361f99621a9",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 360,
         "wires": []
     }
 ]

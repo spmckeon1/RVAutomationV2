@@ -1,0 +1,37 @@
+{
+  "notifications": {
+    "emailEnabled": true,
+    "quietHours": {
+      "enabled": true,
+      "start": "22:00",
+      "end": "07:00"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "retentionDays": 30,
+    "maxFileSize": "10M"
+  },
+  "features": {
+    "maintenanceMode": false,
+    "travelModeEnabled": true
+  },
+  "preferences": {
+    "units": "imperial",
+    "timeFormat": "12h"
+  },
+  "logEventTemplate": {
+    "id": null,
+    "sequence": null,
+    "eventTime": null,
+    "component": null,
+    "function": null,
+    "line": null,
+    "level": null,
+    "category": null,
+    "event": null,
+    "message": null,
+    "data": {
+    }
+  }
+}

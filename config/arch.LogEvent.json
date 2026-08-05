@@ -1,0 +1,14 @@
+{
+  "eventUuid": null,
+  "sequence": null,
+  "eventTime": null,
+  "component": null,
+  "function": null,
+  "line": null,
+  "level": null,
+  "category": null,
+  "message": null,
+  "deviceSequence": null,
+  "data": {
+  }
+}

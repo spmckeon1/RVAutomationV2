@@ -70,10 +70,201 @@
             "e2935b0533035db1",
             "bdd9ee9bfaf93c92"
         ],
-        "x": 134,
+        "x": 194,
         "y": 459,
-        "w": 772,
+        "w": 712,
         "h": 142
+    },
+    {
+        "id": "9c01de1b2a729534",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "name": "Process Syslog LogEvents",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "80da20fb82eb87b9",
+            "50a8f2fa880d0e05",
+            "e4554361f99621a9",
+            "070e3de268d0a30a",
+            "7b548de37b68829a",
+            "eeb09cde0c738d75",
+            "c39b3c1dcdab6d17",
+            "efc766d6ee84325b",
+            "56d9759185a0afbe",
+            "58c2aeac8087bdff",
+            "e5308c28fe9e9beb",
+            "83a71355bc3d5dac",
+            "310565b0bdb7cbf5",
+            "c28038881c180797"
+        ],
+        "x": 384,
+        "y": 419,
+        "w": 722,
+        "h": 422
+    },
+    {
+        "id": "853d56930325c23e",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "JSON File Functions",
+        "style": {
+            "stroke": "#6f2fa0",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "07d8895ec0c2bf2c",
+            "fe7795fa0c7951b9",
+            "0c2efb87805c75a5",
+            "c636e6f5d63201f8",
+            "0c3828d06ae682eb",
+            "7c1294f580331823"
+        ],
+        "x": 194,
+        "y": 673,
+        "w": 738,
+        "h": 614
+    },
+    {
+        "id": "c5d2c6c75bc2d184",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "name": "Device Syslogs in",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "84258be828d3120e",
+            "cc7e6f0e7c814b09",
+            "007450fcf9feed4f",
+            "94ff1b0bfb95ac21"
+        ],
+        "x": 134,
+        "y": 139,
+        "w": 312,
+        "h": 202
+    },
+    {
+        "id": "4aa12a43e05afe12",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "heartbeats",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "5c2599f214ec32c6",
+            "118fa1ce6e5a1d97",
+            "39e6f16338741cc3"
+        ],
+        "x": 194,
+        "y": 1359,
+        "w": 392,
+        "h": 142
+    },
+    {
+        "id": "c636e6f5d63201f8",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "a86f4fb36f8d87ad",
+            "d83ebbaf3e54592f",
+            "e10b8b4bdbdf6e51",
+            "a503636fa4f2b760",
+            "44f10359a017b790"
+        ],
+        "x": 220,
+        "y": 699,
+        "w": 672,
+        "h": 142
+    },
+    {
+        "id": "0c3828d06ae682eb",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#767676"
+        },
+        "nodes": [
+            "18450c9faf480f10",
+            "c0b427f0caeadcb0",
+            "effabb7b8e247790",
+            "7fcb58169565e36b",
+            "6c3162cc353853d1"
+        ],
+        "x": 220,
+        "y": 959,
+        "w": 672,
+        "h": 142
+    },
+    {
+        "id": "7c1294f580331823",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "name": "Append a new line into a JSON file",
+        "style": {
+            "stroke": "#6f2fa0",
+            "label": true,
+            "color": "#6f2fa0"
+        },
+        "nodes": [
+            "cb66be9847f44613",
+            "fada9c3ab5bff03a",
+            "35942ce63d974204",
+            "405f68c1378865b7",
+            "95c6c926e3e54b34"
+        ],
+        "x": 234,
+        "y": 1119,
+        "w": 672,
+        "h": 142
+    },
+    {
+        "id": "fb4d417abfd51a2e",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Device Registration",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "47bd28f698ebaecd",
+            "1f33a508aadf73ed",
+            "5b86657b68e5fd5e",
+            "5b75ca906cd1b47e"
+        ],
+        "x": 194,
+        "y": 1579,
+        "w": 452,
+        "h": 162
     },
     {
         "id": "5be6bf7969fc9e8d",
@@ -105,6 +296,145 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
+    },
+    {
+        "id": "0f931f53a4d06db6",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "4bd63eede254a165",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "eb31c5fb533897a0",
+        "type": "ui-page",
+        "name": "Logs",
+        "ui": "0f931f53a4d06db6",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "4bd63eede254a165",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0d84bc5c17ef7261",
+        "type": "ui-group",
+        "name": "Logs",
+        "page": "eb31c5fb533897a0",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "false",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "634d105249078f87",
+        "type": "ui-page",
+        "name": "GPS",
+        "ui": "0f931f53a4d06db6",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "4bd63eede254a165",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5e25cb33b5ac6c97",
+        "type": "ui-group",
+        "name": "GPS",
+        "page": "634d105249078f87",
+        "width": "19",
+        "height": "14",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
     },
     {
         "id": "13fb5b3eef8d068d",
@@ -152,7 +482,7 @@
         "y": 380,
         "wires": [
             [
-                "912792a501771737"
+                "5f1cab5c77a8e891"
             ]
         ]
     },
@@ -161,15 +491,15 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "DEVICES",
-        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = g_readJsonFile(BOOTSTRAP.FILES.DEVICES);\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const devices = {};\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 440,
+        "x": 660,
+        "y": 640,
         "wires": [
             [
                 "c5c94e3321ce38bc"
@@ -188,8 +518,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 700,
+        "x": 110,
+        "y": 780,
         "wires": [
             []
         ]
@@ -206,8 +536,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
-        "y": 760,
+        "x": 210,
+        "y": 840,
         "wires": [
             []
         ]
@@ -224,8 +554,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 820,
+        "x": 280,
+        "y": 900,
         "wires": [
             []
         ]
@@ -242,8 +572,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 870,
-        "y": 880,
+        "x": 370,
+        "y": 960,
         "wires": [
             []
         ]
@@ -264,8 +594,8 @@
         "z": "0977fce194365578",
         "name": "HOST",
         "info": "HOST\n├── hostname\n├── os\n│   ├── name\n│   ├── version\n│   └── kernel\n├── nodeRed\n│   ├── version\n│   └── uptime\n├── nodejs\n│   └── version\n├── hardware\n│   ├── model\n│   ├── architecture\n│   └── serialNumber\n├── network\n│   ├── hostname\n│   ├── ipAddress\n│   └── macAddress\n└── startupTime\n",
-        "x": 990,
-        "y": 880,
+        "x": 490,
+        "y": 960,
         "wires": []
     },
     {
@@ -283,7 +613,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "bootstrap",
-        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/projects/RVAutomation/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/projects/RVAutomation/config/central.json\",\n        CONFIG: \"/home/admin/projects/RVAutomation/config/config.json\",\n        DEVICES: \"/home/admin/projects/RVAutomation/config/devices.json\",\n        LOG_EVENT_TEMPLATE: \"/home/admin/projects/RVAutomation/config/logEventTemplate.json\"\n    }\n});\nreturn msg;",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/arch.LogEvent.json\"\n    }\n});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -314,12 +644,12 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 100,
+        "x": 110,
         "y": 200,
         "wires": [
             [
@@ -361,7 +691,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "print gloabl vars",
-        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CENTRAL = global.get('central');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.devices = global.get('devices');\nreturn msg;",
+        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CENTRAL = global.get('central');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.logEvent = global.get('logEvent');\nmsg.logging  = global.get('logging');\nmsg.opsLogging = global.get('opsLogging');\nmsg.devices = global.get('devices');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -405,10 +735,85 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 500,
+        "x": 740,
+        "y": 700,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "ad890b1881c8d14f",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "LOG_EVENTS",
+        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logEvent = g_readJsonFile(BOOTSTRAP.FILES.LOG_EVENT);\n\n    global.set(\"logEvent\", logEvent);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 600,
+        "y": 580,
+        "wires": [
+            [
+                "912792a501771737"
+            ]
+        ]
+    },
+    {
+        "id": "5f1cab5c77a8e891",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "LOGGING",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logging = g_readJsonFile(BOOTSTRAP.FILES.LOGGING);\n\n    global.set(\"logging\", logging);\n    node.warn(global.get(\"logging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "932f9b26091550f8"
+            ]
+        ]
+    },
+    {
+        "id": "932f9b26091550f8",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "OPS_LOGGING",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const opsLogging = g_readJsonFile(BOOTSTRAP.FILES.OPS_LOGGING);\n\n    global.set(\"opsLogging\", opsLogging);\n    node.warn(global.get(\"opsLogging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 500,
+        "y": 500,
+        "wires": [
+            [
+                "ad890b1881c8d14f"
+            ]
         ]
     },
     {
@@ -540,7 +945,7 @@
         "z": "e213983d60d65ed3",
         "g": "799b31fd65377930",
         "name": "g_createLogEventObject",
-        "func": "function g_createLogEventObject() {\n    const config = global.get('config');\n    return JSON.parse(JSON.stringify(config.logEventTemplate));\n}\n\nglobal.set('g_createLogEventObject', g_createLogEventObject);",
+        "func": "function g_createLogEventObject() {\n    const logEvent = global.get('logEvent');\n    return JSON.parse(JSON.stringify(logEvent));\n}\n\nglobal.set('g_createLogEventObject', g_createLogEventObject);",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -593,7 +998,7 @@
         "type": "inject",
         "z": "e213983d60d65ed3",
         "g": "799b31fd65377930",
-        "name": "test g_createLogEventObject",
+        "name": "test create LogEvent",
         "props": [
             {
                 "p": "payload"
@@ -610,7 +1015,7 @@
         "topic": "",
         "payload": "BOOTSTRAP.FILES.CONSTANTS",
         "payloadType": "global",
-        "x": 300,
+        "x": 330,
         "y": 560,
         "wires": [
             [
@@ -658,11 +1063,458 @@
         ]
     },
     {
-        "id": "4cc435a5e1358f17",
-        "type": "mqtt in",
-        "z": "49c27f958aacfefb",
+        "id": "a86f4fb36f8d87ad",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "c636e6f5d63201f8",
+        "name": "g_writeJsonFile",
+        "func": "// -----------------------------------------------------------------------------\n// g_writeJsonFile\n//\n// Writes a JavaScript object to a formatted JSON file.\n//\n// Returns:\n//   true  - Success\n//   false - Failure\n// -----------------------------------------------------------------------------\n\nfunction g_writeJsonFile(FQN, object) {\n    try {\n\n        fs.writeFileSync(\n            FQN,\n            JSON.stringify(object, null, 2) + \"\\n\",\n            \"utf8\"\n        );\n\n        return true;\n\n    } catch (err) {\n\n        node.error(\n            `g_writeJsonFile(): Unable to write '${FQN}': ${err.message}`\n        );\n\n        return false;\n    }\n}\n\nglobal.set('g_writeJsonFile', g_writeJsonFile);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 526,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d83ebbaf3e54592f",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "c636e6f5d63201f8",
         "name": "",
-        "topic": "gps/to/nr/new/data",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 336,
+        "y": 740,
+        "wires": [
+            [
+                "a86f4fb36f8d87ad"
+            ]
+        ]
+    },
+    {
+        "id": "e10b8b4bdbdf6e51",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "c636e6f5d63201f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"one\":1,\"two\":\"hello\",\"three\":true}",
+        "payloadType": "json",
+        "x": 356,
+        "y": 800,
+        "wires": [
+            [
+                "a503636fa4f2b760"
+            ]
+        ]
+    },
+    {
+        "id": "a503636fa4f2b760",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "c636e6f5d63201f8",
+        "name": "test g_writeJsonFile",
+        "func": "const g_writeJsonFile = global.get('g_writeJsonFile');\nconst testFile = '/home/admin/.node-red/projects/RVAutomationV2/test/data/g_writeJsonFile.json';\nmsg.payload = g_writeJsonFile(testFile, msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 546,
+        "y": 800,
+        "wires": [
+            [
+                "44f10359a017b790"
+            ]
+        ]
+    },
+    {
+        "id": "44f10359a017b790",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "c636e6f5d63201f8",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 786,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "18450c9faf480f10",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "0c3828d06ae682eb",
+        "name": "g_readJsonFile",
+        "func": "// -----------------------------------------------------------------------------\n// g_readJsonFile\n//\n// Reads a JSON file and returns the parsed JavaScript object.\n//\n// Returns:\n//   object - Parsed JSON object\n//   null   - Failure\n// -----------------------------------------------------------------------------\n\nfunction g_readJsonFile(FQN) {\n    try {\n\n        const json = fs.readFileSync(FQN, \"utf8\");\n\n        return JSON.parse(json);\n\n    } catch (err) {\n\n        node.error(\n            `g_readJsonFile(): Unable to read '${FQN}': ${err.message}`\n        );\n\n        return null;\n    }\n}\n\nglobal.set(\"g_readJsonFile\", g_readJsonFile);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 526,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0b427f0caeadcb0",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "0c3828d06ae682eb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 336,
+        "y": 1000,
+        "wires": [
+            [
+                "18450c9faf480f10"
+            ]
+        ]
+    },
+    {
+        "id": "effabb7b8e247790",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "0c3828d06ae682eb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"one\":1,\"two\":\"hello\",\"three\":true}",
+        "payloadType": "json",
+        "x": 336,
+        "y": 1060,
+        "wires": [
+            [
+                "7fcb58169565e36b"
+            ]
+        ]
+    },
+    {
+        "id": "7fcb58169565e36b",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "0c3828d06ae682eb",
+        "name": "test g_writeJsonFile",
+        "func": "const g_writeJsonFile = global.get('g_writeJsonFile');\nconst testFile = '/home/admin/.node-red/projects/RVAutomationV2/test/data/g_writeJsonFile.json';\nmsg.payload = g_writeJsonFile(testFile, msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 546,
+        "y": 1060,
+        "wires": [
+            [
+                "6c3162cc353853d1"
+            ]
+        ]
+    },
+    {
+        "id": "6c3162cc353853d1",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "0c3828d06ae682eb",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 786,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "07d8895ec0c2bf2c",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "name": "Integration Test - JSON Read/Write",
+        "func": "const g_writeJsonFile = global.get(\"g_writeJsonFile\");\nconst g_readJsonFile = global.get(\"g_readJsonFile\");\n\nconst testFile =\n    \"/home/admin/.node-red/projects/RVAutomationV2/test/data/g_rwTest.json\";\n\nconst original = {\n    one: 1,\n    two: \"hello\",\n    three: true\n};\n\nif (!g_writeJsonFile(testFile, original)) {\n    node.error(\"Write failed.\");\n    return null;\n}\n\nconst copy = g_readJsonFile(testFile);\n\nmsg.payload = {\n    original,\n    copy,\n    equal: JSON.stringify(original) === JSON.stringify(copy)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 606,
+        "y": 900,
+        "wires": [
+            [
+                "0c2efb87805c75a5"
+            ]
+        ]
+    },
+    {
+        "id": "fe7795fa0c7951b9",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "name": "test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 356,
+        "y": 900,
+        "wires": [
+            [
+                "07d8895ec0c2bf2c"
+            ]
+        ]
+    },
+    {
+        "id": "0c2efb87805c75a5",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "853d56930325c23e",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 826,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "cb66be9847f44613",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "7c1294f580331823",
+        "name": "g_appendJsonLine",
+        "func": "// -----------------------------------------------------------------------------\n// g_appendJsonLine\n//\n// Appends a JavaScript object to a file as a single JSON line.\n//\n// Returns:\n//   true  - Success\n//   false - Failure\n// -----------------------------------------------------------------------------\n\nfunction g_appendJsonLine(FQN, object) {\n\n    try {\n\n        fs.appendFileSync(\n            FQN,\n            JSON.stringify(object) + \"\\n\",\n            \"utf8\"\n        );\n\n        return true;\n\n    } catch (err) {\n\n        node.error(\n            `g_appendJsonLine(): Unable to append '${FQN}': ${err.message}`\n        );\n\n        return false;\n    }\n}\n\nglobal.set(\"g_appendJsonLine\", g_appendJsonLine);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 550,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fada9c3ab5bff03a",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "7c1294f580331823",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 1160,
+        "wires": [
+            [
+                "cb66be9847f44613"
+            ]
+        ]
+    },
+    {
+        "id": "35942ce63d974204",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "7c1294f580331823",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "FQN",
+                "v": "/home/admin/.node-red/projects/RVAutomationV2/test/data/g_appendsonTest.jsonl",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"eventUuid\":\"6ca5cf3a-753e-44bd-b4c7-ab6445b2289d\",\"sequence\":191,\"eventTime\":\"3652ms\",\"component\":\"TEST GPS Controller\",\"function\":\"commonItemsEvents\",\"line\":268,\"level\":\"INFO\",\"category\":\"MQTT\",\"message\":\"MQTT Trigger Gate Active. Forwarding execution to connectToMqtt().\",\"deviceSequence\":47,\"data\":{}}",
+        "payloadType": "json",
+        "x": 350,
+        "y": 1220,
+        "wires": [
+            [
+                "405f68c1378865b7"
+            ]
+        ]
+    },
+    {
+        "id": "405f68c1378865b7",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "7c1294f580331823",
+        "name": "test g_appendJsonLine",
+        "func": "const g_appendJsonLine = global.get('g_appendJsonLine');\n\nif (!g_appendJsonLine(msg.FQN, msg.payload)) node.error('g_appendJsonLine FAILED');\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1220,
+        "wires": [
+            [
+                "95c6c926e3e54b34"
+            ]
+        ]
+    },
+    {
+        "id": "95c6c926e3e54b34",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "7c1294f580331823",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "5c2599f214ec32c6",
+        "type": "comment",
+        "z": "e213983d60d65ed3",
+        "g": "4aa12a43e05afe12",
+        "name": "Heartbeat Service",
+        "info": "Responsibilities\n    Receive heartbeat messages from devices.\n    Record the last heartbeat time for each device.\n    Maintain online/offline state.\n    Detect missed heartbeats.\n    Generate heartbeat events.\n    Maintain heartbeat statistics.\n    \nNot Responsible For\n    Sending emails.\n    Updating dashboard widgets.\n    Restarting devices.\n    Deciding heartbeat intervals.\n    Publishing heartbeats.\n    Notice the last one: devices publish, the Heartbeat service consumes.",
+        "x": 310,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "118fa1ce6e5a1d97",
+        "type": "mqtt in",
+        "z": "e213983d60d65ed3",
+        "g": "4aa12a43e05afe12",
+        "name": "Hearbeats in",
+        "topic": "hb/to/nr/+",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5be6bf7969fc9e8d",
@@ -670,12 +1522,139 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 350,
+        "x": 290,
+        "y": 1460,
+        "wires": [
+            [
+                "39e6f16338741cc3"
+            ]
+        ]
+    },
+    {
+        "id": "39e6f16338741cc3",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "4aa12a43e05afe12",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "47bd28f698ebaecd",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "fb4d417abfd51a2e",
+        "name": "debug 24",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "1f33a508aadf73ed",
+        "type": "mqtt in",
+        "z": "e213983d60d65ed3",
+        "g": "fb4d417abfd51a2e",
+        "name": "Registration service in",
+        "topic": "register/to/nr/+",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 1680,
+        "wires": [
+            [
+                "47bd28f698ebaecd",
+                "5b86657b68e5fd5e"
+            ]
+        ]
+    },
+    {
+        "id": "5b86657b68e5fd5e",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "fb4d417abfd51a2e",
+        "name": "Register Device",
+        "func": "try {\n\n    const reg = msg.payload;\n    if (!reg.shortName || !reg.appName) {                                       // Validate registration message.\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n    const devices = global.get(\"devices\");                                      // Get runtime objects.\n    const knownDevices = global.get(\"knownDevices\") || {};\n   if (!knownDevices[reg.shortName]) {                                          // Device known?\n        node.warn(`Unknown device '${reg.shortName}' attempted registration.`);\n        // TODO\n        // Email Library\n        // email.notifyUnknownDevice(reg);\n        return null;\n    }\n    if (!devices[reg.shortName]) {                                              // First registration after startup?                      \n        devices[reg.shortName] = {\n            registration: {},\n            heartbeat: {},\n            state: {},\n            stats: {}\n        };\n    }\n    devices[reg.shortName].registration = reg;                                   // Update registration.\n    global.set(\"devices\", devices);\n    // TODO\n    // Logging Library\n    node.log(`Registered ${reg.shortName}`);\n}\ncatch (err) {\n    node.error(err);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b75ca906cd1b47e",
+        "type": "comment",
+        "z": "e213983d60d65ed3",
+        "g": "fb4d417abfd51a2e",
+        "name": "Register Device function",
+        "info": "MQTT In\n    │\n    ▼\nValidate Registration\n    │\n    ▼\nKnown Device?\n   │        │\n  Yes       No\n   │         │\n   │         ├── Log unknown device\n   │         ├── Email stub\n   │         └── return null\n   ▼\nCreate/Update runtime device\n   │\n   ▼\nLog successful registration",
+        "x": 370,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "b5010bb2b4bbca79",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "name": "knownDevices()",
+        "func": "knownDevices = {\n\n    //------------------------------------------------------------\n    // Returns true if the device is approved.\n    //------------------------------------------------------------\n    exists(shortName) {\n\n        const devices = global.get(\"knownDevices\") || {};\n\n        return devices.hasOwnProperty(shortName);\n    }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 2,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cc435a5e1358f17",
+        "type": "mqtt in",
+        "z": "49c27f958aacfefb",
+        "name": "",
+        "topic": "gps/to/nr/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
         "y": 500,
         "wires": [
             [
                 "8dba1305d96c74c6",
-                "6d8aa5ce9092896d"
+                "cc0fcfd2fce449b1"
             ]
         ]
     },
@@ -696,26 +1675,6 @@
         "wires": []
     },
     {
-        "id": "6d8aa5ce9092896d",
-        "type": "function",
-        "z": "49c27f958aacfefb",
-        "name": "processIncomingData",
-        "func": "const CONSTANTS = global.get(\"CONSTANTS\");\nconst DEVICES = global.get(\"devices\");\nconst CENTRAL = global.get(\"central\");\n\nconst gps = DEVICES.gps;\nconst validation = CENTRAL.gps.validation;\n\n//------------------------------------------------------------\n// Validate payload\n//------------------------------------------------------------\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n    validation.error = CONSTANTS.ERROR.VALIDATION.INVALID_PAYLOAD;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\nconst p = msg.payload;\n\nif (!p.location ||\n    !p.fix ||\n    !p.motion ||\n    !p.altitude ||\n    !p.quality ||\n    !p.utc) {\n\n    validation.error = CONSTANTS.ERROR.VALIDATION.MISSING_REQUIRED_OBJECT;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\n//------------------------------------------------------------\n// Payload validated\n//------------------------------------------------------------\ngps.state = p;\n\nvalidation.error = CONSTANTS.ERROR.VALIDATION.NONE;\nvalidation.consecutiveErrors = 0;\nvalidation.lastValidUpdate = Date.now();\n\nglobal.set(\"DEVICES\", DEVICES);\nglobal.set(\"CENTRAL\", CENTRAL);\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 580,
-        "y": 480,
-        "wires": [
-            [
-                "f0963ad6d9f87774"
-            ]
-        ]
-    },
-    {
         "id": "f0963ad6d9f87774",
         "type": "debug",
         "z": "49c27f958aacfefb",
@@ -728,7 +1687,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
-        "y": 480,
+        "y": 460,
         "wires": []
     },
     {
@@ -764,31 +1723,21 @@
         "wires": []
     },
     {
-        "id": "80da20fb82eb87b9",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "name": "message",
-        "func": "// -----------------------------------------------------------------------------\n// Normalize LogEvent\n//\n// Accepts:\n//   • Legacy ESP32 syslog messages\n//   • Canonical LogEvent objects (future)\n//\n// Produces:\n//   • Canonical LogEvent\n// -----------------------------------------------------------------------------\n\nconst g_createLogEventObject = global.get('g_createLogEventObject');\n\n// Future:\n// if (isLogEvent(msg.payload)) {\n//     return msg;\n// }\n\n// -----------------------------------------------------------------------------\n// Legacy ESP32 Translation\n// -----------------------------------------------------------------------------\n\n/**\n * Determine whether the incoming payload is a log file (multiple legacy log\n * events concatenated together) rather than a single legacy log event.\n *\n * Assumption:\n * Each legacy log event generated by the ESP32 logging framework contains\n * exactly one \"Line#:\" field. Therefore, if the payload contains more than\n * one \"Line#:\", it is considered a log file replay.\n *\n * Returns:\n *   true  - Payload contains multiple legacy log events.\n *   false - Payload contains a single legacy log event.\n */\n\n/*-----  IS THIS A LOG FILE COMING IN OR AN INDIVIDUAL ENTRY  -----*/\n\nfunction isLogFile() {\n    if (typeof msg.payload !== \"string\") return false;\n    const matches = msg.payload.match(/Line#:/g);\n    if (!matches) {\n        return false;\n    }\n    return matches.length > 1;\n}\n\n/**\n * Normalize a legacy log file.\n *\n * A legacy log file consists of one or more legacy log events.\n * Each legacy log event is terminated by a '\\n' character.\n */\n\n/*-----  SPLIT THE LOG FILE INTO INDIVIDUAL ETRIES AND LET normalizeLegacyLogEvent DEAL WITH WHAT TO DO WITH THEM  -----*/\n\nfunction normalizeLogFile() {\n\n    const entries = msg.payload.split('\\n');\n\n    for (const entry of entries) {\n\n        if (entry.length === 0) {\n            continue;\n        }\n\n        const outMsg = {\n            topic: msg.topic,\n            payload: entry\n        };\n\n        normalizeLegacyLogEvent(outMsg);\n    }\n}\n/*-----  IF THE EVENT ARRIVES AS AN OBJECT WITH THE CORRECTLY NAMES ELEMENTS  -----*/\n\nfunction isCanonicalLogEvent() {\n    if (typeof msg.payload !== \"object\" || msg.payload === null)\n        return false;\n\n    return (\n        msg.payload.hasOwnProperty(\"eventTime\") &&\n        msg.payload.hasOwnProperty(\"component\") &&\n        msg.payload.hasOwnProperty(\"function\") &&\n        msg.payload.hasOwnProperty(\"message\")\n    );\n}\n\n/*-----  TRANSITION THE INCOMING LOG OBJECT TO THE STANDARD V2 LOGING OBJECT  -----*/\n\nfunction normalizeCanonicalLogEvent() {\n\n    // Create a new canonical LogEvent.\n    const logEvent = g_createLogEventObject();\n//    const logEvent = JSON.parse(JSON.stringify(config.logEventTemplate));\n\n    // Copy only recognized fields.\n    logEvent.eventTime = msg.payload.eventTime;\n    logEvent.component = msg.payload.component;\n    logEvent.function = msg.payload.function;\n    logEvent.message = msg.payload.message;\n\n    // Ensure data is always an object.\n    if (\"data\" in msg.payload && typeof msg.payload.data === \"object\") {\n        logEvent.data = msg.payload.data;\n    }\n\n    const outMsg = {\n        payload: logEvent\n    };\n\n    node.send(outMsg);\n    return;\n}\n\n/*-----  IS MSG.PAYLOAD A SINGLE LEGACY LOG ENTRY  -----*/\n\nfunction isLegacyLogEvent() {\n    if (typeof msg.payload !== \"string\") return false;\n    const matches = msg.payload.match(/Line#:/g);\n    if (!matches) {\n        return false;\n    }\n    return matches.length === 1;\n}\n\n/*-----  NORMALIZE THE LEGACY EVENT TO THE V2 logEventTemplate  -----*/\n\nfunction normalizeLegacyLogEvent(msg) {\n    const logEvent = g_createLogEventObject();\n//    const logEvent = JSON.parse(JSON.stringify(config.logEventTemplate));\n    const outMsg = {};\n\n    //outMsg.originalPayload = outMsg.payload;\n\n    // Determine the component from the MQTT topic.\n    const topicParts = msg.topic.split(\"/\");\n    logEvent.component = topicParts[0];\n\n    // Save the original payload while translating.\n    const text = msg.payload;\n\n    // Find the first two commas.\n    const firstComma = text.indexOf(\",\");\n    const secondComma = text.indexOf(\",\", firstComma + 1);\n\n    // Event Time\n    logEvent.eventTime = text.substring(0, firstComma).trim();\n\n    // Line Number\n    const lineText = text.substring(firstComma + 1, secondComma).trim();\n    logEvent.line = Number(lineText.replace(\"Line#:\", \"\"));\n\n    // Remaining text (Stage 2 will parse this)\n    logEvent.data.originalPayload = text;\n\n    // Parse the FROM field.\n    const fromText = text.substring(secondComma + 1).trim();\n\n    // Remove the \"FROM:\" prefix.\n    const functionText = fromText.replace(\"FROM:\", \"\").trim();\n\n    // Find the separator between the function name and the message.\n    const separator = functionText.indexOf(\":\");\n\n    // Function name.\n    logEvent.function = functionText.substring(0, separator).trim();\n\n    // Log message.\n    logEvent.message = functionText.substring(separator + 1).trim();\n\n    outMsg.payload = logEvent;\n\n    node.send(outMsg);\n}\n\n/*-----  MAIN  -----*/\n\nif (isCanonicalLogEvent())\n    normalizeCanonicalLogEvent();\n\nelse if (isLogFile())\n    normalizeLogFile();\n\nelse if (isLegacyLogEvent())\n    normalizeLegacyLogEvent(msg);\n\nelse {\n    node.error(\n        \"Normalize LogEvent: Unsupported log event format. Payload type: \" +\n        typeof msg.payload +\n        \", Payload: \" +\n        JSON.stringify(msg.payload)\n    );    return null;\n}\nreturn null;\n\n\n/*\nRule 1\nIf msg.payload is an object that satisfies the minimum LogEvent contract, then it is a Canonical LogEvent.\nCanonical Object\n      │\n      ▼\nnormalizeCanonicalLogEvent()\n\nRule 2\nIf msg.payload is a string containing more than one Line#:, then it is a Log File.\nLegacy Log File\n      │\n      ▼\nnormalizeLogFile()\n\nRule 3\nIf msg.payload is a string containing exactly one Line#:, then it is a Legacy Log Event.\nLegacy Log Event\n      │\n      ▼\nnormalizeLegacyLogEvent()\n\n\nEverything else is unsupported.\nUnsupported\n      │\n      ▼\nnode.error(...)\nreturn;\n*/",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 400,
-        "wires": [
-            [
-                "50a8f2fa880d0e05"
-            ]
-        ]
+        "id": "12b9ef200a41779b",
+        "type": "comment",
+        "z": "49c27f958aacfefb",
+        "name": "Contrat with GPS device",
+        "info": "The gps device shall publish to the below specifications:\n\nPosition\n  Latitude (degrees)\n  Longitude (degrees)\n\nMotion\n  Speed (standard GPS unit)\n  Course (degrees)\n\nAltitude\n  Meters\n\nQuality\n  Satellites\n  HDOP\n\nFix\n  Valid\n  Age\n\nTime\n  UTC",
+        "x": 310,
+        "y": 180,
+        "wires": []
     },
     {
-        "id": "cc7e6f0e7c814b09",
+        "id": "4257c5850ba050cc",
         "type": "mqtt in",
-        "z": "4721bb14b0bb8ce2",
-        "name": "gpsSyslog",
-        "topic": "gps/in/syslog",
+        "z": "49c27f958aacfefb",
+        "name": "",
+        "topic": "gps/to/nr/mqtt/hb",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5be6bf7969fc9e8d",
@@ -796,12 +1745,142 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 300,
-        "y": 380,
+        "x": 330,
+        "y": 660,
         "wires": [
             [
-                "80da20fb82eb87b9",
-                "e4554361f99621a9"
+                "33d90881b1a89cd4"
+            ]
+        ]
+    },
+    {
+        "id": "33d90881b1a89cd4",
+        "type": "debug",
+        "z": "49c27f958aacfefb",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6d8aa5ce9092896d",
+        "type": "function",
+        "z": "49c27f958aacfefb",
+        "name": "processIncomingData",
+        "func": "const CONSTANTS = global.get(\"CONSTANTS\");\nconst DEVICES = global.get(\"devices\");\nconst CENTRAL = global.get(\"central\");\n\nconst gps = DEVICES.gps;\nconst validation = CENTRAL.gps.validation;\n\n//------------------------------------------------------------\n// Validate payload\n//------------------------------------------------------------\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n    validation.error = CONSTANTS.ERROR.VALIDATION.INVALID_PAYLOAD;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\nconst p = msg.payload;\n\nif (!p.location ||\n    !p.fix ||\n    !p.motion ||\n    !p.altitude ||\n    !p.quality ||\n    !p.utc) {\n\n    validation.error = CONSTANTS.ERROR.VALIDATION.MISSING_REQUIRED_OBJECT;\n    validation.consecutiveErrors++;\n\n    global.set(\"CENTRAL\", CENTRAL);\n    return null;\n}\n\n//------------------------------------------------------------\n// Payload validated\n//------------------------------------------------------------\ngps.state = p;\n\nvalidation.error = CONSTANTS.ERROR.VALIDATION.NONE;\nvalidation.consecutiveErrors = 0;\nvalidation.lastValidUpdate = Date.now();\n\nglobal.set(\"DEVICES\", DEVICES);\nglobal.set(\"CENTRAL\", CENTRAL);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc0fcfd2fce449b1",
+        "type": "function",
+        "z": "49c27f958aacfefb",
+        "name": "processMsg",
+        "func": "devices = global.get('devices');\ndevices.gps.state = msg.payload;\n\nmsg.payload = \n\"latitude:       \" + devices.gps.state.position.latitude + 'º' + '<br>' +\n\"Longitude: \" + devices.gps.state.position.longitude + 'º' + '<br>' +\n\"Fix: \" + (devices.gps.state.fix.valid == true ? 'Valid':'Not-Valid') + '<br>' +\n\"Age: \" + devices.gps.state.fix.ageMs + ' ms' + '<br>' +\n\"Speed: \" + devices.gps.state.motion.speedKph + ' kph' + '<br>' +\n\"Course: \" + devices.gps.state.motion.courseDeg + '<br>' +\n\"Altitude: \" + devices.gps.state.altitude.meters + ' m' + '<br>' +\n\"Satellites: \" + devices.gps.state.quality.satellites + '<br>' +\n\"HDOP: \" + devices.gps.state.quality.hdop + '<br>' +\n\"Time: \" + devices.gps.state.utc.hour + ':' +\n           devices.gps.state.utc.minute + ':' +\n           devices.gps.state.utc.second + ' UTC' + '<br>' +\n\"Date: \"+ \n        devices.gps.state.utc.year + '/' +\n        devices.gps.state.utc.month + '/' +\n        devices.gps.state.utc.day;\n    \n    \n    devices.gps.state.utc.second;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "f0963ad6d9f87774",
+                "2f91356a3fa4140f"
+            ]
+        ]
+    },
+    {
+        "id": "2f91356a3fa4140f",
+        "type": "ui-text",
+        "z": "49c27f958aacfefb",
+        "group": "5e25cb33b5ac6c97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "display gps",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 810,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e88c1b910e2209a1",
+        "type": "inject",
+        "z": "49c27f958aacfefb",
+        "name": "clear",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "2f91356a3fa4140f"
+            ]
+        ]
+    },
+    {
+        "id": "80da20fb82eb87b9",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "Validate entry",
+        "func": "// -----------------------------------------------------------------------------\n// Validate Entry\n//\n// Verifies that msg.payload is a canonical LogEvent.\n//\n// Does not modify the event except to ensure optional members exist.\n//\n// Output:\n//\n//     msg.validation = {\n//         valid   : true|false,\n//         reason  : \"...\",\n//         missing : [ ... ]\n//     }\n//\n// -----------------------------------------------------------------------------\n\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Payload is not an object.\",\n        missing: []\n    };\n\n    return msg;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"component\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\"\n];\n\nconst missing = [];\n\nfor (const field of required) {\n    if (!(field in msg.payload)) {\n        missing.push(field);\n    }\n}\n\nif (missing.length > 0) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Missing required fields.\",\n        missing: missing\n    };\n\n    return msg;\n}\n\n// Ensure optional members exist.\nmsg.payload.data ??= {};\n\nmsg.validation = {\n    valid: true,\n    reason: \"\",\n    missing: []\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 560,
+        "wires": [
+            [
+                "83a71355bc3d5dac",
+                "310565b0bdb7cbf5"
             ]
         ]
     },
@@ -809,6 +1888,7 @@
         "id": "50a8f2fa880d0e05",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
         "name": "debug 6",
         "active": false,
         "tosidebar": true,
@@ -818,14 +1898,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
-        "y": 400,
+        "x": 880,
+        "y": 680,
         "wires": []
     },
     {
         "id": "e4554361f99621a9",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
         "name": "debug 8",
         "active": false,
         "tosidebar": true,
@@ -834,8 +1915,590 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
+        "x": 540,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "070e3de268d0a30a",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "Complete",
+        "func": "const logEvent = msg.payload;\n\n/*-----  CREATE THE EVENT UUID  -----*/\n\nfunction assignEventUuid(logEvent) {\n    logEvent.eventUuid = crypto.randomUUID();\n}\n\n/*-----  ASSIGN THE SEQUENCE NUMBER AND TAKE CARE OF ANY NEXT RESERVE ACTIONS NEEDED  -----*/\n\nfunction assignSequence(logEvent) {\n\n    const opsLogging = global.get(\"opsLogging\");\n    const logging = global.get(\"logging\");\n    const blockSize = logging.sequence.blockSize;\n    const reserveMargin = logging.sequence.reserveMargin;\n    const g_saveOpsLogging = global.get('g_saveOpsLogging');\n\n    // Assign the next available sequence.\n    logEvent.sequence = opsLogging.nextSequence++;\n\n    // Reserve the next block before we run out.\n    if (opsLogging.nextSequence >= opsLogging.nextReserve - reserveMargin) {\n        opsLogging.nextSequence = opsLogging.nextReserve;\n        opsLogging.nextReserve += blockSize;\n        g_saveOpsLogging();\n    }\n}\n\n/*-----  ASSIGN THE RECEIVED TIME  -----*/\n\nfunction assignReceivedTime(logEvent) {\n    logEvent.receivedTime = new Date().toISOString();\n}\n\n// -----------------------------------------------------------------------------\n// Complete LogEvent\n//\n// Apply Logging Service policy to a canonical LogEvent.\n// -----------------------------------------------------------------------------\n\n/*-----  MAIN  -----*/\n\nassignReceivedTime(logEvent);\nassignSequence(logEvent);\nassignEventUuid(logEvent);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('nextSequence', 1);",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "crypto",
+                "module": "crypto"
+            }
+        ],
+        "x": 700,
+        "y": 680,
+        "wires": [
+            [
+                "eeb09cde0c738d75",
+                "50a8f2fa880d0e05"
+            ]
+        ]
+    },
+    {
+        "id": "7b548de37b68829a",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "Normalize/LogEvent/in",
+        "links": [
+            "007450fcf9feed4f"
+        ],
+        "x": 425,
+        "y": 480,
+        "wires": [
+            [
+                "e4554361f99621a9",
+                "58c2aeac8087bdff"
+            ]
+        ]
+    },
+    {
+        "id": "eeb09cde0c738d75",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "Validate",
+        "func": "const logEvent = msg.payload;\n\nif (typeof logEvent !== \"object\" || logEvent === null) {\n    node.error(\"LogEvent is not an object.\");\n    return null;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"component\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\",\n    \"data\"\n];\n\nfor (const field of required) {\n    if (!(field in logEvent)) {\n        node.error(`Missing required field: ${field}`);\n        return null;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 740,
+        "wires": [
+            [
+                "c39b3c1dcdab6d17",
+                "efc766d6ee84325b"
+            ]
+        ]
+    },
+    {
+        "id": "c39b3c1dcdab6d17",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "Commit",
+        "func": "const logEvent = msg.payload;\n\ntry {\n    const opsLogging = global.get(\"opsLogging\");\n    const evtlogFile = opsLogging.evtlog.evtlogFile;\n\n    fs.appendFileSync(\n        evtlogFile,\n        JSON.stringify(logEvent) + \"\\n\",\n        \"utf8\"\n    );\n\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to commit log entry: ${err.message}`, msg);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 840,
+        "y": 800,
+        "wires": [
+            [
+                "56d9759185a0afbe"
+            ]
+        ]
+    },
+    {
+        "id": "efc766d6ee84325b",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "84258be828d3120e",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "c5d2c6c75bc2d184",
+        "name": "rtrFanSyslog",
+        "topic": "rtrFanSw/in/syslog",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "007450fcf9feed4f"
+            ]
+        ]
+    },
+    {
+        "id": "cc7e6f0e7c814b09",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "c5d2c6c75bc2d184",
+        "name": "gpsSyslog",
+        "topic": "gps/in/syslog",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "007450fcf9feed4f"
+            ]
+        ]
+    },
+    {
+        "id": "007450fcf9feed4f",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "c5d2c6c75bc2d184",
+        "name": "devices/syslogs/in",
+        "mode": "link",
+        "links": [
+            "7b548de37b68829a"
+        ],
+        "x": 405,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b9e433a6a0fdc597",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "name": "",
+        "topic": "gps/to/nr/new/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "fb559680debbd3b7"
+            ]
+        ]
+    },
+    {
+        "id": "8b7b2e9faf85905e",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "name": "ieTestHb",
+        "topic": "default/heartbeat",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 760,
+        "wires": [
+            [
+                "559f37131207b31e"
+            ]
+        ]
+    },
+    {
+        "id": "559f37131207b31e",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "56d9759185a0afbe",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "debug 17",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "94ff1b0bfb95ac21",
+        "type": "mqtt in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "c5d2c6c75bc2d184",
+        "name": "",
+        "topic": "/ei/to/nr/logs",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "81b23436e74774bf",
+                "007450fcf9feed4f"
+            ]
+        ]
+    },
+    {
+        "id": "81b23436e74774bf",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "58c2aeac8087bdff",
+        "type": "json",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "decide JSON",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "80da20fb82eb87b9",
+                "e5308c28fe9e9beb"
+            ]
+        ]
+    },
+    {
+        "id": "e5308c28fe9e9beb",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "83a71355bc3d5dac",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "debug 18",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "647bde1c01845588",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "name": "readEvents",
+        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    msg.payload = events;\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 270,
+        "y": 1120,
+        "wires": [
+            [
+                "d9963179806d0e0b",
+                "4337e698e7bc28be"
+            ]
+        ]
+    },
+    {
+        "id": "b4171ddbea19918f",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1040,
+        "wires": [
+            [
+                "647bde1c01845588"
+            ]
+        ]
+    },
+    {
+        "id": "d9963179806d0e0b",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 460,
-        "y": 360,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "4337e698e7bc28be",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "name": "format events",
+        "func": "const events = msg.payload;\n\nmsg.payload = events.map(e =>\n    `${String(e.sequence ?? \"\").padStart(5)} ` +\n    `${String(e.eventTime ?? \"\").padEnd(24)} ` +\n    `${String(e.level ?? \"\").padEnd(5)} ` +\n    `${String(e.eventType ?? \"\").padEnd(10)} ` +\n    `${String(e.component ?? \"\").padEnd(10)} ` +\n    `${String(e.message ?? \"\")}`\n).join(\"\\n\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1180,
+        "wires": [
+            [
+                "2493550f97379434",
+                "c58eb17ef4758190"
+            ]
+        ]
+    },
+    {
+        "id": "2493550f97379434",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "310565b0bdb7cbf5",
+        "type": "switch",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "",
+        "property": "validation.valid",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530,
+        "y": 620,
+        "wires": [
+            [
+                "070e3de268d0a30a"
+            ],
+            [
+                "c28038881c180797"
+            ]
+        ]
+    },
+    {
+        "id": "c28038881c180797",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "rejectEntry",
+        "func": "node.warn(\n    `Rejected LogEvent\\n` +\n    `Topic   : ${msg.topic}\\n` +\n    `Reason  : ${msg.validation.reason}\\n` +\n    `Missing : ${msg.validation.missing.join(\", \")}`\n);\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac1d93fbc55fd149",
+        "type": "template",
+        "z": "4721bb14b0bb8ce2",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 300,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c58eb17ef4758190",
+        "type": "ui-template",
+        "z": "4721bb14b0bb8ce2",
+        "group": "0d84bc5c17ef7261",
+        "page": "",
+        "ui": "",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<pre style=\"\n    white-space: pre;\n    overflow-y: auto;\n    font-family: monospace;\n    font-size: 14px;\n    margin: 0;\n\">\n{{ msg.payload }}\n</pre>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 320,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70de0cb46bf839cd",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1300,
+        "wires": [
+            [
+                "c58eb17ef4758190"
+            ]
+        ]
+    },
+    {
+        "id": "fb559680debbd3b7",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "name": "debug 21",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 380,
         "wires": []
     }
 ]

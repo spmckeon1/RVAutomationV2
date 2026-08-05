@@ -1,0 +1,9 @@
+{
+  "nextSequence": 1,
+  "nextReserve": 10001,
+  "evtlog": { 
+    "evtlogFile": "/var/log/RVAutomation/evtlog/todaylog.jsonl"
+  },
+  "devices": {
+  }
+}

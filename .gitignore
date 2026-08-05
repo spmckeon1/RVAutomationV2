@@ -1,1 +1,13 @@
+# Node-RED backup files
 *.backup
+
+# macOS Finder metadata
+.DS_Store
+
+# AppleDouble resource fork files
+._*
+
+# Temporary editor save files
+*.sb-*
+*~
+

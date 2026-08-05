@@ -27,27 +27,23 @@ Each document shall begin with:
 
 Sections shall be organized logically and use Markdown headings.
 
----
-
-## Headings
+### Headings
 
 Use Markdown headings in hierarchical order.
 
 Example:
 
-# Title
+#### Title
 
-## Major Section
+#### Major Section
 
-### Subsection
+#### Subsection
 
 #### Detail
 
 Heading levels shall not be skipped.
 
----
-
-## Diagrams
+### Diagrams
 
 Documentation diagrams shall use plain ASCII characters only.
 
@@ -71,20 +67,21 @@ Preferred diagram elements include:
     +--------+--------+
     |                 |
 
----
-
-## Figures
+### Figures
 
 Diagrams and illustrations should be accompanied by a descriptive
 caption.
 
 Example:
 
-Figure 1. Logging Service Data Flow
+    Figure 1. Logging Service Data Flow
 
----
+### Tables
 
-## Code Examples
+Markdown tables should be used when presenting structured reference
+information.
+
+### Code Examples
 
 Code examples shall be enclosed in fenced Markdown code blocks.
 
@@ -100,10 +97,21 @@ function example() {
 
 ---
 
-## Tables
+## Flow Documentation
 
-Markdown tables should be used when presenting structured reference
-information.
+Every Node-RED flow (tab) intended to become part of the production
+system shall have a corresponding design document in the `docs`
+directory.
+
+The document should normally have the same name as the flow.
+
+The design document describes the purpose, responsibilities,
+interfaces, dependencies, configuration, and overall design of the
+flow. It is not intended to document the implementation of individual
+function nodes.
+
+Temporary development, test, scratch, and experimental flows do not
+require design documents.
 
 ---
 

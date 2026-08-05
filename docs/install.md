@@ -165,4 +165,55 @@ sudo systemctl status mosquitto
 
 Configure the Node-RED MQTT Broker node using the `curly` account credentials.
 
----
+
+## Create RVAutomation Log Directories
+
+RVAutomation stores operational log files outside of the project directory. This keeps runtime data separate from the application source code and configuration files.
+
+Create the RVAutomation log directory structure:
+
+```bash
+sudo mkdir -p /var/log/RVAutomation/syslog
+```
+
+Set the directory owner to the Node-RED user:
+
+```bash
+sudo chown -R admin:admin /var/log/RVAutomation
+```
+
+Restrict access to the owner:
+
+```bash
+sudo chmod -R 700 /var/log/RVAutomation
+```
+
+Verify the directory ownership and permissions:
+
+```bash
+ls -ld /var/log/RVAutomation
+ls -ld /var/log/RVAutomation/syslog
+```
+
+Expected output:
+
+```text
+drwx------ admin admin ... /var/log/RVAutomation
+drwx------ admin admin ... /var/log/RVAutomation/syslog
+```
+
+After installation, the directory structure should be:
+
+```text
+/var/log/
+└── RVAutomation/
+    └── syslog/
+```
+
+The current system log is stored in:
+
+```text
+/var/log/RVAutomation/syslog/syslog.jsonl
+```
+
+The `syslog` directory contains the current system log and its historical log files. Additional logging subsystems (for example, telemetry, audit, or statistics) may create their own subdirectories under `/var/log/RVAutomation` as future functionality is implemented.

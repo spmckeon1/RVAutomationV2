@@ -7,11 +7,6 @@
       "end": "07:00"
     }
   },
-  "logging": {
-    "level": "info",
-    "retentionDays": 30,
-    "maxFileSize": "10M"
-  },
   "features": {
     "maintenanceMode": false,
     "travelModeEnabled": true
@@ -20,18 +15,31 @@
     "units": "imperial",
     "timeFormat": "12h"
   },
-  "logEventTemplate": {
-    "id": null,
-    "sequence": null,
-    "eventTime": null,
-    "component": null,
-    "function": null,
-    "line": null,
-    "level": null,
-    "category": null,
-    "event": null,
-    "message": null,
-    "data": {
+  "logging": {
+    "retentionDays": 30,
+    "maxFileSize": "10M",
+    "defaultLevel": "INFO",
+    "levels": {
+      "ERROR": {
+        "prefixes": [
+          "ERROR:"
+        ]
+      },
+      "WARNING": {
+        "prefixes": [
+          "WARN:"
+        ]
+      },
+      "INFO": {
+        "prefixes": [
+          "INFO:"
+        ]
+      },
+      "DEBUG": {
+        "prefixes": [
+          "DEBUG:"
+        ]
+      }
     }
   }
 }

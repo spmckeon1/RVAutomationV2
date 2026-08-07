@@ -1,0 +1,15 @@
+{
+    "notificationId": "",
+    "sourceId": "",
+
+    "active": true,
+
+    "startedAt": 0,
+    "lastReceivedAt": 0,
+    "resolvedAt": 0,
+
+    "lastNotification": 0,
+    "nextNotification": 0,
+
+    "notificationCount": 0
+}

@@ -1,395 +1,83 @@
 {
-  "ro": {
-    "name": "RO",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "RO_Controller_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    }
-  },
-  "routerFan": {
-    "name": "Router Fan",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Router_Fan_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    }
-  },
-  "diningLight": {
-    "name": "Dining Light",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Dining_Light_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    }
-  },
-  "airCompressor": {
-    "name": "Air Compressor",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Air_Compressor_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    }
-  },
-  "driversSeatShade": {
-    "name": "Drivers Seat Shade",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Drivers_Window_Shade_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
+  "test_gps": {
+    "identity": {
+      "appName": "TEST GPS Controller",
+      "shortName": "test_gps"
     },
-    "blackout": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "driversSeatShade/blackout/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-05T20:54:36.314Z"
     },
-    "solar": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "driversSeatShade/solar/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    }
-  },
-  "windshieldShade": {
-    "name": "Windshield Shade",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Windshield_Shade_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
+    "heartbeat": {
+      "lastHeartbeat": 1786028340088
     },
-    "blackout": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "windshieldShade/blackout/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    },
-    "solar": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "windshieldShade/solar/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    }
-  },
-  "passengerSeatShade": {
-    "name": "Passenger Seat Shade",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Passenger_Window_Shade_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    },
-    "blackout": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "passengerSeatShade/blackout/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    },
-    "solar": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "passengerSeatShade/solar/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    }
-  },
-  "driverWindow": {
-    "name": "Drivers Window",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Drivers_Window_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    },
-    "closeWindow": {
-      "timer": {
-        "latitude": 0,
-        "longitude": 0,
-        "routingTopic": "driverWindow/closeWindow/update",
-        "onOverride": -1,
-        "offOverride": -1,
-        "onOffsetOverride": -1,
-        "offOffsetOverride": -1,
-        "timeout": 1440,
-        "state": "",
-        "extState": "",
-        "start": 0,
-        "end": 0,
-        "start2": 0,
-        "end2": 0,
-        "sunrise": 0,
-        "sunset": 0,
-        "dawn": 0,
-        "dusk": 0,
-        "solarNoon": 0,
-        "night": 0,
-        "nightEnd": 0,
-        "moonrise": 0,
-        "moonset": 0,
-        "now": 0,
-        "duration": 0,
-        "lastHeartbeat": 0
-      }
-    }
-  },
-  "gps": {
-    "name": "GPS",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "GPS_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 1785964983430
     },
     "state": {
-      "location": {
-        "lat": 0,
-        "lng": 0
+      "shortName": "test_gps",
+      "position": {
+        "latitude": 31.68738367,
+        "longitude": -110.355545
       },
       "fix": {
-        "valid": false,
-        "age": 0
+        "valid": true,
+        "ageMs": 904
       },
       "motion": {
         "speedKph": 0,
-        "courseDeg": 0
+        "courseDeg": 318.42
       },
       "altitude": {
-        "meters": 0
+        "meters": 1348.2
       },
       "quality": {
-        "satellites": 0,
-        "hdop": 99.99
+        "satellites": 12,
+        "hdop": 0.99
       },
       "utc": {
-        "year": 0,
-        "month": 0,
-        "day": 0,
-        "hour": 0,
-        "minute": 0,
-        "second": 0
+        "year": 2026,
+        "month": 8,
+        "day": 6,
+        "hour": 14,
+        "minute": 59,
+        "second": 40
       }
-    }
-  },
-  "frontThermostat": {
-    "name": "Front Thermostat",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Front_Thermostat_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
-    }
-  },
-  "shorePowerMonitor": {
-    "name": "Shore Power Monitor",
-    "monitor": {
-      "online": false,
-      "lastSeen": 0,
-      "downEmailSent": false,
-      "lastPingTime": 0,
-      "downSince": 0,
-      "alertGroup": "Shore_Pwr_Mon_Messages",
-      "notifEventType": -1,
-      "currentTopic": "",
-      "sendEmail": false
+    },
+    "stats": {},
+    "data": {
+      "timestamp": {
+        "year": 2026,
+        "month": 8,
+        "day": 6,
+        "hour": 14,
+        "minute": 59,
+        "second": 40
+      },
+      "position": {
+        "latitude": 31.68738367,
+        "longitude": -110.355545
+      },
+      "motion": {
+        "speedKph": 0,
+        "courseDeg": 318.42
+      },
+      "altitude": {
+        "meters": 1348.2
+      },
+      "fix": {
+        "valid": true,
+        "ageMs": 904
+      },
+      "quality": {
+        "satellites": 12,
+        "hdop": 0.99
+      }
     }
   }
 }

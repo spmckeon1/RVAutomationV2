@@ -1,0 +1,14 @@
+{
+    "sourceId": "",
+    "alertId": "",
+
+    "enabled": true,
+
+    "repeatInterval": 0,
+
+    "email": true,
+    "dashboard": true,
+    "log": true,
+
+    "description": ""
+}

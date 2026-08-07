@@ -18,6 +18,30 @@ The architecture should be driven by implementation experience, not speculation.
 
 ---
 
+## Architectural Principles
+
+### Ownership
+
+Every subsystem is the authoritative owner of its own configuration, runtime state, and statistics.
+
+No other subsystem may directly modify information owned by another subsystem.
+
+Subsystems communicate through published interfaces and events.
+
+---
+
+### Autonomous Devices
+
+Devices are authoritative over their own behavior.
+
+External systems may request actions but cannot compel them.
+
+Every device validates requests against its current configuration, runtime state, and current operating conditions before deciding whether to act.
+
+A device may accept, defer, modify, or reject a requested action based on its own operating rules.
+
+Devices should continue operating correctly whenever practical, even when external systems are unavailable.
+
 ## Design Goals
 
 - Every piece of shared information shall have a single authoritative owner.

@@ -1,0 +1,28 @@
+{
+  "identity": {
+    "appName": "",
+    "shortName": ""
+  },
+
+  "registration": {
+    "accepted": false,
+    "acceptedDate": null
+  },
+
+  "heartbeat": {
+    "lastHeartbeat": 0
+  },
+
+  "heartbeatMonitoring": {
+    "enabled": true,
+    "interval": 60000,
+    "timeout": 180000,
+    "online": false,
+    "missedHeartbeats": 0,
+    "lastAlertTime": 0
+  }, 
+  "state": {},
+
+  "stats": {}
+}
+

@@ -32,26 +32,12 @@
         "env": []
     },
     {
-        "id": "b82afc4011b4b924",
-        "type": "group",
-        "z": "e213983d60d65ed3",
-        "name": "Global function g_readJsonFile",
-        "style": {
-            "stroke": "#6f2fa0",
-            "label": true,
-            "color": "#6f2fa0"
-        },
-        "nodes": [
-            "9bcd4840591ee942",
-            "d67529f3de996ef4",
-            "deb4f6ccd9b783da",
-            "ae7b59c2467d1104",
-            "82af9427c91443f4"
-        ],
-        "x": 194,
-        "y": 279,
-        "w": 712,
-        "h": 142
+        "id": "dbbc51d133244edd",
+        "type": "tab",
+        "label": "Configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
     },
     {
         "id": "799b31fd65377930",
@@ -171,6 +157,111 @@
         "h": 142
     },
     {
+        "id": "fb4d417abfd51a2e",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Device Registration",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "47bd28f698ebaecd",
+            "1f33a508aadf73ed",
+            "5b86657b68e5fd5e",
+            "5b75ca906cd1b47e"
+        ],
+        "x": 194,
+        "y": 1579,
+        "w": 452,
+        "h": 162
+    },
+    {
+        "id": "e54622334c42e85f",
+        "type": "group",
+        "z": "0977fce194365578",
+        "name": "Admin functions",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "bd0d957df47ecbed",
+            "fbabbed6d353412f",
+            "7a9458ff7656274a",
+            "094345587bd087d9",
+            "3482af9354d0061d"
+        ],
+        "x": 414,
+        "y": 79,
+        "w": 532,
+        "h": 162
+    },
+    {
+        "id": "d061984243747fb7",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Heartbeats",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "d3d140200440df62",
+            "46a28db1130cc4a6",
+            "d201947feff386ce"
+        ],
+        "x": 188,
+        "y": 1779,
+        "w": 504,
+        "h": 408
+    },
+    {
+        "id": "e32710d675cea10a",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Email",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "cdbf1a2607d897bc",
+            "a760eb906b3089e6",
+            "44f6f7686cc22d53",
+            "6d145c47d40bc2bb"
+        ],
+        "x": 194,
+        "y": 2419,
+        "w": 392,
+        "h": 182
+    },
+    {
+        "id": "ec59d22a9805a7da",
+        "type": "group",
+        "z": "dbbc51d133244edd",
+        "name": "Notification",
+        "style": {
+            "stroke": "#777777",
+            "label": true,
+            "color": "#777777"
+        },
+        "nodes": [
+            "a7da2c372813bc18",
+            "b5e503b603b8a767",
+            "ed0914d7b820c07a",
+            "077a5424afd3cdb1"
+        ],
+        "x": 404,
+        "y": 159,
+        "w": 342,
+        "h": 202
+    },
+    {
         "id": "c636e6f5d63201f8",
         "type": "group",
         "z": "e213983d60d65ed3",
@@ -246,25 +337,98 @@
         "h": 142
     },
     {
-        "id": "fb4d417abfd51a2e",
+        "id": "46a28db1130cc4a6",
         "type": "group",
         "z": "e213983d60d65ed3",
-        "name": "Device Registration",
+        "g": "d061984243747fb7",
+        "name": "Receive Heartbeats",
         "style": {
             "stroke": "#001f60",
             "label": true,
             "color": "#001f60"
         },
         "nodes": [
-            "47bd28f698ebaecd",
-            "1f33a508aadf73ed",
-            "5b86657b68e5fd5e",
-            "5b75ca906cd1b47e"
+            "4257c5850ba050cc",
+            "33d90881b1a89cd4",
+            "01f6410ccba831fd"
+        ],
+        "x": 214,
+        "y": 1879,
+        "w": 452,
+        "h": 122
+    },
+    {
+        "id": "d201947feff386ce",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "g": "d061984243747fb7",
+        "name": "Monitor Heartbeats",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "6ac4ceb52971a03a",
+            "3f42556876b38007",
+            "e1f1b69180b27df2"
+        ],
+        "x": 214,
+        "y": 2039,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "e4c5f2358a31a7c0",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Create a new template object",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "b6605706c12b5418",
+            "e9c2d985b37c13c8",
+            "435a2b078b7afb32",
+            "4d85804a11b37269",
+            "33c21a9e52e7af16"
         ],
         "x": 194,
-        "y": 1579,
-        "w": 452,
-        "h": 162
+        "y": 2219,
+        "w": 592,
+        "h": 142
+    },
+    {
+        "id": "04d64a2aae560f41",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Alert Management Library",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "a224376d36bb0e88",
+            "c12e17e43969be76",
+            "fb02e8e745a7573f",
+            "57fd9455f85a31e8",
+            "d9c8f5c63431086f",
+            "3edae3756d8e9402",
+            "8964b0c7c4830d20",
+            "ffcc8c151587e69d",
+            "f9e063a0c4d514fd",
+            "f1197c68a45a3381",
+            "2cb494cb73b60162",
+            "ee39512448b7cf30",
+            "faa7256bd8e5b851"
+        ],
+        "x": 194,
+        "y": 2759,
+        "w": 572,
+        "h": 642
     },
     {
         "id": "5be6bf7969fc9e8d",
@@ -323,9 +487,9 @@
         "name": "Default Theme",
         "colors": {
             "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#000000",
+            "groupBg": "#5a1c00",
             "groupOutline": "#cccccc"
         },
         "sizes": {
@@ -377,7 +541,7 @@
         "type": "ui-group",
         "name": "Logs",
         "page": "eb31c5fb533897a0",
-        "width": 6,
+        "width": "15",
         "height": 1,
         "order": 1,
         "showTitle": true,
@@ -437,6 +601,75 @@
         "groupType": "default"
     },
     {
+        "id": "2e72e1a7cdfc8699",
+        "type": "ui-theme",
+        "name": "ui-base.label.theme 2",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#e63b7a",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "264ef55d77cf9ba1",
+        "type": "ui-page",
+        "name": "Configuration",
+        "ui": "0f931f53a4d06db6",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "2e72e1a7cdfc8699",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "e7e8139fec4f59b2",
+        "type": "ui-group",
+        "name": "Configuration",
+        "page": "264ef55d77cf9ba1",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
         "id": "13fb5b3eef8d068d",
         "type": "function",
         "z": "0977fce194365578",
@@ -453,8 +686,8 @@
                 "module": "fs"
             }
         ],
-        "x": 230,
-        "y": 320,
+        "x": 290,
+        "y": 380,
         "wires": [
             [
                 "2ed86bf7290b8241"
@@ -478,8 +711,8 @@
                 "module": "fs"
             }
         ],
-        "x": 320,
-        "y": 380,
+        "x": 380,
+        "y": 440,
         "wires": [
             [
                 "5f1cab5c77a8e891"
@@ -491,15 +724,15 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "DEVICES",
-        "func": "try {\n\n    const devices = {};\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = g_readJsonFile(BOOTSTRAP.FILES.DEVICES);\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 640,
+        "x": 700,
+        "y": 680,
         "wires": [
             [
                 "c5c94e3321ce38bc"
@@ -604,8 +837,8 @@
         "z": "0977fce194365578",
         "name": "CONSTANTS",
         "info": "RULES:\nCONSTANTS are values that may be changed by the developer or administrator, \nbut only intentionally as part of the system's design. They are not runtime preferences.\n\nLWT_DOWN; 0\nLWT_UP; 1\nDEV_DWN_2_MINS: 2\nHEARTBEAT: 3?",
-        "x": 410,
-        "y": 320,
+        "x": 470,
+        "y": 380,
         "wires": []
     },
     {
@@ -613,7 +846,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "bootstrap",
-        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/arch.LogEvent.json\"\n    }\n});\nreturn msg;",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n    },\n    TEMPLATES: {\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/logevent.json\", \n        DEVICE: \"/home/admin/.node-red/projects/RVAutomationV2/config/device.json\",\n        \"ACTIVE_NOTIF\": \"/home/admin/.node-red/projects/RVAutomationV2/config/activenotification.json\",\n        \"ALERT_CONFIG\": \"/home/admin/.node-red/projects/RVAutomationV2/config/alertconfiguration.json\"\n    }\n});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -624,7 +857,7 @@
         "y": 260,
         "wires": [
             [
-                "13fb5b3eef8d068d"
+                "5c031a3bbeddb2b7"
             ]
         ]
     },
@@ -691,7 +924,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "print gloabl vars",
-        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.CENTRAL = global.get('central');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.logEvent = global.get('logEvent');\nmsg.logging  = global.get('logging');\nmsg.opsLogging = global.get('opsLogging');\nmsg.devices = global.get('devices');\nreturn msg;",
+        "func": "msg.BOOTSTRAP = global.get('BOOTSTRAP');\nmsg.TEMPLATES = global.get(\"TEMPLATES\");\nmsg.CENTRAL = global.get('central');\nmsg.CONSTANTS = global.get('CONSTANTS');\nmsg.config = global.get('config');\nmsg.logEvent = global.get('logEvent');\nmsg.logging  = global.get('logging');\nmsg.opsLogging = global.get('opsLogging');\nmsg.devices = global.get('devices');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -735,8 +968,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 700,
+        "x": 780,
+        "y": 740,
         "wires": [
             []
         ]
@@ -746,7 +979,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "LOG_EVENTS",
-        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logEvent = g_readJsonFile(BOOTSTRAP.FILES.LOG_EVENT);\n\n    global.set(\"logEvent\", logEvent);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logEvent = g_readJsonFile(BOOTSTRAP.TEMPLATES.LOG_EVENT);\n\n    global.set(\"logEvent\", logEvent);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -758,8 +991,8 @@
                 "module": "fs"
             }
         ],
-        "x": 600,
-        "y": 580,
+        "x": 640,
+        "y": 620,
         "wires": [
             [
                 "912792a501771737"
@@ -771,7 +1004,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "LOGGING",
-        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logging = g_readJsonFile(BOOTSTRAP.FILES.LOGGING);\n\n    global.set(\"logging\", logging);\n    node.warn(global.get(\"logging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const logging = g_readJsonFile(BOOTSTRAP.FILES.LOGGING);\n\n    global.set(\"logging\", logging);\n//    node.warn(global.get(\"logging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -783,8 +1016,8 @@
                 "module": "fs"
             }
         ],
-        "x": 410,
-        "y": 440,
+        "x": 470,
+        "y": 500,
         "wires": [
             [
                 "932f9b26091550f8"
@@ -796,7 +1029,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "OPS_LOGGING",
-        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const opsLogging = g_readJsonFile(BOOTSTRAP.FILES.OPS_LOGGING);\n\n    global.set(\"opsLogging\", opsLogging);\n    node.warn(global.get(\"opsLogging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const g_readJsonFile = global.get('g_readJsonFile');\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const opsLogging = g_readJsonFile(BOOTSTRAP.FILES.OPS_LOGGING);\n\n    global.set(\"opsLogging\", opsLogging);\n//    node.warn(global.get(\"opsLogging\"));\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -808,8 +1041,8 @@
                 "module": "fs"
             }
         ],
-        "x": 500,
-        "y": 500,
+        "x": 560,
+        "y": 560,
         "wires": [
             [
                 "ad890b1881c8d14f"
@@ -817,65 +1050,11 @@
         ]
     },
     {
-        "id": "9bcd4840591ee942",
-        "type": "function",
-        "z": "e213983d60d65ed3",
-        "g": "b82afc4011b4b924",
-        "name": "g_readJsonFile",
-        "func": "function g_readJsonFile(fileName) {\n    return JSON.parse(\n        fs.readFileSync(fileName,\"utf8\")\n    );\n}\n\nglobal.set('g_readJsonFile', g_readJsonFile);",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 540,
-        "y": 320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d67529f3de996ef4",
+        "id": "bd0d957df47ecbed",
         "type": "inject",
-        "z": "e213983d60d65ed3",
-        "g": "b82afc4011b4b924",
+        "z": "0977fce194365578",
+        "g": "e54622334c42e85f",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 350,
-        "y": 320,
-        "wires": [
-            [
-                "9bcd4840591ee942"
-            ]
-        ]
-    },
-    {
-        "id": "deb4f6ccd9b783da",
-        "type": "inject",
-        "z": "e213983d60d65ed3",
-        "g": "b82afc4011b4b924",
-        "name": "test g_getJsonFiile",
         "props": [
             {
                 "p": "payload"
@@ -890,52 +1069,122 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "BOOTSTRAP.FILES.CONSTANTS",
-        "payloadType": "global",
-        "x": 330,
-        "y": 380,
+        "payload": "",
+        "payloadType": "date",
+        "x": 620,
+        "y": 120,
         "wires": [
             [
-                "82af9427c91443f4"
+                "fbabbed6d353412f"
             ]
         ]
     },
     {
-        "id": "ae7b59c2467d1104",
-        "type": "debug",
-        "z": "e213983d60d65ed3",
-        "g": "b82afc4011b4b924",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "82af9427c91443f4",
+        "id": "fbabbed6d353412f",
         "type": "function",
-        "z": "e213983d60d65ed3",
-        "g": "b82afc4011b4b924",
-        "name": "test g_readJsonFile",
-        "func": "let g_readJsonFile = global.get('g_readJsonFile');\nmsg.payload = g_readJsonFile(msg.payload);\nreturn msg;",
+        "z": "0977fce194365578",
+        "g": "e54622334c42e85f",
+        "name": "Delete all Devices",
+        "func": "try {\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = {};\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.warn(\"Device database cleared.\");\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 380,
+        "x": 830,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a9458ff7656274a",
+        "type": "function",
+        "z": "0977fce194365578",
+        "g": "e54622334c42e85f",
+        "name": "Approve Device",
+        "func": "\nconst devices = global.get(\"devices\") || {};\n\nconst shortName = msg.payload.shortName;\n\nconst device = devices[shortName];\n\nif (!device) {\n\n    node.error(`Unknown device '${shortName}'.`);\n    return null;\n}\n\ndevice.registration.accepted = true;\ndevice.registration.acceptedDate = new Date().toISOString();\n\nglobal.set(\"devices\", devices);\n\nconst g_writeJsonFile = global.get(\"g_writeJsonFile\");\nconst BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\ng_writeJsonFile(\n    BOOTSTRAP.FILES.DEVICES,\n    devices\n);\n\nnode.log(`Accepted device '${shortName}'.`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "094345587bd087d9",
+        "type": "inject",
+        "z": "0977fce194365578",
+        "g": "e54622334c42e85f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "none",
+        "payload": "{\"shortName\":\"test_gps\"}",
+        "payloadType": "json",
+        "x": 590,
+        "y": 200,
         "wires": [
             [
-                "ae7b59c2467d1104"
+                "7a9458ff7656274a"
+            ]
+        ]
+    },
+    {
+        "id": "3482af9354d0061d",
+        "type": "comment",
+        "z": "0977fce194365578",
+        "g": "e54622334c42e85f",
+        "name": "APPROVE DEVICE",
+        "info": "edit he JSON script to hve the short name \nthat needs to be approved.",
+        "x": 570,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b16a7f6ba5697cde",
+        "type": "comment",
+        "z": "0977fce194365578",
+        "name": "DEVICE MODEL",
+        "info": "Device\n│\n├── identity\n│   ├── appName\n│   └── shortName\n│\n├── registration\n│   ├── accepted\n│   └── acceptedDate\n│\n├── heartbeat\n│   └── lastHeartbeat\n│\n├── heartbeatMonitoring\n│   ├── enabled\n│   ├── interval\n│   ├── timeout\n│   ├── online\n│   ├── missedHeartbeats\n│   └── lastAlertTime\n│\n├── data\n│   └── <device-specific>\n│\n└── stats\n    └── <device-specific>",
+        "x": 900,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5c031a3bbeddb2b7",
+        "type": "function",
+        "z": "0977fce194365578",
+        "name": "TEMPLATES",
+        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n    const templates = {};\n    templates.LOG_EVENT = g_readJsonFile(BOOTSTRAP.TEMPLATES.LOG_EVENT);\n    templates.DEVICE = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n    templates.ACTIVE_NOTIF = g_readJsonFile(BOOTSTRAP.TEMPLATES.ACTIVE_NOTIF);\n    templates.ALERT_CONFIG = g_readJsonFile(BOOTSTRAP.TEMPLATES.ALERT_CONFIG);\n    global.set(\"TEMPLATES\", templates);\n}\ncatch (err) {\n    node.error(err);\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "13fb5b3eef8d068d"
             ]
         ]
     },
@@ -1029,7 +1278,7 @@
         "z": "e213983d60d65ed3",
         "g": "799b31fd65377930",
         "name": "debug 7",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1173,7 +1422,7 @@
         "z": "e213983d60d65ed3",
         "g": "c636e6f5d63201f8",
         "name": "debug 9",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1295,7 +1544,7 @@
         "z": "e213983d60d65ed3",
         "g": "0c3828d06ae682eb",
         "name": "debug 10",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1363,7 +1612,7 @@
         "z": "e213983d60d65ed3",
         "g": "853d56930325c23e",
         "name": "debug 11",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1486,7 +1735,7 @@
         "z": "e213983d60d65ed3",
         "g": "7c1294f580331823",
         "name": "debug 12",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1554,7 +1803,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "debug 24",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1594,7 +1843,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device",
-        "func": "try {\n\n    const reg = msg.payload;\n    if (!reg.shortName || !reg.appName) {                                       // Validate registration message.\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n    const devices = global.get(\"devices\");                                      // Get runtime objects.\n    const knownDevices = global.get(\"knownDevices\") || {};\n   if (!knownDevices[reg.shortName]) {                                          // Device known?\n        node.warn(`Unknown device '${reg.shortName}' attempted registration.`);\n        // TODO\n        // Email Library\n        // email.notifyUnknownDevice(reg);\n        return null;\n    }\n    if (!devices[reg.shortName]) {                                              // First registration after startup?                      \n        devices[reg.shortName] = {\n            registration: {},\n            heartbeat: {},\n            state: {},\n            stats: {}\n        };\n    }\n    devices[reg.shortName].registration = reg;                                   // Update registration.\n    global.set(\"devices\", devices);\n    // TODO\n    // Logging Library\n    node.log(`Registered ${reg.shortName}`);\n}\ncatch (err) {\n    node.error(err);\n}\nreturn msg;",
+        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATE.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.shortName = reg.shortName;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    node.warn(\"Register Device called\");\n    if (!reg.shortName ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n    node.warn(\"Creating device\");\n    if (!devices[reg.shortName]) {\n\n        node.warn(\n            `New device '${reg.shortName}' requesting registration.`\n        );\n\n        devices[reg.shortName] = createDevice(reg);\n        node.warn(devices[reg.shortName]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n    node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.shortName];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.shortName = reg.shortName;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.shortName}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1613,27 +1862,645 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device function",
-        "info": "MQTT In\n    │\n    ▼\nValidate Registration\n    │\n    ▼\nKnown Device?\n   │        │\n  Yes       No\n   │         │\n   │         ├── Log unknown device\n   │         ├── Email stub\n   │         └── return null\n   ▼\nCreate/Update runtime device\n   │\n   ▼\nLog successful registration",
+        "info": "Registration arrives\n        │\n        ▼\nValidate registration\n        │\n        ▼\nLoad devices\n        │\n        ▼\nshortName exists?\n   │            │\n  No           Yes\n   │            │\n   │            ▼\n   │     Update registration\n   │     Clear \"pending\" flag\n   │     Log registration\n   │\n   ▼\nCreate pending device\nLog unknown device\nEmail stub\nReturn",
         "x": 370,
         "y": 1620,
         "wires": []
     },
     {
-        "id": "b5010bb2b4bbca79",
+        "id": "4257c5850ba050cc",
+        "type": "mqtt in",
+        "z": "e213983d60d65ed3",
+        "g": "46a28db1130cc4a6",
+        "name": "",
+        "topic": "ei/to/nr/hb",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 1940,
+        "wires": [
+            [
+                "33d90881b1a89cd4",
+                "01f6410ccba831fd"
+            ]
+        ]
+    },
+    {
+        "id": "33d90881b1a89cd4",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "46a28db1130cc4a6",
+        "name": "debug 22",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "01f6410ccba831fd",
         "type": "function",
         "z": "e213983d60d65ed3",
-        "name": "knownDevices()",
-        "func": "knownDevices = {\n\n    //------------------------------------------------------------\n    // Returns true if the device is approved.\n    //------------------------------------------------------------\n    exists(shortName) {\n\n        const devices = global.get(\"knownDevices\") || {};\n\n        return devices.hasOwnProperty(shortName);\n    }\n\n};\nreturn msg;",
+        "g": "46a28db1130cc4a6",
+        "name": "Receive Heatbeat",
+        "func": "try {\n\n    const shortName = msg.payload.shortName;\n\n    if (!shortName) {\n        node.error(\"Heartbeat missing payload.shortName.\");\n        return null;\n    }\n\n    const devices = global.get(\"devices\") || {};\n    const device = devices[shortName];\n\n    if (!device) {\n        node.warn(`Heartbeat received from unknown device '${shortName}'.`);\n        return null;\n    }\n\n    if (!device.registration.accepted) {\n        node.warn(`Heartbeat ignored from unaccepted device '${shortName}'.`);\n        return null;\n    }\n\n    const now = Date.now();\n\n    device.heartbeat.lastHeartbeat = now;\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err + \", msg.paylod: \" + msg.payload);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
-        "noerr": 2,
+        "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 1860,
+        "x": 550,
+        "y": 1960,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "d3d140200440df62",
+        "type": "comment",
+        "z": "e213983d60d65ed3",
+        "g": "d061984243747fb7",
+        "name": "Heartbeats",
+        "info": "Heartbeat\n│\n├── Receive Heartbeat\n│   ├── MQTT In (ei/to/nr/hb)\n│   └── Update Heartbeat\n│\n└── Monitor Heartbeats\n    ├── Inject (every 15 seconds)\n    └── Check Heartbeats",
+        "x": 280,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "6ac4ceb52971a03a",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "d201947feff386ce",
+        "name": "HB Monitor",
+        "func": "try {\n\n    const devices = global.get(\"devices\") || {};\n    const now = Date.now();\n\n    for (const shortName in devices) {\n\n        const device = devices[shortName];\n\n        if (!device.registration.accepted)                      // Skip devices that are not accepted.\n            continue;\n\n        if (!device.heartbeatMonitoring.enabled)                // Skip devices that are not being monitored.\n            continue;\n\n        // Heartbeat still within timeout -> device is online.\n        if ((now - device.heartbeat.lastHeartbeat) <\n            device.heartbeatMonitoring.timeout) {\n\n            device.heartbeatMonitoring.online = true;\n            device.heartbeatMonitoring.missedHeartbeats = 0;\n            continue;\n        }\n\n        // Transition Online -> Offline.\n        if (device.heartbeatMonitoring.online) {\n            device.heartbeatMonitoring.online = false;\n            device.heartbeatMonitoring.missedHeartbeats++;\n        }\n\n        const ALERT_INTERVAL = 60 * 60 * 1000;     // 60 minutes\n\n        // Send first alert immediately, then every 60 minutes.\n        if ((now - device.heartbeatMonitoring.lastAlertTime) >= ALERT_INTERVAL) {\n\n            device.heartbeatMonitoring.lastAlertTime = now;\n\n            node.warn(`Device '${shortName}' is offline.`);\n\n            // TODO\n            // Logging subsystem\n            // Notification subsystem\n        }\n    }\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 2080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f42556876b38007",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "d201947feff386ce",
+        "name": "Start HB Check",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 340,
+        "y": 2100,
+        "wires": [
+            [
+                "6ac4ceb52971a03a",
+                "e1f1b69180b27df2"
+            ]
+        ]
+    },
+    {
+        "id": "e1f1b69180b27df2",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "d201947feff386ce",
+        "name": "debug 25",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 2120,
+        "wires": []
+    },
+    {
+        "id": "cdbf1a2607d897bc",
+        "type": "comment",
+        "z": "e213983d60d65ed3",
+        "g": "e32710d675cea10a",
+        "name": "EMAIL",
+        "info": "Notification receives events, evaluates notification policy, and if \npolicy dictates, generates one or more notifications using the \nappropriate transport(s).\n\nResponsibilities\n    Send email using the configured SMTP server.\n    Report success or failure to the caller.\n    Hide the SMTP implementation details.\n\nNot Responsible For\n    Deciding whether an email should be sent.\n    Duplicate suppression.\n    Rate limiting.\n    Notification policy.\n    Message prioritization.\n    Formatting notifications.\n    Choosing recipients based on event type.\n\nInput\n    msg.topic      Subject\n    msg.payload    Plain text body\n    msg.to         Optional recipient override\n\nOutput\n    None",
+        "x": 290,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "a760eb906b3089e6",
+        "type": "e-mail",
+        "z": "e213983d60d65ed3",
+        "g": "e32710d675cea10a",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "SMTP Send",
+        "x": 490,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "44f6f7686cc22d53",
+        "type": "link in",
+        "z": "e213983d60d65ed3",
+        "g": "e32710d675cea10a",
+        "name": "smtp/send/in",
+        "links": [],
+        "x": 335,
+        "y": 2520,
+        "wires": [
+            [
+                "a760eb906b3089e6"
+            ]
+        ]
+    },
+    {
+        "id": "6d145c47d40bc2bb",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "e32710d675cea10a",
+        "name": "Test email",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "This is a test email",
+        "payload": "This is a test of the new email sender",
+        "payloadType": "str",
+        "x": 300,
+        "y": 2560,
+        "wires": [
+            [
+                "a760eb906b3089e6"
+            ]
+        ]
+    },
+    {
+        "id": "b6605706c12b5418",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "e4c5f2358a31a7c0",
+        "name": "g_newObject",
+        "func": "/**\n * Create a new object from a registered template.\n *\n * @param {string} templateName\n *        Name of the template to clone\n *        (e.g. \"LOG_EVENT\", \"DEVICE\", \"ACTIVE_NOTIF\")\n *\n * @returns {Object|null}\n *        A deep copy of the requested template, or null on error.\n */\nfunction g_newObject(templateName) {\n\n    if (!templateName) {\n        node.error(\"g_newObject(): No template name supplied.\");\n        return null;\n    }\n\n    const templates = global.get(\"TEMPLATES\");\n\n    if (!templates) {\n        node.error(\"g_newObject(): Template registry has not been initialized.\");\n        return null;\n    }\n\n    if (!Object.prototype.hasOwnProperty.call(templates, templateName)) {\n        node.error(`g_newObject(): Unknown template '${templateName}'.`);\n        return null;\n    }\n\n    // Deep copy the template so the caller owns its own object.\n    return JSON.parse(JSON.stringify(templates[templateName]));\n\n}\n\nglobal.set(\"g_newObject\", g_newObject);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 2260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9c2d985b37c13c8",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "e4c5f2358a31a7c0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 2260,
+        "wires": [
+            [
+                "b6605706c12b5418"
+            ]
+        ]
+    },
+    {
+        "id": "435a2b078b7afb32",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "e4c5f2358a31a7c0",
+        "name": "test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "LOG_EVENT",
+        "payloadType": "str",
+        "x": 330,
+        "y": 2320,
+        "wires": [
+            [
+                "4d85804a11b37269"
+            ]
+        ]
+    },
+    {
+        "id": "4d85804a11b37269",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "e4c5f2358a31a7c0",
+        "name": "test g_newObject",
+        "func": "const g_newObject = global.get('g_newObject');\nmsg.newObj = g_newObject(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 2320,
+        "wires": [
+            [
+                "33c21a9e52e7af16"
+            ]
+        ]
+    },
+    {
+        "id": "33c21a9e52e7af16",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "e4c5f2358a31a7c0",
+        "name": "debug 26",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "a224376d36bb0e88",
+        "type": "comment",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "Alert Management Library",
+        "info": "",
+        "x": 470,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "c12e17e43969be76",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_findAlert(alerts, alertId)",
+        "func": "// -----------------------------------------------------------------------------\n// g_findAlert\n//\n//Finds an alert by alertId.\n//\n// Parameters:\n//   alerts  - Object containing alerts.\n//   alertId - Alert identifier.\n//\n// Returns:\n//   Alert object if found.\n//   null if not found.\n// -----------------------------------------------------------------------------\n\nfunction g_findAlert(alerts, alertId) {\n\n    if (!alerts)\n        return null;\n\n    if (!alerts[alertId])\n        return null;\n\n    return alerts[alertId];\n\n}\n\nglobal.set(\"g_findAlert\", g_findAlert);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 2900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb02e8e745a7573f",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_notificationSent(alert)",
+        "func": "// -----------------------------------------------------------------------------\n// g_notificationSent\n//\n// Updates an alert after a notification has been sent.\n//\n// Parameters:\n//   alert - Alert object.\n//\n// Returns:\n//   Alert object.\n// -----------------------------------------------------------------------------\n\nfunction g_notificationSent(alert) {\n\n    if (!alert)\n        return null;\n\n    alert.lastNotification = Date.now();\n    alert.notificationCount++;\n\n    return alert;\n\n}\n\nglobal.set(\"g_notificationSent\", g_notificationSent);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 3200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57fd9455f85a31e8",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_isNotificationEnabled(sourceId, alertId)",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 3280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9c8f5c63431086f",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 2900,
+        "wires": [
+            [
+                "c12e17e43969be76"
+            ]
+        ]
+    },
+    {
+        "id": "3edae3756d8e9402",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 3200,
+        "wires": [
+            [
+                "fb02e8e745a7573f"
+            ]
+        ]
+    },
+    {
+        "id": "8964b0c7c4830d20",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 3280,
+        "wires": [
+            [
+                "57fd9455f85a31e8"
+            ]
+        ]
+    },
+    {
+        "id": "ffcc8c151587e69d",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_addAlert(alerts, alertId)",
+        "func": "// -----------------------------------------------------------------------------\n// g_addAlert\n//\n// Creates a new alert and adds it to the specified alert table.\n//\n// Parameters:\n//   alerts  - Object containing alerts.\n//   alertId - Alert identifier.\n//\n// Returns:\n//   Newly created alert object.\n// -----------------------------------------------------------------------------\n\nfunction g_addAlert(alerts, alertId) {\n\n    const g_newObject = global.get(\"g_newObject\");\n\n    const alert = g_newObject(\"ACTIVE_NOTIF\");\n\n    const now = Date.now();\n\n    alert.notificationId = alertId;\n    alert.startedAt = now;\n    alert.lastReceivedAt = now;\n\n    alerts[alertId] = alert;\n\n    return alert;\n\n}\n\nglobal.set(\"g_addAlert\", g_addAlert);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 3000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9e063a0c4d514fd",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 3000,
+        "wires": [
+            [
+                "ffcc8c151587e69d"
+            ]
+        ]
+    },
+    {
+        "id": "f1197c68a45a3381",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_removeAlert(alerts, alertId)",
+        "func": "// -----------------------------------------------------------------------------\n// g_removeAlert\n//\n// Removes an alert from the specified alert table.\n//\n// Parameters:\n//   alerts  - Object containing alerts.\n//   alertId - Alert identifier.\n//\n// Returns:\n//   true  - Alert was removed.\n//   false - Alert was not found.\n// -----------------------------------------------------------------------------\n\nfunction g_removeAlert(alerts, alertId) {\n\n    if (!alerts)\n        return false;\n\n    if (!alerts[alertId])\n        return false;\n\n    delete alerts[alertId];\n\n    return true;\n\n}\n\nglobal.set(\"g_removeAlert\", g_removeAlert);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 3100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2cb494cb73b60162",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 3100,
+        "wires": [
+            [
+                "f1197c68a45a3381"
+            ]
+        ]
+    },
+    {
+        "id": "ee39512448b7cf30",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "g_updateAlert(alert)",
+        "func": "alert.lastReceivedAt = Date.now();",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 3360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "faa7256bd8e5b851",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 3360,
+        "wires": [
+            [
+                "ee39512448b7cf30"
+            ]
         ]
     },
     {
@@ -1649,12 +2516,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 340,
-        "y": 500,
+        "x": 380,
+        "y": 460,
         "wires": [
             [
                 "8dba1305d96c74c6",
-                "cc0fcfd2fce449b1"
+                "cc0fcfd2fce449b1",
+                "6a4f704d3f29e606"
             ]
         ]
     },
@@ -1667,11 +2535,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 520,
+        "x": 560,
+        "y": 500,
         "wires": []
     },
     {
@@ -1733,44 +2602,6 @@
         "wires": []
     },
     {
-        "id": "4257c5850ba050cc",
-        "type": "mqtt in",
-        "z": "49c27f958aacfefb",
-        "name": "",
-        "topic": "gps/to/nr/mqtt/hb",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 330,
-        "y": 660,
-        "wires": [
-            [
-                "33d90881b1a89cd4"
-            ]
-        ]
-    },
-    {
-        "id": "33d90881b1a89cd4",
-        "type": "debug",
-        "z": "49c27f958aacfefb",
-        "name": "debug 22",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 660,
-        "wires": []
-    },
-    {
         "id": "6d8aa5ce9092896d",
         "type": "function",
         "z": "49c27f958aacfefb",
@@ -1793,7 +2624,7 @@
         "type": "function",
         "z": "49c27f958aacfefb",
         "name": "processMsg",
-        "func": "devices = global.get('devices');\ndevices.gps.state = msg.payload;\n\nmsg.payload = \n\"latitude:       \" + devices.gps.state.position.latitude + 'º' + '<br>' +\n\"Longitude: \" + devices.gps.state.position.longitude + 'º' + '<br>' +\n\"Fix: \" + (devices.gps.state.fix.valid == true ? 'Valid':'Not-Valid') + '<br>' +\n\"Age: \" + devices.gps.state.fix.ageMs + ' ms' + '<br>' +\n\"Speed: \" + devices.gps.state.motion.speedKph + ' kph' + '<br>' +\n\"Course: \" + devices.gps.state.motion.courseDeg + '<br>' +\n\"Altitude: \" + devices.gps.state.altitude.meters + ' m' + '<br>' +\n\"Satellites: \" + devices.gps.state.quality.satellites + '<br>' +\n\"HDOP: \" + devices.gps.state.quality.hdop + '<br>' +\n\"Time: \" + devices.gps.state.utc.hour + ':' +\n           devices.gps.state.utc.minute + ':' +\n           devices.gps.state.utc.second + ' UTC' + '<br>' +\n\"Date: \"+ \n        devices.gps.state.utc.year + '/' +\n        devices.gps.state.utc.month + '/' +\n        devices.gps.state.utc.day;\n    \n    \n    devices.gps.state.utc.second;\nreturn msg;",
+        "func": "const shortName = msg.payload.shortName;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[shortName];\n\n// Device has never registered.\nif (!device)\n    return null;\n\n// Device exists but has not yet been approved.\nif (!device.registration.accepted)\n    return null;\n\n// Update the device model.\ndevice.state = msg.payload;\n\nglobal.set(\"devices\", devices);\n\n// Build dashboard display.\nmsg.payload =\n    \"Latitude: \" + device.state.position.latitude + \"º<br>\" +\n    \"Longitude: \" + device.state.position.longitude + \"º<br>\" +\n    \"Fix: \" + (device.state.fix.valid ? \"Valid\" : \"Not-Valid\") + \"<br>\" +\n    \"Age: \" + device.state.fix.ageMs + \" ms<br>\" +\n    \"Speed: \" + device.state.motion.speedKph + \" kph<br>\" +\n    \"Course: \" + device.state.motion.courseDeg + \"<br>\" +\n    \"Altitude: \" + device.state.altitude.meters + \" m<br>\" +\n    \"Satellites: \" + device.state.quality.satellites + \"<br>\" +\n    \"HDOP: \" + device.state.quality.hdop + \"<br>\" +\n    \"Time: \" +\n    device.state.utc.hour + \":\" +\n    device.state.utc.minute + \":\" +\n    device.state.utc.second + \" UTC<br>\" +\n    \"Date: \" +\n    device.state.utc.year + \"/\" +\n    device.state.utc.month + \"/\" +\n    device.state.utc.day;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1815,8 +2646,8 @@
         "z": "49c27f958aacfefb",
         "group": "5e25cb33b5ac6c97",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "3",
+        "height": "4",
         "name": "display gps",
         "label": "",
         "format": "{{msg.payload}}",
@@ -1860,6 +2691,24 @@
             [
                 "2f91356a3fa4140f"
             ]
+        ]
+    },
+    {
+        "id": "6a4f704d3f29e606",
+        "type": "function",
+        "z": "49c27f958aacfefb",
+        "name": "saveData",
+        "func": "const shortName = msg.payload.shortName;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[shortName];\n\nif (!device) {\n    node.warn(`Unknown device '${shortName}'.`);\n    return null;\n}\n\ndevice.data = {\n    timestamp: {\n        year: msg.payload.utc.year,\n        month: msg.payload.utc.month,\n        day: msg.payload.utc.day,\n        hour: msg.payload.utc.hour,\n        minute: msg.payload.utc.minute,\n        second: msg.payload.utc.second\n    },\n\n    position: {\n        latitude: msg.payload.position.latitude,\n        longitude: msg.payload.position.longitude\n    },\n\n    motion: {\n        speedKph: msg.payload.motion.speedKph,\n        courseDeg: msg.payload.motion.courseDeg\n    },\n\n    altitude: {\n        meters: msg.payload.altitude.meters\n    },\n\n    fix: {\n        valid: msg.payload.fix.valid,\n        ageMs: msg.payload.fix.ageMs\n    },\n\n    quality: {\n        satellites: msg.payload.quality.satellites,\n        hdop: msg.payload.quality.hdop\n    }\n};\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 420,
+        "wires": [
+            []
         ]
     },
     {
@@ -2440,8 +3289,8 @@
         "ui": "",
         "name": "",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "15",
+        "height": "8",
         "head": "",
         "format": "<pre style=\"\n    white-space: pre;\n    overflow-y: auto;\n    font-family: monospace;\n    font-size: 14px;\n    margin: 0;\n\">\n{{ msg.payload }}\n</pre>",
         "storeOutMessages": true,
@@ -2500,5 +3349,182 @@
         "x": 480,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "a7da2c372813bc18",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "g": "ec59d22a9805a7da",
+        "name": "NOTIFICATION",
+        "info": "Responsibilities\n    Receive notification requests from other subsystems.\n    Decide whether the requested notification is currently enabled.\n    Prevent duplicate notifications (eventually).\n    Apply rate limiting (eventually).\n    Choose one or more delivery transports.\n    Format the notification message.\n    Request delivery from the selected transport(s).\nNot Responsible For\n    Detecting failures.\n    Monitoring devices.\n    Sending email.\n    Sending SMS.\n    Logging events.\n    Maintaining device state\n\nReceive notification event\n        │\n        ▼\nGenerate notification key\n        │\n        ▼\nAlready in activeNotifications?\n\n        Yes\n            Done.\n\n        No\n            Create ACTIVE_NOTIF\n            Populate it\n            Add to activeNotifications\n            Done.",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7455e65ef4c57a4c",
+        "type": "ui-text",
+        "z": "dbbc51d133244edd",
+        "group": "e7e8139fec4f59b2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "03cb96cc45014776",
+        "type": "inject",
+        "z": "dbbc51d133244edd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 170,
+        "y": 440,
+        "wires": [
+            [
+                "7455e65ef4c57a4c"
+            ]
+        ]
+    },
+    {
+        "id": "3d62b59c0142528c",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "CONFIGURATION",
+        "info": "Responsibilities\n    Present system configuration to the user.\n    Allow configuration values to be modified.\n    Validate user input.\n    Save configuration changes.\n    Notify affected subsystems when configuration changes.\nNot Responsible For\n    Interpreting configuration values.\n    Implementing subsystem behavior.\n    Monitoring system health.\n    Sending notifications.\n    Device registration.    ",
+        "x": 450,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "86c8cf657e1ba58a",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "DASHBOARD",
+        "info": "Dashboard\n\nHome\n\nDevices\n    GPS\n    Windshield Shade\n    ...\n\nDevice Infrastructure\n    Heartbeat\n    Logging\n    Registration\n    ...\n\nSystem Configuration\n    MQTT\n    SMTP\n    Notification\n    Logging\n    ...\n\nHistory\n\nLogs\n\nResponsibilities\n    Summarize device status.\n    Provide commonly used controls.\n    Display active alerts.\n    Navigate to device pages.\nNot Responsible For\n    Detailed device configuration.\n    Device diagnostics.\n    Infrastructure configuration.\n\n    Dashboard\n│\n├── Dashboard\n│\n├── Devices\n│     ├── GPS\n│     ├── Windshield Shade\n│     ├── Router Fan\n│     └── ...\n│\n├── Device Infrastructure\n│     ├── Heartbeat\n│     ├── Logging\n│     ├── Registration\n│     ├── Statistics\n│     └── ...\n│\n├── System Configuration\n│     ├── MQTT\n│     ├── SMTP\n│     ├── Notifications\n│     ├── Storage\n│     └── ...\n│\n├── History\n│\n└── Logs\n\n",
+        "x": 430,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "746d8ad29be8874b",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "DEVICES",
+        "info": "Purpose\nProvides detailed information and management for an individual device.\nEach device page may contain panels such as:\n    Status\n    Commands\n    Live Data\n    Configuration\n    Statistics\n    Diagnostics\n    History\nNot every device will implement every panel.",
+        "x": 420,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "d253e22b924748d8",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "DEVICE INFASTRUCTURE",
+        "info": "Purpose\nConfigure and monitor services common to every EmbeddedInfrastructure device.\nExamples:\n    Heartbeat\n    Registration\n    Logging\n    Statistics\n    Firmware\n    Time",
+        "x": 470,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "408456f85be04b92",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "SYSTEM CONFIGURATION",
+        "info": "Purpose\nConfigure the Node-RED application and infrastructure services.\nExamples:\n    MQTT\n    SMTP\n    Notifications\n    Storage\n    Security",
+        "x": 480,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "056436bfaafb2849",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "System Configuration",
+        "info": "RVAutomation Configuration\n\nMQTT Client\n    Broker\n    Credentials\n    TLS\n\nSMTP\n    Server\n    Credentials\n\nNotification Preferences\n\nLogging Preferences\n\nDashboard Preferences\n\nBackup / Restore\n\nSoftware Updates",
+        "x": 1000,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b5e503b603b8a767",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "ec59d22a9805a7da",
+        "name": "raiseNotification",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed0914d7b820c07a",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "ec59d22a9805a7da",
+        "name": "Notification Inbound",
+        "func": "try {\n\n    const g_newObject = global.get(\"g_newObject\");\n\n    const notifications = global.get(\"notifications\");\n\n    const key =\n        `${msg.payload.notificationId}:${msg.payload.sourceId}`;\n\n    // Already active?\n    if (notifications.activeNotifications[key]) {\n\n        // Ignore duplicate notification.\n        return null;\n\n    }\n\n    const activeNotification =\n        g_newObject(\"ACTIVE_NOTIF\");\n\n    activeNotification.notificationId =\n        msg.payload.notificationId;\n\n    activeNotification.sourceId =\n        msg.payload.sourceId;\n\n    activeNotification.startedAt =\n        Date.now();\n\n    notifications.activeNotifications[key] =\n        activeNotification;\n\n    global.set(\"notifications\", notifications);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "077a5424afd3cdb1",
+        "type": "link in",
+        "z": "dbbc51d133244edd",
+        "g": "ec59d22a9805a7da",
+        "name": "notification/inbound/in",
+        "links": [],
+        "x": 445,
+        "y": 260,
+        "wires": [
+            [
+                "ed0914d7b820c07a"
+            ]
+        ]
     }
 ]

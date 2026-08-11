@@ -1,15 +1,13 @@
 {
-    "notificationId": "",
     "sourceId": "",
+    "entityId": "",
+    "type": "",
 
-    "active": true,
-
-    "startedAt": 0,
-    "lastReceivedAt": 0,
-    "resolvedAt": 0,
+    "timeStarted": 0,
+    "timeLastObserved": 0,
+    "timeResolved": 0,
 
     "lastNotification": 0,
     "nextNotification": 0,
-
     "notificationCount": 0
 }

@@ -20,6 +20,8 @@ The architecture should be driven by implementation experience, not speculation.
 
 ## Architectural Principles
 
+Every external device or system is represented by exactly one Node-RED Service.
+
 ### Ownership
 
 Every subsystem is the authoritative owner of its own configuration, runtime state, and statistics.
@@ -121,6 +123,21 @@ within that object models the resources, state, and capabilities owned by that c
 
 ---
 
+## Standard Service Lifecycle
+
+Every service should define:
+
+### Initialization
+- Perform startup initialization.
+- Load persistent configuration.
+- Initialize runtime state.
+
+### Receive <Primary Event>
+- Process the primary event handled by the service.
+
+### Timer_tick
+- Perform periodic maintenance and time-based processing.
+        
 ## Logging Service
 
 ### Decision

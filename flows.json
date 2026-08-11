@@ -1,5 +1,13 @@
 [
     {
+        "id": "7a83f651793d8da9",
+        "type": "tab",
+        "label": "DESIGN INFORMATION",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0977fce194365578",
         "type": "tab",
         "label": "Startup",
@@ -11,6 +19,14 @@
         "id": "e213983d60d65ed3",
         "type": "tab",
         "label": "Global Functions",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2ecdaac948b4ee3b",
+        "type": "tab",
+        "label": "Windshield Shade",
         "disabled": false,
         "info": "",
         "env": []
@@ -35,6 +51,14 @@
         "id": "dbbc51d133244edd",
         "type": "tab",
         "label": "Configuration",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "93d30457147d20e0",
+        "type": "tab",
+        "label": "Heartbeat",
         "disabled": false,
         "info": "",
         "env": []
@@ -85,7 +109,8 @@
             "e5308c28fe9e9beb",
             "83a71355bc3d5dac",
             "310565b0bdb7cbf5",
-            "c28038881c180797"
+            "c28038881c180797",
+            "d76c6eeede72f8b9"
         ],
         "x": 384,
         "y": 419,
@@ -170,11 +195,12 @@
             "47bd28f698ebaecd",
             "1f33a508aadf73ed",
             "5b86657b68e5fd5e",
-            "5b75ca906cd1b47e"
+            "5b75ca906cd1b47e",
+            "ecb3c98d9edb5d14"
         ],
         "x": 194,
         "y": 1579,
-        "w": 452,
+        "w": 522,
         "h": 162
     },
     {
@@ -254,12 +280,89 @@
             "a7da2c372813bc18",
             "b5e503b603b8a767",
             "ed0914d7b820c07a",
-            "077a5424afd3cdb1"
+            "077a5424afd3cdb1",
+            "568dbce8556c54c0"
         ],
         "x": 404,
         "y": 159,
-        "w": 342,
+        "w": 402,
         "h": 202
+    },
+    {
+        "id": "e4c5f2358a31a7c0",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Create a new template object",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "b6605706c12b5418",
+            "e9c2d985b37c13c8",
+            "435a2b078b7afb32",
+            "4d85804a11b37269",
+            "33c21a9e52e7af16"
+        ],
+        "x": 194,
+        "y": 2219,
+        "w": 592,
+        "h": 142
+    },
+    {
+        "id": "04d64a2aae560f41",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Alert Management Library",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "a224376d36bb0e88",
+            "c12e17e43969be76",
+            "fb02e8e745a7573f",
+            "57fd9455f85a31e8",
+            "d9c8f5c63431086f",
+            "3edae3756d8e9402",
+            "8964b0c7c4830d20",
+            "ffcc8c151587e69d",
+            "f9e063a0c4d514fd",
+            "f1197c68a45a3381",
+            "2cb494cb73b60162",
+            "ee39512448b7cf30",
+            "faa7256bd8e5b851",
+            "9e73ff359253dfa0",
+            "183692494e61c822",
+            "4655250f4ed817df"
+        ],
+        "x": 194,
+        "y": 2759,
+        "w": 572,
+        "h": 722
+    },
+    {
+        "id": "fac7afbb60e38641",
+        "type": "group",
+        "z": "dbbc51d133244edd",
+        "name": "Alert Management Service",
+        "style": {
+            "stroke": "#ff3f3f",
+            "label": true,
+            "color": "#ff3f3f"
+        },
+        "nodes": [
+            "04b56b19841c8ee4",
+            "9575f6a2cd93ef27",
+            "f525c3f0d986182e",
+            "7614d146a817cd4e"
+        ],
+        "x": 354,
+        "y": 979,
+        "w": 252,
+        "h": 242
     },
     {
         "id": "c636e6f5d63201f8",
@@ -377,58 +480,6 @@
         "y": 2039,
         "w": 412,
         "h": 122
-    },
-    {
-        "id": "e4c5f2358a31a7c0",
-        "type": "group",
-        "z": "e213983d60d65ed3",
-        "name": "Create a new template object",
-        "style": {
-            "stroke": "#001f60",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "b6605706c12b5418",
-            "e9c2d985b37c13c8",
-            "435a2b078b7afb32",
-            "4d85804a11b37269",
-            "33c21a9e52e7af16"
-        ],
-        "x": 194,
-        "y": 2219,
-        "w": 592,
-        "h": 142
-    },
-    {
-        "id": "04d64a2aae560f41",
-        "type": "group",
-        "z": "e213983d60d65ed3",
-        "name": "Alert Management Library",
-        "style": {
-            "stroke": "#001f60",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "a224376d36bb0e88",
-            "c12e17e43969be76",
-            "fb02e8e745a7573f",
-            "57fd9455f85a31e8",
-            "d9c8f5c63431086f",
-            "3edae3756d8e9402",
-            "8964b0c7c4830d20",
-            "ffcc8c151587e69d",
-            "f9e063a0c4d514fd",
-            "f1197c68a45a3381",
-            "2cb494cb73b60162",
-            "ee39512448b7cf30",
-            "faa7256bd8e5b851"
-        ],
-        "x": 194,
-        "y": 2759,
-        "w": 572,
-        "h": 642
     },
     {
         "id": "5be6bf7969fc9e8d",
@@ -670,6 +721,46 @@
         "groupType": "default"
     },
     {
+        "id": "c7803681a545c231",
+        "type": "comment",
+        "z": "7a83f651793d8da9",
+        "name": "Service standards",
+        "info": "Every Service flow shall begin with a Service Information comment block.\n\nThe Service Information block shall contain the following sections:\n\n    Purpose\n    Responsibilities\n    Owns\n    Does Not\n    Observations\n    Collaborates With\n    Public Interface",
+        "x": 210,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "0e5cb7282c7c2437",
+        "type": "comment",
+        "z": "7a83f651793d8da9",
+        "name": "Ownership Standards",
+        "info": "Architectural Principle\n\nEach responsibility has exactly one authoritative owner.\n\nApplication Services\n\n- Every external device or external system is represented by an Application Service.\n- An Application Service owns the runtime state and business logic for its device or system.\n\nInfrastructure Services\n\n- Shared responsibilities shall be implemented as Infrastructure Services.\n- Infrastructure Services own the runtime state and business logic associated with the shared responsibility.\n- Infrastructure Services do not own the runtime state of Application Services.\n\nRules\n\n- Every piece of runtime information has exactly one authoritative owner.\n- Services shall not directly modify another Service's runtime state.\n- Services communicate through events and shared infrastructure.",
+        "x": 220,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "90d78be62a576762",
+        "type": "comment",
+        "z": "7a83f651793d8da9",
+        "name": "Event Standards",
+        "info": "Event Standards\n===============\n\nArchitectural Principle\n\nServices communicate by publishing and consuming events.\n\nDefinition\n\nAn event is an immutable statement of fact published by a Service that\ndescribes an observation or a state change that has already occurred.\n\nAn event reports what happened.\n\nAn event does not:\n    - Request action.\n    - Direct another Service.\n    - Infer the cause of an observation.\n\nRules\n\n- Events describe observations or completed state changes.\n- Events shall not contain inferred conclusions.\n- Events shall report only facts known to the publishing Service.\n- Events shall contain only the information required by consumers.\n- Services publish events without knowledge of which Services consume them.\n\nEvent Naming\n\n- Event types shall be UPPER_CASE.\n- Event types shall describe what occurred.\n- Event names shall be nouns describing observations or completed state changes, not requested actions.\n\nExamples\n\n    HEARTBEAT_RECEIVED\n    HEARTBEAT_TIMEOUT\n    ALERT_CREATED\n    ALERT_RESOLVED\n    DEVICE_REGISTERED\n    GPS_POSITION_UPDATED\n\nGuidelines\n\nUse:\n\n    ALERT_CREATED\n\nAvoid:\n\n    SEND_EMAIL\n\nUse:\n\n    HEARTBEAT_TIMEOUT\n\nAvoid:\n\n    DEVICE_FAILED\n\nThe preferred form reports an observable fact.\nThe avoided form requests an action or reports a conclusion.\n\nEvent Ownership\n\n- The publishing Service is the authoritative owner of the event.\n- Once published, the meaning of an event shall not be changed.\n- Consumers act upon events but shall not reinterpret or alter their meaning.",
+        "x": 200,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "bd37f7be7c0f7acd",
+        "type": "comment",
+        "z": "7a83f651793d8da9",
+        "name": "Services",
+        "info": "Services\n========\n\nArchitectural Principle\n\nEvery Service shall follow a common structure and lifecycle. Consistent\norganization improves readability, maintainability, and simplifies the\naddition of new Services.\n\nService Layout\n\nEvery Service shall have the following layout:\n\n    Service Information      (Comment)\n    Initialization           (Function)\n    Event Handler            (Function)\n    Library Functions        (Comment)\n    Utilities                (Optional)\n    Diagnostics              (Optional)\n\nService Initialization\n\nEvery Service shall include an Initialization function using the\nfollowing header:\n\n// -----------------------------------------------------------------------------\n// Initialize <Service Name>\n//\n// Executed once during Node-RED startup.\n//\n// Creates the <Service Name> runtime object. Runtime relationships with other\n// Services are established later through registration.\n// -----------------------------------------------------------------------------\n\nInitialization Rules\n\n- Initialization executes exactly once during Node-RED startup.\n- Initialization creates only the Service's runtime object.\n- Initialization shall not establish relationships with other Services.\n- Initialization shall not register devices or Services.\n- Runtime relationships are established later through registration.\n- Event processing begins only after initialization and registration have\n  completed.",
+        "x": 180,
+        "y": 440,
+        "wires": []
+    },
+    {
         "id": "13fb5b3eef8d068d",
         "type": "function",
         "z": "0977fce194365578",
@@ -846,7 +937,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "bootstrap",
-        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n    },\n    TEMPLATES: {\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/logevent.json\", \n        DEVICE: \"/home/admin/.node-red/projects/RVAutomationV2/config/device.json\",\n        \"ACTIVE_NOTIF\": \"/home/admin/.node-red/projects/RVAutomationV2/config/activenotification.json\",\n        \"ALERT_CONFIG\": \"/home/admin/.node-red/projects/RVAutomationV2/config/alertconfiguration.json\"\n    }\n});\nreturn msg;",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n    },\n    TEMPLATES: {\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/logevent.json\", \n        DEVICE: \"/home/admin/.node-red/projects/RVAutomationV2/config/device.json\",\n        \"ACTIVE_NOTIF\": \"/home/admin/.node-red/projects/RVAutomationV2/config/activenotification.json\",\n        \"ALERT_CONFIG\": \"/home/admin/.node-red/projects/RVAutomationV2/config/alertconfiguration.json\",\n        \"HEARTBEAT_ENTITY\": \"/home/admin/.node-red/projects/RVAutomationV2/config/heartbeat_entity.json\"\n    }\n});\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1104,7 +1195,7 @@
         "z": "0977fce194365578",
         "g": "e54622334c42e85f",
         "name": "Approve Device",
-        "func": "\nconst devices = global.get(\"devices\") || {};\n\nconst shortName = msg.payload.shortName;\n\nconst device = devices[shortName];\n\nif (!device) {\n\n    node.error(`Unknown device '${shortName}'.`);\n    return null;\n}\n\ndevice.registration.accepted = true;\ndevice.registration.acceptedDate = new Date().toISOString();\n\nglobal.set(\"devices\", devices);\n\nconst g_writeJsonFile = global.get(\"g_writeJsonFile\");\nconst BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\ng_writeJsonFile(\n    BOOTSTRAP.FILES.DEVICES,\n    devices\n);\n\nnode.log(`Accepted device '${shortName}'.`);\n\nreturn msg;",
+        "func": "\nconst devices = global.get(\"devices\") || {};\n\nconst sourceId = msg.payload.sourceId;\n\nconst device = devices[sourceId];\n\nif (!device) {\n\n    node.error(`Unknown device '${sourceId}'.`);\n    return null;\n}\n\ndevice.registration.accepted = true;\ndevice.registration.acceptedDate = new Date().toISOString();\n\nglobal.set(\"devices\", devices);\n\nconst g_writeJsonFile = global.get(\"g_writeJsonFile\");\nconst BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\ng_writeJsonFile(\n    BOOTSTRAP.FILES.DEVICES,\n    devices\n);\n\nnode.log(`Accepted device '${sourceId}'.`);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1137,9 +1228,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "none",
-        "payload": "{\"shortName\":\"test_gps\"}",
+        "payload": "{\"sourceId\":\"SD_AUTO\"}",
         "payloadType": "json",
-        "x": 590,
+        "x": 580,
         "y": 200,
         "wires": [
             [
@@ -1163,7 +1254,7 @@
         "type": "comment",
         "z": "0977fce194365578",
         "name": "DEVICE MODEL",
-        "info": "Device\n│\n├── identity\n│   ├── appName\n│   └── shortName\n│\n├── registration\n│   ├── accepted\n│   └── acceptedDate\n│\n├── heartbeat\n│   └── lastHeartbeat\n│\n├── heartbeatMonitoring\n│   ├── enabled\n│   ├── interval\n│   ├── timeout\n│   ├── online\n│   ├── missedHeartbeats\n│   └── lastAlertTime\n│\n├── data\n│   └── <device-specific>\n│\n└── stats\n    └── <device-specific>",
+        "info": "Device\n│\n├── identity\n│   ├── appName\n│   └── sourceId\n│\n├── registration\n│   ├── accepted\n│   └── acceptedDate\n│\n├── heartbeat\n│   └── lastHeartbeat\n│\n├── heartbeatMonitoring\n│   ├── enabled\n│   ├── interval\n│   ├── timeout\n│   ├── online\n│   ├── missedHeartbeats\n│   └── lastAlertTime\n│\n├── data\n│   └── <device-specific>\n│\n└── stats\n    └── <device-specific>",
         "x": 900,
         "y": 680,
         "wires": []
@@ -1173,7 +1264,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "TEMPLATES",
-        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n    const templates = {};\n    templates.LOG_EVENT = g_readJsonFile(BOOTSTRAP.TEMPLATES.LOG_EVENT);\n    templates.DEVICE = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n    templates.ACTIVE_NOTIF = g_readJsonFile(BOOTSTRAP.TEMPLATES.ACTIVE_NOTIF);\n    templates.ALERT_CONFIG = g_readJsonFile(BOOTSTRAP.TEMPLATES.ALERT_CONFIG);\n    global.set(\"TEMPLATES\", templates);\n}\ncatch (err) {\n    node.error(err);\n}\nreturn msg;",
+        "func": "try {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n    const templates = {};\n    templates.LOG_EVENT = g_readJsonFile(BOOTSTRAP.TEMPLATES.LOG_EVENT);\n    templates.DEVICE = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n    templates.ACTIVE_NOTIF = g_readJsonFile(BOOTSTRAP.TEMPLATES.ACTIVE_NOTIF);\n    templates.ALERT_CONFIG = g_readJsonFile(BOOTSTRAP.TEMPLATES.ALERT_CONFIG);\n    templates.HEARTBEAT_ENTITY = g_readJsonFile(BOOTSTRAP.TEMPLATES.HEARTBEAT_ENTITY);\n    global.set(\"TEMPLATES\", templates);\n}\ncatch (err) {\n    node.error(err);\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1803,7 +1894,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "debug 24",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1843,7 +1934,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device",
-        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATE.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.shortName = reg.shortName;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    node.warn(\"Register Device called\");\n    if (!reg.shortName ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n    node.warn(\"Creating device\");\n    if (!devices[reg.shortName]) {\n\n        node.warn(\n            `New device '${reg.shortName}' requesting registration.`\n        );\n\n        devices[reg.shortName] = createDevice(reg);\n        node.warn(devices[reg.shortName]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n    node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.shortName];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.shortName = reg.shortName;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.shortName}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    if (!reg.sourceId ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n\n    if (!devices[reg.sourceId]) {\n\n        node.warn(\n            `New device '${reg.sourceId}' requesting registration.`\n        );\n\n        devices[reg.sourceId] = createDevice(reg);\n        node.warn(devices[reg.sourceId]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n    node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.sourceId];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.sourceId}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1853,7 +1944,9 @@
         "x": 540,
         "y": 1700,
         "wires": [
-            []
+            [
+                "ecb3c98d9edb5d14"
+            ]
         ]
     },
     {
@@ -1862,7 +1955,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device function",
-        "info": "Registration arrives\n        │\n        ▼\nValidate registration\n        │\n        ▼\nLoad devices\n        │\n        ▼\nshortName exists?\n   │            │\n  No           Yes\n   │            │\n   │            ▼\n   │     Update registration\n   │     Clear \"pending\" flag\n   │     Log registration\n   │\n   ▼\nCreate pending device\nLog unknown device\nEmail stub\nReturn",
+        "info": "Registration arrives\n        │\n        ▼\nValidate registration\n        │\n        ▼\nLoad devices\n        │\n        ▼\nsourceId exists?\n   │            │\n  No           Yes\n   │            │\n   │            ▼\n   │     Update registration\n   │     Clear \"pending\" flag\n   │     Log registration\n   │\n   ▼\nCreate pending device\nLog unknown device\nEmail stub\nReturn",
         "x": 370,
         "y": 1620,
         "wires": []
@@ -1914,7 +2007,7 @@
         "z": "e213983d60d65ed3",
         "g": "46a28db1130cc4a6",
         "name": "Receive Heatbeat",
-        "func": "try {\n\n    const shortName = msg.payload.shortName;\n\n    if (!shortName) {\n        node.error(\"Heartbeat missing payload.shortName.\");\n        return null;\n    }\n\n    const devices = global.get(\"devices\") || {};\n    const device = devices[shortName];\n\n    if (!device) {\n        node.warn(`Heartbeat received from unknown device '${shortName}'.`);\n        return null;\n    }\n\n    if (!device.registration.accepted) {\n        node.warn(`Heartbeat ignored from unaccepted device '${shortName}'.`);\n        return null;\n    }\n\n    const now = Date.now();\n\n    device.heartbeat.lastHeartbeat = now;\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err + \", msg.paylod: \" + msg.payload);\n\n}\n\nreturn msg;",
+        "func": "try {\n\n    const sourceId = msg.payload.sourceId;\n\n    if (!sourceId) {\n        node.error(\"Heartbeat missing payload.sourceId.\");\n        return null;\n    }\n\n    const devices = global.get(\"devices\") || {};\n    const device = devices[sourceId];\n\n    if (!device) {\n        node.warn(`Heartbeat received from unknown device '${sourceId}'.`);\n        return null;\n    }\n\n    if (!device.registration.accepted) {\n        node.warn(`Heartbeat ignored from unaccepted device '${sourceId}'.`);\n        return null;\n    }\n\n    const now = Date.now();\n\n    device.heartbeat.lastHeartbeat = now;\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err + \", msg.paylod: \" + msg.payload);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1944,7 +2037,7 @@
         "z": "e213983d60d65ed3",
         "g": "d201947feff386ce",
         "name": "HB Monitor",
-        "func": "try {\n\n    const devices = global.get(\"devices\") || {};\n    const now = Date.now();\n\n    for (const shortName in devices) {\n\n        const device = devices[shortName];\n\n        if (!device.registration.accepted)                      // Skip devices that are not accepted.\n            continue;\n\n        if (!device.heartbeatMonitoring.enabled)                // Skip devices that are not being monitored.\n            continue;\n\n        // Heartbeat still within timeout -> device is online.\n        if ((now - device.heartbeat.lastHeartbeat) <\n            device.heartbeatMonitoring.timeout) {\n\n            device.heartbeatMonitoring.online = true;\n            device.heartbeatMonitoring.missedHeartbeats = 0;\n            continue;\n        }\n\n        // Transition Online -> Offline.\n        if (device.heartbeatMonitoring.online) {\n            device.heartbeatMonitoring.online = false;\n            device.heartbeatMonitoring.missedHeartbeats++;\n        }\n\n        const ALERT_INTERVAL = 60 * 60 * 1000;     // 60 minutes\n\n        // Send first alert immediately, then every 60 minutes.\n        if ((now - device.heartbeatMonitoring.lastAlertTime) >= ALERT_INTERVAL) {\n\n            device.heartbeatMonitoring.lastAlertTime = now;\n\n            node.warn(`Device '${shortName}' is offline.`);\n\n            // TODO\n            // Logging subsystem\n            // Notification subsystem\n        }\n    }\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn null;",
+        "func": "try {\n\n    const devices = global.get(\"devices\") || {};\n    const now = Date.now();\n\n    for (const sourceId in devices) {\n\n        const device = devices[sourceId];\n\n        if (!device.registration.accepted)                      // Skip devices that are not accepted.\n            continue;\n\n        if (!device.heartbeatMonitoring.enabled)                // Skip devices that are not being monitored.\n            continue;\n\n        // Heartbeat still within timeout -> device is online.\n        if ((now - device.heartbeat.lastHeartbeat) <\n            device.heartbeatMonitoring.timeout) {\n\n            device.heartbeatMonitoring.online = true;\n            device.heartbeatMonitoring.missedHeartbeats = 0;\n            continue;\n        }\n\n        // Transition Online -> Offline.\n        if (device.heartbeatMonitoring.online) {\n            device.heartbeatMonitoring.online = false;\n            device.heartbeatMonitoring.missedHeartbeats++;\n        }\n\n        const ALERT_INTERVAL = 60 * 60 * 1000;     // 60 minutes\n\n        // Send first alert immediately, then every 60 minutes.\n        if ((now - device.heartbeatMonitoring.lastAlertTime) >= ALERT_INTERVAL) {\n\n            device.heartbeatMonitoring.lastAlertTime = now;\n\n            node.warn(`Device '${sourceId}' is offline.`);\n\n            // TODO\n            // Logging subsystem\n            // Notification subsystem\n        }\n    }\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn null;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2242,7 +2335,7 @@
         "finalize": "",
         "libs": [],
         "x": 530,
-        "y": 3200,
+        "y": 3280,
         "wires": [
             []
         ]
@@ -2261,7 +2354,7 @@
         "finalize": "",
         "libs": [],
         "x": 580,
-        "y": 3280,
+        "y": 3360,
         "wires": [
             []
         ]
@@ -2319,7 +2412,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 310,
-        "y": 3200,
+        "y": 3280,
         "wires": [
             [
                 "fb02e8e745a7573f"
@@ -2349,7 +2442,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 310,
-        "y": 3280,
+        "y": 3360,
         "wires": [
             [
                 "57fd9455f85a31e8"
@@ -2370,7 +2463,7 @@
         "finalize": "",
         "libs": [],
         "x": 530,
-        "y": 3000,
+        "y": 3080,
         "wires": [
             []
         ]
@@ -2398,7 +2491,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 310,
-        "y": 3000,
+        "y": 3080,
         "wires": [
             [
                 "ffcc8c151587e69d"
@@ -2419,7 +2512,7 @@
         "finalize": "",
         "libs": [],
         "x": 540,
-        "y": 3100,
+        "y": 3180,
         "wires": [
             []
         ]
@@ -2447,7 +2540,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 310,
-        "y": 3100,
+        "y": 3180,
         "wires": [
             [
                 "f1197c68a45a3381"
@@ -2468,7 +2561,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 3360,
+        "y": 3440,
         "wires": [
             []
         ]
@@ -2496,11 +2589,108 @@
         "payload": "",
         "payloadType": "date",
         "x": 310,
-        "y": 3360,
+        "y": 3440,
         "wires": [
             [
                 "ee39512448b7cf30"
             ]
+        ]
+    },
+    {
+        "id": "9e73ff359253dfa0",
+        "type": "inject",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 2940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "183692494e61c822",
+        "type": "function",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4655250f4ed817df",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "04d64a2aae560f41",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 2940,
+        "wires": []
+    },
+    {
+        "id": "ecb3c98d9edb5d14",
+        "type": "link out",
+        "z": "e213983d60d65ed3",
+        "g": "fb4d417abfd51a2e",
+        "name": "register/device/out",
+        "mode": "link",
+        "links": [
+            "c380f1be14a4eada"
+        ],
+        "x": 675,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "5bbcee32e696aebd",
+        "type": "mqtt in",
+        "z": "2ecdaac948b4ee3b",
+        "name": "",
+        "topic": "xxx",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 420,
+        "wires": [
+            []
         ]
     },
     {
@@ -2624,7 +2814,7 @@
         "type": "function",
         "z": "49c27f958aacfefb",
         "name": "processMsg",
-        "func": "const shortName = msg.payload.shortName;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[shortName];\n\n// Device has never registered.\nif (!device)\n    return null;\n\n// Device exists but has not yet been approved.\nif (!device.registration.accepted)\n    return null;\n\n// Update the device model.\ndevice.state = msg.payload;\n\nglobal.set(\"devices\", devices);\n\n// Build dashboard display.\nmsg.payload =\n    \"Latitude: \" + device.state.position.latitude + \"º<br>\" +\n    \"Longitude: \" + device.state.position.longitude + \"º<br>\" +\n    \"Fix: \" + (device.state.fix.valid ? \"Valid\" : \"Not-Valid\") + \"<br>\" +\n    \"Age: \" + device.state.fix.ageMs + \" ms<br>\" +\n    \"Speed: \" + device.state.motion.speedKph + \" kph<br>\" +\n    \"Course: \" + device.state.motion.courseDeg + \"<br>\" +\n    \"Altitude: \" + device.state.altitude.meters + \" m<br>\" +\n    \"Satellites: \" + device.state.quality.satellites + \"<br>\" +\n    \"HDOP: \" + device.state.quality.hdop + \"<br>\" +\n    \"Time: \" +\n    device.state.utc.hour + \":\" +\n    device.state.utc.minute + \":\" +\n    device.state.utc.second + \" UTC<br>\" +\n    \"Date: \" +\n    device.state.utc.year + \"/\" +\n    device.state.utc.month + \"/\" +\n    device.state.utc.day;\n\nreturn msg;",
+        "func": "const sourceId = msg.payload.sourceId;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[sourceId];\n\n// Device has never registered.\nif (!device)\n    return null;\n\n// Device exists but has not yet been approved.\nif (!device.registration.accepted)\n    return null;\n\n// Update the device model.\ndevice.state = msg.payload;\n\nglobal.set(\"devices\", devices);\n\n// Build dashboard display.\nmsg.payload =\n    \"Latitude: \" + device.state.position.latitude + \"º<br>\" +\n    \"Longitude: \" + device.state.position.longitude + \"º<br>\" +\n    \"Fix: \" + (device.state.fix.valid ? \"Valid\" : \"Not-Valid\") + \"<br>\" +\n    \"Age: \" + device.state.fix.ageMs + \" ms<br>\" +\n    \"Speed: \" + device.state.motion.speedKph + \" kph<br>\" +\n    \"Course: \" + device.state.motion.courseDeg + \"<br>\" +\n    \"Altitude: \" + device.state.altitude.meters + \" m<br>\" +\n    \"Satellites: \" + device.state.quality.satellites + \"<br>\" +\n    \"HDOP: \" + device.state.quality.hdop + \"<br>\" +\n    \"Time: \" +\n    device.state.utc.hour + \":\" +\n    device.state.utc.minute + \":\" +\n    device.state.utc.second + \" UTC<br>\" +\n    \"Date: \" +\n    device.state.utc.year + \"/\" +\n    device.state.utc.month + \"/\" +\n    device.state.utc.day;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2698,7 +2888,7 @@
         "type": "function",
         "z": "49c27f958aacfefb",
         "name": "saveData",
-        "func": "const shortName = msg.payload.shortName;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[shortName];\n\nif (!device) {\n    node.warn(`Unknown device '${shortName}'.`);\n    return null;\n}\n\ndevice.data = {\n    timestamp: {\n        year: msg.payload.utc.year,\n        month: msg.payload.utc.month,\n        day: msg.payload.utc.day,\n        hour: msg.payload.utc.hour,\n        minute: msg.payload.utc.minute,\n        second: msg.payload.utc.second\n    },\n\n    position: {\n        latitude: msg.payload.position.latitude,\n        longitude: msg.payload.position.longitude\n    },\n\n    motion: {\n        speedKph: msg.payload.motion.speedKph,\n        courseDeg: msg.payload.motion.courseDeg\n    },\n\n    altitude: {\n        meters: msg.payload.altitude.meters\n    },\n\n    fix: {\n        valid: msg.payload.fix.valid,\n        ageMs: msg.payload.fix.ageMs\n    },\n\n    quality: {\n        satellites: msg.payload.quality.satellites,\n        hdop: msg.payload.quality.hdop\n    }\n};\n",
+        "func": "const sourceId = msg.payload.sourceId;\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[sourceId];\n\nif (!device) {\n    node.warn(`Unknown sourceId '${sourceId}'.`);\n    return null;\n}\n\ndevice.data = {\n    timestamp: {\n        year: msg.payload.utc.year,\n        month: msg.payload.utc.month,\n        day: msg.payload.utc.day,\n        hour: msg.payload.utc.hour,\n        minute: msg.payload.utc.minute,\n        second: msg.payload.utc.second\n    },\n\n    position: {\n        latitude: msg.payload.position.latitude,\n        longitude: msg.payload.position.longitude\n    },\n\n    motion: {\n        speedKph: msg.payload.motion.speedKph,\n        courseDeg: msg.payload.motion.courseDeg\n    },\n\n    altitude: {\n        meters: msg.payload.altitude.meters\n    },\n\n    fix: {\n        valid: msg.payload.fix.valid,\n        ageMs: msg.payload.fix.ageMs\n    },\n\n    quality: {\n        satellites: msg.payload.quality.satellites,\n        hdop: msg.payload.quality.hdop\n    }\n};\n\nglobal.set(\"devices\", devices);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2774,7 +2964,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "9c01de1b2a729534",
         "name": "Complete",
-        "func": "const logEvent = msg.payload;\n\n/*-----  CREATE THE EVENT UUID  -----*/\n\nfunction assignEventUuid(logEvent) {\n    logEvent.eventUuid = crypto.randomUUID();\n}\n\n/*-----  ASSIGN THE SEQUENCE NUMBER AND TAKE CARE OF ANY NEXT RESERVE ACTIONS NEEDED  -----*/\n\nfunction assignSequence(logEvent) {\n\n    const opsLogging = global.get(\"opsLogging\");\n    const logging = global.get(\"logging\");\n    const blockSize = logging.sequence.blockSize;\n    const reserveMargin = logging.sequence.reserveMargin;\n    const g_saveOpsLogging = global.get('g_saveOpsLogging');\n\n    // Assign the next available sequence.\n    logEvent.sequence = opsLogging.nextSequence++;\n\n    // Reserve the next block before we run out.\n    if (opsLogging.nextSequence >= opsLogging.nextReserve - reserveMargin) {\n        opsLogging.nextSequence = opsLogging.nextReserve;\n        opsLogging.nextReserve += blockSize;\n        g_saveOpsLogging();\n    }\n}\n\n/*-----  ASSIGN THE RECEIVED TIME  -----*/\n\nfunction assignReceivedTime(logEvent) {\n    logEvent.receivedTime = new Date().toISOString();\n}\n\n// -----------------------------------------------------------------------------\n// Complete LogEvent\n//\n// Apply Logging Service policy to a canonical LogEvent.\n// -----------------------------------------------------------------------------\n\n/*-----  MAIN  -----*/\n\nassignReceivedTime(logEvent);\nassignSequence(logEvent);\nassignEventUuid(logEvent);\n\nreturn msg;",
+        "func": "const logEvent = msg.payload;\nconst SEQUENCE_BLOCK_SIZE = 10000;\nconst SEQUENCE_RESERVE_MARGIN = 150;\n\n/*-----  CREATE THE EVENT UUID  -----*/\n\nfunction assignEventUuid(logEvent) {\n    logEvent.eventUuid = crypto.randomUUID();\n}\n\n/*-----  ASSIGN THE SEQUENCE NUMBER AND TAKE CARE OF ANY NEXT RESERVE ACTIONS NEEDED  -----*/\n\nfunction assignSequence(logEvent) {\n\n    const opsLogging = global.get(\"opsLogging\");\n    const g_saveOpsLogging = global.get(\"g_saveOpsLogging\");\n\n    logEvent.sequence = opsLogging.nextSequence++;\n\n    if (opsLogging.nextSequence >=\n        opsLogging.nextReserve - SEQUENCE_RESERVE_MARGIN) {\n\n        opsLogging.nextSequence = opsLogging.nextReserve;\n        opsLogging.nextReserve += SEQUENCE_BLOCK_SIZE;\n\n        g_saveOpsLogging();\n    }\n}\n\n/*-----  ASSIGN THE RECEIVED TIME  -----*/\n\nfunction assignReceivedTime(logEvent) {\n    logEvent.receivedTime = new Date().toISOString();\n}\n\n// -----------------------------------------------------------------------------\n// Complete LogEvent\n//\n// Apply Logging Service policy to a canonical LogEvent.\n// -----------------------------------------------------------------------------\n\n/*-----  MAIN  -----*/\n\nassignReceivedTime(logEvent);\nassignSequence(logEvent);\nassignEventUuid(logEvent);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3237,7 +3427,8 @@
         "y": 620,
         "wires": [
             [
-                "070e3de268d0a30a"
+                "070e3de268d0a30a",
+                "d76c6eeede72f8b9"
             ],
             [
                 "c28038881c180797"
@@ -3348,6 +3539,24 @@
         "statusType": "auto",
         "x": 480,
         "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d76c6eeede72f8b9",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "debug 31",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 620,
         "wires": []
     },
     {
@@ -3526,5 +3735,501 @@
                 "ed0914d7b820c07a"
             ]
         ]
+    },
+    {
+        "id": "9f185e764c2d104f",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "Alert Management Rules",
+        "info": "Alert Management Rules\nRule 1 — Device/Service Owns Condition Detection\nA device/service is the authoritative owner of the conditions it monitors.\nExamples:\nHeartbeat owns device online/offline.\nGPS owns GPS fix quality.\nRO owns fresh water level.\nNetwork owns Wi-Fi connectivity.\nNotification never determines whether a condition exists.\nRule 2 — Device/Service Owns Active Alert State\nEach device/service maintains a table of its currently active alerts.\nAn active alert exists only while the monitored condition exists.\nThe device/service uses g_findAlert() to determine whether a condition has already been reported.\nRule 3 — Create Alert\nWhen a condition first occurs:\nCreate an ACTIVE_NOTIF.\nInitialize:\nstartedAt\nlastReceivedAt\nlastNotification\nnextNotification\nnotificationCount\nPass the alert to Notification.\nRule 4 — Update Alert\nWhile the condition continues to exist, the device/service updates the active alert as required.\nTypical updates include:\nlastReceivedAt\nlastNotification\nnextNotification\nnotificationCount\nThe device/service determines when an update is necessary.\nRule 5 — Resolve Alert\nWhen the condition no longer exists:\nLocate the active alert using g_findAlert().\nSet:\nresolvedAt = Date.now()\nPass the resolved alert to Notification.\nIf no active alert exists, no action is required.\nRule 6 — Notification Owns Delivery\nNotification receives alerts from device/services.\nNotification is responsible for:\nLooking up ALERT_CONFIG.\nSending email.\nWriting log entries.\nUpdating dashboards.\nAny future delivery mechanisms.\nDevice/services never send notifications directly.\nRule 7 — Notification Owns Completion\nAfter successfully processing a resolved alert:\nRemove the alert from the originating device/service's active alert table.\nNotification is responsible for final cleanup of the alert lifecycle.\nResponsibilities Summary\nDevice/Service\tNotification\nDetect conditions\tDeliver notifications\nCreate alerts\tEmail\nUpdate alerts\tLogging\nResolve alerts\tDashboard updates\nMaintain active alert table\tApply ALERT_CONFIG\nRemove completed alerts",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "568dbce8556c54c0",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "g": "ec59d22a9805a7da",
+        "name": "Contract",
+        "info": "Inputs\n\n    ALERT_CREATED\n        A service has reported a new alert.\n\n    ALERT_RESOLVED\n        A service has reported that an alert is no longer active.\n\nOutputs\n\n    None (initially)\n\nOwns\n\n    Active notifications.\n\nResponsibilities\n\n    Look up the alert policy.\n    Write a log entry.\n    Update the dashboard.\n    Send an email.\n    Schedule reminder notifications.\n    Cancel reminder notifications.",
+        "x": 720,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "855a636067608bcb",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "name": "registration",
+        "info": " 1. Registration\n        │\n        ▼\nValidate\n        │\n        ▼\nAlready exists?\n      │        │\n     No       Yes\n      │        │\n      ▼        ▼\nCreate     Ignore/Update\n      │\n      ▼\nPersist",
+        "x": 920,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "04b56b19841c8ee4",
+        "type": "comment",
+        "z": "dbbc51d133244edd",
+        "g": "fac7afbb60e38641",
+        "name": "Alert Service",
+        "info": "Owning Service\n      │\n      ▼\nCreate ALERT_CONFIG\n      │\n      ▼\nAlert Management Service\n      │\n      ▼\nPolicy Exists?\n ┌────┴────┐\n │         │\nYes        No\n │         │\n ▼         ▼\nDone    Register Policy\n             │\n             ▼\n      Persist Policy",
+        "x": 450,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9575f6a2cd93ef27",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "fac7afbb60e38641",
+        "name": "Initialization",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f525c3f0d986182e",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "fac7afbb60e38641",
+        "name": "Register Alert",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7614d146a817cd4e",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "fac7afbb60e38641",
+        "name": "Timer_tick",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "369c55600c2497dc",
+        "type": "mqtt in",
+        "z": "dbbc51d133244edd",
+        "name": "",
+        "topic": "SD_AUTO/mqtt/LWT/status",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 1460,
+        "wires": [
+            [
+                "d1a370de157139bb"
+            ]
+        ]
+    },
+    {
+        "id": "d1a370de157139bb",
+        "type": "debug",
+        "z": "dbbc51d133244edd",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "6ed9698291931132",
+        "type": "mqtt in",
+        "z": "dbbc51d133244edd",
+        "name": "",
+        "topic": "/mqtt/LWT/SD_AUTO",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 1540,
+        "wires": [
+            [
+                "d1a370de157139bb"
+            ]
+        ]
+    },
+    {
+        "id": "09193d939de8ab31",
+        "type": "comment",
+        "z": "93d30457147d20e0",
+        "name": "Heartbeat Service",
+        "info": "Heartbeat Service\n\nPurpose\n-------\nThe Heartbeat Service monitors communication with registered devices and\nservices. It detects when communication has been lost or restored and\nmanages heartbeat-related alerts.\n\nResponsibilities\n----------------\n- Monitor heartbeat activity for registered devices and services.\n- Record the time of the last successful check-in.\n- Determine when communication has been lost.\n- Determine when communication has been restored.\n- Create ACTIVE_ALERT records when communication is lost.\n- Resolve ACTIVE_ALERT records when communication is restored.\n- Maintain heartbeat runtime state.\n\nOwns\n----\n- Heartbeat runtime state.\n- Last successful check-in times.\n- Online/offline status.\n- Missed heartbeat statistics.\n- Active heartbeat alerts.\n\nDoes Not\n--------\n- Send email notifications.\n- Display dashboard notifications.\n- Determine notification policy.\n- Delete resolved alerts.\n- Diagnose the cause of communication failures.\n\nObservations\n------------\nThe Heartbeat Service reports only observable facts.\n\nExamples:\n- Communication with a device has been lost.\n- Communication with a device has been restored.\n- The last successful check-in occurred at a specific time.\n\nThe Heartbeat Service does not infer why communication was lost.\n\nCollaborates With\n-----------------\nNotification Service\n    - Receives newly created alerts.\n    - Receives resolved alerts.\n\nConfiguration\n    - Provides heartbeat timing and timeout configuration.\n\nDevice Services\n    - Produce heartbeat messages.\n    - May query heartbeat status.\n\nPublic Interface\n----------------\nInitially anticipated:\n- Process heartbeat received.\n- Check heartbeat timeouts.\n- Create heartbeat alert.\n- Resolve heartbeat alert.",
+        "x": 310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5f81e926c91c3bf2",
+        "type": "comment",
+        "z": "93d30457147d20e0",
+        "name": "Contract",
+        "info": "Purpose\n    ...\n\nInputs\n\n    HEARTBEAT_RECEIVED\n        A device or service has checked in.\n\n    TIMER_TICK\n        Used to evaluate heartbeat timeouts.\n\n    ALERT_COMPLETED\n        Notification Service has completed processing a resolved alert.\n\nOutputs\n\n    ALERT_CREATED\n        Published when communication has been lost.\n\n    ALERT_RESOLVED\n        Published when communication has been restored.\n\nOwns\n\n    Heartbeat runtime state.\n\nPublic Functions\n\n    None (initially)",
+        "x": 280,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "94401f6f10bd928a",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "Initialization",
+        "func": "// -----------------------------------------------------------------------------\n// Initialize Heartbeat Service\n//\n// Executed once during Node-RED startup.\n//\n// Creates the Heartbeat runtime registry.\n//\n// -----------------------------------------------------------------------------\n\nconst heartbeatObj = {};\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3395cc8746f237b1",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "Event Handler",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f2ffd2b537c54f0",
+        "type": "comment",
+        "z": "93d30457147d20e0",
+        "name": "Public Library Functions",
+        "info": "",
+        "x": 330,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d3d3cee7e2157563",
+        "type": "mqtt in",
+        "z": "93d30457147d20e0",
+        "name": "HB In",
+        "topic": "ei/to/nr/hb",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 700,
+        "wires": [
+            [
+                "eae4d39788793bac"
+            ]
+        ]
+    },
+    {
+        "id": "aa621d186c78b296",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "name": "debug 27",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "a9a576903d4ee5b1",
+        "type": "inject",
+        "z": "93d30457147d20e0",
+        "name": "Startup init",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "94401f6f10bd928a"
+            ]
+        ]
+    },
+    {
+        "id": "26baad9228901dba",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "HB Register Device",
+        "func": "// -----------------------------------------------------------------------------\n// HB Register Device\n//\n// Creates or updates the heartbeat monitoring entry for a device.\n//\n// -----------------------------------------------------------------------------\n\nconst reg = msg.payload;\n\nconst heartbeatObj = global.get(\"heartbeatObj\") || {};\nconst g_newObject = global.get(\"g_newObject\");\n\nconst hb = heartbeatObj[reg.sourceId];\n\nif (!hb) {\n\n    //\n    // First registration.\n    //\n    const hbEntity = g_newObject(\"HEARTBEAT_ENTITY\");\n\n    hbEntity.interval = reg.heartbeatInterval;\n    hbEntity.timeout = reg.timeout;\n\n    heartbeatObj[reg.sourceId] = hbEntity;\n\n    global.set(\"heartbeatObj\", heartbeatObj);\n\n    node.log(`Heartbeat monitoring started for '${reg.sourceId}'.`);\n\n    return msg;\n}\n\n//\n// Already registered.\n//\nif (\n    hb.interval === reg.heartbeatInterval &&\n    hb.timeout === reg.timeout\n) {\n\n    // Duplicate registration.\n    return msg;\n}\n\n//\n// Registration changed.\n// Update monitoring policy.\n//\nhb.interval = reg.heartbeatInterval;\nhb.timeout = reg.timeout;\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nnode.log(`Heartbeat policy updated for '${reg.sourceId}'.`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "6a9995dc4a810e08"
+            ]
+        ]
+    },
+    {
+        "id": "c380f1be14a4eada",
+        "type": "link in",
+        "z": "93d30457147d20e0",
+        "name": "hb/register/device/in",
+        "links": [
+            "ecb3c98d9edb5d14"
+        ],
+        "x": 185,
+        "y": 540,
+        "wires": [
+            [
+                "26baad9228901dba"
+            ]
+        ]
+    },
+    {
+        "id": "6a9995dc4a810e08",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "name": "debug 28",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "2de4af080e3151bb",
+        "type": "inject",
+        "z": "93d30457147d20e0",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1060,
+        "wires": [
+            [
+                "5c237e67975f5614"
+            ]
+        ]
+    },
+    {
+        "id": "5c237e67975f5614",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "dump heartbeatObj",
+        "func": "msg.heartbeatObj = global.get('heartbeatObj');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1060,
+        "wires": [
+            [
+                "945181a9dd54f7d6"
+            ]
+        ]
+    },
+    {
+        "id": "945181a9dd54f7d6",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "eae4d39788793bac",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "Receive HB",
+        "func": "const heartbeatObj = global.get(\"heartbeatObj\");\n\nconst hb = heartbeatObj[msg.payload.sourceId];\n\nif (!hb) {\n    node.warn(`Heartbeat received from unregistered source '${msg.payload.sourceId}'.`);\n    return null;\n}\n\nhb.received++;\nhb.lastReceived = Date.now();\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 700,
+        "wires": [
+            [
+                "aa621d186c78b296"
+            ]
+        ]
+    },
+    {
+        "id": "16a48e28b5689dab",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "name": "Timer_tick",
+        "func": "// -----------------------------------------------------------------------------\n// Timer Tick\n//\n// Evaluates whether each monitored entity is meeting its heartbeat commitment.\n//\n// -----------------------------------------------------------------------------\n\nconst heartbeatObj = global.get(\"heartbeatObj\") || {};\n\nconst now = Date.now();\n\nlet okCount = 0;\nlet timeoutCount = 0;\n\nfor (const sourceId in heartbeatObj) {\n\n    const hb = heartbeatObj[sourceId];\n\n    const elapsed = now - hb.lastReceived;\n\n    if (elapsed <= hb.timeout) {\n\n        okCount++;\n\n    }\n    else {\n\n        timeoutCount++;\n\n    }\n\n}\n\n// -----------------------------------------------------------------------------\n// Update node status.\n// -----------------------------------------------------------------------------\n\nlet fill;\nlet text;\n\nif (timeoutCount === 0) {\n\n    fill = \"green\";\n    text = `${okCount} OK`;\n\n}\nelse {\n\n    fill = \"yellow\";\n    text = `${okCount} OK, ${timeoutCount} timeout`;\n\n}\n\nnode.status({\n    fill: fill,\n    shape: \"dot\",\n    text: text\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "898ba7c95e6f09ed"
+            ]
+        ]
+    },
+    {
+        "id": "0e2752fbd7dd52ea",
+        "type": "inject",
+        "z": "93d30457147d20e0",
+        "name": "start timer_tick",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 780,
+        "wires": [
+            [
+                "16a48e28b5689dab"
+            ]
+        ]
+    },
+    {
+        "id": "898ba7c95e6f09ed",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "name": "debug 30",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 780,
+        "wires": []
     }
 ]

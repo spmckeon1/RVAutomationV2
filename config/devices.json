@@ -2,51 +2,52 @@
   "test_gps": {
     "identity": {
       "appName": "TEST GPS Controller",
-      "shortName": "test_gps"
+      "shortName": "test_gps",
+      "sourceId": "test_gps"
     },
     "registration": {
       "accepted": true,
-      "acceptedDate": "2026-08-05T20:54:36.314Z"
+      "acceptedDate": "2026-08-11T03:05:21.877Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1786028340088
+      "lastHeartbeat": 1786336948886
     },
     "heartbeatMonitoring": {
       "enabled": true,
       "interval": 60000,
       "timeout": 180000,
-      "online": true,
-      "missedHeartbeats": 0,
-      "lastAlertTime": 1785964983430
+      "online": false,
+      "missedHeartbeats": 1,
+      "lastAlertTime": 1786420514776
     },
     "state": {
-      "shortName": "test_gps",
+      "sourceId": "test_gps",
       "position": {
-        "latitude": 31.68738367,
-        "longitude": -110.355545
+        "latitude": 31.68740767,
+        "longitude": -110.3555148
       },
       "fix": {
         "valid": true,
-        "ageMs": 904
+        "ageMs": 818
       },
       "motion": {
-        "speedKph": 0,
-        "courseDeg": 318.42
+        "speedKph": 0.1,
+        "courseDeg": 0
       },
       "altitude": {
-        "meters": 1348.2
+        "meters": 1346.8
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.99
+        "hdop": 0.55
       },
       "utc": {
         "year": 2026,
         "month": 8,
-        "day": 6,
-        "hour": 14,
-        "minute": 59,
-        "second": 40
+        "day": 10,
+        "hour": 4,
+        "minute": 42,
+        "second": 33
       }
     },
     "stats": {},
@@ -54,30 +55,53 @@
       "timestamp": {
         "year": 2026,
         "month": 8,
-        "day": 6,
-        "hour": 14,
-        "minute": 59,
-        "second": 40
+        "day": 10,
+        "hour": 4,
+        "minute": 42,
+        "second": 33
       },
       "position": {
-        "latitude": 31.68738367,
-        "longitude": -110.355545
+        "latitude": 31.68740767,
+        "longitude": -110.3555148
       },
       "motion": {
-        "speedKph": 0,
-        "courseDeg": 318.42
+        "speedKph": 0.1,
+        "courseDeg": 0
       },
       "altitude": {
-        "meters": 1348.2
+        "meters": 1346.8
       },
       "fix": {
         "valid": true,
-        "ageMs": 904
+        "ageMs": 818
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.99
+        "hdop": 0.55
       }
     }
+  },
+  "SD_AUTO": {
+    "identity": {
+      "appName": "Shade Automation V4",
+      "sourceId": "SD_AUTO"
+    },
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-11T03:07:49.651Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786422728692
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 1786417679576
+    },
+    "state": {},
+    "stats": {}
   }
 }

@@ -1,0 +1,153 @@
+{
+  "test_gps": {
+    "identity": {
+      "appName": "TEST GPS Controller",
+      "shortName": "test_gps",
+      "sourceId": "test_gps"
+    },
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-11T03:05:21.877Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786461119999
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 1786452482053
+    },
+    "state": {
+      "sourceId": "test_gps",
+      "position": {
+        "latitude": 31.6874195,
+        "longitude": -110.3555137
+      },
+      "fix": {
+        "valid": true,
+        "ageMs": 791
+      },
+      "motion": {
+        "speedKph": 0.3,
+        "courseDeg": 321.77
+      },
+      "altitude": {
+        "meters": 1354.3
+      },
+      "quality": {
+        "satellites": 12,
+        "hdop": 0.81
+      },
+      "utc": {
+        "year": 2026,
+        "month": 8,
+        "day": 11,
+        "hour": 15,
+        "minute": 12,
+        "second": 16
+      }
+    },
+    "stats": {},
+    "data": {
+      "timestamp": {
+        "year": 2026,
+        "month": 8,
+        "day": 11,
+        "hour": 15,
+        "minute": 12,
+        "second": 16
+      },
+      "position": {
+        "latitude": 31.6874195,
+        "longitude": -110.3555137
+      },
+      "motion": {
+        "speedKph": 0.3,
+        "courseDeg": 321.77
+      },
+      "altitude": {
+        "meters": 1354.3
+      },
+      "fix": {
+        "valid": true,
+        "ageMs": 791
+      },
+      "quality": {
+        "satellites": 12,
+        "hdop": 0.81
+      }
+    }
+  },
+  "SD_AUTO": {
+    "identity": {
+      "appName": "Shade Automation V4",
+      "sourceId": "SD_AUTO"
+    },
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-11T03:07:49.651Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786437899773
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": false,
+      "missedHeartbeats": 387,
+      "lastAlertTime": 1786459682632
+    },
+    "state": {},
+    "stats": {}
+  },
+  "test_WS_SD": {
+    "identity": {
+      "appName": "TEST Windshield Shade Controller",
+      "sourceId": "test_WS_SD"
+    },
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-11T13:58:34.184Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786457039991
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": false,
+      "missedHeartbeats": 68,
+      "lastAlertTime": 1786460327667
+    },
+    "state": {},
+    "stats": {}
+  },
+  "test_ws_sd": {
+    "identity": {
+      "appName": "TEST Windshield Shade Controller",
+      "sourceId": "test_ws_sd"
+    },
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-11T14:21:26.915Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786461059900
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 1786460777689
+    },
+    "state": {},
+    "stats": {}
+  }
+}

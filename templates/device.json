@@ -4,6 +4,8 @@
     "sourceId": ""
   },
 
+  "dashboardPage": "",
+
   "registration": {
     "accepted": false,
     "acceptedDate": null
@@ -20,9 +22,9 @@
     "online": false,
     "missedHeartbeats": 0,
     "lastAlertTime": 0
-  }, 
+  },
+
   "state": {},
 
   "stats": {}
 }
-

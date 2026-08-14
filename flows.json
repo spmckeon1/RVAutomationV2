@@ -58,7 +58,15 @@
     {
         "id": "93d30457147d20e0",
         "type": "tab",
-        "label": "Heartbeat",
+        "label": "Services",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "856fbb279d4dc5cf",
+        "type": "tab",
+        "label": "Status",
         "disabled": false,
         "info": "",
         "env": []
@@ -226,26 +234,6 @@
         "h": 162
     },
     {
-        "id": "d061984243747fb7",
-        "type": "group",
-        "z": "e213983d60d65ed3",
-        "name": "Heartbeats",
-        "style": {
-            "stroke": "#001f60",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "d3d140200440df62",
-            "46a28db1130cc4a6",
-            "d201947feff386ce"
-        ],
-        "x": 188,
-        "y": 1779,
-        "w": 504,
-        "h": 408
-    },
-    {
         "id": "e32710d675cea10a",
         "type": "group",
         "z": "e213983d60d65ed3",
@@ -344,14 +332,71 @@
         "h": 722
     },
     {
+        "id": "0b951a054ab1d903",
+        "type": "group",
+        "z": "93d30457147d20e0",
+        "name": "Heartbeat Service",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "09193d939de8ab31",
+            "5f81e926c91c3bf2",
+            "94401f6f10bd928a",
+            "6f2ffd2b537c54f0",
+            "d3d3cee7e2157563",
+            "aa621d186c78b296",
+            "a9a576903d4ee5b1",
+            "26baad9228901dba",
+            "c380f1be14a4eada",
+            "6a9995dc4a810e08",
+            "2de4af080e3151bb",
+            "5c237e67975f5614",
+            "945181a9dd54f7d6",
+            "eae4d39788793bac",
+            "16a48e28b5689dab",
+            "0e2752fbd7dd52ea",
+            "898ba7c95e6f09ed",
+            "79cf45848fa67b11",
+            "b12c972df91920a2",
+            "0d5ba8dab1ddc4fb",
+            "77f05873aab38fe4"
+        ],
+        "x": 14,
+        "y": 239,
+        "w": 652,
+        "h": 862
+    },
+    {
+        "id": "512dc7298a3552c8",
+        "type": "group",
+        "z": "93d30457147d20e0",
+        "name": "LWT Service",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "369c55600c2497dc",
+            "d1a370de157139bb"
+        ],
+        "x": 74,
+        "y": 1239,
+        "w": 412,
+        "h": 82
+    },
+    {
         "id": "fac7afbb60e38641",
         "type": "group",
-        "z": "dbbc51d133244edd",
+        "z": "93d30457147d20e0",
         "name": "Alert Management Service",
         "style": {
-            "stroke": "#ff3f3f",
+            "stroke": "#0070c0",
             "label": true,
-            "color": "#ff3f3f"
+            "color": "#0070c0"
         },
         "nodes": [
             "04b56b19841c8ee4",
@@ -359,10 +404,79 @@
             "f525c3f0d986182e",
             "7614d146a817cd4e"
         ],
-        "x": 354,
-        "y": 979,
+        "x": 894,
+        "y": 239,
         "w": 252,
         "h": 242
+    },
+    {
+        "id": "684590d266722c1d",
+        "type": "group",
+        "z": "dbbc51d133244edd",
+        "name": "INFORMATION",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "3d62b59c0142528c",
+            "86c8cf657e1ba58a",
+            "746d8ad29be8874b",
+            "d253e22b924748d8",
+            "408456f85be04b92",
+            "056436bfaafb2849",
+            "9f185e764c2d104f",
+            "855a636067608bcb"
+        ],
+        "x": 74,
+        "y": 559,
+        "w": 292,
+        "h": 362
+    },
+    {
+        "id": "605792726c72f3fa",
+        "type": "group",
+        "z": "dbbc51d133244edd",
+        "name": "Administration",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "0d69db654bea2561",
+            "07f9c12e28406d1e",
+            "6833246f5394effe",
+            "cfb6227dfa49fa8b",
+            "f626f8d7076ed449",
+            "404b5430be1f6ae3",
+            "fd9570c527c251b6"
+        ],
+        "x": 554,
+        "y": 499,
+        "w": 952,
+        "h": 182
+    },
+    {
+        "id": "d1c256c1c30eaed4",
+        "type": "group",
+        "z": "e213983d60d65ed3",
+        "name": "Page events",
+        "style": {
+            "stroke": "#001f60",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "802b23f5f15793e5",
+            "aee723c9569095e9",
+            "d715fcf28a93016b"
+        ],
+        "x": 354,
+        "y": 119,
+        "w": 332,
+        "h": 122
     },
     {
         "id": "c636e6f5d63201f8",
@@ -440,46 +554,60 @@
         "h": 142
     },
     {
-        "id": "46a28db1130cc4a6",
+        "id": "924544e491daa42d",
         "type": "group",
-        "z": "e213983d60d65ed3",
-        "g": "d061984243747fb7",
-        "name": "Receive Heartbeats",
+        "z": "4721bb14b0bb8ce2",
+        "name": "Display Logs",
         "style": {
-            "stroke": "#001f60",
+            "stroke": "#0070c0",
             "label": true,
-            "color": "#001f60"
+            "color": "#0070c0"
         },
         "nodes": [
-            "4257c5850ba050cc",
-            "33d90881b1a89cd4",
-            "01f6410ccba831fd"
+            "8089fb98e0744f68",
+            "a94863d0851d5376",
+            "b07c4b45d4e13376",
+            "87b7774b46dafe02",
+            "d468d103072f29a7",
+            "8ebc0ceeda36cf1a",
+            "72333f9c12d9509c",
+            "a565ae6594722331",
+            "5a8eb0baea74f81b",
+            "93246fe676f6eba1",
+            "7148640c30407993",
+            "1367d4dfe063f481",
+            "20837c9b2a83f840",
+            "1ace80d71bbd3425",
+            "d01f190d78be6687",
+            "f5c1d6614c612293",
+            "c9721bdd2e8c83ee",
+            "c122719ce74f8f6a",
+            "c8d236d56da8076a",
+            "329fabce979bf06c",
+            "dc91af60b0f07b69",
+            "c70c1d07332a58ce",
+            "c4b0aa1bb4a29a39",
+            "9d35777a2b131516",
+            "f4b5384c1453739a",
+            "2b85c23655181ace",
+            "6818d9dbb084fe7f",
+            "80077ea1eac00ecc",
+            "8ffee1bf3ad1ac73",
+            "9ecf1c2b325fd852",
+            "84ea162d660bcd44",
+            "7ed67aac745eafc7",
+            "ddfb6f6014222966",
+            "23b9f0be2824c974",
+            "f2184f110234ed9a",
+            "7c928e5092ab5130",
+            "7759a0b14cdd0804",
+            "72e977046ac79fa0",
+            "9eecf2cbd05901d6"
         ],
-        "x": 214,
-        "y": 1879,
-        "w": 452,
-        "h": 122
-    },
-    {
-        "id": "d201947feff386ce",
-        "type": "group",
-        "z": "e213983d60d65ed3",
-        "g": "d061984243747fb7",
-        "name": "Monitor Heartbeats",
-        "style": {
-            "stroke": "#001f60",
-            "label": true,
-            "color": "#001f60"
-        },
-        "nodes": [
-            "6ac4ceb52971a03a",
-            "3f42556876b38007",
-            "e1f1b69180b27df2"
-        ],
-        "x": 214,
-        "y": 2039,
-        "w": 412,
-        "h": 122
+        "x": 154,
+        "y": 1339,
+        "w": 1192,
+        "h": 802
     },
     {
         "id": "5be6bf7969fc9e8d",
@@ -556,10 +684,10 @@
         "type": "ui-page",
         "name": "Logs",
         "ui": "0f931f53a4d06db6",
-        "path": "/page1",
+        "path": "/service/logs",
         "icon": "home",
         "layout": "grid",
-        "theme": "4bd63eede254a165",
+        "theme": "43a2176c22de23f9",
         "breakpoints": [
             {
                 "name": "Default",
@@ -606,10 +734,10 @@
         "type": "ui-page",
         "name": "GPS",
         "ui": "0f931f53a4d06db6",
-        "path": "/page2",
+        "path": "/gps",
         "icon": "home",
         "layout": "grid",
-        "theme": "4bd63eede254a165",
+        "theme": "43a2176c22de23f9",
         "breakpoints": [
             {
                 "name": "Default",
@@ -675,10 +803,10 @@
         "type": "ui-page",
         "name": "Configuration",
         "ui": "0f931f53a4d06db6",
-        "path": "/page3",
+        "path": "/service/configuration",
         "icon": "home",
         "layout": "grid",
-        "theme": "2e72e1a7cdfc8699",
+        "theme": "43a2176c22de23f9",
         "breakpoints": [
             {
                 "name": "Default",
@@ -703,14 +831,183 @@
         ],
         "order": 3,
         "className": "",
-        "visible": true,
-        "disabled": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "e7e8139fec4f59b2",
         "type": "ui-group",
         "name": "Configuration",
         "page": "264ef55d77cf9ba1",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f809acefa6dc8472",
+        "type": "ui-page",
+        "name": "Status",
+        "ui": "0f931f53a4d06db6",
+        "path": "/service/status",
+        "icon": "list-status",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0b4befd1d2605cdf",
+        "type": "ui-group",
+        "name": "Device Status",
+        "page": "f809acefa6dc8472",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "43a2176c22de23f9",
+        "type": "ui-theme",
+        "name": "RVAutomation",
+        "colors": {
+            "surface": "#4a7930",
+            "primary": "#4f7a28",
+            "bgPage": "#000000",
+            "groupBg": "#333333",
+            "groupOutline": "#555555"
+        },
+        "sizes": {
+            "density": "comfortable",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "4170a3fa4d67923f",
+        "type": "ui-page",
+        "name": "Windshield Shade",
+        "ui": "0f931f53a4d06db6",
+        "path": "/windshield_shade",
+        "icon": "roller-shade",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7ffe7d782148f1c6",
+        "type": "ui-group",
+        "name": "windshield shade",
+        "page": "4170a3fa4d67923f",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "d3b930ad469610d6",
+        "type": "ui-page",
+        "name": "Admin",
+        "ui": "0f931f53a4d06db6",
+        "path": "/service/admin",
+        "icon": "security",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "1c312bbc82b098e5",
+        "type": "ui-group",
+        "name": "admin",
+        "page": "d3b930ad469610d6",
         "width": 6,
         "height": 1,
         "order": 1,
@@ -937,7 +1234,7 @@
         "type": "function",
         "z": "0977fce194365578",
         "name": "bootstrap",
-        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n    },\n    TEMPLATES: {\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/config/logevent.json\", \n        DEVICE: \"/home/admin/.node-red/projects/RVAutomationV2/config/device.json\",\n        \"ACTIVE_NOTIF\": \"/home/admin/.node-red/projects/RVAutomationV2/config/activenotification.json\",\n        \"ALERT_CONFIG\": \"/home/admin/.node-red/projects/RVAutomationV2/config/alertconfiguration.json\",\n        \"HEARTBEAT_ENTITY\": \"/home/admin/.node-red/projects/RVAutomationV2/config/heartbeat_entity.json\"\n    }\n});\nreturn msg;\n",
+        "func": "global.set(\"BOOTSTRAP\", {\n    FILES: {\n        CONSTANTS: \"/home/admin/.node-red/projects/RVAutomationV2/config/CONSTANTS.json\",\n        CENTRAL: \"/home/admin/.node-red/projects/RVAutomationV2/config/central.json\",\n        CONFIG: \"/home/admin/.node-red/projects/RVAutomationV2/config/config.json\",\n        DEVICES: \"/home/admin/.node-red/projects/RVAutomationV2/config/devices.json\",\n        LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/logging.json\",\n        OPS_LOGGING: \"/home/admin/.node-red/projects/RVAutomationV2/config/ops.logging.json\",\n    },\n    TEMPLATES: {\n        LOG_EVENT: \"/home/admin/.node-red/projects/RVAutomationV2/templates/logevent.json\", \n        DEVICE: \"/home/admin/.node-red/projects/RVAutomationV2/templates/device.json\",\n        \"ACTIVE_NOTIF\": \"/home/admin/.node-red/projects/RVAutomationV2/templates/activenotification.json\",\n        \"ALERT_CONFIG\": \"/home/admin/.node-red/projects/RVAutomationV2/templates/alertconfiguration.json\",\n        \"HEARTBEAT_ENTITY\": \"/home/admin/.node-red/projects/RVAutomationV2/templates/heartbeat_entity.json\"\n    }\n});\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1228,9 +1525,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "none",
-        "payload": "{\"sourceId\":\"SD_AUTO\"}",
+        "payload": "{\"sourceId\":\"test_ws_sd\"}",
         "payloadType": "json",
-        "x": 580,
+        "x": 590,
         "y": 200,
         "wires": [
             [
@@ -1894,7 +2191,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "debug 24",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1934,7 +2231,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device",
-        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    if (!reg.sourceId ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n\n    if (!devices[reg.sourceId]) {\n\n        node.warn(\n            `New device '${reg.sourceId}' requesting registration.`\n        );\n\n        devices[reg.sourceId] = createDevice(reg);\n        node.warn(devices[reg.sourceId]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n    node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.sourceId];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.sourceId}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    if (!reg.sourceId ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n\n    if (!devices[reg.sourceId]) {\n\n        node.warn(\n            `New device '${reg.sourceId}' requesting registration.`\n        );\n\n        devices[reg.sourceId] = createDevice(reg);\n        node.warn(devices[reg.sourceId]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n //   node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.sourceId];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.sourceId}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1958,145 +2255,6 @@
         "info": "Registration arrives\n        │\n        ▼\nValidate registration\n        │\n        ▼\nLoad devices\n        │\n        ▼\nsourceId exists?\n   │            │\n  No           Yes\n   │            │\n   │            ▼\n   │     Update registration\n   │     Clear \"pending\" flag\n   │     Log registration\n   │\n   ▼\nCreate pending device\nLog unknown device\nEmail stub\nReturn",
         "x": 370,
         "y": 1620,
-        "wires": []
-    },
-    {
-        "id": "4257c5850ba050cc",
-        "type": "mqtt in",
-        "z": "e213983d60d65ed3",
-        "g": "46a28db1130cc4a6",
-        "name": "",
-        "topic": "ei/to/nr/hb",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 300,
-        "y": 1940,
-        "wires": [
-            [
-                "33d90881b1a89cd4",
-                "01f6410ccba831fd"
-            ]
-        ]
-    },
-    {
-        "id": "33d90881b1a89cd4",
-        "type": "debug",
-        "z": "e213983d60d65ed3",
-        "g": "46a28db1130cc4a6",
-        "name": "debug 22",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 1920,
-        "wires": []
-    },
-    {
-        "id": "01f6410ccba831fd",
-        "type": "function",
-        "z": "e213983d60d65ed3",
-        "g": "46a28db1130cc4a6",
-        "name": "Receive Heatbeat",
-        "func": "try {\n\n    const sourceId = msg.payload.sourceId;\n\n    if (!sourceId) {\n        node.error(\"Heartbeat missing payload.sourceId.\");\n        return null;\n    }\n\n    const devices = global.get(\"devices\") || {};\n    const device = devices[sourceId];\n\n    if (!device) {\n        node.warn(`Heartbeat received from unknown device '${sourceId}'.`);\n        return null;\n    }\n\n    if (!device.registration.accepted) {\n        node.warn(`Heartbeat ignored from unaccepted device '${sourceId}'.`);\n        return null;\n    }\n\n    const now = Date.now();\n\n    device.heartbeat.lastHeartbeat = now;\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err + \", msg.paylod: \" + msg.payload);\n\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 1960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d3d140200440df62",
-        "type": "comment",
-        "z": "e213983d60d65ed3",
-        "g": "d061984243747fb7",
-        "name": "Heartbeats",
-        "info": "Heartbeat\n│\n├── Receive Heartbeat\n│   ├── MQTT In (ei/to/nr/hb)\n│   └── Update Heartbeat\n│\n└── Monitor Heartbeats\n    ├── Inject (every 15 seconds)\n    └── Check Heartbeats",
-        "x": 280,
-        "y": 1820,
-        "wires": []
-    },
-    {
-        "id": "6ac4ceb52971a03a",
-        "type": "function",
-        "z": "e213983d60d65ed3",
-        "g": "d201947feff386ce",
-        "name": "HB Monitor",
-        "func": "try {\n\n    const devices = global.get(\"devices\") || {};\n    const now = Date.now();\n\n    for (const sourceId in devices) {\n\n        const device = devices[sourceId];\n\n        if (!device.registration.accepted)                      // Skip devices that are not accepted.\n            continue;\n\n        if (!device.heartbeatMonitoring.enabled)                // Skip devices that are not being monitored.\n            continue;\n\n        // Heartbeat still within timeout -> device is online.\n        if ((now - device.heartbeat.lastHeartbeat) <\n            device.heartbeatMonitoring.timeout) {\n\n            device.heartbeatMonitoring.online = true;\n            device.heartbeatMonitoring.missedHeartbeats = 0;\n            continue;\n        }\n\n        // Transition Online -> Offline.\n        if (device.heartbeatMonitoring.online) {\n            device.heartbeatMonitoring.online = false;\n            device.heartbeatMonitoring.missedHeartbeats++;\n        }\n\n        const ALERT_INTERVAL = 60 * 60 * 1000;     // 60 minutes\n\n        // Send first alert immediately, then every 60 minutes.\n        if ((now - device.heartbeatMonitoring.lastAlertTime) >= ALERT_INTERVAL) {\n\n            device.heartbeatMonitoring.lastAlertTime = now;\n\n            node.warn(`Device '${sourceId}' is offline.`);\n\n            // TODO\n            // Logging subsystem\n            // Notification subsystem\n        }\n    }\n\n    global.set(\"devices\", devices);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn null;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 2080,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3f42556876b38007",
-        "type": "inject",
-        "z": "e213983d60d65ed3",
-        "g": "d201947feff386ce",
-        "name": "Start HB Check",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "15",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 340,
-        "y": 2100,
-        "wires": [
-            [
-                "6ac4ceb52971a03a",
-                "e1f1b69180b27df2"
-            ]
-        ]
-    },
-    {
-        "id": "e1f1b69180b27df2",
-        "type": "debug",
-        "z": "e213983d60d65ed3",
-        "g": "d201947feff386ce",
-        "name": "debug 25",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 2120,
         "wires": []
     },
     {
@@ -2675,11 +2833,57 @@
         "wires": []
     },
     {
+        "id": "802b23f5f15793e5",
+        "type": "link out",
+        "z": "e213983d60d65ed3",
+        "g": "d1c256c1c30eaed4",
+        "name": "Global/page/tab/chgs/out",
+        "mode": "link",
+        "links": [],
+        "x": 535,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "aee723c9569095e9",
+        "type": "debug",
+        "z": "e213983d60d65ed3",
+        "g": "d1c256c1c30eaed4",
+        "name": "debug 43",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d715fcf28a93016b",
+        "type": "ui-event",
+        "z": "e213983d60d65ed3",
+        "g": "d1c256c1c30eaed4",
+        "ui": "0f931f53a4d06db6",
+        "name": "",
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "802b23f5f15793e5",
+                "aee723c9569095e9"
+            ]
+        ]
+    },
+    {
         "id": "5bbcee32e696aebd",
         "type": "mqtt in",
         "z": "2ecdaac948b4ee3b",
         "name": "",
-        "topic": "xxx",
+        "topic": "shade/ws/pcb/temp",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "5be6bf7969fc9e8d",
@@ -2687,8 +2891,137 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 370,
+        "x": 410,
         "y": 420,
+        "wires": [
+            [
+                "3f91485226bb954a",
+                "97c9200d2962d2ca"
+            ]
+        ]
+    },
+    {
+        "id": "3f91485226bb954a",
+        "type": "ui-chart",
+        "z": "2ecdaac948b4ee3b",
+        "group": "7ffe7d782148f1c6",
+        "name": "",
+        "label": "PCB Temperature",
+        "order": 1,
+        "chartType": "bar",
+        "category": "",
+        "categoryType": "str",
+        "xAxisLabel": "",
+        "xAxisProperty": "ºF",
+        "xAxisPropertyType": "str",
+        "xAxisType": "category",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "Temperature",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "140",
+        "bins": 10,
+        "action": "replace",
+        "stackSeries": true,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#10ab0d",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#ffffff"
+        ],
+        "textColorDefault": false,
+        "gridColor": [
+            "#fffb00"
+        ],
+        "gridColorDefault": false,
+        "width": "2",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 690,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97c9200d2962d2ca",
+        "type": "debug",
+        "z": "2ecdaac948b4ee3b",
+        "name": "debug 40",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a6d0309abeaa448a",
+        "type": "inject",
+        "z": "2ecdaac948b4ee3b",
+        "name": "ui_update",
+        "props": [
+            {
+                "p": "ui_update",
+                "v": "{\"chartOptions\":{\"grid\":{\"top\":45}}}",
+                "vt": "json"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 440,
+        "y": 480,
+        "wires": [
+            [
+                "3f91485226bb954a"
+            ]
+        ]
+    },
+    {
+        "id": "d15a5521ca6f07ba",
+        "type": "function",
+        "z": "2ecdaac948b4ee3b",
+        "name": "function 2",
+        "func": "msg.ui_update = {\n    chartOptions: {\n        grid: {\n            top: 45\n        }\n    }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 700,
         "wires": [
             []
         ]
@@ -2836,8 +3169,8 @@
         "z": "49c27f958aacfefb",
         "group": "5e25cb33b5ac6c97",
         "order": 1,
-        "width": "3",
-        "height": "4",
+        "width": "4",
+        "height": "5",
         "name": "display gps",
         "label": "",
         "format": "{{msg.payload}}",
@@ -2907,7 +3240,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "9c01de1b2a729534",
         "name": "Validate entry",
-        "func": "// -----------------------------------------------------------------------------\n// Validate Entry\n//\n// Verifies that msg.payload is a canonical LogEvent.\n//\n// Does not modify the event except to ensure optional members exist.\n//\n// Output:\n//\n//     msg.validation = {\n//         valid   : true|false,\n//         reason  : \"...\",\n//         missing : [ ... ]\n//     }\n//\n// -----------------------------------------------------------------------------\n\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Payload is not an object.\",\n        missing: []\n    };\n\n    return msg;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"component\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\"\n];\n\nconst missing = [];\n\nfor (const field of required) {\n    if (!(field in msg.payload)) {\n        missing.push(field);\n    }\n}\n\nif (missing.length > 0) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Missing required fields.\",\n        missing: missing\n    };\n\n    return msg;\n}\n\n// Ensure optional members exist.\nmsg.payload.data ??= {};\n\nmsg.validation = {\n    valid: true,\n    reason: \"\",\n    missing: []\n};\n\nreturn msg;",
+        "func": "// -----------------------------------------------------------------------------\n// Validate Entry\n//\n// Verifies that msg.payload is a canonical LogEvent.\n//\n// Does not modify the event except to ensure optional members exist.\n//\n// Output:\n//\n//     msg.validation = {\n//         valid   : true|false,\n//         reason  : \"...\",\n//         missing : [ ... ]\n//     }\n//\n// -----------------------------------------------------------------------------\n\nif (typeof msg.payload !== \"object\" || msg.payload === null) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Payload is not an object.\",\n        missing: []\n    };\n\n    return msg;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"sourceId\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\"\n];\n\nconst missing = [];\n\nfor (const field of required) {\n    if (!(field in msg.payload)) {\n        missing.push(field);\n    }\n}\n\nif (missing.length > 0) {\n\n    msg.validation = {\n        valid: false,\n        reason: \"Missing required fields.\",\n        missing: missing\n    };\n\n    return msg;\n}\n\n// Ensure optional members exist.\nmsg.payload.data ??= {};\n\nmsg.validation = {\n    valid: true,\n    reason: \"\",\n    missing: []\n};\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3009,7 +3342,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "9c01de1b2a729534",
         "name": "Validate",
-        "func": "const logEvent = msg.payload;\n\nif (typeof logEvent !== \"object\" || logEvent === null) {\n    node.error(\"LogEvent is not an object.\");\n    return null;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"component\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\",\n    \"data\"\n];\n\nfor (const field of required) {\n    if (!(field in logEvent)) {\n        node.error(`Missing required field: ${field}`);\n        return null;\n    }\n}\n\nreturn msg;",
+        "func": "const logEvent = msg.payload;\n\nif (typeof logEvent !== \"object\" || logEvent === null) {\n    node.error(\"LogEvent is not an object.\");\n    return null;\n}\n\nconst required = [\n    \"deviceSequence\",\n    \"eventTime\",\n    \"sourceId\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"recordType\",\n    \"level\",\n    \"eventType\",\n    \"message\",\n    \"data\"\n];\n\nfor (const field of required) {\n    if (!(field in logEvent)) {\n        node.error(`Missing required field: ${field}`);\n        return null;\n    }\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3475,11 +3808,12 @@
         "id": "c58eb17ef4758190",
         "type": "ui-template",
         "z": "4721bb14b0bb8ce2",
+        "d": true,
         "group": "0d84bc5c17ef7261",
         "page": "",
         "ui": "",
         "name": "",
-        "order": 1,
+        "order": 6,
         "width": "15",
         "height": "8",
         "head": "",
@@ -3560,6 +3894,853 @@
         "wires": []
     },
     {
+        "id": "8089fb98e0744f68",
+        "type": "ui-dropdown",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "0d84bc5c17ef7261",
+        "name": "",
+        "label": "System",
+        "tooltip": "",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "multiple": true,
+        "chips": true,
+        "clearable": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onClose",
+        "x": 580,
+        "y": 1520,
+        "wires": [
+            [
+                "72333f9c12d9509c",
+                "f4b5384c1453739a"
+            ]
+        ]
+    },
+    {
+        "id": "a94863d0851d5376",
+        "type": "ui-dropdown",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "0d84bc5c17ef7261",
+        "name": "",
+        "label": "Event Type",
+        "tooltip": "",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "multiple": true,
+        "chips": true,
+        "clearable": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onClose",
+        "x": 590,
+        "y": 1680,
+        "wires": [
+            [
+                "8ebc0ceeda36cf1a",
+                "1ace80d71bbd3425",
+                "6818d9dbb084fe7f"
+            ]
+        ]
+    },
+    {
+        "id": "b07c4b45d4e13376",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Discover Event Types",
+        "func": "const events = Array.isArray(msg.payload) ? msg.payload : [];\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type options available for these events\n// -----------------------------------------------------------------------------\n\nconst availableEventTypes = [\n    ...new Set(\n        events\n            .map(e => e.eventType)\n            .filter(Boolean)\n    )\n].sort();\n\n\n// -----------------------------------------------------------------------------\n// Build dropdown options\n// -----------------------------------------------------------------------------\n\nconst options = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...availableEventTypes.map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Retrieve current Event Type selection\n// -----------------------------------------------------------------------------\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Preserve current selection\n// -----------------------------------------------------------------------------\n\nlet validSelectedEventTypes;\n\nif (selectedEventTypes.includes(\"__ALL__\")) {\n\n    // ALL remains valid because there are available event types.\n    validSelectedEventTypes = [\"__ALL__\"];\n\n} else {\n\n    validSelectedEventTypes =\n        selectedEventTypes.filter(type =>\n            availableEventTypes.includes(type)\n        );\n}\n\n\n// -----------------------------------------------------------------------------\n// Send options and preserved selection\n// -----------------------------------------------------------------------------\n\nmsg.options = options;\nmsg.payload = validSelectedEventTypes;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1700,
+        "wires": [
+            [
+                "a94863d0851d5376"
+            ]
+        ]
+    },
+    {
+        "id": "87b7774b46dafe02",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "readEvents",
+        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    msg.payload = events;\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 430,
+        "y": 1420,
+        "wires": [
+            [
+                "5a8eb0baea74f81b"
+            ]
+        ]
+    },
+    {
+        "id": "d468d103072f29a7",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1420,
+        "wires": [
+            [
+                "87b7774b46dafe02"
+            ]
+        ]
+    },
+    {
+        "id": "8ebc0ceeda36cf1a",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 42",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "72333f9c12d9509c",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Filter System",
+        "func": "const events = flow.get(\"displayLogEvents\") || [];\nconst selectedSystems = Array.isArray(msg.payload) ? msg.payload : [];\n\nlet filteredEvents;\n\nif (selectedSystems.length === 0) {\n    filteredEvents = events;\n} else {\n    filteredEvents = events.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n// Save the result for the next filtering stage\nflow.set(\"displayLogFilteredEvents\", filteredEvents);\n\nmsg.payload = filteredEvents;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1540,
+        "wires": [
+            [
+                "a565ae6594722331",
+                "7148640c30407993"
+            ]
+        ]
+    },
+    {
+        "id": "a565ae6594722331",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 46",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "5a8eb0baea74f81b",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process data",
+        "func": "const events = Array.isArray(msg.payload) ? msg.payload : [];\n\n\n// -----------------------------------------------------------------------------\n// Store the complete event set\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogEvents\", events);\n\n\n// -----------------------------------------------------------------------------\n// Build complete System options\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events\n                .map(e => e.sourceId)\n                .filter(Boolean)\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogSystems\",\n    systems\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Build complete Event Type options\n// -----------------------------------------------------------------------------\n\nconst eventTypes = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events\n                .map(e => e.eventType)\n                .filter(Boolean)\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogEventTypes\",\n    eventTypes\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Build complete Field options\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events.flatMap(event => Object.keys(event))\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogFields\",\n    fields\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Initial dropdown messages\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    ...msg,\n    payload: [],\n    options: systems\n};\n\nconst eventTypeMsg = {\n    ...msg,\n    payload: [],\n    options: eventTypes\n};\n\nconst fieldMsg = {\n    ...msg,\n    payload: [],\n    options: fields\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1420,
+        "wires": [
+            [
+                "1367d4dfe063f481"
+            ],
+            [
+                "20837c9b2a83f840"
+            ],
+            [
+                "7ed67aac745eafc7"
+            ]
+        ],
+        "outputLabels": [
+            "systemDropdown",
+            "eventTypwDropdown",
+            "FieldsDropdown"
+        ]
+    },
+    {
+        "id": "93246fe676f6eba1",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "dscover/event/type/in",
+        "links": [
+            "7148640c30407993"
+        ],
+        "x": 235,
+        "y": 1700,
+        "wires": [
+            [
+                "b07c4b45d4e13376"
+            ]
+        ]
+    },
+    {
+        "id": "7148640c30407993",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "filter/system/out",
+        "mode": "link",
+        "links": [
+            "93246fe676f6eba1"
+        ],
+        "x": 1005,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "1367d4dfe063f481",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process/data/system/out",
+        "mode": "link",
+        "links": [
+            "8ffee1bf3ad1ac73"
+        ],
+        "x": 765,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "20837c9b2a83f840",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process/data/event/type/out",
+        "mode": "link",
+        "links": [
+            "9ecf1c2b325fd852"
+        ],
+        "x": 765,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "1ace80d71bbd3425",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Filter Event Type",
+        "func": "const events = flow.get(\"displayLogFilteredEvents\") || [];\nconst selectedTypes = Array.isArray(msg.payload) ? msg.payload : [];\n\nif (selectedTypes.length === 0) {\n    msg.payload = events;\n    return msg;\n}\n\nmsg.payload = events.filter(event =>\n    selectedTypes.includes(event.eventType)\n);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 1700,
+        "wires": [
+            [
+                "d01f190d78be6687",
+                "f5c1d6614c612293"
+            ]
+        ]
+    },
+    {
+        "id": "d01f190d78be6687",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 47",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "f5c1d6614c612293",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "filter/event/type/out",
+        "mode": "link",
+        "links": [
+            "6b8e6b680d4bd590"
+        ],
+        "x": 1005,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "c9721bdd2e8c83ee",
+        "type": "ui-dropdown",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "0d84bc5c17ef7261",
+        "name": "Fields",
+        "label": "Fields",
+        "tooltip": "",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "multiple": true,
+        "chips": true,
+        "clearable": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onClose",
+        "x": 570,
+        "y": 1800,
+        "wires": [
+            [
+                "9d35777a2b131516"
+            ]
+        ]
+    },
+    {
+        "id": "c122719ce74f8f6a",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Update Log Display",
+        "func": "const events = flow.get(\"displayLogEvents\") || [];\n\nconst selectedSystems =\n    flow.get(\"displayLogSelectedSystems\") || [];\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\nconst selectedFields =\n    flow.get(\"displayLogSelectedFields\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Filter by System\n// -----------------------------------------------------------------------------\n\nlet filteredEvents = events;\n\nif (\n    selectedSystems.length > 0 &&\n    !selectedSystems.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Filter by Event Type\n// -----------------------------------------------------------------------------\n\nif (\n    selectedEventTypes.length > 0 &&\n    !selectedEventTypes.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedEventTypes.includes(event.eventType)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.includes(\"__ALL__\")\n) {\n\n    fieldsToDisplay = flow.get(\"displayLogFields\") || [];\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build display rows\n// -----------------------------------------------------------------------------\n\nconst rows = filteredEvents.map(event => {\n\n    const row = {};\n\n    fieldsToDisplay.forEach(field => {\n        row[field] = event[field];\n    });\n\n    return row;\n});\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 2040,
+        "wires": [
+            [
+                "c8d236d56da8076a"
+            ],
+            [
+                "c8d236d56da8076a",
+                "dc91af60b0f07b69"
+            ]
+        ],
+        "outputLabels": [
+            "clear table",
+            "load table"
+        ]
+    },
+    {
+        "id": "c8d236d56da8076a",
+        "type": "ui-table",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "0d84bc5c17ef7261",
+        "name": "Build Log Display",
+        "label": "",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": true,
+        "showSearch": true,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "append",
+        "className": "",
+        "x": 1230,
+        "y": 2040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "329fabce979bf06c",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Clear Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 980,
+        "y": 2080,
+        "wires": [
+            [
+                "c8d236d56da8076a"
+            ]
+        ]
+    },
+    {
+        "id": "dc91af60b0f07b69",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 49",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "c70c1d07332a58ce",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "update/log/display/in",
+        "links": [
+            "c4b0aa1bb4a29a39",
+            "88b576d36b03424b",
+            "2b85c23655181ace",
+            "80077ea1eac00ecc"
+        ],
+        "x": 815,
+        "y": 2040,
+        "wires": [
+            [
+                "c122719ce74f8f6a"
+            ]
+        ]
+    },
+    {
+        "id": "c4b0aa1bb4a29a39",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "fields/out",
+        "mode": "link",
+        "links": [
+            "84ea162d660bcd44",
+            "c70c1d07332a58ce"
+        ],
+        "x": 955,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "9d35777a2b131516",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Save Field Selection:",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedFields\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 1800,
+        "wires": [
+            [
+                "c4b0aa1bb4a29a39"
+            ]
+        ]
+    },
+    {
+        "id": "f4b5384c1453739a",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Save System Selection",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedSystems\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 1500,
+        "wires": [
+            [
+                "2b85c23655181ace"
+            ]
+        ]
+    },
+    {
+        "id": "2b85c23655181ace",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "save/system/selection/out",
+        "mode": "link",
+        "links": [
+            "8ffee1bf3ad1ac73",
+            "c70c1d07332a58ce"
+        ],
+        "x": 1005,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "6818d9dbb084fe7f",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Save Event Type Selection",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedEventTypes\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1660,
+        "wires": [
+            [
+                "80077ea1eac00ecc"
+            ]
+        ]
+    },
+    {
+        "id": "80077ea1eac00ecc",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "save/event/type/selection/out",
+        "mode": "link",
+        "links": [
+            "9ecf1c2b325fd852",
+            "c70c1d07332a58ce"
+        ],
+        "x": 1005,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "8ffee1bf3ad1ac73",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "system/dropdown/in",
+        "links": [
+            "1367d4dfe063f481",
+            "23b9f0be2824c974",
+            "2b85c23655181ace"
+        ],
+        "x": 465,
+        "y": 1520,
+        "wires": [
+            [
+                "8089fb98e0744f68"
+            ]
+        ]
+    },
+    {
+        "id": "9ecf1c2b325fd852",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "event/type/dropdown.in",
+        "links": [
+            "20837c9b2a83f840",
+            "f2184f110234ed9a",
+            "80077ea1eac00ecc"
+        ],
+        "x": 465,
+        "y": 1660,
+        "wires": [
+            [
+                "a94863d0851d5376"
+            ]
+        ]
+    },
+    {
+        "id": "84ea162d660bcd44",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "fields/drop/down/in",
+        "links": [
+            "7ed67aac745eafc7",
+            "7c928e5092ab5130",
+            "c4b0aa1bb4a29a39"
+        ],
+        "x": 465,
+        "y": 1800,
+        "wires": [
+            [
+                "c9721bdd2e8c83ee"
+            ]
+        ]
+    },
+    {
+        "id": "7ed67aac745eafc7",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process/data/fields/out",
+        "mode": "link",
+        "links": [
+            "84ea162d660bcd44"
+        ],
+        "x": 765,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "ddfb6f6014222966",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Clear Log Display",
+        "func": "// -----------------------------------------------------------------------------\n// Clear all current log-display selections\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedSystems\", []);\nflow.set(\"displayLogSelectedEventTypes\", []);\nflow.set(\"displayLogSelectedFields\", []);\n\n\n// -----------------------------------------------------------------------------\n// Clear System selection\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear Event Type selection\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear Field selection\n// -----------------------------------------------------------------------------\n\nconst fieldMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst tableMsg = {\n    payload: []\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg,\n    tableMsg\n];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 2000,
+        "wires": [
+            [
+                "23b9f0be2824c974"
+            ],
+            [
+                "f2184f110234ed9a"
+            ],
+            [
+                "7c928e5092ab5130"
+            ],
+            [
+                "7759a0b14cdd0804"
+            ]
+        ],
+        "outputLabels": [
+            "systemMsg",
+            "eventTypemsg",
+            "fieldMsg",
+            "tableMsg"
+        ]
+    },
+    {
+        "id": "23b9f0be2824c974",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "clear/log/display/system/out",
+        "mode": "link",
+        "links": [
+            "8ffee1bf3ad1ac73"
+        ],
+        "x": 655,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "f2184f110234ed9a",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "clear/log/display/event/type/out",
+        "mode": "link",
+        "links": [
+            "9ecf1c2b325fd852"
+        ],
+        "x": 655,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "7c928e5092ab5130",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "clear/log/display/fields/out",
+        "mode": "link",
+        "links": [
+            "84ea162d660bcd44"
+        ],
+        "x": 655,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "7759a0b14cdd0804",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "clear/log/display/table/out",
+        "mode": "link",
+        "links": [
+            "72e977046ac79fa0"
+        ],
+        "x": 655,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "72e977046ac79fa0",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "build/log/display/in",
+        "links": [
+            "7759a0b14cdd0804"
+        ],
+        "x": 1025,
+        "y": 2000,
+        "wires": [
+            [
+                "c8d236d56da8076a"
+            ]
+        ]
+    },
+    {
+        "id": "9eecf2cbd05901d6",
+        "type": "ui-button",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "0d84bc5c17ef7261",
+        "name": "Clear log display",
+        "label": "",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "close-outline",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#333333",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 270,
+        "y": 2000,
+        "wires": [
+            [
+                "ddfb6f6014222966"
+            ]
+        ]
+    },
+    {
         "id": "a7da2c372813bc18",
         "type": "comment",
         "z": "dbbc51d133244edd",
@@ -3627,9 +4808,10 @@
         "id": "3d62b59c0142528c",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "CONFIGURATION",
         "info": "Responsibilities\n    Present system configuration to the user.\n    Allow configuration values to be modified.\n    Validate user input.\n    Save configuration changes.\n    Notify affected subsystems when configuration changes.\nNot Responsible For\n    Interpreting configuration values.\n    Implementing subsystem behavior.\n    Monitoring system health.\n    Sending notifications.\n    Device registration.    ",
-        "x": 450,
+        "x": 190,
         "y": 680,
         "wires": []
     },
@@ -3637,50 +4819,55 @@
         "id": "86c8cf657e1ba58a",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "DASHBOARD",
         "info": "Dashboard\n\nHome\n\nDevices\n    GPS\n    Windshield Shade\n    ...\n\nDevice Infrastructure\n    Heartbeat\n    Logging\n    Registration\n    ...\n\nSystem Configuration\n    MQTT\n    SMTP\n    Notification\n    Logging\n    ...\n\nHistory\n\nLogs\n\nResponsibilities\n    Summarize device status.\n    Provide commonly used controls.\n    Display active alerts.\n    Navigate to device pages.\nNot Responsible For\n    Detailed device configuration.\n    Device diagnostics.\n    Infrastructure configuration.\n\n    Dashboard\n│\n├── Dashboard\n│\n├── Devices\n│     ├── GPS\n│     ├── Windshield Shade\n│     ├── Router Fan\n│     └── ...\n│\n├── Device Infrastructure\n│     ├── Heartbeat\n│     ├── Logging\n│     ├── Registration\n│     ├── Statistics\n│     └── ...\n│\n├── System Configuration\n│     ├── MQTT\n│     ├── SMTP\n│     ├── Notifications\n│     ├── Storage\n│     └── ...\n│\n├── History\n│\n└── Logs\n\n",
-        "x": 430,
-        "y": 800,
+        "x": 170,
+        "y": 720,
         "wires": []
     },
     {
         "id": "746d8ad29be8874b",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "DEVICES",
         "info": "Purpose\nProvides detailed information and management for an individual device.\nEach device page may contain panels such as:\n    Status\n    Commands\n    Live Data\n    Configuration\n    Statistics\n    Diagnostics\n    History\nNot every device will implement every panel.",
-        "x": 420,
-        "y": 840,
+        "x": 160,
+        "y": 760,
         "wires": []
     },
     {
         "id": "d253e22b924748d8",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "DEVICE INFASTRUCTURE",
         "info": "Purpose\nConfigure and monitor services common to every EmbeddedInfrastructure device.\nExamples:\n    Heartbeat\n    Registration\n    Logging\n    Statistics\n    Firmware\n    Time",
-        "x": 470,
-        "y": 880,
+        "x": 210,
+        "y": 800,
         "wires": []
     },
     {
         "id": "408456f85be04b92",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "SYSTEM CONFIGURATION",
         "info": "Purpose\nConfigure the Node-RED application and infrastructure services.\nExamples:\n    MQTT\n    SMTP\n    Notifications\n    Storage\n    Security",
-        "x": 480,
-        "y": 920,
+        "x": 220,
+        "y": 840,
         "wires": []
     },
     {
         "id": "056436bfaafb2849",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "System Configuration",
         "info": "RVAutomation Configuration\n\nMQTT Client\n    Broker\n    Credentials\n    TLS\n\nSMTP\n    Server\n    Credentials\n\nNotification Preferences\n\nLogging Preferences\n\nDashboard Preferences\n\nBackup / Restore\n\nSoftware Updates",
-        "x": 1000,
-        "y": 380,
+        "x": 200,
+        "y": 600,
         "wires": []
     },
     {
@@ -3740,10 +4927,11 @@
         "id": "9f185e764c2d104f",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "Alert Management Rules",
         "info": "Alert Management Rules\nRule 1 — Device/Service Owns Condition Detection\nA device/service is the authoritative owner of the conditions it monitors.\nExamples:\nHeartbeat owns device online/offline.\nGPS owns GPS fix quality.\nRO owns fresh water level.\nNetwork owns Wi-Fi connectivity.\nNotification never determines whether a condition exists.\nRule 2 — Device/Service Owns Active Alert State\nEach device/service maintains a table of its currently active alerts.\nAn active alert exists only while the monitored condition exists.\nThe device/service uses g_findAlert() to determine whether a condition has already been reported.\nRule 3 — Create Alert\nWhen a condition first occurs:\nCreate an ACTIVE_NOTIF.\nInitialize:\nstartedAt\nlastReceivedAt\nlastNotification\nnextNotification\nnotificationCount\nPass the alert to Notification.\nRule 4 — Update Alert\nWhile the condition continues to exist, the device/service updates the active alert as required.\nTypical updates include:\nlastReceivedAt\nlastNotification\nnextNotification\nnotificationCount\nThe device/service determines when an update is necessary.\nRule 5 — Resolve Alert\nWhen the condition no longer exists:\nLocate the active alert using g_findAlert().\nSet:\nresolvedAt = Date.now()\nPass the resolved alert to Notification.\nIf no active alert exists, no action is required.\nRule 6 — Notification Owns Delivery\nNotification receives alerts from device/services.\nNotification is responsible for:\nLooking up ALERT_CONFIG.\nSending email.\nWriting log entries.\nUpdating dashboards.\nAny future delivery mechanisms.\nDevice/services never send notifications directly.\nRule 7 — Notification Owns Completion\nAfter successfully processing a resolved alert:\nRemove the alert from the originating device/service's active alert table.\nNotification is responsible for final cleanup of the alert lifecycle.\nResponsibilities Summary\nDevice/Service\tNotification\nDetect conditions\tDeliver notifications\nCreate alerts\tEmail\nUpdate alerts\tLogging\nResolve alerts\tDashboard updates\nMaintain active alert table\tApply ALERT_CONFIG\nRemove completed alerts",
-        "x": 690,
-        "y": 460,
+        "x": 210,
+        "y": 640,
         "wires": []
     },
     {
@@ -3761,106 +4949,213 @@
         "id": "855a636067608bcb",
         "type": "comment",
         "z": "dbbc51d133244edd",
+        "g": "684590d266722c1d",
         "name": "registration",
         "info": " 1. Registration\n        │\n        ▼\nValidate\n        │\n        ▼\nAlready exists?\n      │        │\n     No       Yes\n      │        │\n      ▼        ▼\nCreate     Ignore/Update\n      │\n      ▼\nPersist",
-        "x": 920,
-        "y": 740,
+        "x": 160,
+        "y": 880,
         "wires": []
     },
     {
-        "id": "04b56b19841c8ee4",
+        "id": "0d69db654bea2561",
         "type": "comment",
         "z": "dbbc51d133244edd",
-        "g": "fac7afbb60e38641",
-        "name": "Alert Service",
-        "info": "Owning Service\n      │\n      ▼\nCreate ALERT_CONFIG\n      │\n      ▼\nAlert Management Service\n      │\n      ▼\nPolicy Exists?\n ┌────┴────┐\n │         │\nYes        No\n │         │\n ▼         ▼\nDone    Register Policy\n             │\n             ▼\n      Persist Policy",
-        "x": 450,
+        "g": "605792726c72f3fa",
+        "name": "Administrator",
+        "info": "",
+        "x": 930,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "07f9c12e28406d1e",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "g": "605792726c72f3fa",
+        "name": "Get Pending Devices",
+        "func": "if (\n    msg.topic !== \"$pageview\" ||\n    msg.payload?.page?.id !== \"d3b930ad469610d6\"\n) {\n    return null;\n}\n\nconst devices = global.get(\"devices\") || {};\n\nreturn {\n    topic: \"admin/device-configuration/load\",\n    payload: devices\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 620,
+        "wires": [
+            [
+                "cfb6227dfa49fa8b",
+                "fd9570c527c251b6"
+            ]
+        ]
+    },
+    {
+        "id": "6833246f5394effe",
+        "type": "inject",
+        "z": "dbbc51d133244edd",
+        "g": "605792726c72f3fa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 660,
+        "y": 640,
+        "wires": [
+            [
+                "07f9c12e28406d1e"
+            ]
+        ]
+    },
+    {
+        "id": "cfb6227dfa49fa8b",
+        "type": "ui-template",
+        "z": "dbbc51d133244edd",
+        "g": "605792726c72f3fa",
+        "group": "1c312bbc82b098e5",
+        "page": "",
+        "ui": "",
+        "name": "Pending Devices",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n\n\n        <div style=\"margin-bottom: 24px;\">\n            <h2>Pending Devices</h2>\n        </div>\n\n\n\n        <!-- No pending devices -->\n\n\n        <div v-if=\"devices.length === 0\" style=\"margin-top: 20px;\">\n            No devices require configuration.\n        </div>\n\n\n\n        <!-- Pending devices -->\n\n\n        <div v-for=\"device in devices\" :key=\"device.sourceId\" style=\"margin-bottom: 32px;\">\n\n\n            <!-- Device name -->\n\n\n            <div style=\"font-weight: 600;\">\n                {{ device.appName }}\n            </div>\n\n\n\n            <!-- Dashboard page -->\n\n\n            <div style=\"margin-top: 14px;\">\n                Dashboard Page\n            </div>\n\n\n            <select\n                v-model=\"device.dashboardPage\"\n                @change=\"markChanged\"\n                style=\"\n                    display: block;\n                    width: 100%;\n                    box-sizing: border-box;\n                    margin-top: 6px;\n                    padding: 10px;\n                    min-height: 44px;\n                    border: 1px solid #777;\n                    border-radius: 4px;\n                    background: #111;\n                    color: white;\n                    font-size: 16px;\n                \"\n            >\n\n\n                <option\n                    value=\"\"\n                    style=\"\n                        color: white;\n                        background: #111;\n                    \"\n                >\n                    None\n                </option>\n\n\n                <option\n                    v-for=\"page in availablePagesFor(device)\"\n                    :key=\"page.id\"\n                    :value=\"page.name\"\n                    style=\"\n                        color: white;\n                        background: #111;\n                    \"\n                >\n                    {{ page.name }}\n                </option>\n\n\n            </select>\n\n\n\n            <!-- Accept device -->\n\n\n            <div style=\"margin-top: 14px;\">\n\n\n                <label\n                    style=\"\n                        display: inline-flex;\n                        align-items: center;\n                        gap: 10px;\n                        font-size: 1.1rem;\n                        cursor: pointer;\n                    \"\n                >\n\n\n                    <input\n                        type=\"checkbox\"\n                        v-model=\"device.accepted\"\n                        @change=\"markChanged\"\n                        style=\"\n                            width: 24px;\n                            height: 24px;\n                            cursor: pointer;\n                        \"\n                    >\n\n\n                    <span>Accept Device</span>\n\n\n                </label>\n\n\n            </div>\n\n\n        </div>\n\n\n\n        <!-- Save / Cancel -->\n\n\n        <div style=\"\n                display: flex;\n                gap: 20px;\n                margin-top: 24px;\n            \">\n\n\n            <button\n                :disabled=\"!dirty\"\n                @click=\"cancelChanges\"\n                :style=\"{\n                    minWidth: '100px',\n                    padding: '10px 18px',\n                    fontSize: '16px',\n                    opacity: dirty ? '1' : '0.35',\n                    cursor: dirty ? 'pointer' : 'default'\n                }\"\n            >\n                Cancel\n            </button>\n\n\n            <button\n                :disabled=\"!dirty\"\n                @click=\"saveChanges\"\n                :style=\"{\n                    minWidth: '100px',\n                    padding: '10px 18px',\n                    fontSize: '16px',\n                    opacity: dirty ? '1' : '0.35',\n                    cursor: dirty ? 'pointer' : 'default'\n                }\"\n            >\n                Save\n            </button>\n\n\n        </div>\n\n\n    </div>\n</template>\n\n\n\n<script>\n    export default {\n\n\n    data() {\n\n\n        return {\n            allDevices: {},\n            devices: [],\n            originalDevices: [],\n            dirty: false\n        };\n\n\n    },\n\n\n\n    watch: {\n\n\n        msg: {\n            immediate: true,\n\n\n            handler(msg) {\n\n\n                if (!msg)\n                    return;\n\n\n\n                // -----------------------------------------------------\n                // Save result from Node-RED\n                // -----------------------------------------------------\n\n\n                if (\n                    msg.topic ===\n                    \"admin/device-configuration/save-result\"\n                ) {\n\n\n                    if (msg.payload?.success === true) {\n\n\n                        this.originalDevices =\n                            JSON.parse(\n                                JSON.stringify(this.devices)\n                            );\n\n\n                        this.dirty = false;\n\n\n                    } else {\n\n\n                        console.warn(\n                            \"Device configuration save failed:\",\n                            msg.payload?.errors || []\n                        );\n\n\n                    }\n\n\n                    return;\n                }\n\n\n\n                // -----------------------------------------------------\n                // Complete device data from Node-RED\n                // -----------------------------------------------------\n\n\n                if (!msg.payload)\n                    return;\n\n\n                this.loadDevices(msg.payload);\n\n\n            }\n\n\n        }\n\n\n    },\n\n\n\n    methods: {\n\n\n\n        // -------------------------------------------------------------\n        // Load the complete device collection.\n        //\n        // A device is pending if it is not both:\n        //\n        //   accepted === true\n        //   dashboardPage is assigned\n        //\n        // The complete device collection is retained so that page\n        // assignments can be determined from accepted devices too.\n        // -------------------------------------------------------------\n\n\n        loadDevices(payload) {\n\n\n            this.allDevices =\n                payload;\n\n\n            const pending = [];\n\n\n            for (const sourceId in payload) {\n\n\n                const device =\n                    payload[sourceId];\n\n\n                const configured =\n                    device.registration.accepted === true &&\n                    device.dashboardPage !== \"\";\n\n\n                if (!configured) {\n\n\n                    pending.push({\n                        sourceId:\n                            device.identity.sourceId,\n\n                        appName:\n                            device.identity.appName || \"\",\n\n                        dashboardPage:\n                            device.dashboardPage || \"\",\n\n                        accepted:\n                            device.registration.accepted === true\n                    });\n\n\n                }\n\n\n            }\n\n\n            this.devices =\n                structuredClone(pending);\n\n\n            this.originalDevices =\n                structuredClone(pending);\n\n\n            this.dirty = false;\n\n\n        },\n\n\n\n        // -------------------------------------------------------------\n        // Return Dashboard pages that may be assigned to this device.\n        //\n        // Service pages are excluded.\n        //\n        // Pages already assigned to another device are excluded.\n        //\n        // This device's current page remains available.\n        // -------------------------------------------------------------\n\n\n        availablePagesFor(device) {\n\n\n            const pages =\n                Object.values(\n                    this.$store.state.ui.pages || {}\n                );\n\n\n            const assignedToOtherDevice = [];\n\n\n            for (const sourceId in this.allDevices) {\n\n\n                const other =\n                    this.allDevices[sourceId];\n\n\n                if (\n                    other.identity.sourceId !==\n                    device.sourceId &&\n                    other.dashboardPage\n                ) {\n\n\n                    assignedToOtherDevice.push(\n                        other.dashboardPage\n                    );\n\n\n                }\n\n\n            }\n\n\n            return pages\n\n\n                .filter(page =>\n                    page.type === \"ui-page\" &&\n\n\n                    page.visible !== false &&\n\n\n                    page.disabled !== true &&\n\n\n                    !page.path.startsWith(\"/service/\") &&\n\n\n                    (\n                        page.name === device.dashboardPage ||\n                        !assignedToOtherDevice.includes(\n                            page.name\n                        )\n                    )\n                )\n\n\n                .map(page => ({\n                    id:\n                        page.id,\n\n                    name:\n                        page.name,\n\n                    path:\n                        page.path\n                }));\n\n\n        },\n\n\n\n        // -------------------------------------------------------------\n        // Determine whether the working object differs from the\n        // original object loaded from Node-RED.\n        // -------------------------------------------------------------\n\n\n        markChanged() {\n\n\n            this.dirty =\n                JSON.stringify(this.devices) !==\n                JSON.stringify(this.originalDevices);\n\n\n        },\n\n\n\n        // -------------------------------------------------------------\n        // Discard all local changes.\n        // -------------------------------------------------------------\n\n\n        cancelChanges() {\n\n\n            this.devices =\n                structuredClone(\n                    this.originalDevices\n                );\n\n\n            this.dirty = false;\n\n\n        },\n\n\n\n        // -------------------------------------------------------------\n        // Send only the fields that Admin is allowed to change.\n        //\n        // appName is deliberately not sent.\n        // sourceId identifies the device record.\n        // -------------------------------------------------------------\n\n\n        saveChanges() {\n\n\n            if (!this.dirty)\n                return;\n\n\n\n            const changes =\n                this.devices.map(device => ({\n\n\n                    sourceId:\n                        device.sourceId,\n\n\n                    dashboardPage:\n                        device.dashboardPage,\n\n\n                    accepted:\n                        device.accepted\n\n\n                }));\n\n\n\n            this.send({\n\n\n                topic:\n                    \"admin/device-configuration/save\",\n\n\n                payload:\n                    changes\n\n\n            });\n\n\n        }\n\n\n    }\n\n\n};\n\n\n</script>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1090,
+        "y": 620,
+        "wires": [
+            [
+                "f626f8d7076ed449"
+            ]
+        ]
+    },
+    {
+        "id": "4edd2d80be0acf70",
+        "type": "function",
+        "z": "dbbc51d133244edd",
+        "name": "Get Dashboard pages",
+        "func": "// Validate that we received a parsed array of configurations from the HTTP call\nif (Array.isArray(msg.payload)) {\n    let dashboardPages = [];\n\n    // Loop through the entire active environment setup\n    msg.payload.forEach(function (nodeItem) {\n        // Filter specifically for Dashboard 2.0 configuration page objects\n        if (nodeItem.type === 'ui-page') {\n            dashboardPages.push({\n                id: nodeItem.id,\n                name: nodeItem.name || \"Unnamed Page\",\n                path: nodeItem.path || \"\",\n                icon: nodeItem.icon || \"\",\n                visible: nodeItem.visible !== false,\n                disabled: nodeItem.disabled === true\n            });\n        }\n    });\n\n    // Replace payload with your clean array list of pages\n    msg.payload = dashboardPages;\n    return msg;\n}\n\n// Fallback message to assist if the return object isn't parsed right\nnode.error(\"Payload is not an array. Ensure the HTTP Request return setting is set to 'a parsed JSON object'.\");\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 1020,
+        "wires": [
+            [
+                "66cbb2d3123911aa"
+            ]
+        ]
+    },
+    {
+        "id": "bbcfbfb61a0db0d8",
+        "type": "inject",
+        "z": "dbbc51d133244edd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "4edd2d80be0acf70"
+            ]
+        ]
+    },
+    {
+        "id": "66cbb2d3123911aa",
+        "type": "debug",
+        "z": "dbbc51d133244edd",
+        "name": "debug 25",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
         "y": 1020,
         "wires": []
     },
     {
-        "id": "9575f6a2cd93ef27",
-        "type": "function",
+        "id": "bacd980a641923d0",
+        "type": "ui-control",
         "z": "dbbc51d133244edd",
-        "g": "fac7afbb60e38641",
-        "name": "Initialization",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f525c3f0d986182e",
-        "type": "function",
-        "z": "dbbc51d133244edd",
-        "g": "fac7afbb60e38641",
-        "name": "Register Alert",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
+        "name": "",
+        "ui": "0f931f53a4d06db6",
+        "events": "all",
+        "x": 960,
         "y": 1120,
         "wires": [
             []
         ]
     },
     {
-        "id": "7614d146a817cd4e",
-        "type": "function",
+        "id": "879866549ddbcab8",
+        "type": "ui-template",
         "z": "dbbc51d133244edd",
-        "g": "fac7afbb60e38641",
-        "name": "Timer_tick",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 490,
-        "y": 1180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "369c55600c2497dc",
-        "type": "mqtt in",
-        "z": "dbbc51d133244edd",
-        "name": "",
-        "topic": "SD_AUTO/mqtt/LWT/status",
-        "qos": "1",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 300,
-        "y": 1460,
+        "d": true,
+        "group": "1c312bbc82b098e5",
+        "page": "",
+        "ui": "",
+        "name": "Test Template",
+        "order": 2,
+        "width": "5",
+        "height": "3",
+        "head": "",
+        "format": "<template>\n    <div>\n        <h2>Dashboard Test</h2>\n        <p>Page count: {{ pageCount }}</p>\n\n        <button @click=\"sendPages\">\n            Send Pages to Node-RED\n        </button>\n    </div>\n</template>\n\n<script>\n    export default {\n    computed: {\n        pageCount() {\n            return Object.keys(this.$store.state.ui.pages || {}).length;\n        }\n    },\n\n    methods: {\n        sendPages() {\n            const pages = Object.values(this.$store.state.ui.pages || {})\n                .map(page => ({\n                    id: page.id,\n                    name: page.name,\n                    path: page.path,\n                    visible: page.visible !== false,\n                    disabled: page.disabled === true\n                }));\n\n            this.send({\n                payload: pages\n            });\n        }\n    }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 760,
+        "y": 1140,
         "wires": [
             [
-                "d1a370de157139bb"
+                "326dca6069fb45c5"
             ]
         ]
     },
     {
-        "id": "d1a370de157139bb",
+        "id": "326dca6069fb45c5",
         "type": "debug",
         "z": "dbbc51d133244edd",
-        "name": "debug 32",
+        "name": "debug 41",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -3869,55 +5164,139 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 1500,
+        "x": 880,
+        "y": 1200,
         "wires": []
     },
     {
-        "id": "6ed9698291931132",
-        "type": "mqtt in",
+        "id": "f626f8d7076ed449",
+        "type": "function",
         "z": "dbbc51d133244edd",
-        "name": "",
-        "topic": "/mqtt/LWT/SD_AUTO",
-        "qos": "1",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 320,
-        "y": 1540,
+        "g": "605792726c72f3fa",
+        "name": "Validate Device Configuration",
+        "func": "const changes = msg.payload;\n\nif (!Array.isArray(changes)) {\n    return {\n        topic: \"admin/device-configuration/save-result\",\n        payload: {\n            success: false,\n            errors: [\"Invalid device configuration payload.\"]\n        }\n    };\n}\n\nconst devices = global.get(\"devices\") || {};\nconst errors = [];\nconst seenPages = new Set();\nconst now = new Date().toISOString();\n\n\n// -------------------------------------------------------------\n// Validate every submitted device\n// -------------------------------------------------------------\n\nfor (const change of changes) {\n\n    const sourceId = change.sourceId;\n\n    if (!sourceId) {\n        errors.push(\"A device is missing its sourceId.\");\n        continue;\n    }\n\n    const device = devices[sourceId];\n\n    if (!device) {\n        errors.push(`Unknown device '${sourceId}'.`);\n        continue;\n    }\n\n    if (typeof change.accepted !== \"boolean\") {\n        errors.push(\n            `Invalid accepted value for device '${sourceId}'.`\n        );\n    }\n\n    if (\n        typeof change.dashboardPage !== \"string\"\n    ) {\n        errors.push(\n            `Invalid dashboardPage for device '${sourceId}'.`\n        );\n        continue;\n    }\n\n    const dashboardPage = change.dashboardPage.trim();\n\n    // Empty string means no page assigned.\n    if (dashboardPage === \"\")\n        continue;\n\n    // Prevent two devices from claiming the same page.\n    if (seenPages.has(dashboardPage)) {\n        errors.push(\n            `Dashboard page '${dashboardPage}' is assigned to more than one device.`\n        );\n    }\n\n    seenPages.add(dashboardPage);\n}\n\n\n// -------------------------------------------------------------\n// Stop here if validation failed.\n// Nothing in global.devices has been changed.\n// -------------------------------------------------------------\n\nif (errors.length > 0) {\n\n    return {\n        topic: \"admin/device-configuration/save-result\",\n        payload: {\n            success: false,\n            errors: errors\n        }\n    };\n}\n\n\n// -------------------------------------------------------------\n// Commit the validated changes.\n// -------------------------------------------------------------\n\nfor (const change of changes) {\n\n    const device = devices[change.sourceId];\n\n    const wasAccepted =\n        device.registration &&\n        device.registration.accepted === true;\n\n    const isAccepted = change.accepted === true;\n\n    device.dashboardPage = change.dashboardPage;\n\n    if (!device.registration) {\n        device.registration = {};\n    }\n\n    device.registration.accepted = isAccepted;\n\n    if (isAccepted && !wasAccepted) {\n        device.registration.acceptedDate = now;\n    }\n\n    if (!isAccepted) {\n        device.registration.acceptedDate = null;\n    }\n}\n\n\n// -------------------------------------------------------------\n// Publish the updated runtime device collection.\n// -------------------------------------------------------------\n\nglobal.set(\"devices\", devices);\n\n\n// -------------------------------------------------------------\n// Tell the Admin UI that the save succeeded.\n// -------------------------------------------------------------\n\nreturn {\n    topic: \"admin/device-configuration/save-result\",\n    payload: {\n        success: true\n    }\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 620,
         "wires": [
             [
-                "d1a370de157139bb"
+                "cfb6227dfa49fa8b"
             ]
         ]
+    },
+    {
+        "id": "404b5430be1f6ae3",
+        "type": "link in",
+        "z": "dbbc51d133244edd",
+        "g": "605792726c72f3fa",
+        "name": "get/pendig/devices/in",
+        "links": [
+            "6fe01a9d31bcff41"
+        ],
+        "x": 705,
+        "y": 600,
+        "wires": [
+            [
+                "07f9c12e28406d1e"
+            ]
+        ]
+    },
+    {
+        "id": "a0217042370e6670",
+        "type": "debug",
+        "z": "dbbc51d133244edd",
+        "name": "debug 45",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1140,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "213d04c92d2aa8fe",
+        "type": "ui-event",
+        "z": "dbbc51d133244edd",
+        "ui": "0f931f53a4d06db6",
+        "name": "",
+        "x": 990,
+        "y": 120,
+        "wires": [
+            [
+                "a0217042370e6670",
+                "6fe01a9d31bcff41"
+            ]
+        ]
+    },
+    {
+        "id": "6fe01a9d31bcff41",
+        "type": "link out",
+        "z": "dbbc51d133244edd",
+        "name": "Configurstion/page/tab/chgs/out",
+        "mode": "link",
+        "links": [
+            "404b5430be1f6ae3"
+        ],
+        "x": 1105,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "fd9570c527c251b6",
+        "type": "debug",
+        "z": "dbbc51d133244edd",
+        "g": "605792726c72f3fa",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 580,
+        "wires": []
     },
     {
         "id": "09193d939de8ab31",
         "type": "comment",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Heartbeat Service",
         "info": "Heartbeat Service\n\nPurpose\n-------\nThe Heartbeat Service monitors communication with registered devices and\nservices. It detects when communication has been lost or restored and\nmanages heartbeat-related alerts.\n\nResponsibilities\n----------------\n- Monitor heartbeat activity for registered devices and services.\n- Record the time of the last successful check-in.\n- Determine when communication has been lost.\n- Determine when communication has been restored.\n- Create ACTIVE_ALERT records when communication is lost.\n- Resolve ACTIVE_ALERT records when communication is restored.\n- Maintain heartbeat runtime state.\n\nOwns\n----\n- Heartbeat runtime state.\n- Last successful check-in times.\n- Online/offline status.\n- Missed heartbeat statistics.\n- Active heartbeat alerts.\n\nDoes Not\n--------\n- Send email notifications.\n- Display dashboard notifications.\n- Determine notification policy.\n- Delete resolved alerts.\n- Diagnose the cause of communication failures.\n\nObservations\n------------\nThe Heartbeat Service reports only observable facts.\n\nExamples:\n- Communication with a device has been lost.\n- Communication with a device has been restored.\n- The last successful check-in occurred at a specific time.\n\nThe Heartbeat Service does not infer why communication was lost.\n\nCollaborates With\n-----------------\nNotification Service\n    - Receives newly created alerts.\n    - Receives resolved alerts.\n\nConfiguration\n    - Provides heartbeat timing and timeout configuration.\n\nDevice Services\n    - Produce heartbeat messages.\n    - May query heartbeat status.\n\nPublic Interface\n----------------\nInitially anticipated:\n- Process heartbeat received.\n- Check heartbeat timeouts.\n- Create heartbeat alert.\n- Resolve heartbeat alert.",
-        "x": 310,
-        "y": 240,
+        "x": 130,
+        "y": 280,
         "wires": []
     },
     {
         "id": "5f81e926c91c3bf2",
         "type": "comment",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Contract",
         "info": "Purpose\n    ...\n\nInputs\n\n    HEARTBEAT_RECEIVED\n        A device or service has checked in.\n\n    TIMER_TICK\n        Used to evaluate heartbeat timeouts.\n\n    ALERT_COMPLETED\n        Notification Service has completed processing a resolved alert.\n\nOutputs\n\n    ALERT_CREATED\n        Published when communication has been lost.\n\n    ALERT_RESOLVED\n        Published when communication has been restored.\n\nOwns\n\n    Heartbeat runtime state.\n\nPublic Functions\n\n    None (initially)",
-        "x": 280,
-        "y": 300,
+        "x": 100,
+        "y": 320,
         "wires": []
     },
     {
         "id": "94401f6f10bd928a",
         "type": "function",
         "z": "93d30457147d20e0",
+        "d": true,
+        "g": "0b951a054ab1d903",
         "name": "Initialization",
         "func": "// -----------------------------------------------------------------------------\n// Initialize Heartbeat Service\n//\n// Executed once during Node-RED startup.\n//\n// Creates the Heartbeat runtime registry.\n//\n// -----------------------------------------------------------------------------\n\nconst heartbeatObj = {};\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nreturn msg;",
         "outputs": 1,
@@ -3933,30 +5312,13 @@
         ]
     },
     {
-        "id": "3395cc8746f237b1",
-        "type": "function",
-        "z": "93d30457147d20e0",
-        "name": "Event Handler",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "6f2ffd2b537c54f0",
         "type": "comment",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Public Library Functions",
         "info": "",
-        "x": 330,
+        "x": 150,
         "y": 360,
         "wires": []
     },
@@ -3964,6 +5326,7 @@
         "id": "d3d3cee7e2157563",
         "type": "mqtt in",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "HB In",
         "topic": "ei/to/nr/hb",
         "qos": "0",
@@ -3977,7 +5340,8 @@
         "y": 700,
         "wires": [
             [
-                "eae4d39788793bac"
+                "eae4d39788793bac",
+                "79cf45848fa67b11"
             ]
         ]
     },
@@ -3985,6 +5349,7 @@
         "id": "aa621d186c78b296",
         "type": "debug",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "debug 27",
         "active": false,
         "tosidebar": true,
@@ -4002,6 +5367,7 @@
         "id": "a9a576903d4ee5b1",
         "type": "inject",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Startup init",
         "props": [
             {
@@ -4031,6 +5397,8 @@
         "id": "26baad9228901dba",
         "type": "function",
         "z": "93d30457147d20e0",
+        "d": true,
+        "g": "0b951a054ab1d903",
         "name": "HB Register Device",
         "func": "// -----------------------------------------------------------------------------\n// HB Register Device\n//\n// Creates or updates the heartbeat monitoring entry for a device.\n//\n// -----------------------------------------------------------------------------\n\nconst reg = msg.payload;\n\nconst heartbeatObj = global.get(\"heartbeatObj\") || {};\nconst g_newObject = global.get(\"g_newObject\");\n\nconst hb = heartbeatObj[reg.sourceId];\n\nif (!hb) {\n\n    //\n    // First registration.\n    //\n    const hbEntity = g_newObject(\"HEARTBEAT_ENTITY\");\n\n    hbEntity.interval = reg.heartbeatInterval;\n    hbEntity.timeout = reg.timeout;\n\n    heartbeatObj[reg.sourceId] = hbEntity;\n\n    global.set(\"heartbeatObj\", heartbeatObj);\n\n    node.log(`Heartbeat monitoring started for '${reg.sourceId}'.`);\n\n    return msg;\n}\n\n//\n// Already registered.\n//\nif (\n    hb.interval === reg.heartbeatInterval &&\n    hb.timeout === reg.timeout\n) {\n\n    // Duplicate registration.\n    return msg;\n}\n\n//\n// Registration changed.\n// Update monitoring policy.\n//\nhb.interval = reg.heartbeatInterval;\nhb.timeout = reg.timeout;\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nnode.log(`Heartbeat policy updated for '${reg.sourceId}'.`);\n\nreturn msg;",
         "outputs": 1,
@@ -4051,6 +5419,8 @@
         "id": "c380f1be14a4eada",
         "type": "link in",
         "z": "93d30457147d20e0",
+        "d": true,
+        "g": "0b951a054ab1d903",
         "name": "hb/register/device/in",
         "links": [
             "ecb3c98d9edb5d14"
@@ -4067,6 +5437,8 @@
         "id": "6a9995dc4a810e08",
         "type": "debug",
         "z": "93d30457147d20e0",
+        "d": true,
+        "g": "0b951a054ab1d903",
         "name": "debug 28",
         "active": false,
         "tosidebar": true,
@@ -4084,6 +5456,7 @@
         "id": "2de4af080e3151bb",
         "type": "inject",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "",
         "props": [
             {
@@ -4113,15 +5486,16 @@
         "id": "5c237e67975f5614",
         "type": "function",
         "z": "93d30457147d20e0",
-        "name": "dump heartbeatObj",
-        "func": "msg.heartbeatObj = global.get('heartbeatObj');\nreturn msg;",
+        "g": "0b951a054ab1d903",
+        "name": "dump devices",
+        "func": "msg.devices = global.get('devices');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
+        "x": 340,
         "y": 1060,
         "wires": [
             [
@@ -4133,6 +5507,7 @@
         "id": "945181a9dd54f7d6",
         "type": "debug",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "debug 29",
         "active": true,
         "tosidebar": true,
@@ -4150,8 +5525,9 @@
         "id": "eae4d39788793bac",
         "type": "function",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Receive HB",
-        "func": "const heartbeatObj = global.get(\"heartbeatObj\");\n\nconst hb = heartbeatObj[msg.payload.sourceId];\n\nif (!hb) {\n    node.warn(`Heartbeat received from unregistered source '${msg.payload.sourceId}'.`);\n    return null;\n}\n\nhb.received++;\nhb.lastReceived = Date.now();\n\nglobal.set(\"heartbeatObj\", heartbeatObj);\n\nreturn msg;",
+        "func": "// -----------------------------------------------------------------------------\n// Receive HB\n//\n// Records receipt of a heartbeat from an accepted device.\n//\n// Unregistered or unaccepted devices are silently ignored.\n// Registration Service owns notification of unknown devices.\n//\n// Online/offline state is determined exclusively by Timer_tick.\n// -----------------------------------------------------------------------------\n\nconst sourceId = msg.payload?.sourceId;\n\nif (!sourceId) {\n    return null;\n}\n\nconst devices = global.get(\"devices\") || {};\nconst device = devices[sourceId];\n\n// -----------------------------------------------------------------------------\n// Only accepted devices participate in Heartbeat Service.\n// -----------------------------------------------------------------------------\n\nif (!device || !device.registration?.accepted) {\n    return null;\n}\n\n// -----------------------------------------------------------------------------\n// Heartbeat monitoring must be enabled.\n// -----------------------------------------------------------------------------\n\nif (!device.heartbeatMonitoring?.enabled) {\n    return null;\n}\n\nif (!device.heartbeat) {\n    return null;\n}\n\n// -----------------------------------------------------------------------------\n// Record the heartbeat.\n//\n// Timer_tick owns heartbeatMonitoring.online.\n// -----------------------------------------------------------------------------\n\ndevice.heartbeat.lastHeartbeat = Date.now();\n\nglobal.set(\"devices\", devices);\n\nreturn null;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4170,8 +5546,9 @@
         "id": "16a48e28b5689dab",
         "type": "function",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "Timer_tick",
-        "func": "// -----------------------------------------------------------------------------\n// Timer Tick\n//\n// Evaluates whether each monitored entity is meeting its heartbeat commitment.\n//\n// -----------------------------------------------------------------------------\n\nconst heartbeatObj = global.get(\"heartbeatObj\") || {};\n\nconst now = Date.now();\n\nlet okCount = 0;\nlet timeoutCount = 0;\n\nfor (const sourceId in heartbeatObj) {\n\n    const hb = heartbeatObj[sourceId];\n\n    const elapsed = now - hb.lastReceived;\n\n    if (elapsed <= hb.timeout) {\n\n        okCount++;\n\n    }\n    else {\n\n        timeoutCount++;\n\n    }\n\n}\n\n// -----------------------------------------------------------------------------\n// Update node status.\n// -----------------------------------------------------------------------------\n\nlet fill;\nlet text;\n\nif (timeoutCount === 0) {\n\n    fill = \"green\";\n    text = `${okCount} OK`;\n\n}\nelse {\n\n    fill = \"yellow\";\n    text = `${okCount} OK, ${timeoutCount} timeout`;\n\n}\n\nnode.status({\n    fill: fill,\n    shape: \"dot\",\n    text: text\n});\n\nreturn msg;",
+        "func": "// -----------------------------------------------------------------------------\n// Timer Tick\n//\n// Evaluates heartbeat monitoring for all registered devices.\n//\n// The devices object is authoritative for device registration and heartbeat\n// monitoring state.\n//\n// The timer runs every few seconds, but produces output only when a heartbeat\n// state transition occurs.\n//\n// -----------------------------------------------------------------------------\n\nconst devices = global.get(\"devices\") || {};\n\nconst now = Date.now();\n\nlet okCount = 0;\nlet timeoutCount = 0;\n\nconst events = [];\n\n\n// -----------------------------------------------------------------------------\n// Evaluate every registered device.\n// -----------------------------------------------------------------------------\n\nfor (const sourceId in devices) {\n\n    const device = devices[sourceId];\n\n    // -------------------------------------------------------------------------\n    // Only accepted devices participate in heartbeat monitoring.\n    // -------------------------------------------------------------------------\n\n    if (!device.registration || !device.registration.accepted) {\n        continue;\n    }\n\n    const monitoring = device.heartbeatMonitoring;\n    const heartbeat = device.heartbeat;\n\n    // -------------------------------------------------------------------------\n    // Heartbeat monitoring must be enabled.\n    // -------------------------------------------------------------------------\n\n    if (!monitoring || !monitoring.enabled) {\n        continue;\n    }\n\n    // -------------------------------------------------------------------------\n    // No heartbeat data available.\n    // Treat the device as offline.\n    // -------------------------------------------------------------------------\n\n    if (!heartbeat || !heartbeat.lastHeartbeat) {\n\n        timeoutCount++;\n\n        if (monitoring.online) {\n\n            monitoring.online = false;\n            monitoring.missedHeartbeats = 1;\n\n            events.push({\n                event: \"ALERT_CREATED\",\n                sourceId: sourceId,\n                reason: \"HEARTBEAT_TIMEOUT\",\n                timestamp: now\n            });\n        }\n\n        continue;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Determine how long it has been since the last heartbeat.\n    // -------------------------------------------------------------------------\n\n    const elapsed = now - heartbeat.lastHeartbeat;\n\n\n    // -------------------------------------------------------------------------\n    // Heartbeat is still within the allowed timeout.\n    // -------------------------------------------------------------------------\n\n    if (elapsed <= monitoring.timeout) {\n\n        okCount++;\n\n        // Reset missed-heartbeat count while online.\n        monitoring.missedHeartbeats = 0;\n\n        // ---------------------------------------------------------------------\n        // If the device was previously offline, this is an OFFLINE -> ONLINE\n        // transition.\n        // ---------------------------------------------------------------------\n\n        if (!monitoring.online) {\n\n            monitoring.online = true;\n\n            events.push({\n                event: \"ALERT_RESOLVED\",\n                sourceId: sourceId,\n                reason: \"HEARTBEAT_RESTORED\",\n                timestamp: now\n            });\n        }\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Heartbeat has exceeded the timeout.\n    // -------------------------------------------------------------------------\n\n    else {\n\n        timeoutCount++;\n\n        // ---------------------------------------------------------------------\n        // Calculate missed heartbeats from elapsed time rather than counting\n        // timer ticks. The timer runs every 5 seconds, but the device heartbeat\n        // interval is what defines a missed heartbeat.\n        // ---------------------------------------------------------------------\n\n        if (monitoring.interval > 0) {\n\n            monitoring.missedHeartbeats =\n                Math.floor(elapsed / monitoring.interval);\n\n        }\n        else {\n\n            monitoring.missedHeartbeats = 1;\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Only generate an alert on the ONLINE -> OFFLINE transition.\n        // ---------------------------------------------------------------------\n\n        if (monitoring.online) {\n\n            monitoring.online = false;\n\n            events.push({\n                event: \"ALERT_CREATED\",\n                sourceId: sourceId,\n                reason: \"HEARTBEAT_TIMEOUT\",\n                timestamp: now\n            });\n        }\n    }\n}\n\n\n// -----------------------------------------------------------------------------\n// Persist updated device state.\n// -----------------------------------------------------------------------------\n\nglobal.set(\"devices\", devices);\n\n\n// -----------------------------------------------------------------------------\n// Update node status.\n//\n// This is informational only and does not generate a message.\n// -----------------------------------------------------------------------------\n\nif (timeoutCount === 0) {\n\n    node.status({\n        fill: \"green\",\n        shape: \"dot\",\n        text: `${okCount} OK`\n    });\n\n}\nelse {\n\n    node.status({\n        fill: \"yellow\",\n        shape: \"dot\",\n        text: `${okCount} OK, ${timeoutCount} timeout`\n    });\n}\n\n\n// -----------------------------------------------------------------------------\n// Produce output only when a heartbeat state transition occurred.\n//\n// Ordinary timer ticks produce no message.\n// -----------------------------------------------------------------------------\n\nif (events.length === 0) {\n    return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Return one message for each state transition.\n// -----------------------------------------------------------------------------\n\nreturn events.map(event => ({\n    payload: event\n}));",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4190,6 +5567,7 @@
         "id": "0e2752fbd7dd52ea",
         "type": "inject",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "start timer_tick",
         "props": [
             {
@@ -4219,8 +5597,9 @@
         "id": "898ba7c95e6f09ed",
         "type": "debug",
         "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
         "name": "debug 30",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4230,6 +5609,397 @@
         "statusType": "auto",
         "x": 520,
         "y": 780,
+        "wires": []
+    },
+    {
+        "id": "79cf45848fa67b11",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
+        "name": "debug 33",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "369c55600c2497dc",
+        "type": "mqtt in",
+        "z": "93d30457147d20e0",
+        "g": "512dc7298a3552c8",
+        "name": "",
+        "topic": "/mqtt/LWT/+",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1280,
+        "wires": [
+            [
+                "d1a370de157139bb"
+            ]
+        ]
+    },
+    {
+        "id": "d1a370de157139bb",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "g": "512dc7298a3552c8",
+        "name": "debug 32",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 380,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "04b56b19841c8ee4",
+        "type": "comment",
+        "z": "93d30457147d20e0",
+        "g": "fac7afbb60e38641",
+        "name": "Alert Service",
+        "info": "Owning Service\n      │\n      ▼\nCreate ALERT_CONFIG\n      │\n      ▼\nAlert Management Service\n      │\n      ▼\nPolicy Exists?\n ┌────┴────┐\n │         │\nYes        No\n │         │\n ▼         ▼\nDone    Register Policy\n             │\n             ▼\n      Persist Policy",
+        "x": 990,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9575f6a2cd93ef27",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "g": "fac7afbb60e38641",
+        "name": "Initialization",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f525c3f0d986182e",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "g": "fac7afbb60e38641",
+        "name": "Register Alert",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7614d146a817cd4e",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "g": "fac7afbb60e38641",
+        "name": "Timer_tick",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b12c972df91920a2",
+        "type": "inject",
+        "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 920,
+        "wires": [
+            [
+                "0d5ba8dab1ddc4fb"
+            ]
+        ]
+    },
+    {
+        "id": "0d5ba8dab1ddc4fb",
+        "type": "function",
+        "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
+        "name": "Force Device Offline",
+        "func": "// -----------------------------------------------------------------------------\n// TEST: Force Device Offline\n//\n// Makes a registered device appear to have stopped sending heartbeats.\n// The next Timer_tick should detect ONLINE -> OFFLINE.\n//\n// Set targetSourceId to the device you want to test.\n// -----------------------------------------------------------------------------\n\nconst devices = global.get(\"devices\") || {};\n\nconst targetSourceId = \"test_ws_sd\";\n\nconst device = devices[targetSourceId];\n\nif (!device) {\n    node.error(`Test device '${targetSourceId}' not found.`);\n    return null;\n}\n\nif (!device.heartbeatMonitoring) {\n    node.error(`Device '${targetSourceId}' has no heartbeatMonitoring object.`);\n    return null;\n}\n\n// Make the last heartbeat older than the timeout.\ndevice.heartbeat.lastHeartbeat =\n    Date.now() - device.heartbeatMonitoring.timeout - 1000;\n\n// Deliberately leave the device ONLINE so Timer_tick sees the transition.\ndevice.heartbeatMonitoring.online = true;\ndevice.heartbeatMonitoring.missedHeartbeats = 0;\n\nglobal.set(\"devices\", devices);\n\nnode.warn(`Forced '${targetSourceId}' into heartbeat timeout test state.`);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 920,
+        "wires": [
+            [
+                "77f05873aab38fe4"
+            ]
+        ]
+    },
+    {
+        "id": "77f05873aab38fe4",
+        "type": "debug",
+        "z": "93d30457147d20e0",
+        "g": "0b951a054ab1d903",
+        "name": "debug 34",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "3656e7b88cbae2f0",
+        "type": "ui-template",
+        "z": "856fbb279d4dc5cf",
+        "group": "0b4befd1d2605cdf",
+        "page": "",
+        "ui": "",
+        "name": "Status",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div>\n        <h2>Device Status</h2>\n\n        <div v-for=\"device in msg.payload\" :key=\"device.sourceId\">\n\n            <div>\n                <a href=\"#\" class=\"device-link\" @click.prevent=\"selectDevice(device)\">\n                    {{ device.name }}\n                </a>\n\n                — {{ device.online ? 'UP' : 'DOWN' }}\n            </div>\n\n            <div v-if=\"device.lastHeartbeat\">\n                Last heartbeat:\n                {{ new Date(device.lastHeartbeat).toLocaleString() }}\n            </div>\n\n        </div>\n    </div>\n</template>\n\n<style>\n    .device-link {\n        color: #ffd54f;\n        text-decoration: underline;\n        cursor: pointer;\n    }\n\n    .device-link:hover {\n        color: #fff176;\n    }\n</style>\n\n<script>\n    export default {\n    methods: {\n        selectDevice: function(device) {\n            this.send({\n                payload: {\n                    sourceId: device.sourceId\n                }\n            })\n        }\n    }\n}\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 420,
+        "wires": [
+            [
+                "89419efad0be72d5",
+                "19b1ce4b5ad2f201"
+            ]
+        ]
+    },
+    {
+        "id": "581ca260699b56ed",
+        "type": "function",
+        "z": "856fbb279d4dc5cf",
+        "name": "Build Device Status",
+        "func": "const devices = global.get(\"devices\") || {};\n\nconst status = [];\n\nfor (const sourceId in devices) {\n\n    const device = devices[sourceId];\n\n    if (!device.registration || !device.registration.accepted) {\n        continue;\n    }\n\n    status.push({\n        sourceId: sourceId,\n        name: device.identity.appName,\n        online:\n            device.heartbeatMonitoring &&\n            device.heartbeatMonitoring.online === true\n    });\n}\n\nmsg.payload = status;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "3656e7b88cbae2f0",
+                "71b995f9772b4ffb"
+            ]
+        ]
+    },
+    {
+        "id": "fa6cf038d6b155ae",
+        "type": "inject",
+        "z": "856fbb279d4dc5cf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "581ca260699b56ed"
+            ]
+        ]
+    },
+    {
+        "id": "89419efad0be72d5",
+        "type": "debug",
+        "z": "856fbb279d4dc5cf",
+        "name": "debug 35",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "71b995f9772b4ffb",
+        "type": "debug",
+        "z": "856fbb279d4dc5cf",
+        "name": "debug 36",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "1f4305c492a01fbc",
+        "type": "debug",
+        "z": "856fbb279d4dc5cf",
+        "name": "debug 37",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "19b1ce4b5ad2f201",
+        "type": "function",
+        "z": "856fbb279d4dc5cf",
+        "name": "Navigate Device",
+        "func": "const devices = global.get(\"devices\") || {};\n\nconst sourceId = msg.payload?.sourceId;\n\nif (!sourceId) {\n    node.warn(\"Device navigation requested without a sourceId.\");\n    return null;\n}\n\nconst device = devices[sourceId];\n\nif (!device) {\n    node.warn(`Cannot navigate to unknown device '${sourceId}'.`);\n    return null;\n}\n\n// Temporary GPS test.\nif (sourceId === \"test_gps\") {\n\n    msg.payload = {\n        page: \"GPS\"\n    };\n\n    return msg;\n}\n\nnode.warn(`No Dashboard page defined for '${sourceId}'.`);\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 540,
+        "wires": [
+            [
+                "0f204584ce74b4d6",
+                "a0775f537dadd9a0"
+            ]
+        ]
+    },
+    {
+        "id": "0f204584ce74b4d6",
+        "type": "ui-control",
+        "z": "856fbb279d4dc5cf",
+        "name": "",
+        "ui": "0f931f53a4d06db6",
+        "events": "all",
+        "x": 900,
+        "y": 540,
+        "wires": [
+            [
+                "cf3ea19823814783"
+            ]
+        ]
+    },
+    {
+        "id": "a0775f537dadd9a0",
+        "type": "debug",
+        "z": "856fbb279d4dc5cf",
+        "name": "debug 38",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "cf3ea19823814783",
+        "type": "debug",
+        "z": "856fbb279d4dc5cf",
+        "name": "debug 39",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 580,
         "wires": []
     }
 ]

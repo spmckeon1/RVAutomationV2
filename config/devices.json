@@ -1,97 +1,16 @@
 {
-  "test_gps": {
+  "test_ws_sd": {
     "identity": {
-      "appName": "TEST GPS Controller",
-      "shortName": "test_gps",
-      "sourceId": "test_gps"
+      "appName": "TEST Windshield Shade Controller",
+      "sourceId": "test_ws_sd"
     },
+    "dashboardPage": "Windshield Shade",
     "registration": {
       "accepted": true,
-      "acceptedDate": "2026-08-11T03:05:21.877Z"
+      "acceptedDate": "2026-08-11T23:22:40.952Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1786336948886
-    },
-    "heartbeatMonitoring": {
-      "enabled": true,
-      "interval": 60000,
-      "timeout": 180000,
-      "online": false,
-      "missedHeartbeats": 1,
-      "lastAlertTime": 1786420514776
-    },
-    "state": {
-      "sourceId": "test_gps",
-      "position": {
-        "latitude": 31.68740767,
-        "longitude": -110.3555148
-      },
-      "fix": {
-        "valid": true,
-        "ageMs": 818
-      },
-      "motion": {
-        "speedKph": 0.1,
-        "courseDeg": 0
-      },
-      "altitude": {
-        "meters": 1346.8
-      },
-      "quality": {
-        "satellites": 12,
-        "hdop": 0.55
-      },
-      "utc": {
-        "year": 2026,
-        "month": 8,
-        "day": 10,
-        "hour": 4,
-        "minute": 42,
-        "second": 33
-      }
-    },
-    "stats": {},
-    "data": {
-      "timestamp": {
-        "year": 2026,
-        "month": 8,
-        "day": 10,
-        "hour": 4,
-        "minute": 42,
-        "second": 33
-      },
-      "position": {
-        "latitude": 31.68740767,
-        "longitude": -110.3555148
-      },
-      "motion": {
-        "speedKph": 0.1,
-        "courseDeg": 0
-      },
-      "altitude": {
-        "meters": 1346.8
-      },
-      "fix": {
-        "valid": true,
-        "ageMs": 818
-      },
-      "quality": {
-        "satellites": 12,
-        "hdop": 0.55
-      }
-    }
-  },
-  "SD_AUTO": {
-    "identity": {
-      "appName": "Shade Automation V4",
-      "sourceId": "SD_AUTO"
-    },
-    "registration": {
-      "accepted": true,
-      "acceptedDate": "2026-08-11T03:07:49.651Z"
-    },
-    "heartbeat": {
-      "lastHeartbeat": 1786422728692
+      "lastHeartbeat": 1786715939647
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -99,9 +18,91 @@
       "timeout": 180000,
       "online": true,
       "missedHeartbeats": 0,
-      "lastAlertTime": 1786417679576
+      "lastAlertTime": 0
     },
     "state": {},
     "stats": {}
+  },
+  "test_gps": {
+    "identity": {
+      "appName": "TEST GPS Controller",
+      "sourceId": "test_gps"
+    },
+    "dashboardPage": "GPS",
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-08-12T01:36:12.490Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1786715940110
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 0
+    },
+    "state": {
+      "sourceId": "test_gps",
+      "position": {
+        "latitude": 31.68742467,
+        "longitude": -110.3555237
+      },
+      "fix": {
+        "valid": true,
+        "ageMs": 921
+      },
+      "motion": {
+        "speedKph": 0,
+        "courseDeg": 276.12
+      },
+      "altitude": {
+        "meters": 1343.8
+      },
+      "quality": {
+        "satellites": 12,
+        "hdop": 0.51
+      },
+      "utc": {
+        "year": 2026,
+        "month": 8,
+        "day": 14,
+        "hour": 13,
+        "minute": 59,
+        "second": 22
+      }
+    },
+    "stats": {},
+    "data": {
+      "timestamp": {
+        "year": 2026,
+        "month": 8,
+        "day": 14,
+        "hour": 13,
+        "minute": 59,
+        "second": 22
+      },
+      "position": {
+        "latitude": 31.68742467,
+        "longitude": -110.3555237
+      },
+      "motion": {
+        "speedKph": 0,
+        "courseDeg": 276.12
+      },
+      "altitude": {
+        "meters": 1343.8
+      },
+      "fix": {
+        "valid": true,
+        "ageMs": 921
+      },
+      "quality": {
+        "satellites": 12,
+        "hdop": 0.51
+      }
+    }
   }
 }

@@ -479,6 +479,79 @@
         "h": 122
     },
     {
+        "id": "924544e491daa42d",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "name": "Display Logs",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "a94863d0851d5376",
+            "87b7774b46dafe02",
+            "d468d103072f29a7",
+            "8ebc0ceeda36cf1a",
+            "5a8eb0baea74f81b",
+            "1367d4dfe063f481",
+            "c9721bdd2e8c83ee",
+            "c122719ce74f8f6a",
+            "c8d236d56da8076a",
+            "329fabce979bf06c",
+            "dc91af60b0f07b69",
+            "c70c1d07332a58ce",
+            "c4b0aa1bb4a29a39",
+            "9d35777a2b131516",
+            "6818d9dbb084fe7f",
+            "80077ea1eac00ecc",
+            "9ecf1c2b325fd852",
+            "84ea162d660bcd44",
+            "ddfb6f6014222966",
+            "23b9f0be2824c974",
+            "f2184f110234ed9a",
+            "7c928e5092ab5130",
+            "7759a0b14cdd0804",
+            "72e977046ac79fa0",
+            "9eecf2cbd05901d6",
+            "da1058cd61b4ef08",
+            "7f14592e2cdf759b",
+            "12209a6166b24e2d",
+            "04bec39758ac0f89",
+            "86c938695d40d20b",
+            "ca09e2544fab9c67",
+            "2c3938772243e8f1",
+            "79d827115a7a9eb9",
+            "5ce2e5b0b420a1b7",
+            "f5bbd96c1958884f",
+            "aa0532f177eab5bf",
+            "bad9052183a01af7",
+            "1b7b42b7672c3f7f",
+            "abe946717f7aab47",
+            "ee45d6969a860fc0",
+            "1661f19f1bd77682",
+            "3772d42a578a6b36",
+            "ed221331d72730b2",
+            "6edc6af5bf1dbd5a",
+            "6e29f1201371458d",
+            "15e21681d1f070ce",
+            "8089fb98e0744f68",
+            "8ffee1bf3ad1ac73",
+            "f4b5384c1453739a",
+            "2b85c23655181ace",
+            "ad74b093f60bbaba",
+            "1d02ebdf41761475",
+            "ba853e167a6130f6",
+            "2fd5e97b78ce514d",
+            "0431eb7490392455",
+            "7fb3213921a17167"
+        ],
+        "x": 154,
+        "y": 1359,
+        "w": 1212,
+        "h": 1002
+    },
+    {
         "id": "c636e6f5d63201f8",
         "type": "group",
         "z": "e213983d60d65ed3",
@@ -554,62 +627,6 @@
         "h": 142
     },
     {
-        "id": "924544e491daa42d",
-        "type": "group",
-        "z": "4721bb14b0bb8ce2",
-        "name": "Display Logs",
-        "style": {
-            "stroke": "#0070c0",
-            "label": true,
-            "color": "#0070c0"
-        },
-        "nodes": [
-            "8089fb98e0744f68",
-            "a94863d0851d5376",
-            "b07c4b45d4e13376",
-            "87b7774b46dafe02",
-            "d468d103072f29a7",
-            "8ebc0ceeda36cf1a",
-            "72333f9c12d9509c",
-            "a565ae6594722331",
-            "5a8eb0baea74f81b",
-            "93246fe676f6eba1",
-            "7148640c30407993",
-            "1367d4dfe063f481",
-            "20837c9b2a83f840",
-            "1ace80d71bbd3425",
-            "d01f190d78be6687",
-            "f5c1d6614c612293",
-            "c9721bdd2e8c83ee",
-            "c122719ce74f8f6a",
-            "c8d236d56da8076a",
-            "329fabce979bf06c",
-            "dc91af60b0f07b69",
-            "c70c1d07332a58ce",
-            "c4b0aa1bb4a29a39",
-            "9d35777a2b131516",
-            "f4b5384c1453739a",
-            "2b85c23655181ace",
-            "6818d9dbb084fe7f",
-            "80077ea1eac00ecc",
-            "8ffee1bf3ad1ac73",
-            "9ecf1c2b325fd852",
-            "84ea162d660bcd44",
-            "7ed67aac745eafc7",
-            "ddfb6f6014222966",
-            "23b9f0be2824c974",
-            "f2184f110234ed9a",
-            "7c928e5092ab5130",
-            "7759a0b14cdd0804",
-            "72e977046ac79fa0",
-            "9eecf2cbd05901d6"
-        ],
-        "x": 154,
-        "y": 1339,
-        "w": 1192,
-        "h": 802
-    },
-    {
         "id": "5be6bf7969fc9e8d",
         "type": "mqtt-broker",
         "name": "RVAutomation_V2",
@@ -680,106 +697,6 @@
         }
     },
     {
-        "id": "eb31c5fb533897a0",
-        "type": "ui-page",
-        "name": "Logs",
-        "ui": "0f931f53a4d06db6",
-        "path": "/service/logs",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "43a2176c22de23f9",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 1,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "0d84bc5c17ef7261",
-        "type": "ui-group",
-        "name": "Logs",
-        "page": "eb31c5fb533897a0",
-        "width": "15",
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "false",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "634d105249078f87",
-        "type": "ui-page",
-        "name": "GPS",
-        "ui": "0f931f53a4d06db6",
-        "path": "/gps",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "43a2176c22de23f9",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 2,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "5e25cb33b5ac6c97",
-        "type": "ui-group",
-        "name": "GPS",
-        "page": "634d105249078f87",
-        "width": "19",
-        "height": "14",
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
         "id": "2e72e1a7cdfc8699",
         "type": "ui-theme",
         "name": "ui-base.label.theme 2",
@@ -799,106 +716,6 @@
         }
     },
     {
-        "id": "264ef55d77cf9ba1",
-        "type": "ui-page",
-        "name": "Configuration",
-        "ui": "0f931f53a4d06db6",
-        "path": "/service/configuration",
-        "icon": "home",
-        "layout": "grid",
-        "theme": "43a2176c22de23f9",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 3,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "e7e8139fec4f59b2",
-        "type": "ui-group",
-        "name": "Configuration",
-        "page": "264ef55d77cf9ba1",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
-        "id": "f809acefa6dc8472",
-        "type": "ui-page",
-        "name": "Status",
-        "ui": "0f931f53a4d06db6",
-        "path": "/service/status",
-        "icon": "list-status",
-        "layout": "grid",
-        "theme": "43a2176c22de23f9",
-        "breakpoints": [
-            {
-                "name": "Default",
-                "px": "0",
-                "cols": "3"
-            },
-            {
-                "name": "Tablet",
-                "px": "576",
-                "cols": "6"
-            },
-            {
-                "name": "Small Desktop",
-                "px": "768",
-                "cols": "9"
-            },
-            {
-                "name": "Desktop",
-                "px": "1024",
-                "cols": "12"
-            }
-        ],
-        "order": 4,
-        "className": "",
-        "visible": "true",
-        "disabled": "false"
-    },
-    {
-        "id": "0b4befd1d2605cdf",
-        "type": "ui-group",
-        "name": "Device Status",
-        "page": "f809acefa6dc8472",
-        "width": 6,
-        "height": 1,
-        "order": 1,
-        "showTitle": true,
-        "className": "",
-        "visible": "true",
-        "disabled": "false",
-        "groupType": "default"
-    },
-    {
         "id": "43a2176c22de23f9",
         "type": "ui-theme",
         "name": "RVAutomation",
@@ -911,10 +728,10 @@
         },
         "sizes": {
             "density": "comfortable",
-            "pagePadding": "12px",
-            "groupGap": "12px",
+            "pagePadding": "0px",
+            "groupGap": "0px",
             "groupBorderRadius": "4px",
-            "widgetGap": "12px"
+            "widgetGap": "3px"
         }
     },
     {
@@ -948,7 +765,7 @@
                 "cols": "12"
             }
         ],
-        "order": 6,
+        "order": 7,
         "className": "",
         "visible": "true",
         "disabled": "false"
@@ -998,10 +815,10 @@
                 "cols": "12"
             }
         ],
-        "order": 5,
+        "order": 6,
         "className": "",
-        "visible": true,
-        "disabled": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "1c312bbc82b098e5",
@@ -1016,6 +833,256 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
+    },
+    {
+        "id": "eb31c5fb533897a0",
+        "type": "ui-page",
+        "name": "Logs",
+        "ui": "0f931f53a4d06db6",
+        "path": "/service/logs",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0d84bc5c17ef7261",
+        "type": "ui-group",
+        "name": "Log Table",
+        "page": "eb31c5fb533897a0",
+        "width": "15",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "false",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "634d105249078f87",
+        "type": "ui-page",
+        "name": "GPS",
+        "ui": "0f931f53a4d06db6",
+        "path": "/gps",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5e25cb33b5ac6c97",
+        "type": "ui-group",
+        "name": "GPS",
+        "page": "634d105249078f87",
+        "width": "19",
+        "height": "14",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "264ef55d77cf9ba1",
+        "type": "ui-page",
+        "name": "Configuration",
+        "ui": "0f931f53a4d06db6",
+        "path": "/service/configuration",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "e7e8139fec4f59b2",
+        "type": "ui-group",
+        "name": "Configuration",
+        "page": "264ef55d77cf9ba1",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f809acefa6dc8472",
+        "type": "ui-page",
+        "name": "Status",
+        "ui": "0f931f53a4d06db6",
+        "path": "/service/status",
+        "icon": "list-status",
+        "layout": "grid",
+        "theme": "43a2176c22de23f9",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "0b4befd1d2605cdf",
+        "type": "ui-group",
+        "name": "Device Status",
+        "page": "f809acefa6dc8472",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "94e109669570dbcd",
+        "type": "ui-group",
+        "name": "Controls",
+        "page": "eb31c5fb533897a0",
+        "width": "15",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6d836711f9136ed7",
+        "type": "ui-page",
+        "name": "test",
+        "ui": "0f931f53a4d06db6",
+        "path": "/page7",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "4bd63eede254a165",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "c7803681a545c231",
@@ -2231,7 +2298,7 @@
         "z": "e213983d60d65ed3",
         "g": "fb4d417abfd51a2e",
         "name": "Register Device",
-        "func": "node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    if (!reg.sourceId ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n\n    if (!devices[reg.sourceId]) {\n\n        node.warn(\n            `New device '${reg.sourceId}' requesting registration.`\n        );\n\n        devices[reg.sourceId] = createDevice(reg);\n        node.warn(devices[reg.sourceId]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n //   node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.sourceId];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.sourceId}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
+        "func": "//node.warn(msg.payload);\n\nfunction createDevice(reg) {\n\n    const g_readJsonFile = global.get(\"g_readJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    // Read the architectural device template.\n    const device = g_readJsonFile(BOOTSTRAP.TEMPLATES.DEVICE);\n\n    // Populate identity.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Populate heartbeat configuration.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    // Initialize registration.\n    device.registration.accepted = false;\n    device.registration.acceptedDate = null;\n\n    return device;\n}\n\ntry {\n\n    const reg = msg.payload;\n\n    // Validate registration message.\n    if (!reg.sourceId ||\n        !reg.appName ||\n        reg.heartbeatInterval == null ||\n        reg.timeout == null) {\n\n        node.error(\"Invalid registration message.\");\n        return null;\n    }\n\n    const g_writeJsonFile = global.get(\"g_writeJsonFile\");\n    const BOOTSTRAP = global.get(\"BOOTSTRAP\");\n\n    const devices = global.get(\"devices\") || {};\n\n    //\n    // First registration of this device.\n    //\n\n    if (!devices[reg.sourceId]) {\n\n        node.warn(\n            `New device '${reg.sourceId}' requesting registration.`\n        );\n\n        devices[reg.sourceId] = createDevice(reg);\n        node.warn(devices[reg.sourceId]);\n\n        global.set(\"devices\", devices);\n        node.warn(global.get(\"devices\"));\n\n        g_writeJsonFile(\n            BOOTSTRAP.FILES.DEVICES,\n            devices\n        );\n\n        // TODO\n        // Logging library.\n        // Email administrator requesting approval.\n\n        return null;\n    }\n //   node.warn(devices);\n    \n    //\n    // Existing device.\n    //\n    const device = devices[reg.sourceId];\n\n    // Refresh identity in case firmware changed.\n    device.identity.appName = reg.appName;\n    device.identity.sourceId = reg.sourceId;\n\n    // Refresh heartbeat policy.\n    device.heartbeatMonitoring.interval = reg.heartbeatInterval;\n    device.heartbeatMonitoring.timeout = reg.timeout;\n\n    global.set(\"devices\", devices);\n\n    g_writeJsonFile(\n        BOOTSTRAP.FILES.DEVICES,\n        devices\n    );\n\n    node.log(`Registered '${reg.sourceId}'.`);\n\n}\ncatch (err) {\n\n    node.error(err);\n\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2907,7 +2974,7 @@
         "group": "7ffe7d782148f1c6",
         "name": "",
         "label": "PCB Temperature",
-        "order": 1,
+        "order": 2,
         "chartType": "bar",
         "category": "",
         "categoryType": "str",
@@ -2967,7 +3034,7 @@
         "type": "debug",
         "z": "2ecdaac948b4ee3b",
         "name": "debug 40",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3025,6 +3092,69 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "f68daadebf31b007",
+        "type": "mqtt in",
+        "z": "2ecdaac948b4ee3b",
+        "name": "",
+        "topic": "test_ws_sd/to/nr/sd/data",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "5be6bf7969fc9e8d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 430,
+        "y": 820,
+        "wires": [
+            [
+                "543ae2b9a6715ea0",
+                "2031517880247596"
+            ]
+        ]
+    },
+    {
+        "id": "543ae2b9a6715ea0",
+        "type": "debug",
+        "z": "2ecdaac948b4ee3b",
+        "name": "debug 51",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "2031517880247596",
+        "type": "ui-text",
+        "z": "2ecdaac948b4ee3b",
+        "group": "7ffe7d782148f1c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Windshield data",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 680,
+        "y": 840,
+        "wires": []
     },
     {
         "id": "4cc435a5e1358f17",
@@ -3813,7 +3943,7 @@
         "page": "",
         "ui": "",
         "name": "",
-        "order": 6,
+        "order": 3,
         "width": "15",
         "height": "8",
         "head": "",
@@ -3894,53 +4024,15 @@
         "wires": []
     },
     {
-        "id": "8089fb98e0744f68",
-        "type": "ui-dropdown",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "group": "0d84bc5c17ef7261",
-        "name": "",
-        "label": "System",
-        "tooltip": "",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "passthru": false,
-        "multiple": true,
-        "chips": true,
-        "clearable": true,
-        "options": [
-            {
-                "label": "",
-                "value": "",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "typeIsComboBox": false,
-        "msgTrigger": "onClose",
-        "x": 580,
-        "y": 1520,
-        "wires": [
-            [
-                "72333f9c12d9509c",
-                "f4b5384c1453739a"
-            ]
-        ]
-    },
-    {
         "id": "a94863d0851d5376",
         "type": "ui-dropdown",
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
-        "group": "0d84bc5c17ef7261",
+        "group": "94e109669570dbcd",
         "name": "",
         "label": "Event Type",
         "tooltip": "",
-        "order": 3,
+        "order": 4,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -3960,34 +4052,12 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onClose",
-        "x": 590,
-        "y": 1680,
+        "x": 430,
+        "y": 1780,
         "wires": [
             [
                 "8ebc0ceeda36cf1a",
-                "1ace80d71bbd3425",
                 "6818d9dbb084fe7f"
-            ]
-        ]
-    },
-    {
-        "id": "b07c4b45d4e13376",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Discover Event Types",
-        "func": "const events = Array.isArray(msg.payload) ? msg.payload : [];\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type options available for these events\n// -----------------------------------------------------------------------------\n\nconst availableEventTypes = [\n    ...new Set(\n        events\n            .map(e => e.eventType)\n            .filter(Boolean)\n    )\n].sort();\n\n\n// -----------------------------------------------------------------------------\n// Build dropdown options\n// -----------------------------------------------------------------------------\n\nconst options = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...availableEventTypes.map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Retrieve current Event Type selection\n// -----------------------------------------------------------------------------\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Preserve current selection\n// -----------------------------------------------------------------------------\n\nlet validSelectedEventTypes;\n\nif (selectedEventTypes.includes(\"__ALL__\")) {\n\n    // ALL remains valid because there are available event types.\n    validSelectedEventTypes = [\"__ALL__\"];\n\n} else {\n\n    validSelectedEventTypes =\n        selectedEventTypes.filter(type =>\n            availableEventTypes.includes(type)\n        );\n}\n\n\n// -----------------------------------------------------------------------------\n// Send options and preserved selection\n// -----------------------------------------------------------------------------\n\nmsg.options = options;\nmsg.payload = validSelectedEventTypes;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 1700,
-        "wires": [
-            [
-                "a94863d0851d5376"
             ]
         ]
     },
@@ -4010,7 +4080,7 @@
             }
         ],
         "x": 430,
-        "y": 1420,
+        "y": 1500,
         "wires": [
             [
                 "5a8eb0baea74f81b"
@@ -4040,7 +4110,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 260,
-        "y": 1420,
+        "y": 1500,
         "wires": [
             [
                 "87b7774b46dafe02"
@@ -4061,48 +4131,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1720,
-        "wires": []
-    },
-    {
-        "id": "72333f9c12d9509c",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Filter System",
-        "func": "const events = flow.get(\"displayLogEvents\") || [];\nconst selectedSystems = Array.isArray(msg.payload) ? msg.payload : [];\n\nlet filteredEvents;\n\nif (selectedSystems.length === 0) {\n    filteredEvents = events;\n} else {\n    filteredEvents = events.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n// Save the result for the next filtering stage\nflow.set(\"displayLogFilteredEvents\", filteredEvents);\n\nmsg.payload = filteredEvents;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 790,
-        "y": 1540,
-        "wires": [
-            [
-                "a565ae6594722331",
-                "7148640c30407993"
-            ]
-        ]
-    },
-    {
-        "id": "a565ae6594722331",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 46",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 1580,
+        "x": 420,
+        "y": 1820,
         "wires": []
     },
     {
@@ -4111,7 +4141,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "process data",
-        "func": "const events = Array.isArray(msg.payload) ? msg.payload : [];\n\n\n// -----------------------------------------------------------------------------\n// Store the complete event set\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogEvents\", events);\n\n\n// -----------------------------------------------------------------------------\n// Build complete System options\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events\n                .map(e => e.sourceId)\n                .filter(Boolean)\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogSystems\",\n    systems\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Build complete Event Type options\n// -----------------------------------------------------------------------------\n\nconst eventTypes = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events\n                .map(e => e.eventType)\n                .filter(Boolean)\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogEventTypes\",\n    eventTypes\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Build complete Field options\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            events.flatMap(event => Object.keys(event))\n        )\n    ].sort().map(value => ({\n        label: value,\n        value: value,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"displayLogFields\",\n    fields\n        .filter(option => option.value !== \"__ALL__\")\n        .map(option => option.value)\n);\n\n\n// -----------------------------------------------------------------------------\n// Initial dropdown messages\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    ...msg,\n    payload: [],\n    options: systems\n};\n\nconst eventTypeMsg = {\n    ...msg,\n    payload: [],\n    options: eventTypes\n};\n\nconst fieldMsg = {\n    ...msg,\n    payload: [],\n    options: fields\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg\n];",
+        "func": "/*\n * Process Data\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n * Process Data is responsible for:\n *   - processing/modifying the log events\n *   - building System dropdown options\n *   - building Fields dropdown options\n *\n * Update Event State is responsible for:\n *   - systemMatch\n *   - eventTypeMatch\n *   - show\n *   - Event Type dropdown\n */\n\n\n// -----------------------------------------------------------------------------\n// Get incoming events\n// -----------------------------------------------------------------------------\n\nfunction getIncomingEvents(msg) {\n\n    if (Array.isArray(msg.payload)) {\n        return msg.payload;\n    }\n\n    if (msg.payload && typeof msg.payload === \"object\") {\n        return [msg.payload];\n    }\n\n    return [];\n}\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n//\n// This is where the event-data modifications belong.\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    // -------------------------------------------------------------------------\n    // Existing Process Data event modifications go here.\n    // -------------------------------------------------------------------------\n    //\n    // Example:\n    //\n    // event.someDisplayField = ...;\n    //\n    // Do NOT add:\n    //   systemMatch\n    //   eventTypeMatch\n    //   show\n    //\n    // Those belong to Update Event State.\n    // -------------------------------------------------------------------------\n\n    return event;\n}\n\n\n// -----------------------------------------------------------------------------\n// Get and process events\n// -----------------------------------------------------------------------------\n\nconst incomingEvents = getIncomingEvents(msg);\n\nconst processedEvents = incomingEvents.map(event =>\n    processEvent(event)\n);\n\n\n// -----------------------------------------------------------------------------\n// Store the complete event collection\n// -----------------------------------------------------------------------------\n\nflow.set(\"events\", processedEvents);\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(event => event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(event =>\n            Object.keys(event)\n        )\n    )\n].sort();\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build the three outputs\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    ...msg,\n    payload: systemDropDown\n};\n\nconst fieldsMsg = {\n    ...msg,\n    payload: fieldsDropDown\n};\n\nconst stateMsg = {\n    ...msg,\n    payload: processedEvents\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];\n",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
@@ -4119,135 +4149,39 @@
         "finalize": "",
         "libs": [],
         "x": 610,
-        "y": 1420,
+        "y": 1500,
         "wires": [
             [
-                "1367d4dfe063f481"
+                "15e21681d1f070ce",
+                "7fb3213921a17167"
             ],
             [
-                "20837c9b2a83f840"
+                "6e29f1201371458d",
+                "0431eb7490392455"
             ],
             [
-                "7ed67aac745eafc7"
+                "1367d4dfe063f481",
+                "2fd5e97b78ce514d"
             ]
         ],
         "outputLabels": [
-            "systemDropdown",
-            "eventTypwDropdown",
-            "FieldsDropdown"
+            "systems",
+            "fields",
+            "state"
         ]
-    },
-    {
-        "id": "93246fe676f6eba1",
-        "type": "link in",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "dscover/event/type/in",
-        "links": [
-            "7148640c30407993"
-        ],
-        "x": 235,
-        "y": 1700,
-        "wires": [
-            [
-                "b07c4b45d4e13376"
-            ]
-        ]
-    },
-    {
-        "id": "7148640c30407993",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "filter/system/out",
-        "mode": "link",
-        "links": [
-            "93246fe676f6eba1"
-        ],
-        "x": 1005,
-        "y": 1540,
-        "wires": []
     },
     {
         "id": "1367d4dfe063f481",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
-        "name": "process/data/system/out",
+        "name": "process/data/state/out",
         "mode": "link",
         "links": [
-            "8ffee1bf3ad1ac73"
+            "3772d42a578a6b36"
         ],
-        "x": 765,
-        "y": 1380,
-        "wires": []
-    },
-    {
-        "id": "20837c9b2a83f840",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "process/data/event/type/out",
-        "mode": "link",
-        "links": [
-            "9ecf1c2b325fd852"
-        ],
-        "x": 765,
-        "y": 1420,
-        "wires": []
-    },
-    {
-        "id": "1ace80d71bbd3425",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Filter Event Type",
-        "func": "const events = flow.get(\"displayLogFilteredEvents\") || [];\nconst selectedTypes = Array.isArray(msg.payload) ? msg.payload : [];\n\nif (selectedTypes.length === 0) {\n    msg.payload = events;\n    return msg;\n}\n\nmsg.payload = events.filter(event =>\n    selectedTypes.includes(event.eventType)\n);\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 1700,
-        "wires": [
-            [
-                "d01f190d78be6687",
-                "f5c1d6614c612293"
-            ]
-        ]
-    },
-    {
-        "id": "d01f190d78be6687",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 47",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "f5c1d6614c612293",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "filter/event/type/out",
-        "mode": "link",
-        "links": [
-            "6b8e6b680d4bd590"
-        ],
-        "x": 1005,
-        "y": 1700,
+        "x": 735,
+        "y": 1540,
         "wires": []
     },
     {
@@ -4255,11 +4189,11 @@
         "type": "ui-dropdown",
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
-        "group": "0d84bc5c17ef7261",
+        "group": "94e109669570dbcd",
         "name": "Fields",
         "label": "Fields",
         "tooltip": "",
-        "order": 4,
+        "order": 5,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -4279,8 +4213,8 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onClose",
-        "x": 570,
-        "y": 1800,
+        "x": 410,
+        "y": 1900,
         "wires": [
             [
                 "9d35777a2b131516"
@@ -4293,7 +4227,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Update Log Display",
-        "func": "const events = flow.get(\"displayLogEvents\") || [];\n\nconst selectedSystems =\n    flow.get(\"displayLogSelectedSystems\") || [];\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\nconst selectedFields =\n    flow.get(\"displayLogSelectedFields\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Filter by System\n// -----------------------------------------------------------------------------\n\nlet filteredEvents = events;\n\nif (\n    selectedSystems.length > 0 &&\n    !selectedSystems.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Filter by Event Type\n// -----------------------------------------------------------------------------\n\nif (\n    selectedEventTypes.length > 0 &&\n    !selectedEventTypes.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedEventTypes.includes(event.eventType)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.includes(\"__ALL__\")\n) {\n\n    fieldsToDisplay = flow.get(\"displayLogFields\") || [];\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build display rows\n// -----------------------------------------------------------------------------\n\nconst rows = filteredEvents.map(event => {\n\n    const row = {};\n\n    fieldsToDisplay.forEach(field => {\n        row[field] = event[field];\n    });\n\n    return row;\n});\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
+        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedFields =\n    flow.get(\"selectedFields\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Select events currently marked for display\n// -----------------------------------------------------------------------------\n\nconst visibleEvents =\n    events.filter(event => event.show === true);\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.length === 0 ||\n    selectedFields.includes(\"__ALL__\")\n) {\n    const fieldsDropDown =\n        flow.get(\"fieldsDropDown\") || [];\n\n    fieldsToDisplay =\n        fieldsDropDown\n            .filter(option => option.value !== \"__ALL__\")\n            .map(option => option.value);\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build table rows\n// -----------------------------------------------------------------------------\n\nconst rows =\n    visibleEvents.map(event => {\n\n        const row = {};\n\n        fieldsToDisplay.forEach(field => {\n            row[field] = event[field];\n        });\n\n        return row;\n    });\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -4301,7 +4235,7 @@
         "finalize": "",
         "libs": [],
         "x": 950,
-        "y": 2040,
+        "y": 2140,
         "wires": [
             [
                 "c8d236d56da8076a"
@@ -4324,7 +4258,7 @@
         "group": "0d84bc5c17ef7261",
         "name": "Build Log Display",
         "label": "",
-        "order": 5,
+        "order": 2,
         "width": "0",
         "height": "0",
         "maxrows": 0,
@@ -4339,7 +4273,7 @@
         "action": "append",
         "className": "",
         "x": 1230,
-        "y": 2040,
+        "y": 2140,
         "wires": [
             []
         ]
@@ -4367,7 +4301,7 @@
         "payload": "[]",
         "payloadType": "json",
         "x": 980,
-        "y": 2080,
+        "y": 2180,
         "wires": [
             [
                 "c8d236d56da8076a"
@@ -4380,7 +4314,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "debug 49",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4389,7 +4323,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1200,
-        "y": 2100,
+        "y": 2200,
         "wires": []
     },
     {
@@ -4399,13 +4333,10 @@
         "g": "924544e491daa42d",
         "name": "update/log/display/in",
         "links": [
-            "c4b0aa1bb4a29a39",
-            "88b576d36b03424b",
-            "2b85c23655181ace",
-            "80077ea1eac00ecc"
+            "ed221331d72730b2"
         ],
         "x": 815,
-        "y": 2040,
+        "y": 2140,
         "wires": [
             [
                 "c122719ce74f8f6a"
@@ -4420,11 +4351,10 @@
         "name": "fields/out",
         "mode": "link",
         "links": [
-            "84ea162d660bcd44",
-            "c70c1d07332a58ce"
+            "3772d42a578a6b36"
         ],
-        "x": 955,
-        "y": 1800,
+        "x": 855,
+        "y": 1900,
         "wires": []
     },
     {
@@ -4433,15 +4363,15 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Save Field Selection:",
-        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedFields\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedFields\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Pass selection to Update Log Display\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 1800,
+        "x": 640,
+        "y": 1900,
         "wires": [
             [
                 "c4b0aa1bb4a29a39"
@@ -4449,56 +4379,20 @@
         ]
     },
     {
-        "id": "f4b5384c1453739a",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Save System Selection",
-        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedSystems\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 830,
-        "y": 1500,
-        "wires": [
-            [
-                "2b85c23655181ace"
-            ]
-        ]
-    },
-    {
-        "id": "2b85c23655181ace",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "save/system/selection/out",
-        "mode": "link",
-        "links": [
-            "8ffee1bf3ad1ac73",
-            "c70c1d07332a58ce"
-        ],
-        "x": 1005,
-        "y": 1500,
-        "wires": []
-    },
-    {
         "id": "6818d9dbb084fe7f",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Save Event Type Selection",
-        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save normalized selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedEventTypes\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Return normalized selection\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedEventTypes\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Event State\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 840,
-        "y": 1660,
+        "x": 660,
+        "y": 1780,
         "wires": [
             [
                 "80077ea1eac00ecc"
@@ -4513,31 +4407,11 @@
         "name": "save/event/type/selection/out",
         "mode": "link",
         "links": [
-            "9ecf1c2b325fd852",
-            "c70c1d07332a58ce"
+            "3772d42a578a6b36"
         ],
-        "x": 1005,
-        "y": 1660,
+        "x": 855,
+        "y": 1780,
         "wires": []
-    },
-    {
-        "id": "8ffee1bf3ad1ac73",
-        "type": "link in",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "system/dropdown/in",
-        "links": [
-            "1367d4dfe063f481",
-            "23b9f0be2824c974",
-            "2b85c23655181ace"
-        ],
-        "x": 465,
-        "y": 1520,
-        "wires": [
-            [
-                "8089fb98e0744f68"
-            ]
-        ]
     },
     {
         "id": "9ecf1c2b325fd852",
@@ -4546,12 +4420,11 @@
         "g": "924544e491daa42d",
         "name": "event/type/dropdown.in",
         "links": [
-            "20837c9b2a83f840",
             "f2184f110234ed9a",
-            "80077ea1eac00ecc"
+            "1d02ebdf41761475"
         ],
-        "x": 465,
-        "y": 1660,
+        "x": 305,
+        "y": 1780,
         "wires": [
             [
                 "a94863d0851d5376"
@@ -4565,31 +4438,16 @@
         "g": "924544e491daa42d",
         "name": "fields/drop/down/in",
         "links": [
-            "7ed67aac745eafc7",
             "7c928e5092ab5130",
-            "c4b0aa1bb4a29a39"
+            "6e29f1201371458d"
         ],
-        "x": 465,
-        "y": 1800,
+        "x": 305,
+        "y": 1900,
         "wires": [
             [
                 "c9721bdd2e8c83ee"
             ]
         ]
-    },
-    {
-        "id": "7ed67aac745eafc7",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "process/data/fields/out",
-        "mode": "link",
-        "links": [
-            "84ea162d660bcd44"
-        ],
-        "x": 765,
-        "y": 1460,
-        "wires": []
     },
     {
         "id": "ddfb6f6014222966",
@@ -4605,7 +4463,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 2000,
+        "y": 2100,
         "wires": [
             [
                 "23b9f0be2824c974"
@@ -4638,7 +4496,7 @@
             "8ffee1bf3ad1ac73"
         ],
         "x": 655,
-        "y": 1940,
+        "y": 2040,
         "wires": []
     },
     {
@@ -4652,7 +4510,7 @@
             "9ecf1c2b325fd852"
         ],
         "x": 655,
-        "y": 1980,
+        "y": 2080,
         "wires": []
     },
     {
@@ -4666,7 +4524,7 @@
             "84ea162d660bcd44"
         ],
         "x": 655,
-        "y": 2020,
+        "y": 2120,
         "wires": []
     },
     {
@@ -4680,7 +4538,7 @@
             "72e977046ac79fa0"
         ],
         "x": 655,
-        "y": 2060,
+        "y": 2160,
         "wires": []
     },
     {
@@ -4690,10 +4548,12 @@
         "g": "924544e491daa42d",
         "name": "build/log/display/in",
         "links": [
-            "7759a0b14cdd0804"
+            "7759a0b14cdd0804",
+            "79d827115a7a9eb9",
+            "5ce2e5b0b420a1b7"
         ],
         "x": 1025,
-        "y": 2000,
+        "y": 2100,
         "wires": [
             [
                 "c8d236d56da8076a"
@@ -4705,7 +4565,7 @@
         "type": "ui-button",
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
-        "group": "0d84bc5c17ef7261",
+        "group": "94e109669570dbcd",
         "name": "Clear log display",
         "label": "",
         "order": 1,
@@ -4715,7 +4575,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
+        "className": "log-control-button",
         "icon": "close-outline",
         "iconPosition": "left",
         "payload": "",
@@ -4733,12 +4593,676 @@
         "pointerupPayload": "",
         "pointerupPayloadType": "str",
         "x": 270,
-        "y": 2000,
+        "y": 2100,
         "wires": [
             [
                 "ddfb6f6014222966"
             ]
         ]
+    },
+    {
+        "id": "5b0d710104efffce",
+        "type": "ui-template",
+        "z": "4721bb14b0bb8ce2",
+        "group": "",
+        "page": "eb31c5fb533897a0",
+        "ui": "",
+        "name": "Page Style",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".log-control-button button.v-btn {\n    min-width: 40px !important;\n    width: 40px !important;\n    height: 40px !important;\n    padding: 0 !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
+        "x": 850,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da1058cd61b4ef08",
+        "type": "ui-button",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "94e109669570dbcd",
+        "name": "Tail",
+        "label": "",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "log-control-button",
+        "icon": "tailwind",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#333333",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 290,
+        "y": 2280,
+        "wires": [
+            [
+                "7f14592e2cdf759b"
+            ]
+        ]
+    },
+    {
+        "id": "7f14592e2cdf759b",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Toggle Log Tail",
+        "func": "// -----------------------------------------------------------------------------\n// Toggle Log Tail\n//\n// Output 1 → Tail button\n//   Updates the button color.\n//\n// Output 2 → Update Log Display\n//   Requests a complete display reload when Tail is turned ON.\n//\n// Tail ON:\n//   Establish the current complete log as the Tail baseline.\n//   Request a complete display reload.\n//   Turn the button red.\n//\n// Tail OFF:\n//   Stop Tail mode.\n//   Return the button to its normal color.\n// -----------------------------------------------------------------------------\n\nconst currentlyTailing = flow.get(\"displayLogTail\") === true;\n\n\n// -----------------------------------------------------------------------------\n// Turn Tail OFF\n// -----------------------------------------------------------------------------\n\nif (currentlyTailing) {\n\n    flow.set(\"displayLogTail\", false);\n\n    const buttonMsg = {\n        ui_update: {\n            buttonColor: \"#333333\"\n        }\n    };\n\n    return [buttonMsg, null];\n}\n\n\n// -----------------------------------------------------------------------------\n// Turn Tail ON\n// -----------------------------------------------------------------------------\n\nconst events = flow.get(\"displayLogEvents\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Establish the Tail sequence boundary\n// -----------------------------------------------------------------------------\n\nlet lastSequence = 0;\n\nfor (const event of events) {\n\n    const sequence = Number(event.sequence);\n\n    if (Number.isFinite(sequence) && sequence > lastSequence) {\n        lastSequence = sequence;\n    }\n}\n\nflow.set(\"displayLogTailSequence\", lastSequence);\nflow.set(\"displayLogTail\", true);\n\n\n// -----------------------------------------------------------------------------\n// Output 1 — turn Tail button red\n// -----------------------------------------------------------------------------\n\nconst buttonMsg = {\n    ui_update: {\n        buttonColor: \"red\"\n    }\n};\n\n\n// -----------------------------------------------------------------------------\n// Output 2 — request complete display reload\n// -----------------------------------------------------------------------------\n\nconst reloadMsg = {\n    payload: events\n};\n\n\n// -----------------------------------------------------------------------------\n// Send to both outputs\n// -----------------------------------------------------------------------------\n\nreturn [buttonMsg, reloadMsg];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 2280,
+        "wires": [
+            [
+                "aa0532f177eab5bf"
+            ],
+            [
+                "5ce2e5b0b420a1b7"
+            ]
+        ],
+        "outputLabels": [
+            "btn",
+            "display"
+        ]
+    },
+    {
+        "id": "12209a6166b24e2d",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Read Tail Events",
+        "func": "// -----------------------------------------------------------------------------\n// Read Tail Events\n//\n// Reads the event log and returns only events that arrived after the sequence\n// recorded when Tail mode was started.\n// -----------------------------------------------------------------------------\n\n// Tail isn't active — nothing to do.\nif (flow.get(\"displayLogTail\") !== true) {\n    return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Get the event log file\n// -----------------------------------------------------------------------------\n\nconst opsLogging = global.get(\"opsLogging\");\n\nif (!opsLogging || !opsLogging.evtlog || !opsLogging.evtlog.evtlogFile) {\n    node.error(\"Event log file is not configured.\");\n    return null;\n}\n\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\n\n\n// -----------------------------------------------------------------------------\n// Get the last sequence we have already processed\n// -----------------------------------------------------------------------------\n\nlet lastSequence = Number(\n    flow.get(\"displayLogTailSequence\") || 0\n);\n\nif (!Number.isFinite(lastSequence)) {\n    lastSequence = 0;\n}\n\n\n// -----------------------------------------------------------------------------\n// Read the log\n// -----------------------------------------------------------------------------\n\ntry {\n\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const newEvents = [];\n\n    for (const line of lines) {\n\n        let event;\n\n        try {\n            event = JSON.parse(line);\n        }\n        catch (err) {\n            // Ignore an incomplete/malformed line.\n            continue;\n        }\n\n        const sequence = Number(event.sequence);\n\n        if (\n            Number.isFinite(sequence) &&\n            sequence > lastSequence\n        ) {\n            newEvents.push(event);\n        }\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Nothing new\n    // -------------------------------------------------------------------------\n\n    if (newEvents.length === 0) {\n        return null;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Advance the Tail sequence boundary\n    // -------------------------------------------------------------------------\n\n    const newestSequence = Math.max(\n        ...newEvents.map(event => Number(event.sequence))\n    );\n\n    flow.set(\n        \"displayLogTailSequence\",\n        newestSequence\n    );\n\n\n    // -------------------------------------------------------------------------\n    // Pass only the new events onward\n    // -------------------------------------------------------------------------\n\n    msg.payload = newEvents;\n\n    return msg;\n\n}\ncatch (err) {\n\n    node.error(\n        `Unable to read event log while tailing: ${err.message}`,\n        msg\n    );\n\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 880,
+        "y": 2320,
+        "wires": [
+            [
+                "86c938695d40d20b",
+                "ca09e2544fab9c67"
+            ]
+        ]
+    },
+    {
+        "id": "04bec39758ac0f89",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Tail Poll",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 720,
+        "y": 2320,
+        "wires": [
+            [
+                "12209a6166b24e2d"
+            ]
+        ]
+    },
+    {
+        "id": "86c938695d40d20b",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 48",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "ca09e2544fab9c67",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Filter Tail Events",
+        "func": "// -----------------------------------------------------------------------------\n// Filter Tail Events\n//\n// Applies the current Log Display selections to only the new events received\n// from Tail mode.\n//\n// The complete event history remains untouched.\n// -----------------------------------------------------------------------------\n\nconst events = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// Current selections\n// -----------------------------------------------------------------------------\n\nconst selectedSystems =\n    flow.get(\"displayLogSelectedSystems\") || [];\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Filter by System\n// -----------------------------------------------------------------------------\n\nlet filteredEvents = events;\n\nif (\n    selectedSystems.length > 0 &&\n    !selectedSystems.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Filter by Event Type\n// -----------------------------------------------------------------------------\n\nif (\n    selectedEventTypes.length > 0 &&\n    !selectedEventTypes.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedEventTypes.includes(event.eventType)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Nothing passed the filters\n// -----------------------------------------------------------------------------\n\nif (filteredEvents.length === 0) {\n    return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Pass filtered events onward\n// -----------------------------------------------------------------------------\n\nmsg.payload = filteredEvents;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 2320,
+        "wires": [
+            [
+                "2c3938772243e8f1",
+                "79d827115a7a9eb9"
+            ]
+        ]
+    },
+    {
+        "id": "2c3938772243e8f1",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 50",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 2280,
+        "wires": []
+    },
+    {
+        "id": "79d827115a7a9eb9",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "filter/tail/events/out",
+        "mode": "link",
+        "links": [
+            "72e977046ac79fa0"
+        ],
+        "x": 1225,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "5ce2e5b0b420a1b7",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "toggle/log/tail/display/out",
+        "mode": "link",
+        "links": [
+            "72e977046ac79fa0"
+        ],
+        "x": 595,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "f5bbd96c1958884f",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "tail/btn/in",
+        "links": [
+            "aa0532f177eab5bf"
+        ],
+        "x": 195,
+        "y": 2280,
+        "wires": [
+            [
+                "da1058cd61b4ef08"
+            ]
+        ]
+    },
+    {
+        "id": "aa0532f177eab5bf",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "toggle/log/file/btn/out",
+        "mode": "link",
+        "links": [
+            "f5bbd96c1958884f"
+        ],
+        "x": 595,
+        "y": 2260,
+        "wires": []
+    },
+    {
+        "id": "bad9052183a01af7",
+        "type": "ui-template",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "",
+        "page": "eb31c5fb533897a0",
+        "ui": "",
+        "name": "Log Display Behavior",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<style>\n    .nrdb-ui-table .v-table__wrapper {\n        height: calc(100vh - 300px);\n        overflow-y: auto;\n    }\n\n    .nrdb-ui-table .v-table__wrapper thead th {\n        position: sticky;\n        top: 0;\n        z-index: 10;\n        background: #333333;\n    }\n</style>\n<script>\n(function () {\n\n    let savedDistanceFromBottom = 0;\n    let savedScrollHeight = 0;\n\n    const FOLLOW_THRESHOLD = 30;\n\n\n    function getDistanceFromBottom(wrapper) {\n\n        return (\n            wrapper.scrollHeight -\n            wrapper.scrollTop -\n            wrapper.clientHeight\n        );\n    }\n\n\n    function scrollToBottom(wrapper) {\n\n        wrapper.scrollTop = wrapper.scrollHeight;\n    }\n\n\n    function savePosition(wrapper) {\n\n        savedDistanceFromBottom =\n            getDistanceFromBottom(wrapper);\n\n        savedScrollHeight =\n            wrapper.scrollHeight;\n\n        console.log(\n            \"LOG SCROLL:\",\n            \"distanceFromBottom =\",\n            savedDistanceFromBottom,\n            \"scrollHeight =\",\n            savedScrollHeight\n        );\n    }\n\n\n    function restorePosition(wrapper) {\n\n        const newScrollHeight = wrapper.scrollHeight;\n\n        const logGrowth =\n            newScrollHeight - savedScrollHeight;\n\n\n        // ---------------------------------------------------------------------\n        // User was at or very near the bottom.\n        // Follow the new bottom.\n        // ---------------------------------------------------------------------\n\n        if (savedDistanceFromBottom <= FOLLOW_THRESHOLD) {\n\n            scrollToBottom(wrapper);\n\n            console.log(\n                \"LOG UPDATE: following bottom\"\n            );\n\n            return;\n        }\n\n\n        // ---------------------------------------------------------------------\n        // User was reading older events.\n        //\n        // Preserve the same content in the viewport by compensating for\n        // everything added to the log since the position was saved.\n        // ---------------------------------------------------------------------\n\n        const targetDistanceFromBottom =\n            savedDistanceFromBottom + logGrowth;\n\n\n        wrapper.scrollTop =\n            newScrollHeight -\n            wrapper.clientHeight -\n            targetDistanceFromBottom;\n\n\n        console.log(\n            \"LOG UPDATE: restored position\",\n            \"previousDistanceFromBottom =\",\n            savedDistanceFromBottom,\n            \"logGrowth =\",\n            logGrowth,\n            \"targetDistanceFromBottom =\",\n            targetDistanceFromBottom\n        );\n    }\n\n\n    function start(wrapper) {\n\n        // ---------------------------------------------------------------------\n        // Save the user's actual position whenever they scroll.\n        // ---------------------------------------------------------------------\n\n        wrapper.addEventListener(\"scroll\", function () {\n\n            savePosition(wrapper);\n\n        });\n\n\n        // ---------------------------------------------------------------------\n        // Dashboard 2 may reposition the table when its data changes.\n        // Once that happens, compensate for the amount the log grew.\n        // ---------------------------------------------------------------------\n\n        const observer = new MutationObserver(function () {\n\n            restorePosition(wrapper);\n\n        });\n\n\n        observer.observe(wrapper, {\n            childList: true,\n            subtree: true\n        });\n\n\n        // ---------------------------------------------------------------------\n        // Initial display starts at the newest events.\n        // ---------------------------------------------------------------------\n\n        scrollToBottom(wrapper);\n\n        savedDistanceFromBottom = 0;\n        savedScrollHeight = wrapper.scrollHeight;\n    }\n\n\n    function findWrapper() {\n\n        const wrapper = document.querySelector(\n            '.nrdb-ui-table .v-table__wrapper'\n        );\n\n        if (!wrapper) {\n            setTimeout(findWrapper, 250);\n            return;\n        }\n\n        start(wrapper);\n    }\n\n\n    findWrapper();\n\n})();\n</script>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "widget:page",
+        "className": "",
+        "x": 1060,
+        "y": 1840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b7b42b7672c3f7f",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 1400,
+        "wires": [
+            [
+                "abe946717f7aab47"
+            ]
+        ]
+    },
+    {
+        "id": "abe946717f7aab47",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "dump flow.displayLogEvents",
+        "func": "msg.events = flow.get('events');\nmsg.systemDropDown = flow.get('systemDropDown');\nmsg.eventTypeDropDown = flow.get('eventTypeDropDown');\nmsg.fieldsDropDown = flow.get('fieldsDropDown');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 1400,
+        "wires": [
+            [
+                "ee45d6969a860fc0"
+            ]
+        ]
+    },
+    {
+        "id": "ee45d6969a860fc0",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 53",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "1661f19f1bd77682",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Update Event State",
+        "func": "const events = flow.get(\"events\") || [];\n\nconst selectedSystems =\n    flow.get(\"selectedSystems\") || [\"__ALL__\"];\n\nconst selectedEventTypes =\n    flow.get(\"selectedEventTypes\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Update state for every event\n// -----------------------------------------------------------------------------\n\nevents.forEach(event => {\n\n    // -------------------------------------------------------------------------\n    // System match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedSystems.length === 0 ||\n        selectedSystems.includes(\"__ALL__\")\n    ) {\n        event.systemMatch = true;\n    } else {\n        event.systemMatch =\n            selectedSystems.includes(event.sourceId);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Event Type match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedEventTypes.length === 0 ||\n        selectedEventTypes.includes(\"__ALL__\")\n    ) {\n        event.eventTypeMatch = true;\n    } else {\n        event.eventTypeMatch =\n            selectedEventTypes.includes(event.eventType);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Final display state\n    // -------------------------------------------------------------------------\n\n    event.show =\n        event.systemMatch &&\n        event.eventTypeMatch;\n});\n\n\n// -----------------------------------------------------------------------------\n// Find events matching the current System selection\n//\n// Event Type choices are based on these events.\n// -----------------------------------------------------------------------------\n\nconst matchingEvents = events.filter(event =>\n    event.systemMatch\n);\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type dropdown\n// -----------------------------------------------------------------------------\n\nconst eventTypeDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            matchingEvents\n                .map(event => event.eventType)\n                .filter(Boolean)\n        )\n    ]\n        .sort()\n        .map(eventType => ({\n            label: eventType,\n            value: eventType,\n            type: \"str\"\n        }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Store Event Type dropdown options\n// -----------------------------------------------------------------------------\n\nflow.set(\"eventTypeDropDown\", eventTypeDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Send Event Type dropdown update\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    ...msg,\n    payload: eventTypeDropDown\n};\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Log Display\n// -----------------------------------------------------------------------------\n\nconst displayMsg = {\n    ...msg,\n    topic: \"displayLog\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → Event Type dropdown\n// Output 2 → Update Log Display\n// -----------------------------------------------------------------------------\n\nreturn [\n    eventTypeMsg,\n    displayMsg\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 1460,
+        "wires": [
+            [
+                "6edc6af5bf1dbd5a",
+                "1d02ebdf41761475"
+            ],
+            [
+                "ed221331d72730b2",
+                "ba853e167a6130f6"
+            ]
+        ],
+        "outputLabels": [
+            "evtDropDown",
+            "events"
+        ]
+    },
+    {
+        "id": "3772d42a578a6b36",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "update/event/state/in",
+        "links": [
+            "1367d4dfe063f481",
+            "2b85c23655181ace",
+            "c4b0aa1bb4a29a39",
+            "80077ea1eac00ecc"
+        ],
+        "x": 905,
+        "y": 1460,
+        "wires": [
+            [
+                "1661f19f1bd77682"
+            ]
+        ]
+    },
+    {
+        "id": "ed221331d72730b2",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "update/event/state/events/out",
+        "mode": "link",
+        "links": [
+            "c70c1d07332a58ce"
+        ],
+        "x": 1215,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "6edc6af5bf1dbd5a",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 55",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "6e29f1201371458d",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process/data/fields/out",
+        "mode": "link",
+        "links": [
+            "84ea162d660bcd44"
+        ],
+        "x": 735,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "15e21681d1f070ce",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "process/data/system/out",
+        "mode": "link",
+        "links": [
+            "8ffee1bf3ad1ac73"
+        ],
+        "x": 735,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "8089fb98e0744f68",
+        "type": "ui-dropdown",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "group": "94e109669570dbcd",
+        "name": "",
+        "label": "System",
+        "tooltip": "",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "multiple": true,
+        "chips": true,
+        "clearable": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": false,
+        "msgTrigger": "onClose",
+        "x": 420,
+        "y": 1640,
+        "wires": [
+            [
+                "f4b5384c1453739a"
+            ]
+        ]
+    },
+    {
+        "id": "8ffee1bf3ad1ac73",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "system/dropdown/in",
+        "links": [
+            "23b9f0be2824c974",
+            "15e21681d1f070ce"
+        ],
+        "x": 305,
+        "y": 1640,
+        "wires": [
+            [
+                "8089fb98e0744f68"
+            ]
+        ]
+    },
+    {
+        "id": "f4b5384c1453739a",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Save System Selection",
+        "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedSystems\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Pass selection to Update Event State\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 1640,
+        "wires": [
+            [
+                "2b85c23655181ace",
+                "ad74b093f60bbaba"
+            ]
+        ]
+    },
+    {
+        "id": "2b85c23655181ace",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "save/system/selection/out",
+        "mode": "link",
+        "links": [
+            "3772d42a578a6b36"
+        ],
+        "x": 855,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "ad74b093f60bbaba",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 52",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "1d02ebdf41761475",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "update/event/state/event/dropdown/out",
+        "mode": "link",
+        "links": [
+            "9ecf1c2b325fd852"
+        ],
+        "x": 1215,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "ba853e167a6130f6",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 56",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "2fd5e97b78ce514d",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 44",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "0431eb7490392455",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 46",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "7fb3213921a17167",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 47",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 1480,
+        "wires": []
     },
     {
         "id": "a7da2c372813bc18",
@@ -5657,7 +6181,7 @@
         "z": "93d30457147d20e0",
         "g": "512dc7298a3552c8",
         "name": "debug 32",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,

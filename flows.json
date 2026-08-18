@@ -544,7 +544,15 @@
             "ba853e167a6130f6",
             "2fd5e97b78ce514d",
             "0431eb7490392455",
-            "7fb3213921a17167"
+            "7fb3213921a17167",
+            "6118f464fb110afb",
+            "a978c98428dd20c0",
+            "27d688e746644485",
+            "1e3dbccfbe7563a3",
+            "46970263d9a27bf2",
+            "2fe0226730e03256",
+            "8e86ed5e5a608646",
+            "e7f38e5b1f34c1a9"
         ],
         "x": 154,
         "y": 1359,
@@ -4067,7 +4075,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "readEvents",
-        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    msg.payload = events;\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
+        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\n\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    flow.set(\"events\", events);\n\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4083,7 +4091,8 @@
         "y": 1500,
         "wires": [
             [
-                "5a8eb0baea74f81b"
+                "5a8eb0baea74f81b",
+                "46970263d9a27bf2"
             ]
         ]
     },
@@ -4123,7 +4132,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "debug 42",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4141,7 +4150,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "process data",
-        "func": "/*\n * Process Data\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n * Process Data is responsible for:\n *   - processing/modifying the log events\n *   - building System dropdown options\n *   - building Fields dropdown options\n *\n * Update Event State is responsible for:\n *   - systemMatch\n *   - eventTypeMatch\n *   - show\n *   - Event Type dropdown\n */\n\n\n// -----------------------------------------------------------------------------\n// Get incoming events\n// -----------------------------------------------------------------------------\n\nfunction getIncomingEvents(msg) {\n\n    if (Array.isArray(msg.payload)) {\n        return msg.payload;\n    }\n\n    if (msg.payload && typeof msg.payload === \"object\") {\n        return [msg.payload];\n    }\n\n    return [];\n}\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n//\n// This is where the event-data modifications belong.\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    // -------------------------------------------------------------------------\n    // Existing Process Data event modifications go here.\n    // -------------------------------------------------------------------------\n    //\n    // Example:\n    //\n    // event.someDisplayField = ...;\n    //\n    // Do NOT add:\n    //   systemMatch\n    //   eventTypeMatch\n    //   show\n    //\n    // Those belong to Update Event State.\n    // -------------------------------------------------------------------------\n\n    return event;\n}\n\n\n// -----------------------------------------------------------------------------\n// Get and process events\n// -----------------------------------------------------------------------------\n\nconst incomingEvents = getIncomingEvents(msg);\n\nconst processedEvents = incomingEvents.map(event =>\n    processEvent(event)\n);\n\n\n// -----------------------------------------------------------------------------\n// Store the complete event collection\n// -----------------------------------------------------------------------------\n\nflow.set(\"events\", processedEvents);\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(event => event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(event =>\n            Object.keys(event)\n        )\n    )\n].sort();\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build the three outputs\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    ...msg,\n    payload: systemDropDown\n};\n\nconst fieldsMsg = {\n    ...msg,\n    payload: fieldsDropDown\n};\n\nconst stateMsg = {\n    ...msg,\n    payload: processedEvents\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];\n",
+        "func": "/*\n * Process Data\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n * Event data is owned by flow.events.\n *\n * Each event is wrapped without modifying the original event:\n *\n * {\n *     event: { ...original event... },\n *     show: true\n * }\n *\n * Update Event State adds the dynamic filtering state.\n */\n\n\n// -----------------------------------------------------------------------------\n// Load events\n// -----------------------------------------------------------------------------\n\nconst events = flow.get(\"events\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    return {\n        event: event,\n        show: true\n    };\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events\n// -----------------------------------------------------------------------------\n\nconst processedEvents = events.map(event =>\n    processEvent(event)\n);\n\n\n// -----------------------------------------------------------------------------\n// Store the processed event collection\n// -----------------------------------------------------------------------------\n\nflow.set(\"events\", processedEvents);\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(item => item.event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(item =>\n            Object.keys(item.event)\n        )\n    )\n].sort();\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build outputs\n//\n// These messages contain only the data needed by their destinations.\n// The event collection remains in flow.events.\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"],\n    options: systemDropDown\n};\n\nconst fieldsMsg = {\n    payload: [\"__ALL__\"],\n    options: fieldsDropDown\n};\n\nconst stateMsg = {\n    topic: \"updateEventState\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
@@ -4217,7 +4226,8 @@
         "y": 1900,
         "wires": [
             [
-                "9d35777a2b131516"
+                "9d35777a2b131516",
+                "e7f38e5b1f34c1a9"
             ]
         ]
     },
@@ -4227,7 +4237,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Update Log Display",
-        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedFields =\n    flow.get(\"selectedFields\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Select events currently marked for display\n// -----------------------------------------------------------------------------\n\nconst visibleEvents =\n    events.filter(event => event.show === true);\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.length === 0 ||\n    selectedFields.includes(\"__ALL__\")\n) {\n    const fieldsDropDown =\n        flow.get(\"fieldsDropDown\") || [];\n\n    fieldsToDisplay =\n        fieldsDropDown\n            .filter(option => option.value !== \"__ALL__\")\n            .map(option => option.value);\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build table rows\n// -----------------------------------------------------------------------------\n\nconst rows =\n    visibleEvents.map(event => {\n\n        const row = {};\n\n        fieldsToDisplay.forEach(field => {\n            row[field] = event[field];\n        });\n\n        return row;\n    });\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
+        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedFields =\n    flow.get(\"selectedFields\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Select events currently marked for display\n// -----------------------------------------------------------------------------\n\nconst visibleEvents =\n    events.filter(item => item.show === true);\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.length === 0 ||\n    selectedFields.includes(\"__ALL__\")\n) {\n    const fieldsDropDown =\n        flow.get(\"fieldsDropDown\") || [];\n\n    fieldsToDisplay =\n        fieldsDropDown\n            .filter(option => option.value !== \"__ALL__\")\n            .map(option => option.value);\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build table rows\n// -----------------------------------------------------------------------------\n\nconst rows =\n    visibleEvents.map(item => {\n\n        const row = {};\n\n        fieldsToDisplay.forEach(field => {\n            row[field] = item.event[field];\n        });\n\n        return row;\n    });\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -4238,7 +4248,8 @@
         "y": 2140,
         "wires": [
             [
-                "c8d236d56da8076a"
+                "c8d236d56da8076a",
+                "6118f464fb110afb"
             ],
             [
                 "c8d236d56da8076a",
@@ -4395,7 +4406,8 @@
         "y": 1780,
         "wires": [
             [
-                "80077ea1eac00ecc"
+                "80077ea1eac00ecc",
+                "a978c98428dd20c0"
             ]
         ]
     },
@@ -4410,7 +4422,7 @@
             "3772d42a578a6b36"
         ],
         "x": 855,
-        "y": 1780,
+        "y": 1760,
         "wires": []
     },
     {
@@ -4420,14 +4432,15 @@
         "g": "924544e491daa42d",
         "name": "event/type/dropdown.in",
         "links": [
-            "f2184f110234ed9a",
-            "1d02ebdf41761475"
+            "1d02ebdf41761475",
+            "f2184f110234ed9a"
         ],
         "x": 305,
         "y": 1780,
         "wires": [
             [
-                "a94863d0851d5376"
+                "a94863d0851d5376",
+                "8e86ed5e5a608646"
             ]
         ]
     },
@@ -4455,7 +4468,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Clear Log Display",
-        "func": "// -----------------------------------------------------------------------------\n// Clear all current log-display selections\n// -----------------------------------------------------------------------------\n\nflow.set(\"displayLogSelectedSystems\", []);\nflow.set(\"displayLogSelectedEventTypes\", []);\nflow.set(\"displayLogSelectedFields\", []);\n\n\n// -----------------------------------------------------------------------------\n// Clear System selection\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear Event Type selection\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear Field selection\n// -----------------------------------------------------------------------------\n\nconst fieldMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst tableMsg = {\n    payload: []\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg,\n    tableMsg\n];",
+        "func": "// -----------------------------------------------------------------------------\n// Clear current log-display selections\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedSystems\", [\"__ALL__\"]);\nflow.set(\"selectedEventTypes\", [\"__ALL__\"]);\nflow.set(\"selectedFields\", [\"__ALL__\"]);\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Systems\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Event Types\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Fields\n// -----------------------------------------------------------------------------\n\nconst fieldMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst tableMsg = {\n    payload: []\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg,\n    tableMsg\n];",
         "outputs": 4,
         "timeout": 0,
         "noerr": 0,
@@ -4927,7 +4940,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "dump flow.displayLogEvents",
-        "func": "msg.events = flow.get('events');\nmsg.systemDropDown = flow.get('systemDropDown');\nmsg.eventTypeDropDown = flow.get('eventTypeDropDown');\nmsg.fieldsDropDown = flow.get('fieldsDropDown');\nreturn msg;",
+        "func": "msg.events = flow.get('events');\nmsg.systemDropDown = flow.get('systemDropDown');\nmsg.eventTypeDropDown = flow.get('eventTypeDropDown');\nmsg.fieldsDropDown = flow.get('fieldsDropDown');\nmsg.selectedFields = flow.get(\"selectedFields\");\n\nmsg.selectedSystems = flow.get('selectedSystems');\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -4966,7 +4979,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "Update Event State",
-        "func": "const events = flow.get(\"events\") || [];\n\nconst selectedSystems =\n    flow.get(\"selectedSystems\") || [\"__ALL__\"];\n\nconst selectedEventTypes =\n    flow.get(\"selectedEventTypes\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Update state for every event\n// -----------------------------------------------------------------------------\n\nevents.forEach(event => {\n\n    // -------------------------------------------------------------------------\n    // System match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedSystems.length === 0 ||\n        selectedSystems.includes(\"__ALL__\")\n    ) {\n        event.systemMatch = true;\n    } else {\n        event.systemMatch =\n            selectedSystems.includes(event.sourceId);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Event Type match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedEventTypes.length === 0 ||\n        selectedEventTypes.includes(\"__ALL__\")\n    ) {\n        event.eventTypeMatch = true;\n    } else {\n        event.eventTypeMatch =\n            selectedEventTypes.includes(event.eventType);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Final display state\n    // -------------------------------------------------------------------------\n\n    event.show =\n        event.systemMatch &&\n        event.eventTypeMatch;\n});\n\n\n// -----------------------------------------------------------------------------\n// Find events matching the current System selection\n//\n// Event Type choices are based on these events.\n// -----------------------------------------------------------------------------\n\nconst matchingEvents = events.filter(event =>\n    event.systemMatch\n);\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type dropdown\n// -----------------------------------------------------------------------------\n\nconst eventTypeDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n    ...[\n        ...new Set(\n            matchingEvents\n                .map(event => event.eventType)\n                .filter(Boolean)\n        )\n    ]\n        .sort()\n        .map(eventType => ({\n            label: eventType,\n            value: eventType,\n            type: \"str\"\n        }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Store Event Type dropdown options\n// -----------------------------------------------------------------------------\n\nflow.set(\"eventTypeDropDown\", eventTypeDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Send Event Type dropdown update\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    ...msg,\n    payload: eventTypeDropDown\n};\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Log Display\n// -----------------------------------------------------------------------------\n\nconst displayMsg = {\n    ...msg,\n    topic: \"displayLog\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → Event Type dropdown\n// Output 2 → Update Log Display\n// -----------------------------------------------------------------------------\n\nreturn [\n    eventTypeMsg,\n    displayMsg\n];",
+        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedSystems =\n    flow.get(\"selectedSystems\") || [\"__ALL__\"];\n\nconst selectedEventTypes =\n    flow.get(\"selectedEventTypes\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Update state for every wrapped event\n// -----------------------------------------------------------------------------\n\nevents.forEach(item => {\n\n    const event = item.event;\n\n\n    // -------------------------------------------------------------------------\n    // System match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedSystems.length === 0 ||\n        selectedSystems.includes(\"__ALL__\")\n    ) {\n        item.systemMatch = true;\n    } else {\n        item.systemMatch =\n            selectedSystems.includes(event.sourceId);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Event Type match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedEventTypes.length === 0 ||\n        selectedEventTypes.includes(\"__ALL__\")\n    ) {\n        item.eventTypeMatch = true;\n    } else {\n        item.eventTypeMatch =\n            selectedEventTypes.includes(event.eventType);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Final display state\n    // -------------------------------------------------------------------------\n\n    item.show =\n        item.systemMatch &&\n        item.eventTypeMatch;\n});\n\n\n// -----------------------------------------------------------------------------\n// Find events matching the current System selection\n//\n// Event Type choices are based on these events.\n// -----------------------------------------------------------------------------\n\nconst matchingEvents =\n    events.filter(item =>\n        item.systemMatch\n    );\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type dropdown\n// -----------------------------------------------------------------------------\n\nconst eventTypeDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...[\n        ...new Set(\n            matchingEvents\n                .map(item => item.event.eventType)\n                .filter(Boolean)\n        )\n    ]\n        .sort()\n        .map(eventType => ({\n            label: eventType,\n            value: eventType,\n            type: \"str\"\n        }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Store Event Type dropdown options\n// -----------------------------------------------------------------------------\n\nflow.set(\n    \"eventTypeDropDown\",\n    eventTypeDropDown\n);\n\n\n// -----------------------------------------------------------------------------\n// Send Event Type dropdown update\n//\n// payload = current selection\n// options = available choices\n//\n// Do NOT copy msg. The event collection lives in flow.events.\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: selectedEventTypes,\n    options: eventTypeDropDown\n};\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Log Display\n//\n// The event collection is already in flow.events.\n// -----------------------------------------------------------------------------\n\nconst displayMsg = {\n    topic: \"displayLog\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → Event Type dropdown\n// Output 2 → Update Log Display\n// -----------------------------------------------------------------------------\n\nreturn [\n    eventTypeMsg,\n    displayMsg\n];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
@@ -5034,7 +5047,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 1260,
@@ -5102,7 +5116,8 @@
         "y": 1640,
         "wires": [
             [
-                "f4b5384c1453739a"
+                "f4b5384c1453739a",
+                "27d688e746644485"
             ]
         ]
     },
@@ -5120,7 +5135,8 @@
         "y": 1640,
         "wires": [
             [
-                "8089fb98e0744f68"
+                "8089fb98e0744f68",
+                "1e3dbccfbe7563a3"
             ]
         ]
     },
@@ -5166,7 +5182,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "924544e491daa42d",
         "name": "debug 52",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5262,6 +5278,162 @@
         "statusType": "auto",
         "x": 840,
         "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "6118f464fb110afb",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 54",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "a978c98428dd20c0",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 57",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "27d688e746644485",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 58",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "1e3dbccfbe7563a3",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 59",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "46970263d9a27bf2",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 60",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "2fe0226730e03256",
+        "type": "inject",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 250,
+        "y": 1720,
+        "wires": [
+            [
+                "a94863d0851d5376"
+            ]
+        ]
+    },
+    {
+        "id": "8e86ed5e5a608646",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 61",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "e7f38e5b1f34c1a9",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "debug 62",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1940,
         "wires": []
     },
     {

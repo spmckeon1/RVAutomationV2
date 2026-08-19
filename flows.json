@@ -94,38 +94,6 @@
         "h": 142
     },
     {
-        "id": "9c01de1b2a729534",
-        "type": "group",
-        "z": "4721bb14b0bb8ce2",
-        "name": "Process Syslog LogEvents",
-        "style": {
-            "stroke": "#ff0000",
-            "label": true,
-            "color": "#ff0000"
-        },
-        "nodes": [
-            "80da20fb82eb87b9",
-            "50a8f2fa880d0e05",
-            "e4554361f99621a9",
-            "070e3de268d0a30a",
-            "7b548de37b68829a",
-            "eeb09cde0c738d75",
-            "c39b3c1dcdab6d17",
-            "efc766d6ee84325b",
-            "56d9759185a0afbe",
-            "58c2aeac8087bdff",
-            "e5308c28fe9e9beb",
-            "83a71355bc3d5dac",
-            "310565b0bdb7cbf5",
-            "c28038881c180797",
-            "d76c6eeede72f8b9"
-        ],
-        "x": 384,
-        "y": 419,
-        "w": 722,
-        "h": 422
-    },
-    {
         "id": "853d56930325c23e",
         "type": "group",
         "z": "e213983d60d65ed3",
@@ -147,27 +115,6 @@
         "y": 673,
         "w": 738,
         "h": 614
-    },
-    {
-        "id": "c5d2c6c75bc2d184",
-        "type": "group",
-        "z": "4721bb14b0bb8ce2",
-        "name": "Device Syslogs in",
-        "style": {
-            "stroke": "#ff0000",
-            "label": true,
-            "color": "#ff0000"
-        },
-        "nodes": [
-            "84258be828d3120e",
-            "cc7e6f0e7c814b09",
-            "007450fcf9feed4f",
-            "94ff1b0bfb95ac21"
-        ],
-        "x": 134,
-        "y": 139,
-        "w": 312,
-        "h": 202
     },
     {
         "id": "4aa12a43e05afe12",
@@ -489,75 +436,115 @@
             "color": "#0070c0"
         },
         "nodes": [
-            "a94863d0851d5376",
-            "87b7774b46dafe02",
-            "d468d103072f29a7",
-            "8ebc0ceeda36cf1a",
-            "5a8eb0baea74f81b",
-            "1367d4dfe063f481",
-            "c9721bdd2e8c83ee",
-            "c122719ce74f8f6a",
-            "c8d236d56da8076a",
-            "329fabce979bf06c",
-            "dc91af60b0f07b69",
-            "c70c1d07332a58ce",
-            "c4b0aa1bb4a29a39",
-            "9d35777a2b131516",
-            "6818d9dbb084fe7f",
-            "80077ea1eac00ecc",
-            "9ecf1c2b325fd852",
-            "84ea162d660bcd44",
-            "ddfb6f6014222966",
-            "23b9f0be2824c974",
-            "f2184f110234ed9a",
-            "7c928e5092ab5130",
-            "7759a0b14cdd0804",
-            "72e977046ac79fa0",
-            "9eecf2cbd05901d6",
-            "da1058cd61b4ef08",
-            "7f14592e2cdf759b",
-            "12209a6166b24e2d",
-            "04bec39758ac0f89",
-            "86c938695d40d20b",
-            "ca09e2544fab9c67",
-            "2c3938772243e8f1",
-            "79d827115a7a9eb9",
-            "5ce2e5b0b420a1b7",
-            "f5bbd96c1958884f",
-            "aa0532f177eab5bf",
-            "bad9052183a01af7",
             "1b7b42b7672c3f7f",
             "abe946717f7aab47",
             "ee45d6969a860fc0",
-            "1661f19f1bd77682",
-            "3772d42a578a6b36",
-            "ed221331d72730b2",
-            "6edc6af5bf1dbd5a",
-            "6e29f1201371458d",
-            "15e21681d1f070ce",
-            "8089fb98e0744f68",
-            "8ffee1bf3ad1ac73",
-            "f4b5384c1453739a",
-            "2b85c23655181ace",
-            "ad74b093f60bbaba",
-            "1d02ebdf41761475",
-            "ba853e167a6130f6",
-            "2fd5e97b78ce514d",
-            "0431eb7490392455",
-            "7fb3213921a17167",
-            "6118f464fb110afb",
-            "a978c98428dd20c0",
-            "27d688e746644485",
-            "1e3dbccfbe7563a3",
-            "46970263d9a27bf2",
-            "2fe0226730e03256",
-            "8e86ed5e5a608646",
-            "e7f38e5b1f34c1a9"
+            "e74e86b3ef76bf36",
+            "b82f2b75b4342871",
+            "40baf922d5c208e2",
+            "bb8fa93c293f0a04"
         ],
-        "x": 154,
-        "y": 1359,
-        "w": 1212,
-        "h": 1002
+        "x": 88,
+        "y": 859,
+        "w": 874,
+        "h": 1708
+    },
+    {
+        "id": "d0d2a609578bd1c5",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "name": "Event log reception",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "9c01de1b2a729534",
+            "c5d2c6c75bc2d184"
+        ],
+        "x": 88,
+        "y": 73,
+        "w": 784,
+        "h": 694
+    },
+    {
+        "id": "eed79a6497832c09",
+        "type": "group",
+        "z": "2ecdaac948b4ee3b",
+        "name": "shades controller",
+        "style": {
+            "stroke": "#0070c0",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "f68daadebf31b007",
+            "543ae2b9a6715ea0",
+            "0e4c70376a9b98f2",
+            "68ccd611ed237333",
+            "66201dc315f3c651",
+            "5bbcee32e696aebd"
+        ],
+        "x": 134,
+        "y": 179,
+        "w": 712,
+        "h": 322
+    },
+    {
+        "id": "9c01de1b2a729534",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "d0d2a609578bd1c5",
+        "name": "Process Syslog LogEvents",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "80da20fb82eb87b9",
+            "50a8f2fa880d0e05",
+            "e4554361f99621a9",
+            "070e3de268d0a30a",
+            "7b548de37b68829a",
+            "eeb09cde0c738d75",
+            "c39b3c1dcdab6d17",
+            "efc766d6ee84325b",
+            "56d9759185a0afbe",
+            "58c2aeac8087bdff",
+            "e5308c28fe9e9beb",
+            "83a71355bc3d5dac",
+            "310565b0bdb7cbf5",
+            "c28038881c180797",
+            "d76c6eeede72f8b9"
+        ],
+        "x": 124,
+        "y": 319,
+        "w": 722,
+        "h": 422
+    },
+    {
+        "id": "c5d2c6c75bc2d184",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "d0d2a609578bd1c5",
+        "name": "Device Syslogs in",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "color": "#ff0000"
+        },
+        "nodes": [
+            "84258be828d3120e",
+            "cc7e6f0e7c814b09",
+            "007450fcf9feed4f",
+            "94ff1b0bfb95ac21"
+        ],
+        "x": 114,
+        "y": 99,
+        "w": 312,
+        "h": 202
     },
     {
         "id": "c636e6f5d63201f8",
@@ -633,6 +620,143 @@
         "y": 1119,
         "w": 672,
         "h": 142
+    },
+    {
+        "id": "e74e86b3ef76bf36",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Data in",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "87b7774b46dafe02",
+            "d468d103072f29a7",
+            "46970263d9a27bf2",
+            "71491ae4faad352f",
+            "f66c9a9b2e3a54fc",
+            "c367766e78fdb95a",
+            "9bd6b55784616a6c",
+            "2b5629f5c6e475fa",
+            "2851736c1a2e2061",
+            "c7e0af54ea198d66"
+        ],
+        "x": 114,
+        "y": 959,
+        "w": 822,
+        "h": 162
+    },
+    {
+        "id": "b82f2b75b4342871",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Drop down menus",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "a94863d0851d5376",
+            "8ebc0ceeda36cf1a",
+            "c9721bdd2e8c83ee",
+            "c4b0aa1bb4a29a39",
+            "9d35777a2b131516",
+            "6818d9dbb084fe7f",
+            "80077ea1eac00ecc",
+            "9ecf1c2b325fd852",
+            "84ea162d660bcd44",
+            "8089fb98e0744f68",
+            "8ffee1bf3ad1ac73",
+            "f4b5384c1453739a",
+            "2b85c23655181ace",
+            "ad74b093f60bbaba",
+            "a978c98428dd20c0",
+            "27d688e746644485",
+            "1e3dbccfbe7563a3",
+            "8e86ed5e5a608646",
+            "e7f38e5b1f34c1a9"
+        ],
+        "x": 114,
+        "y": 1459,
+        "w": 742,
+        "h": 422
+    },
+    {
+        "id": "40baf922d5c208e2",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "Controlls",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#3f93cf"
+        },
+        "nodes": [
+            "ddfb6f6014222966",
+            "23b9f0be2824c974",
+            "f2184f110234ed9a",
+            "7c928e5092ab5130",
+            "7759a0b14cdd0804",
+            "9eecf2cbd05901d6",
+            "da1058cd61b4ef08",
+            "7f14592e2cdf759b",
+            "5ce2e5b0b420a1b7",
+            "f5bbd96c1958884f",
+            "aa0532f177eab5bf"
+        ],
+        "x": 114,
+        "y": 1139,
+        "w": 542,
+        "h": 302
+    },
+    {
+        "id": "bb8fa93c293f0a04",
+        "type": "group",
+        "z": "4721bb14b0bb8ce2",
+        "g": "924544e491daa42d",
+        "name": "data processing",
+        "style": {
+            "stroke": "#3f3f3f",
+            "label": true,
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "dd2b5261754ebff4",
+            "c5ba86f57d9c9d10",
+            "2d89152a39e04083",
+            "5a8eb0baea74f81b",
+            "2180d648c4cd407e",
+            "2fd5e97b78ce514d",
+            "1367d4dfe063f481",
+            "6e29f1201371458d",
+            "15e21681d1f070ce",
+            "7fb3213921a17167",
+            "0431eb7490392455",
+            "6118f464fb110afb",
+            "c122719ce74f8f6a",
+            "c8d236d56da8076a",
+            "329fabce979bf06c",
+            "dc91af60b0f07b69",
+            "c70c1d07332a58ce",
+            "72e977046ac79fa0",
+            "1661f19f1bd77682",
+            "3772d42a578a6b36",
+            "ed221331d72730b2",
+            "6edc6af5bf1dbd5a",
+            "1d02ebdf41761475",
+            "ba853e167a6130f6",
+            "bad9052183a01af7"
+        ],
+        "x": 114,
+        "y": 1899,
+        "w": 572,
+        "h": 642
     },
     {
         "id": "5be6bf7969fc9e8d",
@@ -775,19 +899,19 @@
         ],
         "order": 7,
         "className": "",
-        "visible": "true",
-        "disabled": "false"
+        "visible": true,
+        "disabled": false
     },
     {
         "id": "7ffe7d782148f1c6",
         "type": "ui-group",
         "name": "windshield shade",
         "page": "4170a3fa4d67923f",
-        "width": 6,
+        "width": "12",
         "height": 1,
         "order": 1,
-        "showTitle": true,
-        "className": "",
+        "showTitle": false,
+        "className": "windshield-group",
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
@@ -2957,6 +3081,7 @@
         "id": "5bbcee32e696aebd",
         "type": "mqtt in",
         "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
         "name": "",
         "topic": "shade/ws/pcb/temp",
         "qos": "2",
@@ -2966,145 +3091,19 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 410,
+        "x": 290,
         "y": 420,
         "wires": [
             [
-                "3f91485226bb954a",
-                "97c9200d2962d2ca"
+                "0e4c70376a9b98f2"
             ]
-        ]
-    },
-    {
-        "id": "3f91485226bb954a",
-        "type": "ui-chart",
-        "z": "2ecdaac948b4ee3b",
-        "group": "7ffe7d782148f1c6",
-        "name": "",
-        "label": "PCB Temperature",
-        "order": 2,
-        "chartType": "bar",
-        "category": "",
-        "categoryType": "str",
-        "xAxisLabel": "",
-        "xAxisProperty": "ºF",
-        "xAxisPropertyType": "str",
-        "xAxisType": "category",
-        "xAxisFormat": "",
-        "xAxisFormatType": "auto",
-        "xmin": "",
-        "xmax": "",
-        "yAxisLabel": "Temperature",
-        "yAxisProperty": "payload",
-        "yAxisPropertyType": "msg",
-        "ymin": "0",
-        "ymax": "140",
-        "bins": 10,
-        "action": "replace",
-        "stackSeries": true,
-        "pointShape": "circle",
-        "pointRadius": 4,
-        "showLegend": true,
-        "removeOlder": 1,
-        "removeOlderUnit": "3600",
-        "removeOlderPoints": "",
-        "colors": [
-            "#10ab0d",
-            "#ff0000",
-            "#ff7f0e",
-            "#2ca02c",
-            "#a347e1",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "textColor": [
-            "#ffffff"
-        ],
-        "textColorDefault": false,
-        "gridColor": [
-            "#fffb00"
-        ],
-        "gridColorDefault": false,
-        "width": "2",
-        "height": "4",
-        "className": "",
-        "interpolation": "linear",
-        "x": 690,
-        "y": 420,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "97c9200d2962d2ca",
-        "type": "debug",
-        "z": "2ecdaac948b4ee3b",
-        "name": "debug 40",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 380,
-        "wires": []
-    },
-    {
-        "id": "a6d0309abeaa448a",
-        "type": "inject",
-        "z": "2ecdaac948b4ee3b",
-        "name": "ui_update",
-        "props": [
-            {
-                "p": "ui_update",
-                "v": "{\"chartOptions\":{\"grid\":{\"top\":45}}}",
-                "vt": "json"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 440,
-        "y": 480,
-        "wires": [
-            [
-                "3f91485226bb954a"
-            ]
-        ]
-    },
-    {
-        "id": "d15a5521ca6f07ba",
-        "type": "function",
-        "z": "2ecdaac948b4ee3b",
-        "name": "function 2",
-        "func": "msg.ui_update = {\n    chartOptions: {\n        grid: {\n            top: 45\n        }\n    }\n};\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 700,
-        "wires": [
-            []
         ]
     },
     {
         "id": "f68daadebf31b007",
         "type": "mqtt in",
         "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
         "name": "",
         "topic": "test_ws_sd/to/nr/sd/data",
         "qos": "1",
@@ -3114,12 +3113,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 430,
-        "y": 820,
+        "x": 270,
+        "y": 340,
         "wires": [
             [
                 "543ae2b9a6715ea0",
-                "2031517880247596"
+                "0e4c70376a9b98f2"
             ]
         ]
     },
@@ -3127,6 +3126,7 @@
         "id": "543ae2b9a6715ea0",
         "type": "debug",
         "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
         "name": "debug 51",
         "active": true,
         "tosidebar": true,
@@ -3136,32 +3136,78 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
-        "y": 800,
+        "x": 500,
+        "y": 220,
         "wires": []
     },
     {
-        "id": "2031517880247596",
-        "type": "ui-text",
+        "id": "0e4c70376a9b98f2",
+        "type": "ui-template",
         "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
         "group": "7ffe7d782148f1c6",
+        "page": "",
+        "ui": "",
+        "name": "Shade controls",
         "order": 1,
         "width": 0,
         "height": 0,
-        "name": "",
-        "label": "Windshield data",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "style": false,
-        "font": "",
-        "fontSize": 16,
-        "color": "#717171",
-        "wrapText": false,
+        "head": "",
+        "format": "<template>\n\n    <div class=\"shade-page\">\n\n        <div class=\"shade-card\">\n\n            <!-- =================================================\n                 DAY SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    DAY\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ day.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.upEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': day.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"day.direction === 'NONE'\">\n\n                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.downEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': day.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n\n            <!-- =================================================\n                 NIGHT SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    NIGHT\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ night.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.upEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': night.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"night.direction === 'NONE'\">\n\n                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.downEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': night.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n    <div class=\"parking-brake\" :class=\"{ 'brake-on': parkingBrake }\">\n        Ⓟ\n    </div>\n    \n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n</template>\n\n\n<script>\n    export default {\n\n    data() {\n\n        return {\n\n            day: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            night: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            parkingBrake: false,\n\n            pcbTemperature: null\n\n        };\n\n    },\n\n\n    watch: {\n\n        msg: {\n\n            immediate: true,\n\n            deep: true,\n\n            handler(msg) {\n\n                if (!msg || !msg.payload)\n                    return;\n\n                    if (msg.topic === \"shade/ws/pcb/temp\") {\n                    \n                    this.pcbTemperature = msg.payload;\n                    \n                    return;\n                    \n                }\n                \n                const data = msg.payload;\n\n                if (data.schema !== \"shadeState.v1\")\n                    return;\n\n\n                if (data.day) {\n\n                    this.day = {\n                        ...this.day,\n                        ...data.day\n                    };\n\n                }\n\n\n                if (data.night) {\n\n                    this.night = {\n                        ...this.night,\n                        ...data.night\n                    };\n\n                }\n\n\n                if (typeof data.parkingBrake === \"boolean\") {\n\n                    this.parkingBrake =\n                        data.parkingBrake;\n\n                }\n\n            }\n\n        }\n\n    }\n\n};\n\n</script>\n\n\n<style>\n    /* =========================================================\n   PAGE\n   ========================================================= */\n\n    .shade-page {\n\n        width: 100%;\n\n        box-sizing: border-box;\n\n        display: flex;\n\n        justify-content: center;\n\n        align-items: flex-start;\n\n        padding: 10px;\n    }\n\n\n    /* =========================================================\n   MAIN CARD\n   ========================================================= */\n\n    .shade-card {\n\n        width: 100%;\n\n        max-width: 520px;\n\n        position: relative;\n\n        box-sizing: border-box;\n\n        display: grid;\n\n        grid-template-columns:\n            repeat(2, minmax(0, 1fr));\n\n        gap: 24px;\n\n        padding: 18px 22px 20px;\n\n        background: #333;\n\n        border: 1px solid #555;\n\n        border-radius: 4px;\n\n        box-shadow:\n            0 2px 5px rgba(0, 0, 0, 0.35);\n    }\n\n\n    /* =========================================================\n   SHADE PANEL\n   ========================================================= */\n\n    .shade-panel {\n\n        text-align: center;\n\n        box-sizing: border-box;\n    }\n\n\n    /* =========================================================\n   DAY / NIGHT\n   ========================================================= */\n\n    .shade-title {\n\n        font-size: 20px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n\n        margin-bottom: 4px;\n    }\n\n\n    /* =========================================================\n   PERCENT DOWN\n   ========================================================= */\n\n    .shade-percent {\n\n        font-size: 18px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n    }\n\n\n    /* =========================================================\n   DOWN LABEL\n   ========================================================= */\n\n    .shade-down {\n\n        margin-top: 3px;\n\n        font-size: 14px;\n\n        letter-spacing: 2px;\n\n        opacity: 0.7;\n    }\n\n\n    /* =========================================================\n   CONTROL BOUNDING BOX\n   ========================================================= */\n\n    .shade-controls {\n\n        width: 82px;\n\n        height: 150px;\n\n        box-sizing: border-box;\n\n        margin: 12px auto 0;\n\n        border: 2px solid #888;\n\n        border-radius: 8px;\n\n        overflow: hidden;\n\n        background: #181818;\n\n        display: flex;\n\n        flex-direction: column;\n\n        box-shadow:\n            0 2px 4px rgba(0, 0, 0, 0.4);\n    }\n\n\n    /* =========================================================\n   CONTROL BUTTON\n   ========================================================= */\n\n    .shade-button {\n\n        flex: 1;\n\n        min-height: 0;\n\n        width: 100%;\n\n        padding: 0;\n\n        margin: 0;\n\n        border: 0;\n\n        border-bottom: 1px solid #555;\n\n        background:\n            linear-gradient(#292929,\n                #1b1b1b);\n\n        display: flex;\n\n        align-items: center;\n\n        justify-content: center;\n\n        cursor: pointer;\n    }\n\n\n    .shade-button:last-child {\n\n        border-bottom: 0;\n    }\n\n\n    /* =========================================================\n   HOVER / ACTIVE\n   ========================================================= */\n\n    .shade-button:hover:not(:disabled) {\n\n        background: #333;\n    }\n\n\n    .shade-button:active:not(:disabled) {\n\n        background: #111;\n    }\n\n\n    /* =========================================================\n   DISABLED BUTTON\n   ========================================================= */\n\n    .shade-button:disabled {\n\n        opacity: 0.30;\n\n        cursor: default;\n    }\n\n\n    /* =========================================================\n   SVG GRAPHICS\n   ========================================================= */\n\n    .motion-arrow {\n\n        width: 28px;\n\n        height: 28px;\n    }\n\n\n    .stop-icon {\n\n        width: 24px;\n\n        height: 24px;\n    }\n\n\n    /* =========================================================\n   MOTION TRAIL\n   ========================================================= */\n\n    .arrow-motion-shaft {\n\n        opacity: 0.85;\n    }\n\n\n    /* =========================================================\n   MOVING UP\n   ========================================================= */\n\n    .moving-up .arrow-motion-shaft {\n\n        animation:\n            moveUp 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   MOVING DOWN\n   ========================================================= */\n\n    .moving-down .arrow-motion-shaft {\n\n        animation:\n            moveDown 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   UP ANIMATION\n   ========================================================= */\n\n    @keyframes moveUp {\n\n        from {\n\n            stroke-dashoffset: 0;\n\n        }\n\n        to {\n\n            stroke-dashoffset: -28;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   DOWN ANIMATION\n   ========================================================= */\n\n    @keyframes moveDown {\n\n        from {\n\n            stroke-dashoffset: -28;\n\n        }\n\n        to {\n\n            stroke-dashoffset: 0;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   PHONE\n   ========================================================= */\n\n    @media (max-width: 575px) {\n\n        .shade-card {\n\n            max-width: 280px;\n\n            gap: 12px;\n\n            padding: 14px 10px 16px;\n        }\n\n\n        .shade-controls {\n\n            width: 72px;\n\n            height: 132px;\n        }\n\n\n        .motion-arrow {\n\n            width: 25px;\n\n            height: 25px;\n        }\n\n\n        .stop-icon {\n\n            width: 22px;\n\n            height: 22px;\n        }\n\n    }\n\n\n    /* =========================================================\n   TABLET\n   ========================================================= */\n\n    @media (min-width: 576px) and (max-width: 1023px) {\n\n        .shade-card {\n\n            max-width: 460px;\n        }\n\n    }\n\n\n    /* =========================================================\n   DESKTOP\n   ========================================================= */\n\n    @media (min-width: 1024px) {\n\n        .shade-card {\n\n            max-width: 520px;\n        }\n\n    }\n\n    /* =========================================================\n    PCB TEMPERATURE\n    ========================================================= */\n    \n.pcb-temperature {\n    position: absolute;\n\n    left: 50%;\n\n    bottom: 35px;\n\n    transform: translateX(-50%);\n\n    text-align: center;\n\n    font-size: 11px;\n\n    line-height: 1.05;\n\n    opacity: 0.65;\n}\n\n/* =========================================================\nPARKING BRAKE\n========================================================= */\n\n.parking-brake {\n    position: absolute;\n    left: 50%;\n    bottom: 62px;\n    transform: translateX(-50%);\n    font-size: 36px;\n    line-height: 1;\n    color: #7ed321;\n    opacity: 0.9;\n}\n\n\n.parking-brake.brake-on {\n    color: #e31b23;\n    opacity: 1;\n}\n\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
         "className": "",
-        "value": "payload",
-        "valueType": "msg",
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "66201dc315f3c651"
+            ]
+        ]
+    },
+    {
+        "id": "68ccd611ed237333",
+        "type": "ui-template",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "group": "",
+        "page": "4170a3fa4d67923f",
+        "ui": "",
+        "name": "background-color: #000000 ",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": ".windshield-group .v-card {\n    background-color: #000000 !important;\n    border-color: #000000 !important;\n}",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "page:style",
+        "className": "",
         "x": 680,
-        "y": 840,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66201dc315f3c651",
+        "type": "debug",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 380,
         "wires": []
     },
     {
@@ -3385,8 +3431,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 560,
+        "x": 340,
+        "y": 460,
         "wires": [
             [
                 "83a71355bc3d5dac",
@@ -3408,8 +3454,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 680,
+        "x": 620,
+        "y": 580,
         "wires": []
     },
     {
@@ -3425,8 +3471,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 460,
+        "x": 280,
+        "y": 360,
         "wires": []
     },
     {
@@ -3447,8 +3493,8 @@
                 "module": "crypto"
             }
         ],
-        "x": 700,
-        "y": 680,
+        "x": 440,
+        "y": 580,
         "wires": [
             [
                 "eeb09cde0c738d75",
@@ -3465,8 +3511,8 @@
         "links": [
             "007450fcf9feed4f"
         ],
-        "x": 425,
-        "y": 480,
+        "x": 165,
+        "y": 380,
         "wires": [
             [
                 "e4554361f99621a9",
@@ -3487,8 +3533,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 740,
+        "x": 520,
+        "y": 640,
         "wires": [
             [
                 "c39b3c1dcdab6d17",
@@ -3514,8 +3560,8 @@
                 "module": "fs"
             }
         ],
-        "x": 840,
-        "y": 800,
+        "x": 580,
+        "y": 700,
         "wires": [
             [
                 "56d9759185a0afbe"
@@ -3536,8 +3582,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
-        "y": 740,
+        "x": 700,
+        "y": 640,
         "wires": []
     },
     {
@@ -3554,8 +3600,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 230,
-        "y": 240,
+        "x": 210,
+        "y": 200,
         "wires": [
             [
                 "007450fcf9feed4f"
@@ -3576,8 +3622,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
-        "y": 180,
+        "x": 220,
+        "y": 140,
         "wires": [
             [
                 "007450fcf9feed4f"
@@ -3594,67 +3640,8 @@
         "links": [
             "7b548de37b68829a"
         ],
-        "x": 405,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "b9e433a6a0fdc597",
-        "type": "mqtt in",
-        "z": "4721bb14b0bb8ce2",
-        "name": "",
-        "topic": "gps/to/nr/new/data",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 250,
-        "y": 400,
-        "wires": [
-            [
-                "fb559680debbd3b7"
-            ]
-        ]
-    },
-    {
-        "id": "8b7b2e9faf85905e",
-        "type": "mqtt in",
-        "z": "4721bb14b0bb8ce2",
-        "name": "ieTestHb",
-        "topic": "default/heartbeat",
-        "qos": "0",
-        "datatype": "auto-detect",
-        "broker": "5be6bf7969fc9e8d",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 180,
-        "y": 760,
-        "wires": [
-            [
-                "559f37131207b31e"
-            ]
-        ]
-    },
-    {
-        "id": "559f37131207b31e",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "name": "debug 14",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 780,
+        "x": 385,
+        "y": 200,
         "wires": []
     },
     {
@@ -3671,8 +3658,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
-        "y": 800,
+        "x": 740,
+        "y": 700,
         "wires": []
     },
     {
@@ -3689,30 +3676,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 250,
-        "y": 300,
+        "x": 230,
+        "y": 260,
         "wires": [
             [
-                "81b23436e74774bf",
                 "007450fcf9feed4f"
             ]
         ]
-    },
-    {
-        "id": "81b23436e74774bf",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "name": "debug 16",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 300,
-        "wires": []
     },
     {
         "id": "58c2aeac8087bdff",
@@ -3723,8 +3693,8 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 550,
-        "y": 500,
+        "x": 290,
+        "y": 400,
         "wires": [
             [
                 "80da20fb82eb87b9",
@@ -3746,8 +3716,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 500,
+        "x": 480,
+        "y": 400,
         "wires": []
     },
     {
@@ -3763,116 +3733,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 800,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "647bde1c01845588",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "name": "readEvents",
-        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    msg.payload = events;\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 270,
-        "y": 1120,
-        "wires": [
-            [
-                "d9963179806d0e0b",
-                "4337e698e7bc28be"
-            ]
-        ]
-    },
-    {
-        "id": "b4171ddbea19918f",
-        "type": "inject",
-        "z": "4721bb14b0bb8ce2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 1040,
-        "wires": [
-            [
-                "647bde1c01845588"
-            ]
-        ]
-    },
-    {
-        "id": "d9963179806d0e0b",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "name": "debug 19",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 460,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "4337e698e7bc28be",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "name": "format events",
-        "func": "const events = msg.payload;\n\nmsg.payload = events.map(e =>\n    `${String(e.sequence ?? \"\").padStart(5)} ` +\n    `${String(e.eventTime ?? \"\").padEnd(24)} ` +\n    `${String(e.level ?? \"\").padEnd(5)} ` +\n    `${String(e.eventType ?? \"\").padEnd(10)} ` +\n    `${String(e.component ?? \"\").padEnd(10)} ` +\n    `${String(e.message ?? \"\")}`\n).join(\"\\n\");\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 1180,
-        "wires": [
-            [
-                "2493550f97379434",
-                "c58eb17ef4758190"
-            ]
-        ]
-    },
-    {
-        "id": "2493550f97379434",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "name": "debug 20",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 560,
-        "y": 1180,
+        "x": 540,
+        "y": 460,
         "wires": []
     },
     {
@@ -3894,8 +3756,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 620,
+        "x": 270,
+        "y": 520,
         "wires": [
             [
                 "070e3de268d0a30a",
@@ -3919,99 +3781,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 680,
+        "x": 250,
+        "y": 580,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "ac1d93fbc55fd149",
-        "type": "template",
-        "z": "4721bb14b0bb8ce2",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
-        "output": "str",
-        "x": 300,
-        "y": 1240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c58eb17ef4758190",
-        "type": "ui-template",
-        "z": "4721bb14b0bb8ce2",
-        "d": true,
-        "group": "0d84bc5c17ef7261",
-        "page": "",
-        "ui": "",
-        "name": "",
-        "order": 3,
-        "width": "15",
-        "height": "8",
-        "head": "",
-        "format": "<pre style=\"\n    white-space: pre;\n    overflow-y: auto;\n    font-family: monospace;\n    font-size: 14px;\n    margin: 0;\n\">\n{{ msg.payload }}\n</pre>",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 320,
-        "y": 1320,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "70de0cb46bf839cd",
-        "type": "inject",
-        "z": "4721bb14b0bb8ce2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 110,
-        "y": 1300,
-        "wires": [
-            [
-                "c58eb17ef4758190"
-            ]
-        ]
-    },
-    {
-        "id": "fb559680debbd3b7",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "name": "debug 21",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "d76c6eeede72f8b9",
@@ -4027,20 +3801,20 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 620,
+        "x": 580,
+        "y": 520,
         "wires": []
     },
     {
         "id": "a94863d0851d5376",
         "type": "ui-dropdown",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "group": "94e109669570dbcd",
         "name": "",
         "label": "Event Type",
         "tooltip": "",
-        "order": 4,
+        "order": 5,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -4060,8 +3834,8 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onClose",
-        "x": 430,
-        "y": 1780,
+        "x": 280,
+        "y": 1680,
         "wires": [
             [
                 "8ebc0ceeda36cf1a",
@@ -4070,69 +3844,12 @@
         ]
     },
     {
-        "id": "87b7774b46dafe02",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "readEvents",
-        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\n\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n\n    flow.set(\"events\", events);\n\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 430,
-        "y": 1500,
-        "wires": [
-            [
-                "5a8eb0baea74f81b",
-                "46970263d9a27bf2"
-            ]
-        ]
-    },
-    {
-        "id": "d468d103072f29a7",
-        "type": "inject",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 260,
-        "y": 1500,
-        "wires": [
-            [
-                "87b7774b46dafe02"
-            ]
-        ]
-    },
-    {
         "id": "8ebc0ceeda36cf1a",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "debug 42",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4140,25 +3857,25 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 1820,
+        "x": 270,
+        "y": 1720,
         "wires": []
     },
     {
         "id": "5a8eb0baea74f81b",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "process data",
-        "func": "/*\n * Process Data\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n * Event data is owned by flow.events.\n *\n * Each event is wrapped without modifying the original event:\n *\n * {\n *     event: { ...original event... },\n *     show: true\n * }\n *\n * Update Event State adds the dynamic filtering state.\n */\n\n\n// -----------------------------------------------------------------------------\n// Load events\n// -----------------------------------------------------------------------------\n\nconst events = flow.get(\"events\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    return {\n        event: event,\n        show: true\n    };\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events\n// -----------------------------------------------------------------------------\n\nconst processedEvents = events.map(event =>\n    processEvent(event)\n);\n\n\n// -----------------------------------------------------------------------------\n// Store the processed event collection\n// -----------------------------------------------------------------------------\n\nflow.set(\"events\", processedEvents);\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(item => item.event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(item =>\n            Object.keys(item.event)\n        )\n    )\n].sort();\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build outputs\n//\n// These messages contain only the data needed by their destinations.\n// The event collection remains in flow.events.\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"],\n    options: systemDropDown\n};\n\nconst fieldsMsg = {\n    payload: [\"__ALL__\"],\n    options: fieldsDropDown\n};\n\nconst stateMsg = {\n    topic: \"updateEventState\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];",
+        "func": "/*\n * Process Data\n *\n * Input:\n *\n *   sourced/from/file\n *       flow.events already contains the events read from the log file.\n *\n *   sourced/from/tail\n *       msg.payload contains JSON string(s) from tail-file.\n *\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n *\n * Event data is owned by flow.events.\n *\n * Common event form:\n *\n * {\n *     event: { ...original event... },\n *     show: true,\n *     pending: true\n * }\n */\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    return {\n        event: event,\n        show: true,\n        pending: true\n    };\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from the initial file read\n// -----------------------------------------------------------------------------\n\nfunction fromReadFile() {\n\n    const events = flow.get(\"events\") || [];\n\n    const processedEvents = events.map(event =>\n        processEvent(event)\n    );\n\n    flow.set(\"events\", processedEvents);\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from tail-file\n// -----------------------------------------------------------------------------\n\nfunction fromTailFile() {\n\n    let incomingEvents = msg.payload;\n\n    // Normally tail-file supplies one JSON string.\n    // Accept an array as well so this remains safe if that ever changes.\n    if (!Array.isArray(incomingEvents)) {\n        incomingEvents = [incomingEvents];\n    }\n\n    const newEvents = [];\n\n    for (const incomingEvent of incomingEvents) {\n\n        let event = incomingEvent;\n\n\n        // ---------------------------------------------------------------------\n        // Convert JSON string to event object\n        // ---------------------------------------------------------------------\n\n        if (typeof event === \"string\") {\n\n            try {\n                event = JSON.parse(event);\n            }\n            catch (err) {\n\n                node.error(\n                    `Unable to parse tailed event: ${err.message}`,\n                    msg\n                );\n\n                continue;\n            }\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Validate event\n        // ---------------------------------------------------------------------\n\n        if (\n            !event ||\n            typeof event !== \"object\" ||\n            Array.isArray(event)\n        ) {\n\n            node.error(\n                \"Invalid event received from tail-file.\",\n                msg\n            );\n\n            continue;\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Process new event\n        // ---------------------------------------------------------------------\n\n        newEvents.push(\n            processEvent(event)\n        );\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Nothing usable arrived\n    // -------------------------------------------------------------------------\n\n    if (newEvents.length === 0) {\n        return;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Append new events to existing collection\n    // -------------------------------------------------------------------------\n\n    const events = flow.get(\"events\") || [];\n\n    events.push(...newEvents);\n\n    flow.set(\"events\", events);\n}\n\n\n// -----------------------------------------------------------------------------\n// Select the source\n// -----------------------------------------------------------------------------\n\nswitch (msg.topic) {\n\n    case \"sourced/from/file\":\n        fromReadFile();\n        break;\n\n\n    case \"sourced/from/tail\":\n        fromTailFile();\n        break;\n\n\n    default:\n\n        node.error(\n            `Unknown message source: ${msg.topic}`,\n            msg\n        );\n\n        return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Everything below this point operates on the same flow.events structure,\n// regardless of where the events came from.\n// -----------------------------------------------------------------------------\n\nconst processedEvents = flow.get(\"events\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(item => item.event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fieldOrder = [\n    \"sequence\",\n    \"eventTime\",\n    \"sourceId\",\n    \"eventType\",\n    \"level\",\n    \"message\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"data\",\n    \"eventUuid\",\n    \"deviceSequence\",\n    \"recordType\",\n    \"receivedTime\"\n];\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(item =>\n            Object.keys(item.event)\n        )\n    )\n].sort((a, b) => {\n\n    const aIndex = fieldOrder.indexOf(a);\n    const bIndex = fieldOrder.indexOf(b);\n\n    if (aIndex !== -1 && bIndex !== -1) {\n        return aIndex - bIndex;\n    }\n\n    if (aIndex !== -1) return -1;\n    if (bIndex !== -1) return 1;\n\n    return a.localeCompare(b);\n});\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build outputs\n//\n// These messages contain only the data needed by their destinations.\n// The event collection remains in flow.events.\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"],\n    options: systemDropDown\n};\n\nconst fieldsMsg = {\n    payload: [\"__ALL__\"],\n    options: fieldsDropDown\n};\n\n/*\nconst stateMsg = {\n    topic: \"updateEventState\"\n};\n*/\n\nconst stateMsg = {\n    topic: msg.topic\n};\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 1500,
+        "x": 330,
+        "y": 2080,
         "wires": [
             [
                 "15e21681d1f070ce",
@@ -4183,26 +3900,26 @@
         "id": "1367d4dfe063f481",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "process/data/state/out",
         "mode": "link",
         "links": [
             "3772d42a578a6b36"
         ],
-        "x": 735,
-        "y": 1540,
+        "x": 455,
+        "y": 2120,
         "wires": []
     },
     {
         "id": "c9721bdd2e8c83ee",
         "type": "ui-dropdown",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "group": "94e109669570dbcd",
         "name": "Fields",
         "label": "Fields",
         "tooltip": "",
-        "order": 5,
+        "order": 6,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -4222,8 +3939,8 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onClose",
-        "x": 410,
-        "y": 1900,
+        "x": 260,
+        "y": 1800,
         "wires": [
             [
                 "9d35777a2b131516",
@@ -4235,17 +3952,17 @@
         "id": "c122719ce74f8f6a",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "Update Log Display",
-        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedFields =\n    flow.get(\"selectedFields\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Select events currently marked for display\n// -----------------------------------------------------------------------------\n\nconst visibleEvents =\n    events.filter(item => item.show === true);\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.length === 0 ||\n    selectedFields.includes(\"__ALL__\")\n) {\n    const fieldsDropDown =\n        flow.get(\"fieldsDropDown\") || [];\n\n    fieldsToDisplay =\n        fieldsDropDown\n            .filter(option => option.value !== \"__ALL__\")\n            .map(option => option.value);\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Build table rows\n// -----------------------------------------------------------------------------\n\nconst rows =\n    visibleEvents.map(item => {\n\n        const row = {};\n\n        fieldsToDisplay.forEach(field => {\n            row[field] = item.event[field];\n        });\n\n        return row;\n    });\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst clearMsg = {\n    payload: []\n};\n\n\n// -----------------------------------------------------------------------------\n// Load table\n// -----------------------------------------------------------------------------\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
+        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedFields =\n    flow.get(\"selectedFields\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Determine fields to display\n// -----------------------------------------------------------------------------\n\nlet fieldsToDisplay;\n\nif (\n    selectedFields.length === 0 ||\n    selectedFields.includes(\"__ALL__\")\n) {\n    const fieldsDropDown =\n        flow.get(\"fieldsDropDown\") || [];\n\n    fieldsToDisplay =\n        fieldsDropDown\n            .filter(option => option.value !== \"__ALL__\")\n            .map(option => option.value);\n\n} else {\n\n    fieldsToDisplay = selectedFields;\n}\n\n\n// -----------------------------------------------------------------------------\n// Tail update\n//\n// Display only newly processed events.\n//\n// Pending means:\n//     This event has not yet been handed to the log display.\n//\n// Once handled here, pending is cleared.\n// -----------------------------------------------------------------------------\n\nif (msg.topic === \"sourced/from/tail\") {\n\n    const pendingEvents =\n        events.filter(item =>\n            item.pending === true\n        );\n\n    // Nothing new to display.\n    if (pendingEvents.length === 0) {\n        return [null, null];\n    }\n\n\n    const displayEvents =\n        pendingEvents.filter(item =>\n            item.show === true\n        );\n\n\n    const rows =\n        displayEvents.map(item => {\n\n            const row = {};\n\n            fieldsToDisplay.forEach(field => {\n                row[field] = item.event[field];\n            });\n\n            return row;\n        });\n\n\n    // These events have now been dealt with,\n    // whether they were visible or not.\n    pendingEvents.forEach(item => {\n        item.pending = false;\n    });\n\n\n    // Pending events existed, but none matched\n    // the current display filter.\n    if (rows.length === 0) {\n        return [null, null];\n    }\n\n\n    // Append new rows.\n    return [\n        null,\n        {\n            payload: rows\n        }\n    ];\n}\n\n\n// -----------------------------------------------------------------------------\n// Full display update\n//\n// File load or filter change:\n//     clear the existing table, then fill it.\n// -----------------------------------------------------------------------------\n\nconst displayEvents =\n    events.filter(item =>\n        item.show === true\n    );\n\n\nconst rows =\n    displayEvents.map(item => {\n\n        const row = {};\n\n        fieldsToDisplay.forEach(field => {\n            row[field] = item.event[field];\n        });\n\n        return row;\n    });\n\n\n// -----------------------------------------------------------------------------\n// These events have now been handed to the display.\n// -----------------------------------------------------------------------------\n\nevents.forEach(item => {\n    item.pending = false;\n});\n\n\nconst clearMsg = {\n    payload: []\n};\n\nconst loadMsg = {\n    payload: rows\n};\n\n\nreturn [\n    clearMsg,\n    loadMsg\n];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 950,
-        "y": 2140,
+        "x": 290,
+        "y": 2440,
         "wires": [
             [
                 "c8d236d56da8076a",
@@ -4265,11 +3982,11 @@
         "id": "c8d236d56da8076a",
         "type": "ui-table",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "group": "0d84bc5c17ef7261",
         "name": "Build Log Display",
         "label": "",
-        "order": 2,
+        "order": 1,
         "width": "0",
         "height": "0",
         "maxrows": 0,
@@ -4283,8 +4000,8 @@
         "mobileBreakpointType": "defaults",
         "action": "append",
         "className": "",
-        "x": 1230,
-        "y": 2140,
+        "x": 570,
+        "y": 2440,
         "wires": [
             []
         ]
@@ -4293,7 +4010,7 @@
         "id": "329fabce979bf06c",
         "type": "inject",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "Clear Table",
         "props": [
             {
@@ -4311,8 +4028,8 @@
         "topic": "",
         "payload": "[]",
         "payloadType": "json",
-        "x": 980,
-        "y": 2180,
+        "x": 320,
+        "y": 2480,
         "wires": [
             [
                 "c8d236d56da8076a"
@@ -4323,7 +4040,7 @@
         "id": "dc91af60b0f07b69",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 49",
         "active": false,
         "tosidebar": true,
@@ -4333,21 +4050,21 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1200,
-        "y": 2200,
+        "x": 540,
+        "y": 2500,
         "wires": []
     },
     {
         "id": "c70c1d07332a58ce",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "update/log/display/in",
         "links": [
             "ed221331d72730b2"
         ],
-        "x": 815,
-        "y": 2140,
+        "x": 155,
+        "y": 2440,
         "wires": [
             [
                 "c122719ce74f8f6a"
@@ -4358,21 +4075,21 @@
         "id": "c4b0aa1bb4a29a39",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "fields/out",
         "mode": "link",
         "links": [
             "3772d42a578a6b36"
         ],
-        "x": 855,
-        "y": 1900,
+        "x": 705,
+        "y": 1800,
         "wires": []
     },
     {
         "id": "9d35777a2b131516",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "Save Field Selection:",
         "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedFields\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Pass selection to Update Log Display\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
         "outputs": 1,
@@ -4381,8 +4098,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 640,
-        "y": 1900,
+        "x": 490,
+        "y": 1800,
         "wires": [
             [
                 "c4b0aa1bb4a29a39"
@@ -4393,7 +4110,7 @@
         "id": "6818d9dbb084fe7f",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "Save Event Type Selection",
         "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedEventTypes\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Event State\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
         "outputs": 1,
@@ -4402,8 +4119,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 1780,
+        "x": 510,
+        "y": 1680,
         "wires": [
             [
                 "80077ea1eac00ecc",
@@ -4415,28 +4132,28 @@
         "id": "80077ea1eac00ecc",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "save/event/type/selection/out",
         "mode": "link",
         "links": [
             "3772d42a578a6b36"
         ],
-        "x": 855,
-        "y": 1760,
+        "x": 705,
+        "y": 1660,
         "wires": []
     },
     {
         "id": "9ecf1c2b325fd852",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "event/type/dropdown.in",
         "links": [
             "1d02ebdf41761475",
             "f2184f110234ed9a"
         ],
-        "x": 305,
-        "y": 1780,
+        "x": 155,
+        "y": 1680,
         "wires": [
             [
                 "a94863d0851d5376",
@@ -4448,14 +4165,14 @@
         "id": "84ea162d660bcd44",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "fields/drop/down/in",
         "links": [
             "7c928e5092ab5130",
             "6e29f1201371458d"
         ],
-        "x": 305,
-        "y": 1900,
+        "x": 155,
+        "y": 1800,
         "wires": [
             [
                 "c9721bdd2e8c83ee"
@@ -4463,110 +4180,16 @@
         ]
     },
     {
-        "id": "ddfb6f6014222966",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Clear Log Display",
-        "func": "// -----------------------------------------------------------------------------\n// Clear current log-display selections\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedSystems\", [\"__ALL__\"]);\nflow.set(\"selectedEventTypes\", [\"__ALL__\"]);\nflow.set(\"selectedFields\", [\"__ALL__\"]);\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Systems\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Event Types\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Fields\n// -----------------------------------------------------------------------------\n\nconst fieldMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst tableMsg = {\n    payload: []\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg,\n    tableMsg\n];",
-        "outputs": 4,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 2100,
-        "wires": [
-            [
-                "23b9f0be2824c974"
-            ],
-            [
-                "f2184f110234ed9a"
-            ],
-            [
-                "7c928e5092ab5130"
-            ],
-            [
-                "7759a0b14cdd0804"
-            ]
-        ],
-        "outputLabels": [
-            "systemMsg",
-            "eventTypemsg",
-            "fieldMsg",
-            "tableMsg"
-        ]
-    },
-    {
-        "id": "23b9f0be2824c974",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "clear/log/display/system/out",
-        "mode": "link",
-        "links": [
-            "8ffee1bf3ad1ac73"
-        ],
-        "x": 655,
-        "y": 2040,
-        "wires": []
-    },
-    {
-        "id": "f2184f110234ed9a",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "clear/log/display/event/type/out",
-        "mode": "link",
-        "links": [
-            "9ecf1c2b325fd852"
-        ],
-        "x": 655,
-        "y": 2080,
-        "wires": []
-    },
-    {
-        "id": "7c928e5092ab5130",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "clear/log/display/fields/out",
-        "mode": "link",
-        "links": [
-            "84ea162d660bcd44"
-        ],
-        "x": 655,
-        "y": 2120,
-        "wires": []
-    },
-    {
-        "id": "7759a0b14cdd0804",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "clear/log/display/table/out",
-        "mode": "link",
-        "links": [
-            "72e977046ac79fa0"
-        ],
-        "x": 655,
-        "y": 2160,
-        "wires": []
-    },
-    {
         "id": "72e977046ac79fa0",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "build/log/display/in",
         "links": [
-            "7759a0b14cdd0804",
-            "79d827115a7a9eb9",
-            "5ce2e5b0b420a1b7"
+            "7759a0b14cdd0804"
         ],
-        "x": 1025,
-        "y": 2100,
+        "x": 365,
+        "y": 2400,
         "wires": [
             [
                 "c8d236d56da8076a"
@@ -4574,316 +4197,10 @@
         ]
     },
     {
-        "id": "9eecf2cbd05901d6",
-        "type": "ui-button",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "group": "94e109669570dbcd",
-        "name": "Clear log display",
-        "label": "",
-        "order": 1,
-        "width": "1",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "log-control-button",
-        "icon": "close-outline",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "#333333",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 270,
-        "y": 2100,
-        "wires": [
-            [
-                "ddfb6f6014222966"
-            ]
-        ]
-    },
-    {
-        "id": "5b0d710104efffce",
-        "type": "ui-template",
-        "z": "4721bb14b0bb8ce2",
-        "group": "",
-        "page": "eb31c5fb533897a0",
-        "ui": "",
-        "name": "Page Style",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "head": "",
-        "format": ".log-control-button button.v-btn {\n    min-width: 40px !important;\n    width: 40px !important;\n    height: 40px !important;\n    padding: 0 !important;\n}",
-        "storeOutMessages": true,
-        "passthru": true,
-        "resendOnRefresh": true,
-        "templateScope": "page:style",
-        "className": "",
-        "x": 850,
-        "y": 180,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "da1058cd61b4ef08",
-        "type": "ui-button",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "group": "94e109669570dbcd",
-        "name": "Tail",
-        "label": "",
-        "order": 2,
-        "width": "1",
-        "height": "1",
-        "emulateClick": false,
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "log-control-button",
-        "icon": "tailwind",
-        "iconPosition": "left",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "buttonColor": "#333333",
-        "textColor": "",
-        "iconColor": "",
-        "enableClick": true,
-        "enablePointerdown": false,
-        "pointerdownPayload": "",
-        "pointerdownPayloadType": "str",
-        "enablePointerup": false,
-        "pointerupPayload": "",
-        "pointerupPayloadType": "str",
-        "x": 290,
-        "y": 2280,
-        "wires": [
-            [
-                "7f14592e2cdf759b"
-            ]
-        ]
-    },
-    {
-        "id": "7f14592e2cdf759b",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Toggle Log Tail",
-        "func": "// -----------------------------------------------------------------------------\n// Toggle Log Tail\n//\n// Output 1 → Tail button\n//   Updates the button color.\n//\n// Output 2 → Update Log Display\n//   Requests a complete display reload when Tail is turned ON.\n//\n// Tail ON:\n//   Establish the current complete log as the Tail baseline.\n//   Request a complete display reload.\n//   Turn the button red.\n//\n// Tail OFF:\n//   Stop Tail mode.\n//   Return the button to its normal color.\n// -----------------------------------------------------------------------------\n\nconst currentlyTailing = flow.get(\"displayLogTail\") === true;\n\n\n// -----------------------------------------------------------------------------\n// Turn Tail OFF\n// -----------------------------------------------------------------------------\n\nif (currentlyTailing) {\n\n    flow.set(\"displayLogTail\", false);\n\n    const buttonMsg = {\n        ui_update: {\n            buttonColor: \"#333333\"\n        }\n    };\n\n    return [buttonMsg, null];\n}\n\n\n// -----------------------------------------------------------------------------\n// Turn Tail ON\n// -----------------------------------------------------------------------------\n\nconst events = flow.get(\"displayLogEvents\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Establish the Tail sequence boundary\n// -----------------------------------------------------------------------------\n\nlet lastSequence = 0;\n\nfor (const event of events) {\n\n    const sequence = Number(event.sequence);\n\n    if (Number.isFinite(sequence) && sequence > lastSequence) {\n        lastSequence = sequence;\n    }\n}\n\nflow.set(\"displayLogTailSequence\", lastSequence);\nflow.set(\"displayLogTail\", true);\n\n\n// -----------------------------------------------------------------------------\n// Output 1 — turn Tail button red\n// -----------------------------------------------------------------------------\n\nconst buttonMsg = {\n    ui_update: {\n        buttonColor: \"red\"\n    }\n};\n\n\n// -----------------------------------------------------------------------------\n// Output 2 — request complete display reload\n// -----------------------------------------------------------------------------\n\nconst reloadMsg = {\n    payload: events\n};\n\n\n// -----------------------------------------------------------------------------\n// Send to both outputs\n// -----------------------------------------------------------------------------\n\nreturn [buttonMsg, reloadMsg];",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 2280,
-        "wires": [
-            [
-                "aa0532f177eab5bf"
-            ],
-            [
-                "5ce2e5b0b420a1b7"
-            ]
-        ],
-        "outputLabels": [
-            "btn",
-            "display"
-        ]
-    },
-    {
-        "id": "12209a6166b24e2d",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Read Tail Events",
-        "func": "// -----------------------------------------------------------------------------\n// Read Tail Events\n//\n// Reads the event log and returns only events that arrived after the sequence\n// recorded when Tail mode was started.\n// -----------------------------------------------------------------------------\n\n// Tail isn't active — nothing to do.\nif (flow.get(\"displayLogTail\") !== true) {\n    return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Get the event log file\n// -----------------------------------------------------------------------------\n\nconst opsLogging = global.get(\"opsLogging\");\n\nif (!opsLogging || !opsLogging.evtlog || !opsLogging.evtlog.evtlogFile) {\n    node.error(\"Event log file is not configured.\");\n    return null;\n}\n\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\n\n\n// -----------------------------------------------------------------------------\n// Get the last sequence we have already processed\n// -----------------------------------------------------------------------------\n\nlet lastSequence = Number(\n    flow.get(\"displayLogTailSequence\") || 0\n);\n\nif (!Number.isFinite(lastSequence)) {\n    lastSequence = 0;\n}\n\n\n// -----------------------------------------------------------------------------\n// Read the log\n// -----------------------------------------------------------------------------\n\ntry {\n\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const newEvents = [];\n\n    for (const line of lines) {\n\n        let event;\n\n        try {\n            event = JSON.parse(line);\n        }\n        catch (err) {\n            // Ignore an incomplete/malformed line.\n            continue;\n        }\n\n        const sequence = Number(event.sequence);\n\n        if (\n            Number.isFinite(sequence) &&\n            sequence > lastSequence\n        ) {\n            newEvents.push(event);\n        }\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Nothing new\n    // -------------------------------------------------------------------------\n\n    if (newEvents.length === 0) {\n        return null;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Advance the Tail sequence boundary\n    // -------------------------------------------------------------------------\n\n    const newestSequence = Math.max(\n        ...newEvents.map(event => Number(event.sequence))\n    );\n\n    flow.set(\n        \"displayLogTailSequence\",\n        newestSequence\n    );\n\n\n    // -------------------------------------------------------------------------\n    // Pass only the new events onward\n    // -------------------------------------------------------------------------\n\n    msg.payload = newEvents;\n\n    return msg;\n\n}\ncatch (err) {\n\n    node.error(\n        `Unable to read event log while tailing: ${err.message}`,\n        msg\n    );\n\n    return null;\n}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "fs",
-                "module": "fs"
-            }
-        ],
-        "x": 880,
-        "y": 2320,
-        "wires": [
-            [
-                "86c938695d40d20b",
-                "ca09e2544fab9c67"
-            ]
-        ]
-    },
-    {
-        "id": "04bec39758ac0f89",
-        "type": "inject",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Tail Poll",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 720,
-        "y": 2320,
-        "wires": [
-            [
-                "12209a6166b24e2d"
-            ]
-        ]
-    },
-    {
-        "id": "86c938695d40d20b",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 48",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 2280,
-        "wires": []
-    },
-    {
-        "id": "ca09e2544fab9c67",
-        "type": "function",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "Filter Tail Events",
-        "func": "// -----------------------------------------------------------------------------\n// Filter Tail Events\n//\n// Applies the current Log Display selections to only the new events received\n// from Tail mode.\n//\n// The complete event history remains untouched.\n// -----------------------------------------------------------------------------\n\nconst events = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// Current selections\n// -----------------------------------------------------------------------------\n\nconst selectedSystems =\n    flow.get(\"displayLogSelectedSystems\") || [];\n\nconst selectedEventTypes =\n    flow.get(\"displayLogSelectedEventTypes\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Filter by System\n// -----------------------------------------------------------------------------\n\nlet filteredEvents = events;\n\nif (\n    selectedSystems.length > 0 &&\n    !selectedSystems.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedSystems.includes(event.sourceId)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Filter by Event Type\n// -----------------------------------------------------------------------------\n\nif (\n    selectedEventTypes.length > 0 &&\n    !selectedEventTypes.includes(\"__ALL__\")\n) {\n    filteredEvents = filteredEvents.filter(event =>\n        selectedEventTypes.includes(event.eventType)\n    );\n}\n\n\n// -----------------------------------------------------------------------------\n// Nothing passed the filters\n// -----------------------------------------------------------------------------\n\nif (filteredEvents.length === 0) {\n    return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Pass filtered events onward\n// -----------------------------------------------------------------------------\n\nmsg.payload = filteredEvents;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1080,
-        "y": 2320,
-        "wires": [
-            [
-                "2c3938772243e8f1",
-                "79d827115a7a9eb9"
-            ]
-        ]
-    },
-    {
-        "id": "2c3938772243e8f1",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 50",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1080,
-        "y": 2280,
-        "wires": []
-    },
-    {
-        "id": "79d827115a7a9eb9",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "filter/tail/events/out",
-        "mode": "link",
-        "links": [
-            "72e977046ac79fa0"
-        ],
-        "x": 1225,
-        "y": 2320,
-        "wires": []
-    },
-    {
-        "id": "5ce2e5b0b420a1b7",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "toggle/log/tail/display/out",
-        "mode": "link",
-        "links": [
-            "72e977046ac79fa0"
-        ],
-        "x": 595,
-        "y": 2300,
-        "wires": []
-    },
-    {
-        "id": "f5bbd96c1958884f",
-        "type": "link in",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "tail/btn/in",
-        "links": [
-            "aa0532f177eab5bf"
-        ],
-        "x": 195,
-        "y": 2280,
-        "wires": [
-            [
-                "da1058cd61b4ef08"
-            ]
-        ]
-    },
-    {
-        "id": "aa0532f177eab5bf",
-        "type": "link out",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "toggle/log/file/btn/out",
-        "mode": "link",
-        "links": [
-            "f5bbd96c1958884f"
-        ],
-        "x": 595,
-        "y": 2260,
-        "wires": []
-    },
-    {
         "id": "bad9052183a01af7",
         "type": "ui-template",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "group": "",
         "page": "eb31c5fb533897a0",
         "ui": "",
@@ -4898,8 +4215,8 @@
         "resendOnRefresh": true,
         "templateScope": "widget:page",
         "className": "",
-        "x": 1060,
-        "y": 1840,
+        "x": 280,
+        "y": 2360,
         "wires": [
             []
         ]
@@ -4926,8 +4243,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 260,
-        "y": 1400,
+        "x": 220,
+        "y": 900,
         "wires": [
             [
                 "abe946717f7aab47"
@@ -4947,8 +4264,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 1400,
+        "x": 460,
+        "y": 900,
         "wires": [
             [
                 "ee45d6969a860fc0"
@@ -4969,25 +4286,25 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 1400,
+        "x": 680,
+        "y": 900,
         "wires": []
     },
     {
         "id": "1661f19f1bd77682",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "Update Event State",
-        "func": "const events =\n    flow.get(\"events\") || [];\n\nconst selectedSystems =\n    flow.get(\"selectedSystems\") || [\"__ALL__\"];\n\nconst selectedEventTypes =\n    flow.get(\"selectedEventTypes\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Update state for every wrapped event\n// -----------------------------------------------------------------------------\n\nevents.forEach(item => {\n\n    const event = item.event;\n\n\n    // -------------------------------------------------------------------------\n    // System match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedSystems.length === 0 ||\n        selectedSystems.includes(\"__ALL__\")\n    ) {\n        item.systemMatch = true;\n    } else {\n        item.systemMatch =\n            selectedSystems.includes(event.sourceId);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Event Type match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedEventTypes.length === 0 ||\n        selectedEventTypes.includes(\"__ALL__\")\n    ) {\n        item.eventTypeMatch = true;\n    } else {\n        item.eventTypeMatch =\n            selectedEventTypes.includes(event.eventType);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Final display state\n    // -------------------------------------------------------------------------\n\n    item.show =\n        item.systemMatch &&\n        item.eventTypeMatch;\n});\n\n\n// -----------------------------------------------------------------------------\n// Find events matching the current System selection\n//\n// Event Type choices are based on these events.\n// -----------------------------------------------------------------------------\n\nconst matchingEvents =\n    events.filter(item =>\n        item.systemMatch\n    );\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type dropdown\n// -----------------------------------------------------------------------------\n\nconst eventTypeDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...[\n        ...new Set(\n            matchingEvents\n                .map(item => item.event.eventType)\n                .filter(Boolean)\n        )\n    ]\n        .sort()\n        .map(eventType => ({\n            label: eventType,\n            value: eventType,\n            type: \"str\"\n        }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Store Event Type dropdown options\n// -----------------------------------------------------------------------------\n\nflow.set(\n    \"eventTypeDropDown\",\n    eventTypeDropDown\n);\n\n\n// -----------------------------------------------------------------------------\n// Send Event Type dropdown update\n//\n// payload = current selection\n// options = available choices\n//\n// Do NOT copy msg. The event collection lives in flow.events.\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: selectedEventTypes,\n    options: eventTypeDropDown\n};\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Log Display\n//\n// The event collection is already in flow.events.\n// -----------------------------------------------------------------------------\n\nconst displayMsg = {\n    topic: \"displayLog\"\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → Event Type dropdown\n// Output 2 → Update Log Display\n// -----------------------------------------------------------------------------\n\nreturn [\n    eventTypeMsg,\n    displayMsg\n];",
+        "func": "/*\n * Update Event State\n *\n * sourced/from/tail\n *     → process pending events only\n *\n * anything else\n *     → process all events\n *\n * The event collection remains in flow.events.\n * Only the source topic is passed to Update Log Display.\n */\n\n\nconst events =\n    flow.get(\"events\") || [];\n\nconst selectedSystems =\n    flow.get(\"selectedSystems\") || [\"__ALL__\"];\n\nconst selectedEventTypes =\n    flow.get(\"selectedEventTypes\") || [\"__ALL__\"];\n\n\n// -----------------------------------------------------------------------------\n// Determine which events need state processing\n//\n// Tail events are incremental, so only pending events are processed.\n//\n// All other sources represent a complete state recalculation.\n// -----------------------------------------------------------------------------\n\nconst processAll =\n    msg.topic !== \"sourced/from/tail\";\n\n\n// -----------------------------------------------------------------------------\n// Update state for the appropriate events\n// -----------------------------------------------------------------------------\n\nevents.forEach(item => {\n\n    // Tail path:\n    // skip events that are not part of this new update.\n\n    if (!processAll && !item.pending) {\n        return;\n    }\n\n\n    const event = item.event;\n\n\n    // -------------------------------------------------------------------------\n    // System match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedSystems.length === 0 ||\n        selectedSystems.includes(\"__ALL__\")\n    ) {\n        item.systemMatch = true;\n    } else {\n        item.systemMatch =\n            selectedSystems.includes(event.sourceId);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Event Type match\n    // -------------------------------------------------------------------------\n\n    if (\n        selectedEventTypes.length === 0 ||\n        selectedEventTypes.includes(\"__ALL__\")\n    ) {\n        item.eventTypeMatch = true;\n    } else {\n        item.eventTypeMatch =\n            selectedEventTypes.includes(event.eventType);\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Final display state\n    // -------------------------------------------------------------------------\n\n    item.show =\n        item.systemMatch &&\n        item.eventTypeMatch;\n\n\n    // -------------------------------------------------------------------------\n    // State has now been calculated for this event.\n    // -------------------------------------------------------------------------\n\n//    item.pending = false;\n});\n\n\n// -----------------------------------------------------------------------------\n// Find events matching the current System selection\n//\n// Event Type choices are based on these events.\n// -----------------------------------------------------------------------------\n\nconst matchingEvents =\n    events.filter(item =>\n        item.systemMatch\n    );\n\n\n// -----------------------------------------------------------------------------\n// Build Event Type dropdown\n// -----------------------------------------------------------------------------\n\nconst eventTypeDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...[\n        ...new Set(\n            matchingEvents\n                .map(item => item.event.eventType)\n                .filter(Boolean)\n        )\n    ]\n        .sort()\n        .map(eventType => ({\n            label: eventType,\n            value: eventType,\n            type: \"str\"\n        }))\n];\n\n\n// -----------------------------------------------------------------------------\n// Store Event Type dropdown options\n// -----------------------------------------------------------------------------\n\nflow.set(\n    \"eventTypeDropDown\",\n    eventTypeDropDown\n);\n\n\n// -----------------------------------------------------------------------------\n// Send Event Type dropdown update\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: selectedEventTypes,\n    options: eventTypeDropDown\n};\n\n\n// -----------------------------------------------------------------------------\n// Trigger Update Log Display\n//\n// The events themselves remain in flow.events.\n// Preserve the source topic so Update Log Display can determine whether\n// this is a full display update or an incremental tail update.\n// -----------------------------------------------------------------------------\n\nconst displayMsg = {\n    topic: msg.topic\n};\n\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → Event Type dropdown\n// Output 2 → Update Log Display\n// -----------------------------------------------------------------------------\n\nreturn [\n    eventTypeMsg,\n    displayMsg\n];",
         "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 1460,
+        "x": 350,
+        "y": 2260,
         "wires": [
             [
                 "6edc6af5bf1dbd5a",
@@ -5007,7 +4324,7 @@
         "id": "3772d42a578a6b36",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "update/event/state/in",
         "links": [
             "1367d4dfe063f481",
@@ -5015,8 +4332,8 @@
             "c4b0aa1bb4a29a39",
             "80077ea1eac00ecc"
         ],
-        "x": 905,
-        "y": 1460,
+        "x": 205,
+        "y": 2260,
         "wires": [
             [
                 "1661f19f1bd77682"
@@ -5027,23 +4344,24 @@
         "id": "ed221331d72730b2",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "update/event/state/events/out",
         "mode": "link",
         "links": [
-            "c70c1d07332a58ce"
+            "c70c1d07332a58ce",
+            "2d89152a39e04083"
         ],
-        "x": 1215,
-        "y": 1480,
+        "x": 515,
+        "y": 2280,
         "wires": []
     },
     {
         "id": "6edc6af5bf1dbd5a",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 55",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5051,48 +4369,48 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1260,
-        "y": 1400,
+        "x": 560,
+        "y": 2200,
         "wires": []
     },
     {
         "id": "6e29f1201371458d",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "process/data/fields/out",
         "mode": "link",
         "links": [
             "84ea162d660bcd44"
         ],
-        "x": 735,
-        "y": 1500,
+        "x": 455,
+        "y": 2080,
         "wires": []
     },
     {
         "id": "15e21681d1f070ce",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "process/data/system/out",
         "mode": "link",
         "links": [
             "8ffee1bf3ad1ac73"
         ],
-        "x": 735,
-        "y": 1460,
+        "x": 455,
+        "y": 2040,
         "wires": []
     },
     {
         "id": "8089fb98e0744f68",
         "type": "ui-dropdown",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "group": "94e109669570dbcd",
         "name": "",
         "label": "System",
         "tooltip": "",
-        "order": 3,
+        "order": 4,
         "width": "2",
         "height": "1",
         "passthru": false,
@@ -5112,8 +4430,8 @@
         "className": "",
         "typeIsComboBox": false,
         "msgTrigger": "onClose",
-        "x": 420,
-        "y": 1640,
+        "x": 270,
+        "y": 1540,
         "wires": [
             [
                 "f4b5384c1453739a",
@@ -5125,14 +4443,14 @@
         "id": "8ffee1bf3ad1ac73",
         "type": "link in",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "system/dropdown/in",
         "links": [
             "23b9f0be2824c974",
             "15e21681d1f070ce"
         ],
-        "x": 305,
-        "y": 1640,
+        "x": 155,
+        "y": 1540,
         "wires": [
             [
                 "8089fb98e0744f68",
@@ -5144,7 +4462,7 @@
         "id": "f4b5384c1453739a",
         "type": "function",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "Save System Selection",
         "func": "let selected = Array.isArray(msg.payload)\n    ? msg.payload\n    : [];\n\n\n// -----------------------------------------------------------------------------\n// ALL is mutually exclusive with individual selections\n// -----------------------------------------------------------------------------\n\nif (selected.includes(\"__ALL__\")) {\n    selected = [\"__ALL__\"];\n}\n\n\n// -----------------------------------------------------------------------------\n// Save current user selection\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedSystems\", selected);\n\n\n// -----------------------------------------------------------------------------\n// Pass selection to Update Event State\n// -----------------------------------------------------------------------------\n\nmsg.payload = selected;\n\nreturn msg;",
         "outputs": 1,
@@ -5153,8 +4471,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1640,
+        "x": 500,
+        "y": 1540,
         "wires": [
             [
                 "2b85c23655181ace",
@@ -5166,21 +4484,21 @@
         "id": "2b85c23655181ace",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "save/system/selection/out",
         "mode": "link",
         "links": [
             "3772d42a578a6b36"
         ],
-        "x": 855,
-        "y": 1660,
+        "x": 705,
+        "y": 1560,
         "wires": []
     },
     {
         "id": "ad74b093f60bbaba",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "debug 52",
         "active": false,
         "tosidebar": true,
@@ -5190,29 +4508,29 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 1620,
+        "x": 750,
+        "y": 1520,
         "wires": []
     },
     {
         "id": "1d02ebdf41761475",
         "type": "link out",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "update/event/state/event/dropdown/out",
         "mode": "link",
         "links": [
             "9ecf1c2b325fd852"
         ],
-        "x": 1215,
-        "y": 1440,
+        "x": 515,
+        "y": 2240,
         "wires": []
     },
     {
         "id": "ba853e167a6130f6",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 56",
         "active": false,
         "tosidebar": true,
@@ -5222,15 +4540,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1260,
-        "y": 1520,
+        "x": 560,
+        "y": 2320,
         "wires": []
     },
     {
         "id": "2fd5e97b78ce514d",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 44",
         "active": false,
         "tosidebar": true,
@@ -5240,15 +4558,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 620,
-        "y": 1560,
+        "x": 340,
+        "y": 2140,
         "wires": []
     },
     {
         "id": "0431eb7490392455",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 46",
         "active": false,
         "tosidebar": true,
@@ -5258,15 +4576,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 1520,
+        "x": 560,
+        "y": 2100,
         "wires": []
     },
     {
         "id": "7fb3213921a17167",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 47",
         "active": false,
         "tosidebar": true,
@@ -5276,15 +4594,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 1480,
+        "x": 560,
+        "y": 2060,
         "wires": []
     },
     {
         "id": "6118f464fb110afb",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "bb8fa93c293f0a04",
         "name": "debug 54",
         "active": false,
         "tosidebar": true,
@@ -5294,17 +4612,17 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1220,
-        "y": 2080,
+        "x": 560,
+        "y": 2380,
         "wires": []
     },
     {
         "id": "a978c98428dd20c0",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "debug 57",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5312,15 +4630,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
-        "y": 1800,
+        "x": 750,
+        "y": 1700,
         "wires": []
     },
     {
         "id": "27d688e746644485",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "debug 58",
         "active": true,
         "tosidebar": true,
@@ -5330,34 +4648,16 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
-        "y": 1680,
+        "x": 450,
+        "y": 1580,
         "wires": []
     },
     {
         "id": "1e3dbccfbe7563a3",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "b82f2b75b4342871",
         "name": "debug 59",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 420,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "46970263d9a27bf2",
-        "type": "debug",
-        "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 60",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -5366,15 +4666,96 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1460,
+        "x": 270,
+        "y": 1500,
         "wires": []
     },
     {
-        "id": "2fe0226730e03256",
+        "id": "8e86ed5e5a608646",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "b82f2b75b4342871",
+        "name": "debug 61",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "e7f38e5b1f34c1a9",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "b82f2b75b4342871",
+        "name": "debug 62",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "2180d648c4cd407e",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "bb8fa93c293f0a04",
+        "name": "process/data/in",
+        "links": [
+            "9bd6b55784616a6c",
+            "2b5629f5c6e475fa"
+        ],
+        "x": 205,
+        "y": 2080,
+        "wires": [
+            [
+                "5a8eb0baea74f81b"
+            ]
+        ]
+    },
+    {
+        "id": "87b7774b46dafe02",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "readEvents",
+        "func": "const opsLogging = global.get(\"opsLogging\");\nconst evtlogFile = opsLogging.evtlog.evtlogFile;\n\ntry {\n    const text = fs.readFileSync(evtlogFile, \"utf8\");\n\n    const lines = text\n        .split(\"\\n\")\n        .filter(line => line.trim() !== \"\");\n\n    const events = lines.map(line => JSON.parse(line));\n    msg.topic = \"sourced/from/file\";\n\n    flow.set(\"events\", events);\n\n    return msg;\n\n} catch (err) {\n    node.error(`Unable to read event log: ${err.message}`, msg);\n    return null;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 270,
+        "y": 1040,
+        "wires": [
+            [
+                "46970263d9a27bf2",
+                "2b5629f5c6e475fa"
+            ]
+        ]
+    },
+    {
+        "id": "d468d103072f29a7",
         "type": "inject",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
+        "g": "e74e86b3ef76bf36",
         "name": "",
         "props": [
             {
@@ -5390,23 +4771,23 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "[]",
-        "payloadType": "json",
-        "x": 250,
-        "y": 1720,
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 1000,
         "wires": [
             [
-                "a94863d0851d5376"
+                "87b7774b46dafe02"
             ]
         ]
     },
     {
-        "id": "8e86ed5e5a608646",
+        "id": "46970263d9a27bf2",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 61",
-        "active": true,
+        "g": "e74e86b3ef76bf36",
+        "name": "debug 60",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5414,17 +4795,46 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 420,
-        "y": 1740,
+        "x": 300,
+        "y": 1080,
         "wires": []
     },
     {
-        "id": "e7f38e5b1f34c1a9",
+        "id": "71491ae4faad352f",
+        "type": "tail-file",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "filename": "/var/log/RVAutomation/evtlog/todaylog.jsonl",
+        "createFile": false,
+        "mode": "",
+        "encoding": "utf-8",
+        "split": true,
+        "separator": "\\r?\\n",
+        "fromBeginning": false,
+        "flushAtEOF": false,
+        "rememberLast": true,
+        "limitSize": true,
+        "maxBytes": "",
+        "skipBlank": true,
+        "useTrim": true,
+        "sendError": false,
+        "interval": "",
+        "name": "TailLogFile",
+        "x": 580,
+        "y": 1000,
+        "wires": [
+            [
+                "c367766e78fdb95a"
+            ]
+        ]
+    },
+    {
+        "id": "f66c9a9b2e3a54fc",
         "type": "debug",
         "z": "4721bb14b0bb8ce2",
-        "g": "924544e491daa42d",
-        "name": "debug 62",
-        "active": true,
+        "g": "e74e86b3ef76bf36",
+        "name": "debug 63",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5432,9 +4842,409 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 600,
-        "y": 1940,
+        "x": 830,
+        "y": 1040,
         "wires": []
+    },
+    {
+        "id": "c367766e78fdb95a",
+        "type": "change",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "add Topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "sourced/from/tail",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1060,
+        "wires": [
+            [
+                "f66c9a9b2e3a54fc",
+                "9bd6b55784616a6c"
+            ]
+        ]
+    },
+    {
+        "id": "9bd6b55784616a6c",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "tail/file/out",
+        "mode": "link",
+        "links": [
+            "2180d648c4cd407e"
+        ],
+        "x": 785,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "2b5629f5c6e475fa",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "read/events/out",
+        "mode": "link",
+        "links": [
+            "2180d648c4cd407e"
+        ],
+        "x": 405,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "ddfb6f6014222966",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "Clear Log Display",
+        "func": "// -----------------------------------------------------------------------------\n// Clear current log-display selections\n// -----------------------------------------------------------------------------\n\nflow.set(\"selectedSystems\", [\"__ALL__\"]);\nflow.set(\"selectedEventTypes\", [\"__ALL__\"]);\nflow.set(\"selectedFields\", [\"__ALL__\"]);\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Systems\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Event Types\n// -----------------------------------------------------------------------------\n\nconst eventTypeMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Select ALL Fields\n// -----------------------------------------------------------------------------\n\nconst fieldMsg = {\n    payload: [\"__ALL__\"]\n};\n\n\n// -----------------------------------------------------------------------------\n// Clear table\n// -----------------------------------------------------------------------------\n\nconst tableMsg = {\n    payload: []\n};\n\n\nreturn [\n    systemMsg,\n    eventTypeMsg,\n    fieldMsg,\n    tableMsg\n];",
+        "outputs": 4,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1240,
+        "wires": [
+            [
+                "23b9f0be2824c974"
+            ],
+            [
+                "f2184f110234ed9a"
+            ],
+            [
+                "7c928e5092ab5130"
+            ],
+            [
+                "7759a0b14cdd0804"
+            ]
+        ],
+        "outputLabels": [
+            "systemMsg",
+            "eventTypemsg",
+            "fieldMsg",
+            "tableMsg"
+        ]
+    },
+    {
+        "id": "23b9f0be2824c974",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "clear/log/display/system/out",
+        "mode": "link",
+        "links": [
+            "8ffee1bf3ad1ac73"
+        ],
+        "x": 615,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "f2184f110234ed9a",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "clear/log/display/event/type/out",
+        "mode": "link",
+        "links": [
+            "9ecf1c2b325fd852"
+        ],
+        "x": 615,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "7c928e5092ab5130",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "clear/log/display/fields/out",
+        "mode": "link",
+        "links": [
+            "84ea162d660bcd44"
+        ],
+        "x": 615,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "7759a0b14cdd0804",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "clear/log/display/table/out",
+        "mode": "link",
+        "links": [
+            "72e977046ac79fa0"
+        ],
+        "x": 615,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "9eecf2cbd05901d6",
+        "type": "ui-button",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "group": "94e109669570dbcd",
+        "name": "Clear log display",
+        "label": "",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "log-control-button",
+        "icon": "close-outline",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#333333",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 230,
+        "y": 1240,
+        "wires": [
+            [
+                "ddfb6f6014222966"
+            ]
+        ]
+    },
+    {
+        "id": "da1058cd61b4ef08",
+        "type": "ui-button",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "group": "94e109669570dbcd",
+        "name": "Tail",
+        "label": "",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "log-control-button",
+        "icon": "tailwind",
+        "iconPosition": "left",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#333333",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 310,
+        "y": 1380,
+        "wires": [
+            [
+                "7f14592e2cdf759b"
+            ]
+        ]
+    },
+    {
+        "id": "7f14592e2cdf759b",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "Toggle Log Tail",
+        "func": "const tailing = flow.get(\"displayLogTail\") === true;\n\nif (tailing) {\n\n    // Currently ON → turn OFF\n    flow.set(\"displayLogTail\", false);\n\n    return [\n        { topic: \"tail-file-stop\" },\n        {\n            ui_update: {\n                buttonColor: \"#333333\"\n            }\n        }\n    ];\n}\n\n\n// Currently OFF → turn ON\nflow.set(\"displayLogTail\", true);\n\nreturn [\n    { topic: \"tail-file-start\" },\n    {\n        ui_update: {\n            buttonColor: \"red\"\n        }\n    }\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1380,
+        "wires": [
+            [
+                "aa0532f177eab5bf"
+            ],
+            [
+                "5ce2e5b0b420a1b7"
+            ]
+        ],
+        "outputLabels": [
+            "display",
+            "btn"
+        ]
+    },
+    {
+        "id": "5ce2e5b0b420a1b7",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "toggle/log/tail/btn/out",
+        "mode": "link",
+        "links": [
+            "f5bbd96c1958884f"
+        ],
+        "x": 615,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "f5bbd96c1958884f",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "tail/btn/in",
+        "links": [
+            "5ce2e5b0b420a1b7"
+        ],
+        "x": 215,
+        "y": 1380,
+        "wires": [
+            [
+                "da1058cd61b4ef08"
+            ]
+        ]
+    },
+    {
+        "id": "aa0532f177eab5bf",
+        "type": "link out",
+        "z": "4721bb14b0bb8ce2",
+        "g": "40baf922d5c208e2",
+        "name": "toggle/log/file/display/out",
+        "mode": "link",
+        "links": [
+            "2851736c1a2e2061",
+            "c7e0af54ea198d66"
+        ],
+        "x": 615,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "2851736c1a2e2061",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "tail/log/file/in",
+        "links": [
+            "aa0532f177eab5bf"
+        ],
+        "x": 475,
+        "y": 1000,
+        "wires": [
+            [
+                "71491ae4faad352f"
+            ]
+        ]
+    },
+    {
+        "id": "c7e0af54ea198d66",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "e74e86b3ef76bf36",
+        "name": "read/events/in",
+        "links": [
+            "aa0532f177eab5bf"
+        ],
+        "x": 155,
+        "y": 1040,
+        "wires": [
+            [
+                "87b7774b46dafe02"
+            ]
+        ]
+    },
+    {
+        "id": "dd2b5261754ebff4",
+        "type": "ui-text",
+        "z": "4721bb14b0bb8ce2",
+        "g": "bb8fa93c293f0a04",
+        "group": "94e109669570dbcd",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "name": "Event count",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 270,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "c5ba86f57d9c9d10",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "bb8fa93c293f0a04",
+        "name": "Update Entry Count",
+        "func": "const events = flow.get(\"events\") || [];\n\nreturn {\n    payload: `Entries: ${events.length}`\n};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1940,
+        "wires": [
+            [
+                "dd2b5261754ebff4"
+            ]
+        ]
+    },
+    {
+        "id": "2d89152a39e04083",
+        "type": "link in",
+        "z": "4721bb14b0bb8ce2",
+        "g": "bb8fa93c293f0a04",
+        "name": "update/entry/count/in",
+        "links": [
+            "ed221331d72730b2"
+        ],
+        "x": 155,
+        "y": 1940,
+        "wires": [
+            [
+                "c5ba86f57d9c9d10"
+            ]
+        ]
     },
     {
         "id": "a7da2c372813bc18",

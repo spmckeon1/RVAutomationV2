@@ -10,7 +10,7 @@
       "acceptedDate": "2026-08-11T23:22:40.952Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787008259952
+      "lastHeartbeat": 1787146009699
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -34,7 +34,7 @@
       "acceptedDate": "2026-08-12T01:36:12.490Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787008259983
+      "lastHeartbeat": 1787145959669
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -47,31 +47,31 @@
     "state": {
       "sourceId": "test_gps",
       "position": {
-        "latitude": 31.68742133,
-        "longitude": -110.3554982
+        "latitude": 31.68739333,
+        "longitude": -110.3555252
       },
       "fix": {
         "valid": true,
-        "ageMs": 820
+        "ageMs": 487
       },
       "motion": {
         "speedKph": 0,
-        "courseDeg": 0
+        "courseDeg": 295.16
       },
       "altitude": {
-        "meters": 1352.1
+        "meters": 1347.5
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.6
+        "hdop": 0.51
       },
       "utc": {
         "year": 2026,
         "month": 8,
-        "day": 17,
-        "hour": 23,
-        "minute": 11,
-        "second": 28
+        "day": 19,
+        "hour": 13,
+        "minute": 26,
+        "second": 53
       }
     },
     "stats": {},
@@ -79,29 +79,29 @@
       "timestamp": {
         "year": 2026,
         "month": 8,
-        "day": 17,
-        "hour": 23,
-        "minute": 11,
-        "second": 28
+        "day": 19,
+        "hour": 13,
+        "minute": 26,
+        "second": 53
       },
       "position": {
-        "latitude": 31.68742133,
-        "longitude": -110.3554982
+        "latitude": 31.68739333,
+        "longitude": -110.3555252
       },
       "motion": {
         "speedKph": 0,
-        "courseDeg": 0
+        "courseDeg": 295.16
       },
       "altitude": {
-        "meters": 1352.1
+        "meters": 1347.5
       },
       "fix": {
         "valid": true,
-        "ageMs": 820
+        "ageMs": 487
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.6
+        "hdop": 0.51
       }
     }
   }

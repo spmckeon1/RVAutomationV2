@@ -10,7 +10,7 @@
       "acceptedDate": "2026-08-11T23:22:40.952Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787146009699
+      "lastHeartbeat": 1787290200464
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -34,44 +34,44 @@
       "acceptedDate": "2026-08-12T01:36:12.490Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787145959669
+      "lastHeartbeat": 1787281797750
     },
     "heartbeatMonitoring": {
       "enabled": true,
       "interval": 60000,
       "timeout": 180000,
-      "online": true,
-      "missedHeartbeats": 0,
+      "online": false,
+      "missedHeartbeats": 141,
       "lastAlertTime": 0
     },
     "state": {
       "sourceId": "test_gps",
       "position": {
-        "latitude": 31.68739333,
-        "longitude": -110.3555252
+        "latitude": 31.6874245,
+        "longitude": -110.3555047
       },
       "fix": {
         "valid": true,
-        "ageMs": 487
+        "ageMs": 608
       },
       "motion": {
         "speedKph": 0,
-        "courseDeg": 295.16
+        "courseDeg": 341.81
       },
       "altitude": {
-        "meters": 1347.5
+        "meters": 1342.3
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.51
+        "hdop": 0.53
       },
       "utc": {
         "year": 2026,
         "month": 8,
-        "day": 19,
-        "hour": 13,
-        "minute": 26,
-        "second": 53
+        "day": 21,
+        "hour": 3,
+        "minute": 10,
+        "second": 27
       }
     },
     "stats": {},
@@ -79,29 +79,29 @@
       "timestamp": {
         "year": 2026,
         "month": 8,
-        "day": 19,
-        "hour": 13,
-        "minute": 26,
-        "second": 53
+        "day": 21,
+        "hour": 3,
+        "minute": 10,
+        "second": 27
       },
       "position": {
-        "latitude": 31.68739333,
-        "longitude": -110.3555252
+        "latitude": 31.6874245,
+        "longitude": -110.3555047
       },
       "motion": {
         "speedKph": 0,
-        "courseDeg": 295.16
+        "courseDeg": 341.81
       },
       "altitude": {
-        "meters": 1347.5
+        "meters": 1342.3
       },
       "fix": {
         "valid": true,
-        "ageMs": 487
+        "ageMs": 608
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.51
+        "hdop": 0.53
       }
     }
   }

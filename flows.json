@@ -461,11 +461,12 @@
         },
         "nodes": [
             "9c01de1b2a729534",
-            "c5d2c6c75bc2d184"
+            "c5d2c6c75bc2d184",
+            "53a53f329a3f1d0f"
         ],
         "x": 88,
         "y": 73,
-        "w": 784,
+        "w": 878,
         "h": 694
     },
     {
@@ -484,11 +485,15 @@
             "0e4c70376a9b98f2",
             "68ccd611ed237333",
             "66201dc315f3c651",
-            "5bbcee32e696aebd"
+            "5bbcee32e696aebd",
+            "28e7c73e830293c0",
+            "baf48b026d06671e",
+            "169cf35c0cb58fec",
+            "59c755532f7412a4"
         ],
         "x": 134,
         "y": 179,
-        "w": 712,
+        "w": 972,
         "h": 322
     },
     {
@@ -517,12 +522,13 @@
             "83a71355bc3d5dac",
             "310565b0bdb7cbf5",
             "c28038881c180797",
-            "d76c6eeede72f8b9"
+            "d76c6eeede72f8b9",
+            "467b39cae00277ac"
         ],
         "x": 124,
-        "y": 319,
+        "y": 299,
         "w": 722,
-        "h": 422
+        "h": 442
     },
     {
         "id": "c5d2c6c75bc2d184",
@@ -3105,7 +3111,7 @@
         "z": "2ecdaac948b4ee3b",
         "g": "eed79a6497832c09",
         "name": "",
-        "topic": "test_ws_sd/to/nr/sd/data",
+        "topic": "test_ws_sd/to/nr/shadeState",
         "qos": "1",
         "datatype": "auto-detect",
         "broker": "5be6bf7969fc9e8d",
@@ -3113,12 +3119,13 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 270,
+        "x": 280,
         "y": 340,
         "wires": [
             [
                 "543ae2b9a6715ea0",
-                "0e4c70376a9b98f2"
+                "0e4c70376a9b98f2",
+                "a2ac76cb2cc65d7f"
             ]
         ]
     },
@@ -3128,7 +3135,7 @@
         "z": "2ecdaac948b4ee3b",
         "g": "eed79a6497832c09",
         "name": "debug 51",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3153,9 +3160,9 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n\n    <div class=\"shade-page\">\n\n        <div class=\"shade-card\">\n\n            <!-- =================================================\n                 DAY SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    DAY\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ day.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.upEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': day.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"day.direction === 'NONE'\">\n\n                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.downEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': day.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n\n            <!-- =================================================\n                 NIGHT SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    NIGHT\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ night.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.upEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': night.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"night.direction === 'NONE'\">\n\n                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.downEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': night.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n    <div class=\"parking-brake\" :class=\"{ 'brake-on': parkingBrake }\">\n        Ⓟ\n    </div>\n    \n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n</template>\n\n\n<script>\n    export default {\n\n    data() {\n\n        return {\n\n            day: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            night: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            parkingBrake: false,\n\n            pcbTemperature: null\n\n        };\n\n    },\n\n\n    watch: {\n\n        msg: {\n\n            immediate: true,\n\n            deep: true,\n\n            handler(msg) {\n\n                if (!msg || !msg.payload)\n                    return;\n\n                    if (msg.topic === \"shade/ws/pcb/temp\") {\n                    \n                    this.pcbTemperature = msg.payload;\n                    \n                    return;\n                    \n                }\n                \n                const data = msg.payload;\n\n                if (data.schema !== \"shadeState.v1\")\n                    return;\n\n\n                if (data.day) {\n\n                    this.day = {\n                        ...this.day,\n                        ...data.day\n                    };\n\n                }\n\n\n                if (data.night) {\n\n                    this.night = {\n                        ...this.night,\n                        ...data.night\n                    };\n\n                }\n\n\n                if (typeof data.parkingBrake === \"boolean\") {\n\n                    this.parkingBrake =\n                        data.parkingBrake;\n\n                }\n\n            }\n\n        }\n\n    }\n\n};\n\n</script>\n\n\n<style>\n    /* =========================================================\n   PAGE\n   ========================================================= */\n\n    .shade-page {\n\n        width: 100%;\n\n        box-sizing: border-box;\n\n        display: flex;\n\n        justify-content: center;\n\n        align-items: flex-start;\n\n        padding: 10px;\n    }\n\n\n    /* =========================================================\n   MAIN CARD\n   ========================================================= */\n\n    .shade-card {\n\n        width: 100%;\n\n        max-width: 520px;\n\n        position: relative;\n\n        box-sizing: border-box;\n\n        display: grid;\n\n        grid-template-columns:\n            repeat(2, minmax(0, 1fr));\n\n        gap: 24px;\n\n        padding: 18px 22px 20px;\n\n        background: #333;\n\n        border: 1px solid #555;\n\n        border-radius: 4px;\n\n        box-shadow:\n            0 2px 5px rgba(0, 0, 0, 0.35);\n    }\n\n\n    /* =========================================================\n   SHADE PANEL\n   ========================================================= */\n\n    .shade-panel {\n\n        text-align: center;\n\n        box-sizing: border-box;\n    }\n\n\n    /* =========================================================\n   DAY / NIGHT\n   ========================================================= */\n\n    .shade-title {\n\n        font-size: 20px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n\n        margin-bottom: 4px;\n    }\n\n\n    /* =========================================================\n   PERCENT DOWN\n   ========================================================= */\n\n    .shade-percent {\n\n        font-size: 18px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n    }\n\n\n    /* =========================================================\n   DOWN LABEL\n   ========================================================= */\n\n    .shade-down {\n\n        margin-top: 3px;\n\n        font-size: 14px;\n\n        letter-spacing: 2px;\n\n        opacity: 0.7;\n    }\n\n\n    /* =========================================================\n   CONTROL BOUNDING BOX\n   ========================================================= */\n\n    .shade-controls {\n\n        width: 82px;\n\n        height: 150px;\n\n        box-sizing: border-box;\n\n        margin: 12px auto 0;\n\n        border: 2px solid #888;\n\n        border-radius: 8px;\n\n        overflow: hidden;\n\n        background: #181818;\n\n        display: flex;\n\n        flex-direction: column;\n\n        box-shadow:\n            0 2px 4px rgba(0, 0, 0, 0.4);\n    }\n\n\n    /* =========================================================\n   CONTROL BUTTON\n   ========================================================= */\n\n    .shade-button {\n\n        flex: 1;\n\n        min-height: 0;\n\n        width: 100%;\n\n        padding: 0;\n\n        margin: 0;\n\n        border: 0;\n\n        border-bottom: 1px solid #555;\n\n        background:\n            linear-gradient(#292929,\n                #1b1b1b);\n\n        display: flex;\n\n        align-items: center;\n\n        justify-content: center;\n\n        cursor: pointer;\n    }\n\n\n    .shade-button:last-child {\n\n        border-bottom: 0;\n    }\n\n\n    /* =========================================================\n   HOVER / ACTIVE\n   ========================================================= */\n\n    .shade-button:hover:not(:disabled) {\n\n        background: #333;\n    }\n\n\n    .shade-button:active:not(:disabled) {\n\n        background: #111;\n    }\n\n\n    /* =========================================================\n   DISABLED BUTTON\n   ========================================================= */\n\n    .shade-button:disabled {\n\n        opacity: 0.30;\n\n        cursor: default;\n    }\n\n\n    /* =========================================================\n   SVG GRAPHICS\n   ========================================================= */\n\n    .motion-arrow {\n\n        width: 28px;\n\n        height: 28px;\n    }\n\n\n    .stop-icon {\n\n        width: 24px;\n\n        height: 24px;\n    }\n\n\n    /* =========================================================\n   MOTION TRAIL\n   ========================================================= */\n\n    .arrow-motion-shaft {\n\n        opacity: 0.85;\n    }\n\n\n    /* =========================================================\n   MOVING UP\n   ========================================================= */\n\n    .moving-up .arrow-motion-shaft {\n\n        animation:\n            moveUp 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   MOVING DOWN\n   ========================================================= */\n\n    .moving-down .arrow-motion-shaft {\n\n        animation:\n            moveDown 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   UP ANIMATION\n   ========================================================= */\n\n    @keyframes moveUp {\n\n        from {\n\n            stroke-dashoffset: 0;\n\n        }\n\n        to {\n\n            stroke-dashoffset: -28;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   DOWN ANIMATION\n   ========================================================= */\n\n    @keyframes moveDown {\n\n        from {\n\n            stroke-dashoffset: -28;\n\n        }\n\n        to {\n\n            stroke-dashoffset: 0;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   PHONE\n   ========================================================= */\n\n    @media (max-width: 575px) {\n\n        .shade-card {\n\n            max-width: 280px;\n\n            gap: 12px;\n\n            padding: 14px 10px 16px;\n        }\n\n\n        .shade-controls {\n\n            width: 72px;\n\n            height: 132px;\n        }\n\n\n        .motion-arrow {\n\n            width: 25px;\n\n            height: 25px;\n        }\n\n\n        .stop-icon {\n\n            width: 22px;\n\n            height: 22px;\n        }\n\n    }\n\n\n    /* =========================================================\n   TABLET\n   ========================================================= */\n\n    @media (min-width: 576px) and (max-width: 1023px) {\n\n        .shade-card {\n\n            max-width: 460px;\n        }\n\n    }\n\n\n    /* =========================================================\n   DESKTOP\n   ========================================================= */\n\n    @media (min-width: 1024px) {\n\n        .shade-card {\n\n            max-width: 520px;\n        }\n\n    }\n\n    /* =========================================================\n    PCB TEMPERATURE\n    ========================================================= */\n    \n.pcb-temperature {\n    position: absolute;\n\n    left: 50%;\n\n    bottom: 35px;\n\n    transform: translateX(-50%);\n\n    text-align: center;\n\n    font-size: 11px;\n\n    line-height: 1.05;\n\n    opacity: 0.65;\n}\n\n/* =========================================================\nPARKING BRAKE\n========================================================= */\n\n.parking-brake {\n    position: absolute;\n    left: 50%;\n    bottom: 62px;\n    transform: translateX(-50%);\n    font-size: 36px;\n    line-height: 1;\n    color: #7ed321;\n    opacity: 0.9;\n}\n\n\n.parking-brake.brake-on {\n    color: #e31b23;\n    opacity: 1;\n}\n\n</style>",
+        "format": "<template>\n\n    <div class=\"shade-page\">\n\n        <div class=\"shade-card\">\n\n            <!-- =================================================\n                 DAY SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    DAY\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ day.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.upEnabled\"\n    @click=\"send({\n    payload: {\n    shade: 'day',\n    action: 'UP'\n    }\n    })\">\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': day.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"day.direction === 'NONE'\"\n                        @click=\"send({\n                            payload: {\n                                shade: 'day',\n                                action: 'STOP'\n                            }\n    })\">                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!day.downEnabled\"\n @click=\"send({\n    payload: {\n        shade: 'day',\n        action: 'DOWN'\n    }\n})\"                       >\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': day.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n\n            <!-- =================================================\n                 NIGHT SHADE\n                 ================================================= -->\n\n            <div class=\"shade-panel\">\n\n                <div class=\"shade-title\">\n                    NIGHT\n                </div>\n\n                <div class=\"shade-percent\">\n                    {{ night.percentDown }}%\n                </div>\n\n                <div class=\"shade-down\">\n                    DOWN\n                </div>\n\n                <div class=\"shade-controls\">\n\n                    <!-- UP -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.upEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-up': night.direction === 'UP'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 25 L32 7 L52 25\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 12 V56\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- STOP -->\n                    <button\n                        class=\"shade-button stop-button\"\n                        :disabled=\"night.direction === 'NONE'\">\n\n                        <svg\n                            class=\"stop-icon\"\n                            viewBox=\"0 0 64 64\">\n\n                            <polygon\n                                points=\"22,5 42,5 59,22 59,42\n                                        42,59 22,59 5,42 5,22\"\n                                fill=\"#e31b23\"\n                                stroke=\"white\"\n                                stroke-width=\"5\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n\n                    <!-- DOWN -->\n                    <button\n                        class=\"shade-button\"\n                        :disabled=\"!night.downEnabled\">\n\n                        <svg\n                            class=\"motion-arrow\"\n                            :class=\"{\n                                'moving-down': night.direction === 'DOWN'\n                            }\"\n                            viewBox=\"0 0 64 64\">\n\n                            <!-- Shaft -->\n                            <path\n                                class=\"arrow-motion-shaft\"\n                                d=\"M32 8 V52\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-dasharray=\"6 8\"/>\n\n                            <!-- Arrow head -->\n                            <path\n                                d=\"M12 39 L32 57 L52 39\"\n                                fill=\"none\"\n                                stroke=\"#7ed321\"\n                                stroke-width=\"7\"\n                                stroke-linecap=\"round\"\n                                stroke-linejoin=\"round\"/>\n\n                        </svg>\n\n                    </button>\n\n                </div>\n\n            </div>\n\n        </div>\n\n    </div>\n\n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n    <div class=\"parking-brake\" :class=\"{ 'brake-on': parkingBrake }\">\n        Ⓟ\n    </div>\n    \n    <div class=\"pcb-temperature\">\n        <div>PCB</div>\n        <div>{{ pcbTemperature }}°F</div>\n    </div>\n\n</template>\n\n\n<script>\n    export default {\n\n    data() {\n\n        return {\n\n            day: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            night: {\n                percentDown: 0,\n                direction: \"NONE\",\n                upEnabled: false,\n                downEnabled: false\n            },\n\n            parkingBrake: false,\n\n            pcbTemperature: null\n\n        };\n\n    },\n\n\n    watch: {\n\n        msg: {\n\n            immediate: true,\n\n            deep: true,\n\nhandler(msg) {\n\nif (!msg || !msg.payload)\nreturn;\n\nconst envelope = msg.payload;\n\n// -------------------------------------------------------------\n// Is this message for the Shade Controls receiver?\n// -------------------------------------------------------------\n\nif (\nenvelope.owner !== \"application\" ||\nenvelope.route !== \"test_ws_sd/to/nr/shadeState\"\n) {\nreturn;\n}\n\n\n// -------------------------------------------------------------\n// Process the command\n// -------------------------------------------------------------\n\nswitch (envelope.command) {\n\ncase \"STATE\": {\n\nconst data = envelope.data;\n\nif (\n!data ||\ndata.schema !== \"shadeState.v1\"\n) {\nreturn;\n}\n\nif (data.day) {\n\nthis.day = {\n...this.day,\n...data.day\n};\n\n}\n\nif (data.night) {\n\nthis.night = {\n...this.night,\n...data.night\n};\n\n}\n\nif (typeof data.parkingBrake === \"boolean\") {\n\nthis.parkingBrake =\ndata.parkingBrake;\n\n}\n\nbreak;\n}\n\n\ncase \"TEMPERATURE\": {\n\nconst data = envelope.data;\n\nif (\n!data ||\ndata.schema !== \"pcbTemperature.v1\"\n) {\nreturn;\n}\n\nif (typeof data.temperature === \"number\") {\n\nthis.pcbTemperature =\ndata.temperature;\n\n}\n\nbreak;\n}\n\n\ndefault:\nreturn;\n}\n}\n\n        }\n\n    }\n\n};\n\n</script>\n\n\n<style>\n    /* =========================================================\n   PAGE\n   ========================================================= */\n\n    .shade-page {\n\n        width: 100%;\n\n        box-sizing: border-box;\n\n        display: flex;\n\n        justify-content: center;\n\n        align-items: flex-start;\n\n        padding: 10px;\n    }\n\n\n    /* =========================================================\n   MAIN CARD\n   ========================================================= */\n\n    .shade-card {\n\n        width: 100%;\n\n        max-width: 520px;\n\n        position: relative;\n\n        box-sizing: border-box;\n\n        display: grid;\n\n        grid-template-columns:\n            repeat(2, minmax(0, 1fr));\n\n        gap: 24px;\n\n        padding: 18px 22px 20px;\n\n        background: #333;\n\n        border: 1px solid #555;\n\n        border-radius: 4px;\n\n        box-shadow:\n            0 2px 5px rgba(0, 0, 0, 0.35);\n    }\n\n\n    /* =========================================================\n   SHADE PANEL\n   ========================================================= */\n\n    .shade-panel {\n\n        text-align: center;\n\n        box-sizing: border-box;\n    }\n\n\n    /* =========================================================\n   DAY / NIGHT\n   ========================================================= */\n\n    .shade-title {\n\n        font-size: 20px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n\n        margin-bottom: 4px;\n    }\n\n\n    /* =========================================================\n   PERCENT DOWN\n   ========================================================= */\n\n    .shade-percent {\n\n        font-size: 18px;\n\n        font-weight: 700;\n\n        line-height: 1.1;\n    }\n\n\n    /* =========================================================\n   DOWN LABEL\n   ========================================================= */\n\n    .shade-down {\n\n        margin-top: 3px;\n\n        font-size: 14px;\n\n        letter-spacing: 2px;\n\n        opacity: 0.7;\n    }\n\n\n    /* =========================================================\n   CONTROL BOUNDING BOX\n   ========================================================= */\n\n    .shade-controls {\n\n        width: 82px;\n\n        height: 150px;\n\n        box-sizing: border-box;\n\n        margin: 12px auto 0;\n\n        border: 2px solid #888;\n\n        border-radius: 8px;\n\n        overflow: hidden;\n\n        background: #181818;\n\n        display: flex;\n\n        flex-direction: column;\n\n        box-shadow:\n            0 2px 4px rgba(0, 0, 0, 0.4);\n    }\n\n\n    /* =========================================================\n   CONTROL BUTTON\n   ========================================================= */\n\n    .shade-button {\n\n        flex: 1;\n\n        min-height: 0;\n\n        width: 100%;\n\n        padding: 0;\n\n        margin: 0;\n\n        border: 0;\n\n        border-bottom: 1px solid #555;\n\n        background:\n            linear-gradient(#292929,\n                #1b1b1b);\n\n        display: flex;\n\n        align-items: center;\n\n        justify-content: center;\n\n        cursor: pointer;\n    }\n\n\n    .shade-button:last-child {\n\n        border-bottom: 0;\n    }\n\n\n    /* =========================================================\n   HOVER / ACTIVE\n   ========================================================= */\n\n    .shade-button:hover:not(:disabled) {\n\n        background: #333;\n    }\n\n\n    .shade-button:active:not(:disabled) {\n\n        background: #111;\n    }\n\n\n    /* =========================================================\n   DISABLED BUTTON\n   ========================================================= */\n\n    .shade-button:disabled {\n\n        opacity: 0.30;\n\n        cursor: default;\n    }\n\n\n    /* =========================================================\n   SVG GRAPHICS\n   ========================================================= */\n\n    .motion-arrow {\n\n        width: 28px;\n\n        height: 28px;\n    }\n\n\n    .stop-icon {\n\n        width: 24px;\n\n        height: 24px;\n    }\n\n\n    /* =========================================================\n   MOTION TRAIL\n   ========================================================= */\n\n    .arrow-motion-shaft {\n\n        opacity: 0.85;\n    }\n\n\n    /* =========================================================\n   MOVING UP\n   ========================================================= */\n\n    .moving-up .arrow-motion-shaft {\n\n        animation:\n            moveUp 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   MOVING DOWN\n   ========================================================= */\n\n    .moving-down .arrow-motion-shaft {\n\n        animation:\n            moveDown 0.8s linear infinite;\n    }\n\n\n    /* =========================================================\n   UP ANIMATION\n   ========================================================= */\n\n    @keyframes moveUp {\n\n        from {\n\n            stroke-dashoffset: 0;\n\n        }\n\n        to {\n\n            stroke-dashoffset: -28;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   DOWN ANIMATION\n   ========================================================= */\n\n    @keyframes moveDown {\n\n        from {\n\n            stroke-dashoffset: -28;\n\n        }\n\n        to {\n\n            stroke-dashoffset: 0;\n\n        }\n\n    }\n\n\n    /* =========================================================\n   PHONE\n   ========================================================= */\n\n    @media (max-width: 575px) {\n\n        .shade-card {\n\n            max-width: 280px;\n\n            gap: 12px;\n\n            padding: 14px 10px 16px;\n        }\n\n\n        .shade-controls {\n\n            width: 72px;\n\n            height: 132px;\n        }\n\n\n        .motion-arrow {\n\n            width: 25px;\n\n            height: 25px;\n        }\n\n\n        .stop-icon {\n\n            width: 22px;\n\n            height: 22px;\n        }\n\n    }\n\n\n    /* =========================================================\n   TABLET\n   ========================================================= */\n\n    @media (min-width: 576px) and (max-width: 1023px) {\n\n        .shade-card {\n\n            max-width: 460px;\n        }\n\n    }\n\n\n    /* =========================================================\n   DESKTOP\n   ========================================================= */\n\n    @media (min-width: 1024px) {\n\n        .shade-card {\n\n            max-width: 520px;\n        }\n\n    }\n\n    /* =========================================================\n    PCB TEMPERATURE\n    ========================================================= */\n    \n.pcb-temperature {\n    position: absolute;\n\n    left: 50%;\n\n    bottom: 35px;\n\n    transform: translateX(-50%);\n\n    text-align: center;\n\n    font-size: 11px;\n\n    line-height: 1.05;\n\n    opacity: 0.65;\n}\n\n/* =========================================================\nPARKING BRAKE\n========================================================= */\n\n.parking-brake {\n    position: absolute;\n    left: 50%;\n    bottom: 62px;\n    transform: translateX(-50%);\n    font-size: 36px;\n    line-height: 1;\n    color: #7ed321;\n    opacity: 0.9;\n}\n\n\n.parking-brake.brake-on {\n    color: #e31b23;\n    opacity: 1;\n}\n\n</style>",
         "storeOutMessages": true,
-        "passthru": true,
+        "passthru": false,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
@@ -3163,7 +3170,8 @@
         "y": 380,
         "wires": [
             [
-                "66201dc315f3c651"
+                "66201dc315f3c651",
+                "28e7c73e830293c0"
             ]
         ]
     },
@@ -3198,7 +3206,7 @@
         "z": "2ecdaac948b4ee3b",
         "g": "eed79a6497832c09",
         "name": "debug 14",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3207,8 +3215,154 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 740,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "28e7c73e830293c0",
+        "type": "function",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "name": "Build Shade Command",
+        "func": "    let devices = global.get('devices');\n    msg.payload = {\n    owner: \"application\",\n        route: \"nr/to/\" + devices.test_ws_sd.identity.sourceId + \"/shadeOps\",\n    command: \"EXEC\",\n    data: {\n        shade: msg.payload.shade,\n        action: msg.payload.action\n    }};\n    msg.topic = \"nr/to/\" + devices.test_ws_sd.identity.sourceId + \"/sd/cmd\";\n    return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 400,
+        "wires": [
+            [
+                "baf48b026d06671e",
+                "169cf35c0cb58fec"
+            ]
+        ]
+    },
+    {
+        "id": "baf48b026d06671e",
+        "type": "debug",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "169cf35c0cb58fec",
+        "type": "mqtt out",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "name": "send cmd",
+        "topic": "",
+        "qos": "2",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5be6bf7969fc9e8d",
+        "x": 1020,
         "y": 380,
         "wires": []
+    },
+    {
+        "id": "3968811bdc295c37",
+        "type": "inject",
+        "z": "2ecdaac948b4ee3b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59c755532f7412a4",
+        "type": "debug",
+        "z": "2ecdaac948b4ee3b",
+        "g": "eed79a6497832c09",
+        "name": "debug 19",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "90fe205bf8118b04",
+        "type": "function",
+        "z": "2ecdaac948b4ee3b",
+        "name": "mqttMsgRouter",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2ac76cb2cc65d7f",
+        "type": "switch",
+        "z": "2ecdaac948b4ee3b",
+        "name": "Shade state",
+        "property": "payload.route",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "test_ws_sd/to/nr/shadeState",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "59c755532f7412a4"
+            ]
+        ]
     },
     {
         "id": "4cc435a5e1358f17",
@@ -3468,7 +3622,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 280,
@@ -3590,6 +3745,7 @@
         "id": "84258be828d3120e",
         "type": "mqtt in",
         "z": "4721bb14b0bb8ce2",
+        "d": true,
         "g": "c5d2c6c75bc2d184",
         "name": "rtrFanSyslog",
         "topic": "rtrFanSw/in/syslog",
@@ -3612,6 +3768,7 @@
         "id": "cc7e6f0e7c814b09",
         "type": "mqtt in",
         "z": "4721bb14b0bb8ce2",
+        "d": true,
         "g": "c5d2c6c75bc2d184",
         "name": "gpsSyslog",
         "topic": "gps/in/syslog",
@@ -3867,7 +4024,7 @@
         "z": "4721bb14b0bb8ce2",
         "g": "bb8fa93c293f0a04",
         "name": "process data",
-        "func": "/*\n * Process Data\n *\n * Input:\n *\n *   sourced/from/file\n *       flow.events already contains the events read from the log file.\n *\n *   sourced/from/tail\n *       msg.payload contains JSON string(s) from tail-file.\n *\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n *\n * Event data is owned by flow.events.\n *\n * Common event form:\n *\n * {\n *     event: { ...original event... },\n *     show: true,\n *     pending: true\n * }\n */\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    return {\n        event: event,\n        show: true,\n        pending: true\n    };\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from the initial file read\n// -----------------------------------------------------------------------------\n\nfunction fromReadFile() {\n\n    const events = flow.get(\"events\") || [];\n\n    const processedEvents = events.map(event =>\n        processEvent(event)\n    );\n\n    flow.set(\"events\", processedEvents);\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from tail-file\n// -----------------------------------------------------------------------------\n\nfunction fromTailFile() {\n\n    let incomingEvents = msg.payload;\n\n    // Normally tail-file supplies one JSON string.\n    // Accept an array as well so this remains safe if that ever changes.\n    if (!Array.isArray(incomingEvents)) {\n        incomingEvents = [incomingEvents];\n    }\n\n    const newEvents = [];\n\n    for (const incomingEvent of incomingEvents) {\n\n        let event = incomingEvent;\n\n\n        // ---------------------------------------------------------------------\n        // Convert JSON string to event object\n        // ---------------------------------------------------------------------\n\n        if (typeof event === \"string\") {\n\n            try {\n                event = JSON.parse(event);\n            }\n            catch (err) {\n\n                node.error(\n                    `Unable to parse tailed event: ${err.message}`,\n                    msg\n                );\n\n                continue;\n            }\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Validate event\n        // ---------------------------------------------------------------------\n\n        if (\n            !event ||\n            typeof event !== \"object\" ||\n            Array.isArray(event)\n        ) {\n\n            node.error(\n                \"Invalid event received from tail-file.\",\n                msg\n            );\n\n            continue;\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Process new event\n        // ---------------------------------------------------------------------\n\n        newEvents.push(\n            processEvent(event)\n        );\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Nothing usable arrived\n    // -------------------------------------------------------------------------\n\n    if (newEvents.length === 0) {\n        return;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Append new events to existing collection\n    // -------------------------------------------------------------------------\n\n    const events = flow.get(\"events\") || [];\n\n    events.push(...newEvents);\n\n    flow.set(\"events\", events);\n}\n\n\n// -----------------------------------------------------------------------------\n// Select the source\n// -----------------------------------------------------------------------------\n\nswitch (msg.topic) {\n\n    case \"sourced/from/file\":\n        fromReadFile();\n        break;\n\n\n    case \"sourced/from/tail\":\n        fromTailFile();\n        break;\n\n\n    default:\n\n        node.error(\n            `Unknown message source: ${msg.topic}`,\n            msg\n        );\n\n        return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Everything below this point operates on the same flow.events structure,\n// regardless of where the events came from.\n// -----------------------------------------------------------------------------\n\nconst processedEvents = flow.get(\"events\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(item => item.event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fieldOrder = [\n    \"sequence\",\n    \"eventTime\",\n    \"sourceId\",\n    \"eventType\",\n    \"level\",\n    \"message\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"data\",\n    \"eventUuid\",\n    \"deviceSequence\",\n    \"recordType\",\n    \"receivedTime\"\n];\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(item =>\n            Object.keys(item.event)\n        )\n    )\n].sort((a, b) => {\n\n    const aIndex = fieldOrder.indexOf(a);\n    const bIndex = fieldOrder.indexOf(b);\n\n    if (aIndex !== -1 && bIndex !== -1) {\n        return aIndex - bIndex;\n    }\n\n    if (aIndex !== -1) return -1;\n    if (bIndex !== -1) return 1;\n\n    return a.localeCompare(b);\n});\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build outputs\n//\n// These messages contain only the data needed by their destinations.\n// The event collection remains in flow.events.\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"],\n    options: systemDropDown\n};\n\nconst fieldsMsg = {\n    payload: [\"__ALL__\"],\n    options: fieldsDropDown\n};\n\n/*\nconst stateMsg = {\n    topic: \"updateEventState\"\n};\n*/\n\nconst stateMsg = {\n    topic: msg.topic\n};\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];",
+        "func": "/*\n * Process Data\n *\n * Input:\n *\n *   sourced/from/file\n *       flow.events already contains the events read from the log file.\n *\n *   sourced/from/tail\n *       msg.payload contains JSON string(s) from tail-file.\n *\n *\n * Output 1 → System dropdown\n * Output 2 → Fields dropdown\n * Output 3 → Update Event State\n *\n *\n * Event data is owned by flow.events.\n *\n * Common event form:\n *\n * {\n *     event: { ...original event... },\n *     show: true,\n *     pending: true\n * }\n */\n\n\n// -----------------------------------------------------------------------------\n// Process one event\n// -----------------------------------------------------------------------------\n\nfunction processEvent(event) {\n\n    return {\n        event: event,\n        show: true,\n        pending: true\n    };\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from the initial file read\n// -----------------------------------------------------------------------------\n\nfunction fromReadFile() {\n\n    const events = flow.get(\"events\") || [];\n\n    const processedEvents = events.map(event =>\n        processEvent(event)\n    );\n\n    flow.set(\"events\", processedEvents);\n}\n\n\n// -----------------------------------------------------------------------------\n// Process events from tail-file\n// -----------------------------------------------------------------------------\n\nfunction fromTailFile() {\n\n    let incomingEvents = msg.payload;\n\n    // Normally tail-file supplies one JSON string.\n    // Accept an array as well so this remains safe if that ever changes.\n    if (!Array.isArray(incomingEvents)) {\n        incomingEvents = [incomingEvents];\n    }\n\n    const newEvents = [];\n\n    for (const incomingEvent of incomingEvents) {\n\n        let event = incomingEvent;\n\n\n        // ---------------------------------------------------------------------\n        // Convert JSON string to event object\n        // ---------------------------------------------------------------------\n\n        if (typeof event === \"string\") {\n\n            try {\n                event = JSON.parse(event);\n            }\n            catch (err) {\n\n                node.error(\n                    `Unable to parse tailed event: ${err.message}. Received: ${event}`,\n                    msg\n                );\n                continue;\n            }\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Validate event\n        // ---------------------------------------------------------------------\n\n        if (\n            !event ||\n            typeof event !== \"object\" ||\n            Array.isArray(event)\n        ) {\n\n            node.error(\n                \"Invalid event received from tail-file.\",\n                msg\n            );\n\n            continue;\n        }\n\n\n        // ---------------------------------------------------------------------\n        // Process new event\n        // ---------------------------------------------------------------------\n\n        newEvents.push(\n            processEvent(event)\n        );\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Nothing usable arrived\n    // -------------------------------------------------------------------------\n\n    if (newEvents.length === 0) {\n        return;\n    }\n\n\n    // -------------------------------------------------------------------------\n    // Append new events to existing collection\n    // -------------------------------------------------------------------------\n\n    const events = flow.get(\"events\") || [];\n\n    events.push(...newEvents);\n\n    flow.set(\"events\", events);\n}\n\n\n// -----------------------------------------------------------------------------\n// Select the source\n// -----------------------------------------------------------------------------\n\nswitch (msg.topic) {\n\n    case \"sourced/from/file\":\n        fromReadFile();\n        break;\n\n\n    case \"sourced/from/tail\":\n        fromTailFile();\n        break;\n\n\n    default:\n\n        node.error(\n            `Unknown message source: ${msg.topic}`,\n            msg\n        );\n\n        return null;\n}\n\n\n// -----------------------------------------------------------------------------\n// Everything below this point operates on the same flow.events structure,\n// regardless of where the events came from.\n// -----------------------------------------------------------------------------\n\nconst processedEvents = flow.get(\"events\") || [];\n\n\n// -----------------------------------------------------------------------------\n// Build System dropdown\n// -----------------------------------------------------------------------------\n\nconst systems = [\n    ...new Set(\n        processedEvents\n            .map(item => item.event.sourceId)\n            .filter(Boolean)\n    )\n].sort();\n\nconst systemDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...systems.map(system => ({\n        label: system,\n        value: system,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"systemDropDown\", systemDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build Fields dropdown\n// -----------------------------------------------------------------------------\n\nconst fieldOrder = [\n    \"sequence\",\n    \"eventTime\",\n    \"sourceId\",\n    \"eventType\",\n    \"level\",\n    \"message\",\n    \"file\",\n    \"function\",\n    \"line\",\n    \"data\",\n    \"eventUuid\",\n    \"deviceSequence\",\n    \"recordType\",\n    \"receivedTime\"\n];\n\nconst fields = [\n    ...new Set(\n        processedEvents.flatMap(item =>\n            Object.keys(item.event)\n        )\n    )\n].sort((a, b) => {\n\n    const aIndex = fieldOrder.indexOf(a);\n    const bIndex = fieldOrder.indexOf(b);\n\n    if (aIndex !== -1 && bIndex !== -1) {\n        return aIndex - bIndex;\n    }\n\n    if (aIndex !== -1) return -1;\n    if (bIndex !== -1) return 1;\n\n    return a.localeCompare(b);\n});\n\nconst fieldsDropDown = [\n    {\n        label: \"ALL\",\n        value: \"__ALL__\",\n        type: \"str\"\n    },\n\n    ...fields.map(field => ({\n        label: field,\n        value: field,\n        type: \"str\"\n    }))\n];\n\nflow.set(\"fieldsDropDown\", fieldsDropDown);\n\n\n// -----------------------------------------------------------------------------\n// Build outputs\n//\n// These messages contain only the data needed by their destinations.\n// The event collection remains in flow.events.\n// -----------------------------------------------------------------------------\n\nconst systemMsg = {\n    payload: [\"__ALL__\"],\n    options: systemDropDown\n};\n\nconst fieldsMsg = {\n    payload: [\"__ALL__\"],\n    options: fieldsDropDown\n};\n\n/*\nconst stateMsg = {\n    topic: \"updateEventState\"\n};\n*/\n\nconst stateMsg = {\n    topic: msg.topic\n};\n\n// -----------------------------------------------------------------------------\n// Outputs\n//\n// Output 1 → System dropdown\n// Output 2 → Fields dropdown\n// Output 3 → Update Event State\n// -----------------------------------------------------------------------------\n\nreturn [\n    systemMsg,\n    fieldsMsg,\n    stateMsg\n];",
         "outputs": 3,
         "timeout": 0,
         "noerr": 0,
@@ -5245,6 +5402,45 @@
                 "c5ba86f57d9c9d10"
             ]
         ]
+    },
+    {
+        "id": "467b39cae00277ac",
+        "type": "function",
+        "z": "4721bb14b0bb8ce2",
+        "g": "9c01de1b2a729534",
+        "name": "function 2",
+        "func": "let text;\n\nif (Buffer.isBuffer(msg.payload)) {\n    text = msg.payload.toString();\n}\nelse if (typeof msg.payload === \"string\") {\n    text = msg.payload;\n}\nelse {\n    text = JSON.stringify(msg.payload);\n}\n\nif (text.includes(\"SHADE_OPS setup() has completed\")) {\n\n    node.warn(\n        \"FOUND IT!\\n\" +\n        \"topic = \" + msg.topic + \"\\n\" +\n        \"length = \" + text.length + \"\\n\" +\n        \"payload = [\" + text + \"]\"\n    );\n\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 340,
+        "wires": [
+            [
+                "53a53f329a3f1d0f"
+            ]
+        ]
+    },
+    {
+        "id": "53a53f329a3f1d0f",
+        "type": "debug",
+        "z": "4721bb14b0bb8ce2",
+        "g": "d0d2a609578bd1c5",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "a7da2c372813bc18",

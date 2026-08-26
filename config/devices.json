@@ -10,7 +10,7 @@
       "acceptedDate": "2026-08-11T23:22:40.952Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787290200464
+      "lastHeartbeat": 1787719440502
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -41,7 +41,7 @@
       "interval": 60000,
       "timeout": 180000,
       "online": false,
-      "missedHeartbeats": 141,
+      "missedHeartbeats": 7294,
       "lastAlertTime": 0
     },
     "state": {

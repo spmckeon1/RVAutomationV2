@@ -1,16 +1,18 @@
 {
-  "test_ws_sd": {
+  "drvSd": {
     "identity": {
-      "appName": "TEST Windshield Shade Controller",
-      "sourceId": "test_ws_sd"
+      "appName": "TEST Drivers Window Shade Controller",
+      "sourceId": "drvSd",
+      "deviceId": "71886986-da3d-4706-8799-1cf032dc649c",
+      "ipAddress": "192.168.1.133"
     },
-    "dashboardPage": "Windshield Shade",
+    "dashboardPage": "",
     "registration": {
       "accepted": true,
-      "acceptedDate": "2026-08-11T23:22:40.952Z"
+      "acceptedDate": "2026-09-10T14:14:52.264Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787719440502
+      "lastHeartbeat": 1790478596586
     },
     "heartbeatMonitoring": {
       "enabled": true,
@@ -21,88 +23,155 @@
       "lastAlertTime": 0
     },
     "state": {},
-    "stats": {}
+    "stats": {},
+    "pageId": "drvShade",
+    "pageName": "Drivers Window Shade",
+    "uiId": "a7911ae80808578f"
   },
-  "test_gps": {
+  "wsSd": {
     "identity": {
-      "appName": "TEST GPS Controller",
-      "sourceId": "test_gps"
+      "appName": "TEST Windshield Shade Controller",
+      "sourceId": "wsSd",
+      "deviceId": "17296970-d0ad-4897-84ad-5ee036224a51",
+      "ipAddress": "192.168.1.121"
     },
-    "dashboardPage": "GPS",
+    "dashboardPage": "",
     "registration": {
       "accepted": true,
-      "acceptedDate": "2026-08-12T01:36:12.490Z"
+      "acceptedDate": "2026-09-10T15:22:35.360Z"
     },
     "heartbeat": {
-      "lastHeartbeat": 1787281797750
+      "lastHeartbeat": 1790478300196
     },
     "heartbeatMonitoring": {
       "enabled": true,
       "interval": 60000,
       "timeout": 180000,
       "online": false,
-      "missedHeartbeats": 7294,
+      "missedHeartbeats": 5,
+      "lastAlertTime": 0
+    },
+    "state": {},
+    "stats": {},
+    "pageId": "wshdShade",
+    "pageName": "Windshield Shade",
+    "uiId": "4170a3fa4d67923f"
+  },
+  "gps": {
+    "identity": {
+      "appName": "TEST GPS Controller",
+      "sourceId": "gps",
+      "deviceId": "1ab1b38e-1f9d-4b69-ae80-fc77cb7ead99",
+      "ipAddress": "192.168.1.138"
+    },
+    "dashboardPage": "",
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-09-11T00:13:00.906Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1790478598850
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
       "lastAlertTime": 0
     },
     "state": {
-      "sourceId": "test_gps",
+      "sourceId": "gps",
+      "bootTime": 1790399989,
       "position": {
-        "latitude": 31.6874245,
-        "longitude": -110.3555047
+        "latitude": 31.6874625,
+        "longitude": -110.3551497
       },
       "fix": {
         "valid": true,
-        "ageMs": 608
+        "ageMs": 666
       },
       "motion": {
-        "speedKph": 0,
-        "courseDeg": 341.81
+        "speedKph": 0.1,
+        "courseDeg": 300.93
       },
       "altitude": {
-        "meters": 1342.3
+        "meters": 1347.6
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.53
+        "hdop": 0.68
       },
       "utc": {
         "year": 2026,
-        "month": 8,
-        "day": 21,
+        "month": 9,
+        "day": 27,
         "hour": 3,
         "minute": 10,
-        "second": 27
+        "second": 40
       }
     },
     "stats": {},
+    "pageId": "GPS",
     "data": {
       "timestamp": {
         "year": 2026,
-        "month": 8,
-        "day": 21,
+        "month": 9,
+        "day": 27,
         "hour": 3,
         "minute": 10,
-        "second": 27
+        "second": 40
       },
       "position": {
-        "latitude": 31.6874245,
-        "longitude": -110.3555047
+        "latitude": 31.6874625,
+        "longitude": -110.3551497
       },
       "motion": {
-        "speedKph": 0,
-        "courseDeg": 341.81
+        "speedKph": 0.1,
+        "courseDeg": 300.93
       },
       "altitude": {
-        "meters": 1342.3
+        "meters": 1347.6
       },
       "fix": {
         "valid": true,
-        "ageMs": 608
+        "ageMs": 666
       },
       "quality": {
         "satellites": 12,
-        "hdop": 0.53
+        "hdop": 0.68
       }
-    }
+    },
+    "pageName": "GPS",
+    "uiId": "634d105249078f87"
+  },
+  "psSd": {
+    "identity": {
+      "appName": "TEST Passenger Window Shade Controller",
+      "sourceId": "psSd",
+      "deviceId": "3b9eed10-60f3-47f6-8169-eb0ff465a685",
+      "ipAddress": "192.168.1.134"
+    },
+    "dashboardPage": "",
+    "registration": {
+      "accepted": true,
+      "acceptedDate": "2026-09-19T17:12:44.743Z"
+    },
+    "heartbeat": {
+      "lastHeartbeat": 1790478598864
+    },
+    "heartbeatMonitoring": {
+      "enabled": true,
+      "interval": 60000,
+      "timeout": 180000,
+      "online": true,
+      "missedHeartbeats": 0,
+      "lastAlertTime": 0
+    },
+    "state": {},
+    "stats": {},
+    "pageId": "passShade",
+    "pageName": "Passenger Shade",
+    "uiId": "ff8bb69331e7d834"
   }
 }

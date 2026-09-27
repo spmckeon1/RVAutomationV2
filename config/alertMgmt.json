@@ -1,0 +1,36 @@
+{
+  "alertTypes": {
+    "drvSd_HB": {
+      "closeOut": {},
+      "email": {
+        "delay": 360000,
+        "recipients": "stephen@rsmckeon.com",
+        "reminder": 3600000
+      }
+    },
+    "psSd_HB": {
+      "closeOut": {},
+      "email": {
+        "delay": 300000,
+        "recipients": "stephen@rsmckeon.com",
+        "reminder": 3600000
+      }
+    },
+    "wsSd_HB": {
+      "closeOut": {},
+      "email": {
+        "delay": 300000,
+        "recipients": "stephen@rsmckeon.com",
+        "reminder": 3600000
+      }
+    },
+    "gps_HB": {
+      "closeOut": {},
+      "email": {
+        "delay": 300000,
+        "recipients": "stephen@rsmckeon.com",
+        "reminder": 3600000
+      }
+    }
+  }
+}

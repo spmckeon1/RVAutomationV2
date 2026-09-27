@@ -1,0 +1,79 @@
+[
+  {
+    "id": "eb31c5fb533897a0",
+    "name": "Logs",
+    "path": "/logs",
+    "type": "service",
+    "owner": "Logs"
+  },
+  {
+    "id": "4170a3fa4d67923f",
+    "name": "Windshield Shade",
+    "path": "/windshield_shade",
+    "type": "device",
+    "owner": "Windshield Shade"
+  },
+  {
+    "id": "d3b930ad469610d6",
+    "name": "Admin",
+    "path": "/admin",
+    "type": "service",
+    "owner": "Administration"
+  },
+  {
+    "id": "6d836711f9136ed7",
+    "name": "Dashboard",
+    "path": "/dashboard",
+    "type": "application",
+    "owner": "Node-Red"
+  },
+  {
+    "id": "264ef55d77cf9ba1",
+    "name": "Configuration",
+    "path": "/configuration",
+    "type": "service",
+    "owner": "Administration"
+  },
+  {
+    "id": "f809acefa6dc8472",
+    "name": "Status",
+    "path": "/status",
+    "type": "service",
+    "owner": "Administration"
+  },
+  {
+    "id": "634d105249078f87",
+    "name": "GPS",
+    "path": "/gps",
+    "type": "application",
+    "owner": "GPS"
+  },
+  {
+    "id": "a7911ae80808578f",
+    "name": "Drivers Window Shade",
+    "path": "/drivers_window_shade",
+    "type": "device",
+    "owner": "Drivers Window Shade"
+  },
+  {
+    "id": "ff8bb69331e7d834",
+    "name": "Passenger Shade",
+    "path": "/passenger_shade",
+    "type": "device",
+    "owner": "Passenger Wiindow Shade"
+  },
+  {
+    "id": "71ebaab953dea142",
+    "name": "Test Page",
+    "path": "/page10",
+    "type": "unconfigured",
+    "owner": "System"
+  },
+  {
+    "id": "290e630dedb23fa4",
+    "name": "Services",
+    "path": "/services",
+    "type": "service",
+    "owner": "Administration"
+  }
+]

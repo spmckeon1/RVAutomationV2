@@ -1,0 +1,23 @@
+{
+  "sourceId": "",
+  "alertType": "",
+  "state": "",
+  "acknowledgement": {
+    "acknowledged": false,
+    "acknowledgedAt": null,
+    "acknowledgedBy": null
+  },
+  "lifecycle": {
+    "firstEventAt": null,
+    "alertActive": null,
+    "lastEventAt": null,
+    "occurrenceCount": 0
+  },
+  "notification": {
+    "contactCount": 0,
+    "emailCount": 0,
+    "firstContactAt": null,
+    "firstEmailSent": null,
+    "lastEmailSent": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "closeOut": {
+  },
+  "email": {
+    "delay": 0,
+    "recipients": "",
+    "reminder": "hourly"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sourceId": "drvSd",
+  "alertType": "heartbeat",
+  "state": "broken",
+  "rules": {
+    "closeOut": {
+    },
+    "email": {
+      "delay": 360000,
+      "recipients": "stephen@rsmckeon.com",
+      "reminder": 3600000
+    }
+  }
+}

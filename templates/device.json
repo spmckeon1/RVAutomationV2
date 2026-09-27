@@ -1,7 +1,8 @@
 {
   "identity": {
     "appName": "",
-    "sourceId": ""
+    "sourceId": "",
+    "deviceId": ""
   },
 
   "dashboardPage": "",
